@@ -157,6 +157,8 @@
 .as-lgs h2 { margin: 6px 0 10px; font-size: 2rem; }
 .as-lgs p { margin: 0; opacity: .85; max-width: 560px; }
 .as-lgs .btn { position: relative; }
+.as-deney { background: linear-gradient(120deg, #be185d, #4c1d95); }
+.as-deney .as-lgs-etiket { color: #fde68a; }
 
 /* Biliyor muydun */
 .as-bilgi-kutu {
