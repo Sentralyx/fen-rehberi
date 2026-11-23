@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permütasyon, Kombinasyon ve Olasılık – KPSS Matematik | Fen Bilimleri Rehberi</title>
+  <meta name="description" content="KPSS Matematik permütasyon, kombinasyon ve olasılık konu anlatımı: toplama ve çarpma yoluyla sayma, permütasyon, tekrarlı ve dairesel permütasyon, kombinasyon, olasılık hesaplama, zar, para ve torba problemleri. Özet ve 15 soruluk çözümlü test.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="kap ust-ic">
+      <a class="logo" href="/kpss/">
+        <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+        <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <a href="/kpss/">Ana Sayfa</a>
+        <a href="/kpss/genel-yetenek/turkce/">Türkçe</a>
+        <a class="aktif" href="/kpss/genel-yetenek/matematik/">Matematik</a>
+        <a href="/kpss/genel-kultur/tarih/">Tarih</a>
+        <a href="/kpss/genel-kultur/cografya/">Coğrafya</a>
+        <a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a>
+        <a class="menu-lgs" href="/">📚 Tüm Bölümler</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek">
+        <a href="/kpss/">KPSS</a> › <a href="/kpss/genel-yetenek/matematik/">Matematik</a> › 13. Konu
+      </div>
+      <h1>🎲 Permütasyon, Kombinasyon ve Olasılık</h1>
+      <p>Sayma yöntemleri, sıralama (permütasyon), seçme (kombinasyon) ve olasılık hesaplamanın temel kuralları.</p>
+      <div class="konu-meta">
+        <span>📚 KPSS Matematik · 13. Konu</span>
+        <span>⏱️ 16 dk okuma</span>
+        <span>✅ 15 soruluk test</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="sayma">Sayma Yöntemleri</h2>
+
+        <ul>
+          <li><strong>Çarpma yoluyla sayma:</strong> Bir iş birinci adımda m, ikinci adımda n farklı yolla yapılabiliyorsa tamamı
+            m · n farklı yolla yapılabilir. 3 gömlek ve 4 pantolonla 3 · 4 = <strong>12</strong> farklı kombin yapılır.</li>
+          <li><strong>Toplama yoluyla sayma:</strong> Ayrık seçeneklerden yalnızca biri seçilecekse seçenek sayıları toplanır.</li>
+          <li><strong>Rakam problemleri:</strong> 1, 2, 3, 4, 5 rakamlarıyla rakamları farklı üç basamaklı 5 · 4 · 3 = <strong>60</strong> sayı yazılabilir.</li>
+        </ul>
+
+        <h2 id="permutasyon">Permütasyon (Sıralama)</h2>
+
+        <p>Sıranın önemli olduğu durumlarda permütasyon kullanılır.</p>
+        <div class="formul">n farklı nesnenin sıralanması: n! &nbsp;&nbsp;&nbsp; P(n, r) = n! / (n − r)!</div>
+        <ul>
+          <li>5 kişi bir sıraya 5! = <strong>120</strong> farklı şekilde dizilir.</li>
+          <li>P(6, 2) = 6 · 5 = <strong>30</strong>.</li>
+          <li><strong>Tekrarlı permütasyon:</strong> Özdeş nesneler varsa n! / (a! · b! · ...). ANNE kelimesinin harfleri 4! / 2! = <strong>12</strong> farklı şekilde sıralanır.</li>
+          <li><strong>Dairesel permütasyon:</strong> n kişi yuvarlak bir masaya (n − 1)! farklı şekilde oturur: 6 kişi → 5! = <strong>120</strong>.</li>
+        </ul>
+
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+
+        <h2 id="kombinasyon">Kombinasyon (Seçme)</h2>
+
+        <p>Sıranın önemli olmadığı, yalnızca seçimin yapıldığı durumlarda kombinasyon kullanılır.</p>
+        <div class="formul">C(n, r) = n! / (r! · (n − r)!) &nbsp;&nbsp;&nbsp; C(n, r) = C(n, n − r)</div>
+        <ul>
+          <li>C(6, 2) = 6 · 5 / 2 = <strong>15</strong>.</li>
+          <li>8 kişiden 3 kişilik bir komite C(8, 3) = 8 · 7 · 6 / 6 = <strong>56</strong> farklı şekilde seçilir.</li>
+          <li>C(10, 8) = C(10, 2) = <strong>45</strong>; C(n, 0) = C(n, n) = 1.</li>
+        </ul>
+        <div class="bilgi">
+          <div><strong>Permütasyon mu, kombinasyon mu?</strong> "Sıralama, dizilme, başkan ve yardımcısı seçme" gibi sıranın önemli
+          olduğu durumlarda permütasyon; "grup, komite, takım seçme" gibi sıranın önemsiz olduğu durumlarda kombinasyon kullanılır.</div>
+        </div>
+
+        <h2 id="olasilik">Olasılık</h2>
+
+        <div class="formul">P(A) = İstenen durum sayısı / Tüm durumların sayısı &nbsp;&nbsp;&nbsp; 0 ≤ P(A) ≤ 1</div>
+        <ul>
+          <li><strong>Tümleyen:</strong> Bir olayın olmama olasılığı 1 − P(A)'dır. P(A) = 2/5 ise olmama olasılığı 3/5.</li>
+          <li><strong>Zar:</strong> Bir zar atıldığında asal sayı (2, 3, 5) gelme olasılığı 3/6 = <strong>1/2</strong>.</li>
+          <li><strong>İki zar:</strong> Tüm durum 36; toplamın 7 olduğu durumlar (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) → 6/36 = <strong>1/6</strong>.</li>
+          <li><strong>Bağımsız olaylar:</strong> Olasılıklar çarpılır. İki para atıldığında ikisinin de tura gelme olasılığı (1/2) · (1/2) = <strong>1/4</strong>.</li>
+          <li><strong>Torba:</strong> 3 kırmızı ve 5 mavi bilyeden çekilen bir bilyenin kırmızı olma olasılığı <strong>3/8</strong>.</li>
+        </ul>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Art arda yapılan işlerde seçenek sayıları çarpılır, ayrık seçeneklerde toplanır.</li>
+            <li>n farklı nesne n! şekilde sıralanır; P(n, r) = n!/(n − r)!.</li>
+            <li>Özdeş nesneler varsa n!/(a!·b!); n kişi yuvarlak masaya (n − 1)! şekilde oturur.</li>
+            <li>C(n, r) = n!/(r!(n − r)!); C(n, r) = C(n, n − r).</li>
+            <li>Sıra önemliyse permütasyon, önemsizse kombinasyon kullanılır.</li>
+            <li>Olasılık istenen / tüm durumdur; olmama olasılığı 1 − P'dir; bağımsız olaylarda olasılıklar çarpılır.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#sayma">Sayma yöntemleri</a></li>
+            <li><a href="#permutasyon">Permütasyon</a></li>
+            <li><a href="#kombinasyon">Kombinasyon</a></li>
+            <li><a href="#olasilik">Olasılık</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 15 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+      </aside>
+    </div>
+
+    <nav class="unite-gecis" aria-label="Konular arası geçiş">
+      <a class="gecis-onceki" href="/kpss/genel-yetenek/matematik/kumeler-ve-fonksiyonlar/"><small>← Önceki konu</small>⭕ Kümeler ve Fonksiyonlar</a>
+      <a class="gecis-sonraki" href="/kpss/genel-yetenek/matematik/sayisal-mantik/"><small>Sonraki konu →</small>📊 Sayısal Mantık, Tablo ve Grafikler</a>
+    </nav>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/kpss/">
+          <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+          <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+        </a>
+        <p>KPSS adayları için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Dersler</h4>
+        <ul>
+          <li><a href="/kpss/genel-yetenek/turkce/">Türkçe</a></li>
+          <li><a href="/kpss/genel-yetenek/matematik/">Matematik</a></li>
+          <li><a href="/kpss/genel-kultur/tarih/">Tarih</a></li>
+          <li><a href="/kpss/genel-kultur/cografya/">Coğrafya</a></li>
+          <li><a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Tüm Bölümler</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Fen Bilimleri Rehberi</span>
+      <span>Hedefine adım adım 🎯</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_SORULARI = [
+  {
+    "soru": "3 farklı gömleği ve 4 farklı pantolonu olan bir kişi, bir gömlek ve bir pantolonu kaç farklı şekilde giyebilir?",
+    "secenekler": [
+      "7",
+      "12",
+      "24",
+      "9",
+      "81"
+    ],
+    "dogru": 1,
+    "aciklama": "Çarpma yoluyla sayma: 3 · 4 = 12."
+  },
+  {
+    "soru": "5 kişi bir sıraya kaç farklı şekilde dizilebilir?",
+    "secenekler": [
+      "25",
+      "60",
+      "24",
+      "120",
+      "720"
+    ],
+    "dogru": 3,
+    "aciklama": "5! = 120."
+  },
+  {
+    "soru": "P(6, 2) kaçtır?",
+    "secenekler": [
+      "30",
+      "15",
+      "12",
+      "36",
+      "720"
+    ],
+    "dogru": 0,
+    "aciklama": "P(6, 2) = 6! / 4! = 6 · 5 = 30."
+  },
+  {
+    "soru": "C(6, 2) kaçtır?",
+    "secenekler": [
+      "30",
+      "12",
+      "36",
+      "20",
+      "15"
+    ],
+    "dogru": 4,
+    "aciklama": "C(6, 2) = 6 · 5 / 2 = 15."
+  },
+  {
+    "soru": "8 kişilik bir gruptan 3 kişilik bir komite kaç farklı şekilde seçilebilir?",
+    "secenekler": [
+      "24",
+      "336",
+      "56",
+      "512",
+      "120"
+    ],
+    "dogru": 2,
+    "aciklama": "Sıra önemli olmadığından C(8, 3) = 8 · 7 · 6 / 6 = 56."
+  },
+  {
+    "soru": "KALEM kelimesinin harfleri kullanılarak anlamlı ya da anlamsız 5 harfli kaç farklı kelime yazılabilir?",
+    "secenekler": [
+      "25",
+      "60",
+      "24",
+      "120",
+      "3125"
+    ],
+    "dogru": 3,
+    "aciklama": "5 farklı harf 5! = 120 farklı şekilde sıralanır."
+  },
+  {
+    "soru": "ANNE kelimesinin harfleri kullanılarak anlamlı ya da anlamsız 4 harfli kaç farklı kelime yazılabilir?",
+    "secenekler": [
+      "12",
+      "24",
+      "6",
+      "8",
+      "16"
+    ],
+    "dogru": 0,
+    "aciklama": "N harfi iki kez tekrar ettiğinden 4! / 2! = 12."
+  },
+  {
+    "soru": "6 kişi yuvarlak bir masa etrafına kaç farklı şekilde oturabilir?",
+    "secenekler": [
+      "720",
+      "36",
+      "60",
+      "24",
+      "120"
+    ],
+    "dogru": 4,
+    "aciklama": "Dairesel permütasyon: (6 − 1)! = 5! = 120."
+  },
+  {
+    "soru": "1, 2, 3, 4 ve 5 rakamları kullanılarak rakamları farklı üç basamaklı kaç doğal sayı yazılabilir?",
+    "secenekler": [
+      "125",
+      "60",
+      "10",
+      "15",
+      "20"
+    ],
+    "dogru": 1,
+    "aciklama": "5 · 4 · 3 = 60."
+  },
+  {
+    "soru": "Bir zar atıldığında üst yüze asal sayı gelme olasılığı kaçtır?",
+    "secenekler": [
+      "1/3",
+      "2/3",
+      "1/2",
+      "1/6",
+      "5/6"
+    ],
+    "dogru": 2,
+    "aciklama": "Asal sayılar 2, 3 ve 5'tir; 3/6 = 1/2."
+  },
+  {
+    "soru": "Hilesiz iki madeni para birlikte atıldığında ikisinin de tura gelme olasılığı kaçtır?",
+    "secenekler": [
+      "1/2",
+      "1/3",
+      "3/4",
+      "1/4",
+      "1"
+    ],
+    "dogru": 3,
+    "aciklama": "Bağımsız olaylar: (1/2) · (1/2) = 1/4."
+  },
+  {
+    "soru": "Bir torbada 3 kırmızı ve 5 mavi bilye vardır. Torbadan rastgele çekilen bir bilyenin kırmızı olma olasılığı kaçtır?",
+    "secenekler": [
+      "3/8",
+      "3/5",
+      "5/8",
+      "1/3",
+      "1/2"
+    ],
+    "dogru": 0,
+    "aciklama": "Kırmızı bilye sayısı 3, toplam 8; olasılık 3/8."
+  },
+  {
+    "soru": "İki zar birlikte atıldığında üst yüzlerdeki sayıların toplamının 7 olma olasılığı kaçtır?",
+    "secenekler": [
+      "7/36",
+      "1/12",
+      "1/9",
+      "1/6",
+      "1/4"
+    ],
+    "dogru": 3,
+    "aciklama": "Toplamı 7 olan 6 durum vardır: 6/36 = 1/6."
+  },
+  {
+    "soru": "Bir olayın gerçekleşme olasılığı 2/5 olduğuna göre bu olayın gerçekleşmeme olasılığı kaçtır?",
+    "secenekler": [
+      "2/5",
+      "1/5",
+      "3/5",
+      "4/5",
+      "1"
+    ],
+    "dogru": 2,
+    "aciklama": "1 − 2/5 = 3/5."
+  },
+  {
+    "soru": "C(10, 8) kaçtır?",
+    "secenekler": [
+      "80",
+      "45",
+      "90",
+      "10",
+      "18"
+    ],
+    "dogru": 1,
+    "aciklama": "C(10, 8) = C(10, 2) = 10 · 9 / 2 = 45."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>

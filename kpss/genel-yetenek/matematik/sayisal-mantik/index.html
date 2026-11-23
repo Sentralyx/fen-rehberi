@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayısal Mantık, Tablo ve Grafikler – KPSS Matematik | Fen Bilimleri Rehberi</title>
+  <meta name="description" content="KPSS Matematik sayısal mantık, tablo ve grafikler konu anlatımı: sayı dizileri ve örüntüler, yeni tanımlı işlemler, tablo okuma, sütun, çizgi ve daire grafikleri, merkez açı hesaplama. Özet ve 15 soruluk çözümlü test.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="kap ust-ic">
+      <a class="logo" href="/kpss/">
+        <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+        <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <a href="/kpss/">Ana Sayfa</a>
+        <a href="/kpss/genel-yetenek/turkce/">Türkçe</a>
+        <a class="aktif" href="/kpss/genel-yetenek/matematik/">Matematik</a>
+        <a href="/kpss/genel-kultur/tarih/">Tarih</a>
+        <a href="/kpss/genel-kultur/cografya/">Coğrafya</a>
+        <a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a>
+        <a class="menu-lgs" href="/">📚 Tüm Bölümler</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek">
+        <a href="/kpss/">KPSS</a> › <a href="/kpss/genel-yetenek/matematik/">Matematik</a> › 14. Konu
+      </div>
+      <h1>📊 Sayısal Mantık, Tablo ve Grafikler</h1>
+      <p>Sayı dizilerindeki kuralı bulma, tanımlanan işlemleri uygulama ve tablo-grafik sorularını hızlı yorumlama.</p>
+      <div class="konu-meta">
+        <span>📚 KPSS Matematik · 14. Konu</span>
+        <span>⏱️ 15 dk okuma</span>
+        <span>✅ 15 soruluk test</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="diziler">Sayı Dizileri ve Örüntüler</h2>
+
+        <p>Dizilerde kuralı bulmak için ardışık terimler arasındaki <strong>farklara</strong> veya <strong>oranlara</strong> bakılır.</p>
+        <div class="tablo-kap"><table>
+          <tr><th>Dizi</th><th>Kural</th><th>Sonraki terim</th></tr>
+          <tr><td>3, 6, 12, 24, ...</td><td>Her terim 2 ile çarpılıyor</td><td>48</td></tr>
+          <tr><td>81, 27, 9, 3, ...</td><td>Her terim 3'e bölünüyor</td><td>1</td></tr>
+          <tr><td>2, 3, 5, 8, 12, ...</td><td>Farklar 1, 2, 3, 4, ... artıyor</td><td>17</td></tr>
+          <tr><td>1, 4, 9, 16, ...</td><td>Kare sayılar (n²)</td><td>25</td></tr>
+          <tr><td>2, 5, 10, 17, 26, ...</td><td>n² + 1</td><td>37</td></tr>
+          <tr><td>1, 1, 2, 3, 5, 8, ...</td><td>Her terim önceki iki terimin toplamı</td><td>13</td></tr>
+        </table></div>
+
+        <h2 id="islem">Yeni Tanımlı İşlemler</h2>
+
+        <p>Soruda tanımlanan kural, harflerin yerine verilen sayılar yazılarak uygulanır. İç içe işlemlerde önce parantez içi çözülür.</p>
+        <ul>
+          <li>a ∗ b = 2a + b ise 3 ∗ 4 = 2 · 3 + 4 = <strong>10</strong>.</li>
+          <li>a ∆ b = a · b − a ise 2 ∆ 5 = 10 − 2 = <strong>8</strong>.</li>
+          <li>x ⊕ y = x² − y ise 3 ⊕ (2 ⊕ 1) için önce 2 ⊕ 1 = 4 − 1 = 3; sonra 3 ⊕ 3 = 9 − 3 = <strong>6</strong>.</li>
+        </ul>
+
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+
+        <h2 id="tablo">Tablo ve Grafik Okuma</h2>
+
+        <p>Örnek tablo: Bir mağazanın aylık satış adetleri şöyledir: Ocak 120, Şubat 150, Mart 90, Nisan 140.</p>
+        <ul>
+          <li><strong>Ortalama:</strong> (120 + 150 + 90 + 140) / 4 = 500 / 4 = <strong>125</strong>.</li>
+          <li><strong>Değişim:</strong> Ocak→Şubat +30, Şubat→Mart −60, Mart→Nisan +50. En büyük artış Mart'tan Nisan'a geçiştedir.</li>
+          <li><strong>Yüzde değişim:</strong> (Yeni − Eski) / Eski · 100. Şubat'tan Mart'a: −60 / 150 = <strong>%40 azalış</strong>.</li>
+        </ul>
+        <div class="bilgi">
+          <div><strong>İpucu:</strong> Sütun grafiklerinde eksenlerin birimlerine, çizgi grafiklerinde eğimin yönüne dikkat edin.
+          Yüzde değişimde her zaman <strong>eski değer</strong> paydaya yazılır.</div>
+        </div>
+
+        <h2 id="daire">Daire Grafiği</h2>
+
+        <p>Daire grafiğinde bütün 360°'dir. Bir dilimin merkez açısı, o dilimin bütüne oranıyla bulunur.</p>
+        <div class="formul">Merkez açı = (Parça / Bütün) · 360° &nbsp;&nbsp;&nbsp; %1 = 3,6°</div>
+        <ul>
+          <li>%25'lik dilimin merkez açısı 25 · 3,6 = <strong>90°</strong>.</li>
+          <li>40 öğrencinin 12'sini gösteren dilim (12/40) · 360 = <strong>108°</strong>.</li>
+          <li>200 kişilik grupta 72°'lik dilim (72/360) · 200 = <strong>40 kişi</strong>yi gösterir.</li>
+        </ul>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Dizilerde ardışık terimlerin farkına veya oranına bakılır; fark dizileri ve kare sayılar sık çıkar.</li>
+            <li>Yeni tanımlı işlemlerde kural aynen uygulanır; iç içe işlemlerde önce parantez çözülür.</li>
+            <li>Ortalama = toplam / terim sayısı; yüzde değişimde eski değer paydaya yazılır.</li>
+            <li>Daire grafiğinde bütün 360°'dir; %1 = 3,6°; merkez açı = (parça / bütün) · 360°.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#diziler">Sayı dizileri ve örüntüler</a></li>
+            <li><a href="#islem">Yeni tanımlı işlemler</a></li>
+            <li><a href="#tablo">Tablo ve grafik okuma</a></li>
+            <li><a href="#daire">Daire grafiği</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 15 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+      </aside>
+    </div>
+
+    <nav class="unite-gecis" aria-label="Konular arası geçiş">
+      <a class="gecis-onceki" href="/kpss/genel-yetenek/matematik/permutasyon-kombinasyon-olasilik/"><small>← Önceki konu</small>🎲 Permütasyon, Kombinasyon ve Olasılık</a>
+    </nav>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/kpss/">
+          <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+          <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+        </a>
+        <p>KPSS adayları için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Dersler</h4>
+        <ul>
+          <li><a href="/kpss/genel-yetenek/turkce/">Türkçe</a></li>
+          <li><a href="/kpss/genel-yetenek/matematik/">Matematik</a></li>
+          <li><a href="/kpss/genel-kultur/tarih/">Tarih</a></li>
+          <li><a href="/kpss/genel-kultur/cografya/">Coğrafya</a></li>
+          <li><a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Tüm Bölümler</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Fen Bilimleri Rehberi</span>
+      <span>Hedefine adım adım 🎯</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_SORULARI = [
+  {
+    "soru": "2, 5, 10, 17, 26, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "40"
+    ],
+    "dogru": 2,
+    "aciklama": "Terimler n² + 1 kuralına uyar; 6² + 1 = 37."
+  },
+  {
+    "soru": "3, 6, 12, 24, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "48",
+      "30",
+      "36",
+      "42",
+      "27"
+    ],
+    "dogru": 0,
+    "aciklama": "Her terim 2 ile çarpılmaktadır: 24 · 2 = 48."
+  },
+  {
+    "soru": "1, 1, 2, 3, 5, 8, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "11",
+      "12",
+      "10",
+      "16",
+      "13"
+    ],
+    "dogru": 4,
+    "aciklama": "Her terim önceki iki terimin toplamıdır: 5 + 8 = 13."
+  },
+  {
+    "soru": "81, 27, 9, 3, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "0",
+      "1",
+      "3",
+      "1/3",
+      "−3"
+    ],
+    "dogru": 1,
+    "aciklama": "Her terim 3'e bölünmektedir: 3 / 3 = 1."
+  },
+  {
+    "soru": "a ∗ b = 2a + b şeklinde tanımlanıyor. Buna göre 3 ∗ 4 kaçtır?",
+    "secenekler": [
+      "11",
+      "14",
+      "7",
+      "10",
+      "12"
+    ],
+    "dogru": 3,
+    "aciklama": "3 ∗ 4 = 2 · 3 + 4 = 10."
+  },
+  {
+    "soru": "a ∆ b = a · b − a şeklinde tanımlanıyor. Buna göre 2 ∆ 5 kaçtır?",
+    "secenekler": [
+      "10",
+      "3",
+      "8",
+      "7",
+      "5"
+    ],
+    "dogru": 2,
+    "aciklama": "2 ∆ 5 = 2 · 5 − 2 = 8."
+  },
+  {
+    "soru": "Bir şirketteki çalışanların %25'i yöneticidir. Çalışanların dağılımı daire grafiğinde gösterilirse yöneticileri gösteren dilimin merkez açısı kaç derece olur?",
+    "secenekler": [
+      "25",
+      "45",
+      "60",
+      "120",
+      "90"
+    ],
+    "dogru": 4,
+    "aciklama": "25 · 3,6 = 90°."
+  },
+  {
+    "soru": "200 kişilik bir grubun dağılımını gösteren daire grafiğinde 72°'lik dilim kaç kişiyi gösterir?",
+    "secenekler": [
+      "72",
+      "40",
+      "36",
+      "50",
+      "20"
+    ],
+    "dogru": 1,
+    "aciklama": "(72 / 360) · 200 = 40 kişi."
+  },
+  {
+    "soru": "Bir mağazanın aylık satış adetleri şöyledir: Ocak 120, Şubat 150, Mart 90, Nisan 140. Buna göre satışların en çok arttığı ay geçişi hangisidir?",
+    "secenekler": [
+      "Ocak → Şubat",
+      "Şubat → Mart",
+      "Mart → Nisan",
+      "Ocak → Mart",
+      "Artış olmamıştır"
+    ],
+    "dogru": 2,
+    "aciklama": "Ocak→Şubat +30, Şubat→Mart −60, Mart→Nisan +50; en büyük artış Mart'tan Nisan'adır."
+  },
+  {
+    "soru": "Bir mağazanın aylık satış adetleri şöyledir: Ocak 120, Şubat 150, Mart 90, Nisan 140. Buna göre dört aylık ortalama satış adedi kaçtır?",
+    "secenekler": [
+      "120",
+      "130",
+      "135",
+      "125",
+      "140"
+    ],
+    "dogru": 3,
+    "aciklama": "(120 + 150 + 90 + 140) / 4 = 500 / 4 = 125."
+  },
+  {
+    "soru": "Bir mağazanın aylık satış adetleri şöyledir: Ocak 120, Şubat 150, Mart 90, Nisan 140. Buna göre Mart ayı satışları Şubat ayına göre yüzde kaç azalmıştır?",
+    "secenekler": [
+      "%60",
+      "%30",
+      "%50",
+      "%25",
+      "%40"
+    ],
+    "dogru": 4,
+    "aciklama": "Azalış 60; 60 / 150 · 100 = %40."
+  },
+  {
+    "soru": "2, 3, 5, 8, 12, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "17",
+      "16",
+      "15",
+      "18",
+      "20"
+    ],
+    "dogru": 0,
+    "aciklama": "Farklar 1, 2, 3, 4 şeklinde artıyor; sonraki fark 5: 12 + 5 = 17."
+  },
+  {
+    "soru": "1, 4, 9, 16, ... dizisinde bir sonraki terim kaçtır?",
+    "secenekler": [
+      "20",
+      "25",
+      "24",
+      "32",
+      "36"
+    ],
+    "dogru": 1,
+    "aciklama": "Kare sayılar dizisidir: 5² = 25."
+  },
+  {
+    "soru": "40 öğrencinin 12'si basketbolu seçmiştir. Öğrencilerin seçimleri daire grafiğinde gösterilirse basketbolu gösteren dilimin merkez açısı kaç derece olur?",
+    "secenekler": [
+      "72",
+      "90",
+      "120",
+      "108",
+      "144"
+    ],
+    "dogru": 3,
+    "aciklama": "(12 / 40) · 360 = 108°."
+  },
+  {
+    "soru": "x ⊕ y = x² − y şeklinde tanımlanıyor. Buna göre 3 ⊕ (2 ⊕ 1) kaçtır?",
+    "secenekler": [
+      "8",
+      "9",
+      "6",
+      "3",
+      "5"
+    ],
+    "dogru": 2,
+    "aciklama": "2 ⊕ 1 = 4 − 1 = 3; 3 ⊕ 3 = 9 − 3 = 6."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
