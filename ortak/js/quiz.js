@@ -3,7 +3,7 @@
   var alan = document.getElementById("test");
   if (!alan || typeof TEST_SORULARI === "undefined") return;
 
-  var harfler = ["A", "B", "C", "D"];
+  var harfler = ["A", "B", "C", "D", "E"];
   var toplam = TEST_SORULARI.length;
   var cevaplanan, dogruSayisi;
 

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fen.sentralyx.com/</loc></url>
   <url><loc>https://fen.sentralyx.com/ortaokul/fen/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-yetenek/turkce/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-yetenek/matematik/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-kultur/tarih/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-kultur/cografya/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-kultur/vatandaslik/</loc></url>
+  <url><loc>https://fen.sentralyx.com/kpss/genel-kultur/tarih/islamiyet-oncesi-turk-tarihi/</loc></url>
   <url><loc>https://fen.sentralyx.com/ortaokul/fen/5-sinif/</loc></url>
   <url><loc>https://fen.sentralyx.com/ortaokul/fen/6-sinif/</loc></url>
   <url><loc>https://fen.sentralyx.com/ortaokul/fen/7-sinif/</loc></url>
