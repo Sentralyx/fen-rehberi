@@ -272,6 +272,30 @@ tr:nth-child(even) td { background: #f8fafc; }
 .sonuc-puan { font-size: 3rem; font-weight: 900; line-height: 1; margin: 6px 0; }
 .sonuc-mesaj { font-size: 1.1rem; margin: 0 0 16px; opacity: .9; }
 
+/* ===== Üniteler arası geçiş ===== */
+.unite-gecis { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+.unite-gecis a {
+  display: flex; flex-direction: column; gap: 2px; text-decoration: none;
+  background: var(--kart); border: 1px solid var(--cizgi); border-radius: var(--radius);
+  padding: 18px 22px; color: var(--lacivert); font-weight: 800; box-shadow: var(--golge-kucuk);
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.unite-gecis a:hover { transform: translateY(-3px); box-shadow: var(--golge); border-color: #99f6e4; }
+.unite-gecis small { color: var(--ana); font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+.unite-gecis .gecis-sonraki { text-align: right; grid-column: 2; }
+
+/* Kavram kartları (konu içinde) */
+.kavramlar { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 18px 0; }
+.kavram { background: #f8fafc; border: 1px solid var(--cizgi); border-radius: 14px; padding: 14px 16px; }
+.kavram b { display: block; color: var(--ana-koyu); margin-bottom: 2px; }
+.kavram span { font-size: .95rem; color: var(--lacivert-2); }
+.formul {
+  text-align: center; font-size: 1.25rem; font-weight: 800; color: var(--lacivert);
+  background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 14px; padding: 14px; margin: 18px 0;
+}
+.formul small { display: block; font-size: .85rem; font-weight: 600; color: var(--soluk); margin-top: 4px; }
+.sekil figcaption { text-align: center; font-size: .88rem; color: var(--soluk); margin-top: 6px; }
+
 /* ===== Alt bilgi ===== */
 .alt { background: var(--lacivert); color: #cbd5e1; margin-top: 40px; font-size: .95rem; }
 .alt-izgara {
@@ -319,4 +343,6 @@ tr:nth-child(even) td { background: #f8fafc; }
   .bolum-bas h2 { font-size: 1.6rem; }
   .yazi { padding: 22px 18px; }
   .test { padding: 18px 14px; }
+  .unite-gecis { grid-template-columns: 1fr; }
+  .unite-gecis .gecis-sonraki { grid-column: 1; }
 }
