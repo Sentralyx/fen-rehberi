@@ -188,7 +188,9 @@ th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--ci
 tr:last-child td { border-bottom: none; }
 th { background: var(--lacivert-2); color: #fff; font-weight: 700; }
 tr:nth-child(even) td { background: #f8fafc; }
-.tablo-kap { overflow-x: auto; }
+.tablo-kap { overflow-x: auto; max-width: 100%; }
+.tablo-kap table { min-width: 460px; }
+.yazi { min-width: 0; }
 
 /* Yan menü */
 .yan { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 18px; }
@@ -315,7 +317,7 @@ tr:nth-child(even) td { background: #f8fafc; }
 
 /* ===== Duyarlı tasarım ===== */
 @media (max-width: 900px) {
-  .yazi-duzen { grid-template-columns: 1fr; }
+  .yazi-duzen { grid-template-columns: minmax(0, 1fr); }
   .yan { position: static; order: -1; }
   .yan-test { display: none; }
 }
