@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kümeler ve Fonksiyonlar – KPSS Matematik | Fen Bilimleri Rehberi</title>
+  <meta name="description" content="KPSS Matematik kümeler ve fonksiyonlar konu anlatımı: küme kavramı, alt küme ve öz alt küme sayısı, birleşim, kesişim, fark, Venn şeması problemleri, fonksiyon değeri, bileşke ve ters fonksiyon. Özet ve 15 soruluk çözümlü test.">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="kap ust-ic">
+      <a class="logo" href="/kpss/">
+        <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+        <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <a href="/kpss/">Ana Sayfa</a>
+        <a href="/kpss/genel-yetenek/turkce/">Türkçe</a>
+        <a class="aktif" href="/kpss/genel-yetenek/matematik/">Matematik</a>
+        <a href="/kpss/genel-kultur/tarih/">Tarih</a>
+        <a href="/kpss/genel-kultur/cografya/">Coğrafya</a>
+        <a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a>
+        <a class="menu-lgs" href="/">📚 Tüm Bölümler</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek">
+        <a href="/kpss/">KPSS</a> › <a href="/kpss/genel-yetenek/matematik/">Matematik</a> › 12. Konu
+      </div>
+      <h1>⭕ Kümeler ve Fonksiyonlar</h1>
+      <p>Kümelerde işlemler, Venn şeması problemleri ve fonksiyonlarda değer hesaplama, bileşke ve ters fonksiyon.</p>
+      <div class="konu-meta">
+        <span>📚 KPSS Matematik · 12. Konu</span>
+        <span>⏱️ 15 dk okuma</span>
+        <span>✅ 15 soruluk test</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="kume">Küme ve Alt Küme</h2>
+
+        <p>İyi tanımlanmış nesneler topluluğuna <strong>küme</strong> denir. A kümesinin eleman sayısı s(A) ile gösterilir.</p>
+        <div class="formul">n elemanlı bir kümenin alt küme sayısı = 2ⁿ &nbsp;&nbsp;&nbsp; öz alt küme sayısı = 2ⁿ − 1</div>
+        <ul>
+          <li>4 elemanlı bir kümenin 2⁴ = <strong>16</strong> alt kümesi, 15 öz alt kümesi vardır.</li>
+          <li><strong>Boş küme</strong> her kümenin alt kümesidir; boş kümenin alt küme sayısı 2⁰ = <strong>1</strong>'dir.</li>
+          <li>Her küme kendisinin alt kümesidir, ancak öz alt kümesi değildir.</li>
+        </ul>
+
+        <h2 id="islemler">Kümelerde İşlemler</h2>
+
+        <p>A = {1, 2, 3, 4, 5} ve B = {4, 5, 6, 7} olsun:</p>
+        <div class="tablo-kap"><table>
+          <tr><th>İşlem</th><th>Tanım</th><th>Sonuç</th></tr>
+          <tr><td>Birleşim (A ∪ B)</td><td>İki kümedeki bütün elemanlar</td><td>{1, 2, 3, 4, 5, 6, 7}</td></tr>
+          <tr><td>Kesişim (A ∩ B)</td><td>İki kümenin ortak elemanları</td><td>{4, 5}</td></tr>
+          <tr><td>Fark (A \ B)</td><td>A'da olup B'de olmayan elemanlar</td><td>{1, 2, 3}</td></tr>
+          <tr><td>Tümleyen (A′)</td><td>Evrensel kümede olup A'da olmayan elemanlar</td><td>—</td></tr>
+        </table></div>
+        <div class="formul">s(A ∪ B) = s(A) + s(B) − s(A ∩ B)</div>
+        <p>Örnek: s(A) = 7, s(B) = 5, s(A ∩ B) = 3 ise s(A ∪ B) = 7 + 5 − 3 = <strong>9</strong>.</p>
+
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+
+        <h2 id="venn">Venn Şeması Problemleri</h2>
+
+        <p>Örnek: 30 kişilik bir sınıfta 18 öğrenci İngilizce, 15 öğrenci Almanca biliyor; 5 öğrenci bu dillerin hiçbirini bilmiyor.</p>
+        <ul>
+          <li>En az bir dil bilen: 30 − 5 = 25</li>
+          <li>25 = 18 + 15 − x → ikisini de bilen x = <strong>8</strong></li>
+          <li>Yalnız İngilizce bilen: 18 − 8 = <strong>10</strong>; yalnız Almanca bilen: 15 − 8 = 7</li>
+        </ul>
+
+        <h2 id="fonksiyon">Fonksiyon ve Değer Hesaplama</h2>
+
+        <p>A kümesinin her elemanını B kümesinin <strong>yalnız bir</strong> elemanıyla eşleyen bağıntıya <strong>fonksiyon</strong>
+          denir. f(x) ifadesinde x yerine verilen değer yazılarak fonksiyonun değeri bulunur.</p>
+        <ul>
+          <li>f(x) = 3x − 2 ise f(4) = 12 − 2 = <strong>10</strong>.</li>
+          <li>f(x) = x² − 1 ise f(−2) = 4 − 1 = <strong>3</strong>.</li>
+          <li>f(x + 1) = 3x + 5 ise f(4) için x + 1 = 4 → x = 3 → f(4) = 9 + 5 = <strong>14</strong>.</li>
+          <li>f(x) = ax + b, f(0) = 3, f(1) = 5 ise b = 3, a = 2 → f(2) = <strong>7</strong>.</li>
+        </ul>
+
+        <h2 id="bileske">Bileşke ve Ters Fonksiyon</h2>
+
+        <div class="kavramlar">
+          <div class="kavram"><b>Bileşke fonksiyon</b><span>(f ∘ g)(x) = f(g(x)): önce g, sonra f uygulanır. f(x) = 2x + 1 ve g(x) = x² ise f(g(3)) = f(9) = <strong>19</strong>.</span></div>
+          <div class="kavram"><b>Ters fonksiyon</b><span>y = f(x) ifadesinde x yalnız bırakılır ve x ile y yer değiştirir. f(x) = 2x − 6 ise f⁻¹(x) = (x + 6)/2; f⁻¹(4) = <strong>5</strong>.</span></div>
+          <div class="kavram"><b>Pratik bilgi</b><span>f(a) = b ise f⁻¹(b) = a'dır.</span></div>
+        </div>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>n elemanlı kümenin alt küme sayısı 2ⁿ, öz alt küme sayısı 2ⁿ − 1'dir.</li>
+            <li>Boş küme her kümenin alt kümesidir; boş kümenin 1 alt kümesi vardır.</li>
+            <li>s(A ∪ B) = s(A) + s(B) − s(A ∩ B).</li>
+            <li>Venn problemlerinde önce "hiçbiri" çıkarılarak birleşim bulunur, ardından kesişim hesaplanır.</li>
+            <li>f(x) ifadesinde x yerine verilen değer yazılır; f(x + 1) gibi ifadelerde önce x bulunur.</li>
+            <li>f(g(x)) için önce g, sonra f uygulanır; f(a) = b ise f⁻¹(b) = a.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#kume">Küme ve alt küme</a></li>
+            <li><a href="#islemler">Kümelerde işlemler</a></li>
+            <li><a href="#venn">Venn şeması problemleri</a></li>
+            <li><a href="#fonksiyon">Fonksiyon ve değer hesaplama</a></li>
+            <li><a href="#bileske">Bileşke ve ters fonksiyon</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 15 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+      </aside>
+    </div>
+
+    <nav class="unite-gecis" aria-label="Konular arası geçiş">
+      <a class="gecis-onceki" href="/kpss/genel-yetenek/matematik/hiz-ve-isci-problemleri/"><small>← Önceki konu</small>🚗 Hız ve İşçi Problemleri</a>
+    </nav>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/kpss/">
+          <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+          <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+        </a>
+        <p>KPSS adayları için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Dersler</h4>
+        <ul>
+          <li><a href="/kpss/genel-yetenek/turkce/">Türkçe</a></li>
+          <li><a href="/kpss/genel-yetenek/matematik/">Matematik</a></li>
+          <li><a href="/kpss/genel-kultur/tarih/">Tarih</a></li>
+          <li><a href="/kpss/genel-kultur/cografya/">Coğrafya</a></li>
+          <li><a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Tüm Bölümler</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Fen Bilimleri Rehberi</span>
+      <span>Hedefine adım adım 🎯</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_SORULARI = [
+  {
+    "soru": "4 elemanlı bir kümenin alt küme sayısı kaçtır?",
+    "secenekler": [
+      "8",
+      "15",
+      "16",
+      "4",
+      "32"
+    ],
+    "dogru": 2,
+    "aciklama": "Alt küme sayısı 2⁴ = 16."
+  },
+  {
+    "soru": "5 elemanlı bir kümenin öz alt küme sayısı kaçtır?",
+    "secenekler": [
+      "31",
+      "32",
+      "25",
+      "10",
+      "15"
+    ],
+    "dogru": 0,
+    "aciklama": "Öz alt küme sayısı 2⁵ − 1 = 31."
+  },
+  {
+    "soru": "A = {1, 2, 3, 4, 5} ve B = {4, 5, 6, 7} olduğuna göre A ∩ B kümesi aşağıdakilerden hangisidir?",
+    "secenekler": [
+      "{1, 2, 3}",
+      "{6, 7}",
+      "{1, 2, 3, 4, 5, 6, 7}",
+      "{4, 5}",
+      "∅"
+    ],
+    "dogru": 3,
+    "aciklama": "Ortak elemanlar 4 ve 5'tir."
+  },
+  {
+    "soru": "A = {1, 2, 3, 4, 5} ve B = {4, 5, 6, 7} olduğuna göre s(A ∪ B) kaçtır?",
+    "secenekler": [
+      "9",
+      "2",
+      "5",
+      "4",
+      "7"
+    ],
+    "dogru": 4,
+    "aciklama": "s(A ∪ B) = 5 + 4 − 2 = 7."
+  },
+  {
+    "soru": "A = {1, 2, 3, 4, 5} ve B = {4, 5, 6, 7} olduğuna göre A \\ B kümesi aşağıdakilerden hangisidir?",
+    "secenekler": [
+      "{1, 2, 3}",
+      "{6, 7}",
+      "{4, 5}",
+      "{1, 2, 3, 6, 7}",
+      "{5}"
+    ],
+    "dogru": 0,
+    "aciklama": "A'da olup B'de olmayan elemanlar 1, 2 ve 3'tür."
+  },
+  {
+    "soru": "30 kişilik bir sınıfta 18 öğrenci İngilizce, 15 öğrenci Almanca bilmektedir. 5 öğrenci bu dillerin hiçbirini bilmediğine göre her iki dili de bilen kaç öğrenci vardır?",
+    "secenekler": [
+      "3",
+      "8",
+      "5",
+      "10",
+      "13"
+    ],
+    "dogru": 1,
+    "aciklama": "En az bir dil bilen 25 kişi; 25 = 18 + 15 − x → x = 8."
+  },
+  {
+    "soru": "30 kişilik bir sınıfta 18 öğrenci İngilizce, 15 öğrenci Almanca bilmektedir. 5 öğrenci bu dillerin hiçbirini bilmediğine göre yalnızca İngilizce bilen kaç öğrenci vardır?",
+    "secenekler": [
+      "18",
+      "13",
+      "7",
+      "10",
+      "8"
+    ],
+    "dogru": 3,
+    "aciklama": "İkisini de bilen 8 kişi; yalnız İngilizce bilen 18 − 8 = 10."
+  },
+  {
+    "soru": "s(A) = 7, s(B) = 5 ve s(A ∩ B) = 3 olduğuna göre s(A ∪ B) kaçtır?",
+    "secenekler": [
+      "12",
+      "15",
+      "9",
+      "8",
+      "10"
+    ],
+    "dogru": 2,
+    "aciklama": "s(A ∪ B) = 7 + 5 − 3 = 9."
+  },
+  {
+    "soru": "f(x) = 3x − 2 olduğuna göre f(4) kaçtır?",
+    "secenekler": [
+      "12",
+      "14",
+      "8",
+      "10",
+      "6"
+    ],
+    "dogru": 3,
+    "aciklama": "f(4) = 3 · 4 − 2 = 10."
+  },
+  {
+    "soru": "f(x) = 2x + 1 ve g(x) = x² olduğuna göre f(g(3)) kaçtır?",
+    "secenekler": [
+      "49",
+      "19",
+      "7",
+      "18",
+      "10"
+    ],
+    "dogru": 1,
+    "aciklama": "g(3) = 9; f(9) = 2 · 9 + 1 = 19."
+  },
+  {
+    "soru": "f(x) = 2x − 6 olduğuna göre f⁻¹(4) kaçtır?",
+    "secenekler": [
+      "2",
+      "−1",
+      "1",
+      "5",
+      "−2"
+    ],
+    "dogru": 3,
+    "aciklama": "f⁻¹(x) = (x + 6)/2 → f⁻¹(4) = 10/2 = 5."
+  },
+  {
+    "soru": "f(x + 1) = 3x + 5 olduğuna göre f(4) kaçtır?",
+    "secenekler": [
+      "17",
+      "14",
+      "11",
+      "20",
+      "12"
+    ],
+    "dogru": 1,
+    "aciklama": "x + 1 = 4 → x = 3; f(4) = 3 · 3 + 5 = 14."
+  },
+  {
+    "soru": "f(x) = x² − 1 olduğuna göre f(−2) kaçtır?",
+    "secenekler": [
+      "−5",
+      "5",
+      "−3",
+      "4",
+      "3"
+    ],
+    "dogru": 4,
+    "aciklama": "f(−2) = (−2)² − 1 = 4 − 1 = 3."
+  },
+  {
+    "soru": "Boş kümenin alt küme sayısı kaçtır?",
+    "secenekler": [
+      "1",
+      "0",
+      "2",
+      "Sonsuz",
+      "Tanımsız"
+    ],
+    "dogru": 0,
+    "aciklama": "Boş kümenin tek alt kümesi kendisidir: 2⁰ = 1."
+  },
+  {
+    "soru": "f(x) = ax + b, f(0) = 3 ve f(1) = 5 olduğuna göre f(2) kaçtır?",
+    "secenekler": [
+      "8",
+      "6",
+      "9",
+      "10",
+      "7"
+    ],
+    "dogru": 4,
+    "aciklama": "f(0) = b = 3; f(1) = a + 3 = 5 → a = 2; f(2) = 4 + 3 = 7."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
