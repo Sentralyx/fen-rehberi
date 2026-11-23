@@ -1,4 +1,3 @@
+# Site hazırlık aşamasında: arama motorları taramasın.
 User-agent: *
-Allow: /
-
-Sitemap: https://fen.sentralyx.com/sitemap.xml
+Disallow: /
