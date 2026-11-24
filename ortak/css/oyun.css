@@ -1,0 +1,104 @@
+/* ===== Oyunlar ===== */
+.sb-oyun { background: radial-gradient(circle at 85% 10%, #7c3aed 0%, #0f172a 60%, #042f2e 100%); padding-bottom: 48px; }
+.oyun-duzen { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; margin-top: 8px; }
+@media (max-width: 900px) { .oyun-duzen { grid-template-columns: 1fr; } }
+.oyun-kutu { background: #fff; border: 1px solid var(--cizgi); border-radius: var(--radius); box-shadow: var(--golge); padding: 16px; }
+.oyun-yan .yan-kutu, .oyun-yan .ogr-kutu { background: #fff; border: 1px solid var(--cizgi); border-radius: var(--radius); padding: 16px 18px; margin-bottom: 14px; box-shadow: var(--golge-kucuk); }
+.oyun-yan h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--lacivert); }
+.oyun-yan ul, .oyun-yan ol { margin: 0; padding-left: 20px; font-size: .94rem; }
+.oyun-yan li { margin-bottom: 5px; }
+.tam-ekran-btn { width: 100%; margin-bottom: 14px; cursor: pointer; border: 0; font-family: inherit; }
+.oyun-kutu:fullscreen { overflow: auto; padding: 24px; border-radius: 0; background: #f6f8fb; }
+
+/* Oyun listesi */
+.oyunlar { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); margin: 12px 0 30px; }
+.oyun-kart { display: block; background: #fff; border: 1px solid var(--cizgi); border-radius: var(--radius); overflow: hidden; text-decoration: none; color: var(--yazi); box-shadow: var(--golge-kucuk); transition: transform .18s, box-shadow .18s; }
+.oyun-kart:hover { transform: translateY(-4px); box-shadow: var(--golge); }
+.oyun-kart-ust { font-size: 3.4rem; text-align: center; padding: 26px 0; color: #fff; }
+.oyun-kart-ust.mor { background: linear-gradient(135deg, #7c3aed, #4c1d95); }
+.oyun-kart-ust.turuncu { background: linear-gradient(135deg, #f97316, #c2410c); }
+.oyun-kart-ic { padding: 16px 18px 18px; }
+.oyun-kart-ic h3 { margin: 6px 0 6px; color: var(--lacivert); }
+.oyun-kart-ic p { margin: 0 0 10px; color: var(--soluk); font-size: .94rem; }
+.oyun-etiketler { display: flex; flex-wrap: wrap; gap: 6px; font-size: .8rem; color: var(--soluk); font-weight: 700; }
+.oyun-etiketler span { background: #f1f5f9; border-radius: 99px; padding: 2px 10px; }
+
+/* Ortak oyun parçaları */
+.oy-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.oy-chip { font: inherit; font-weight: 800; border: 2px solid var(--cizgi); background: #fff; border-radius: 12px; padding: 5px 13px; cursor: pointer; color: var(--lacivert); }
+.oy-chip.aktif { border-color: var(--mor); background: #f5f3ff; color: var(--mor); }
+.oy-chip.bitti { border-color: #86efac; background: #f0fdf4; color: #15803d; }
+.oy-chip.bitti.aktif { border-color: var(--mor); }
+.oy-gorev { background: #f8fafc; border: 1px solid var(--cizgi); border-radius: 14px; padding: 12px 16px; margin-bottom: 12px; }
+.oy-gorev h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--lacivert); }
+.oy-gorev p { margin: 0 0 4px; }
+.oy-hikaye { color: var(--soluk); }
+.oy-hedef { font-weight: 800; }
+.oy-hedef-durum { font-weight: 800; font-size: .95rem; color: #92400e; }
+.oy-hedef-durum.tamam { color: #15803d; }
+.oy-ipucu { font: inherit; font-size: .85rem; font-weight: 800; border: 0; background: var(--vurgu-acik); color: #92400e; border-radius: 99px; padding: 2px 12px; cursor: pointer; margin-left: 6px; }
+.oy-ipucu-metin { display: block; font-weight: 600; margin-top: 4px; color: #78350f; }
+.oy-araclar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.oy-arac { font: inherit; font-weight: 800; font-size: .92rem; border: 2px solid var(--cizgi); background: #fff; border-radius: 12px; padding: 6px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; color: var(--lacivert); }
+.oy-arac .ik { font-size: 1.15rem; }
+.oy-arac em { font-style: normal; background: var(--lacivert); color: #fff; border-radius: 99px; font-size: .75rem; padding: 0 7px; }
+.oy-arac.aktif { border-color: var(--ana); background: var(--ana-acik); }
+.oy-arac.tukendi { opacity: .45; }
+.oy-sifir { margin-left: auto; }
+.oy-pil { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; padding: 3px 10px; background: #fff7ed; border-radius: 12px; border: 2px solid #fed7aa; }
+.oy-pilbtn { font: inherit; font-weight: 900; border: 2px solid #fdba74; background: #fff; width: 32px; height: 32px; border-radius: 8px; cursor: pointer; }
+.oy-pilbtn.aktif { background: #f97316; color: #fff; border-color: #ea580c; }
+.oy-sahne { background: #f1f5f9; border-radius: 16px; border: 1px solid var(--cizgi); padding: 6px; }
+.oy-durum { margin-top: 10px; padding: 10px 14px; border-radius: 12px; font-weight: 800; font-size: .95rem; }
+.oy-durum.iyi { background: #f0fdf4; color: #15803d; }
+.oy-durum.bilgi { background: #eff6ff; color: #1d4ed8; }
+.oy-durum.tehlike { background: #fef2f2; color: #b91c1c; }
+.oy-basari { margin-top: 12px; padding: 16px 18px; border-radius: 14px; background: #f0fdf4; border: 2px solid #86efac; }
+.oy-basari h3 { margin: 0 0 6px; color: #15803d; }
+.oy-basari p { margin: 0 0 12px; }
+
+/* Devre Ustası SVG */
+.devre-svg { width: 100%; height: auto; display: block; touch-action: manipulation; }
+.kb { stroke: #94a3b8; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.kb.akim { stroke: #f59e0b; }
+.kb-nokta { stroke: #fff; stroke-width: 3; fill: none; stroke-linecap: round; stroke-dasharray: 1 16; animation: akis .7s linear infinite; }
+@keyframes akis { to { stroke-dashoffset: -17; } }
+.slot { cursor: pointer; outline: none; }
+.slot-kutu { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; }
+.slot-kutu.bos { stroke-dasharray: 6 5; fill: #fff; }
+.slot:hover .slot-kutu, .slot:focus .slot-kutu { stroke: var(--mor); }
+.slot-arti { fill: #94a3b8; font-size: 30px; font-weight: 800; text-anchor: middle; }
+.kb.ic { stroke-width: 6; }
+.ampul-cam { stroke: #64748b; stroke-width: 2.5; }
+.ampul-tel { stroke: #475569; stroke-width: 2; fill: none; }
+.ampul-x { fill: #fff; font-size: 18px; text-anchor: middle; font-weight: 900; }
+.ampul-et { fill: #475569; font-size: 12px; font-weight: 800; text-anchor: middle; }
+.ank-nokta { fill: #475569; }
+.ank-kol { stroke: #475569; stroke-width: 5; stroke-linecap: round; }
+.ank-kol.akim { stroke: #f59e0b; }
+.pil-kutu { fill: #fff7ed; stroke: #ea580c; stroke-width: 3; }
+.pil-cizgi { stroke: #fdba74; stroke-width: 2; }
+.pil-yazi { fill: #c2410c; font-size: 16px; font-weight: 900; text-anchor: middle; }
+.pil-v { fill: #c2410c; font-size: 14px; font-weight: 900; }
+
+/* Hâl Değiştirici */
+.hal-alan { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 10px; }
+.hal-sol { flex: 0 1 360px; min-width: 260px; }
+.hal-sag { flex: 1 1 300px; min-width: 260px; }
+.hal-cv { width: 100%; height: auto; aspect-ratio: 360 / 300; border-radius: 14px; border: 1px solid var(--cizgi); display: block; }
+.hal-gcv { width: 100%; height: auto; aspect-ratio: 420 / 250; border-radius: 14px; border: 1px solid var(--cizgi); display: block; }
+.hal-ust { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.hal-termo { width: 26px; height: 90px; border: 3px solid #475569; border-radius: 14px; background: #f1f5f9; position: relative; overflow: hidden; flex: none; }
+.hal-civa { position: absolute; left: 0; right: 0; bottom: 0; background: #ef4444; transition: height .08s linear; }
+.hal-derece { font-size: 2rem; font-weight: 900; color: var(--lacivert); line-height: 1.1; }
+.hal-faz { font-weight: 800; color: var(--mor); }
+.hal-gbaslik { font-weight: 800; color: var(--lacivert); margin-bottom: 4px; }
+.hal-ctl { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; background: #f8fafc; border: 1px solid var(--cizgi); border-radius: 14px; padding: 10px 14px; }
+.hal-sl { flex: 1 1 200px; accent-color: var(--turuncu); height: 28px; }
+.hal-soguk, .hal-sicak { font-weight: 800; }
+.hal-secenekler { display: grid; gap: 8px; margin-bottom: 8px; }
+.hal-secenek { font: inherit; text-align: left; border: 2px solid var(--cizgi); background: #fff; border-radius: 12px; padding: 9px 14px; cursor: pointer; font-weight: 700; }
+.hal-secenek:hover:not(:disabled) { border-color: var(--mor); }
+.hal-secenek.yanlis { border-color: #fca5a5; background: #fef2f2; color: #b91c1c; }
+.hal-secenek.dogru { border-color: #86efac; background: #f0fdf4; }
+.hal-mesaj { margin: 0; color: #b91c1c; font-weight: 700; }
