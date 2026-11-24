@@ -225,7 +225,7 @@
   }
 
   function dongu(zaman) {
-    var dt = Math.min(0.05, (zaman - sonZ) / 1000); sonZ = zaman;
+    var dt = Math.min(0.2, (zaman - sonZ) / 1000); sonZ = zaman;
     var d = hesapla(mad, H);
     if (guc !== 0 && !(bitirildi && soruAcik)) {
       var alt = hTemp(mad, mad.lo, 'kati'), ust = hTemp(mad, mad.hi, 'gaz');
