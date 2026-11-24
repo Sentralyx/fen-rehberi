@@ -245,7 +245,7 @@ tr:nth-child(even) td { background: #f8fafc; }
   background: #fff; border: 1px solid var(--cizgi);
   border-radius: 14px; padding: 20px; margin-bottom: 16px; box-shadow: var(--golge-kucuk);
 }
-.soru p { margin: 0 0 12px; font-weight: 800; color: var(--lacivert); }
+.soru p { margin: 0 0 12px; font-weight: 800; color: var(--lacivert); white-space: pre-line; }
 .secenek {
   display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
   background: #fff; border: 2px solid var(--cizgi); border-radius: 12px;
