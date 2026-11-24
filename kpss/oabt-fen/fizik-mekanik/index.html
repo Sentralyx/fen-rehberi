@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÖABT Fen Bilimleri - Fizik: Mekanik | Fen Bilimleri Rehberi</title>
+  <meta name="description" content="ÖABT Fen Bilimleri mekanik alanında vektörler, hareket, Newton yasaları, iş enerji, momentum, dairesel hareket, kütle çekimi, denge ve tork; 15 soruluk test">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="kap ust-ic">
+      <a class="logo" href="/kpss/">
+        <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+        <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="menu">
+        <a href="/kpss/">Ana Sayfa</a>
+        <a href="/kpss/genel-yetenek/turkce/">Türkçe</a>
+        <a href="/kpss/genel-yetenek/matematik/">Matematik</a>
+        <a href="/kpss/genel-kultur/tarih/">Tarih</a>
+        <a href="/kpss/genel-kultur/cografya/">Coğrafya</a>
+        <a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a>
+        <a href="/kpss/egitim-bilimleri/">Eğitim Bilimleri</a>
+        <a class="aktif" href="/kpss/oabt-fen/">ÖABT Fen</a>
+        <a class="menu-lgs" href="/">📚 Tüm Bölümler</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek">
+        <a href="/kpss/">KPSS</a> › <a href="/kpss/oabt-fen/">ÖABT Fen</a> › 1. Konu
+      </div>
+      <h1>⚙️ ÖABT Fen Bilimleri - Fizik: Mekanik</h1>
+      <p>Mekanik, ÖABT Fen Bilimleri alan bilgisinin en ağırlıklı parçasıdır ve kuvvet-hareket ilişkisini temel alır. Bu çalışma vektörlerden torka uzanan zinciri lisans düzeyinde ve sınav mantığıyla ele alır. Her bölümde tanım, yasa, ayırt edici ayrıntı ve kısa bir çözümlü örnek bulunur.</p>
+      <div class="konu-meta">
+        <span>📚 ÖABT Fen Bilimleri · 1. Konu</span>
+        <span>⏱️ 40 dk okuma</span>
+        <span>✅ 15 soruluk test</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="vektorler">Vektörler ve bileşenler</h2>
+<p><strong>Tanım:</strong> Vektör, hem büyüklüğü hem yönü olan fiziksel niceliktir. Kuvvet, hız, ivme ve yer değiştirme vektördür; kütle, sıcaklık ve enerji skalerdir.</p><p><strong>Bileşenler:</strong> x ekseniyle θ açı yapan F vektörü için Fx = F·cosθ ve Fy = F·sinθ yazılır. Bileşenlerin işareti vektörün bulunduğu bölgeye göre belirlenir; III. bölgede ikisi de negatiftir.</p><p><strong>Çözümlü örnek:</strong> 10 N kuvvet x ekseniyle 30° yapıyorsa Fx = 10·cos30 ≈ 8,66 N, Fy = 10·sin30 = 5 N olur. Büyüklük √(Fx² + Fy²) ile geri bulunur.</p>
+
+        <h2 id="kinematik">Kinematik: konum, hız, ivme</h2>
+<p><strong>Tanım:</strong> Konumun zamana göre değişimi yer değiştirme, birim zamandaki değişimi hız, hızın zamana göre değişimi ivmedir. Hız vektör, sürat skalerdir.</p><p><strong>Bağıntılar:</strong> Sabit ivmeli harekette v = v0 + a·t, Δx = v0·t + 1/2·a·t² ve v² = v0² + 2·a·Δx kullanılır. Bu bağıntılardan yalnızca ivme sabit olduğunda yararlanılır.</p><div class="tablo-kap"><table><tr><th>Nicelik</th><th>SI birimi</th><th>Türü</th></tr><tr><td>Yer değiştirme</td><td>m</td><td>Vektör</td></tr><tr><td>Hız</td><td>m/s</td><td>Vektör</td></tr><tr><td>İvme</td><td>m/s²</td><td>Vektör</td></tr></table></div>
+
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+
+        <h2 id="newton-yasalari">Newton yasaları ve sürtünme</h2>
+<p><strong>I. yasa:</strong> Net kuvvet sıfırsa cisim duruyorsa durmaya, hareket ediyorsa sabit hızla gitmeye devam eder. Buna eylemsizlik ilkesi denir.</p><p><strong>II. yasa:</strong> Fnet = m·a. İvme net kuvvetle aynı yöndedir, kütle arttıkça aynı kuvvetin oluşturduğu ivme azalır.</p><p><strong>III. yasa:</strong> Etki ve tepki eşit büyüklükte, zıt yöndedir ve farklı cisimlere etki eder; bu yüzden birbirini dengelemez.</p><p><strong>Sürtünme ve örnek:</strong> Kinetik sürtünme fk = μk·N ile bulunur. 2 kg blok yatayda 10 N ile çekilirse N = m·g = 20 N, fk = 0,2·20 = 4 N, net kuvvet 6 N ve a = 6/2 = 3 m/s² olur (g = 10 m/s²).</p><p><strong>Eğik düzlem:</strong> Sürtünmesiz eğik düzlemde ağırlığın düzleme paralel bileşeni m·g·sinθ olduğundan a = g·sinθ bulunur; açı büyüdükçe ivme artar.</p>
+
+        <h2 id="is-enerji-guc">İş, enerji ve güç</h2>
+<p><strong>İş:</strong> Sabit kuvvetin yaptığı iş W = F·s·cosθ ile hesaplanır. Kuvvet yer değiştirmeye dikse iş sıfırdır.</p><p><strong>Enerji:</strong> Kinetik enerji K = 1/2·m·v², yer çekimi potansiyel enerjisi U = m·g·h ile verilir. Sürtünme yoksa mekanik enerji korunur; sürtünme varsa Wsürtünme = ΔEmekanik olur.</p><p><strong>Güç:</strong> P = W/t ve anlık güç P = F·v·cosθ ile bulunur; SI birimi watttır.</p><p><strong>Çözümlü örnek:</strong> 50 N kuvvet, yolla 60° açı yaparak 4 m yol alırsa W = 50·4·cos60 = 100 J; bu iş 2 s'de yapılırsa P = 50 W olur.</p>
+
+        <h2 id="momentum-carpisma">Momentum ve çarpışma</h2>
+<p><strong>Tanım:</strong> Momentum p = m·v ile tanımlanır ve vektördür. Dış net kuvvet sıfırsa sistemin toplam momentumu korunur.</p><p><strong>Çarpışma türleri:</strong> Esnek çarpışmada hem momentum hem kinetik enerji korunur. Esnek olmayan çarpışmada yalnız momentum korunur; cisimler yapışırsa ortak hız kullanılır.</p><p><strong>İtme:</strong> J = F·Δt = Δp'dir. Aynı momentum değişimi daha uzun sürede gerçekleşirse ortalama kuvvet azalır; güvenlik kemeri ve hava yastığı bu ilkeye dayanır.</p><p><strong>Çözümlü örnek:</strong> 1 kg cisim 6 m/s ile 2 kg durağan cisme çarpıp yapışırsa v = (1·6)/(1+2) = 2 m/s olur.</p>
+
+        <h2 id="dairesel-kutle-cekimi">Dairesel hareket ve kütle çekimi</h2>
+<p><strong>Merkezcil ivme:</strong> Sabit hızlı dairesel harekette hızın büyüklüğü sabit kalsa da yönü değişir. Merkezcil ivme a = v²/r = ω²·r ile verilir ve daima merkeze doğrudur.</p><p><strong>Merkezcil kuvvet:</strong> Fc = m·v²·r⁻¹ ifadesi ayrı bir kuvvet değil, mevcut kuvvetlerin merkeze doğru bileşenidir. Kuvvet hıza dik olduğu için iş yapmaz.</p><p><strong>Kütle çekimi:</strong> F = G·m1·m2/r²; yüzeyde g = G·M/R² olur. g, cismin kütlesine bağlı değildir.</p><p><strong>Çözümlü örnek:</strong> r = 2 m, v = 4 m/s ve m = 0,5 kg ise Fc = 0,5·4²/2 = 4 N bulunur.</p>
+
+        <h2 id="denge-tork">Denge ve tork</h2>
+<p><strong>Denge koşulları:</strong> Bir cismin öteleme ve dönme hareketi yapmaması için ∑F = 0 ve seçilen bir noktaya göre ∑τ = 0 olmalıdır.</p><p><strong>Tork:</strong> τ = F·r·sinθ ile hesaplanır; burada r, döner noktadan kuvvetin uygulandığı noktaya olan uzaklıktır. Kuvvet döner noktaya dik uygulanırsa τ = F·r olur.</p><p><strong>Ağırlık merkezi:</strong> Ağırlığın etki ettiği kabul edilen noktadır. Desteğin dışına düşerse cisim döner.</p><p><strong>Çözümlü örnek:</strong> 20 N kuvvet 0,4 m kolda dik uygulanırsa τ = 20·0,4 = 8 N·m olur; aynı kuvvet 0,2 m kolda uygulanırsa tork yarıya iner.</p>
+
+        <h2 id="yanilgilar">Yaygın kavram yanılgıları</h2>
+<p><strong>Yanılgı 1:</strong> Merkezcil kuvvet ayrı bir kuvvetmiş gibi düşünülür. Oysa ip gerilmesi, sürtünme veya yer çekimi merkezcil görevi görebilir.</p><p><strong>Yanılgı 2:</strong> Etki-tepki kuvvetleri aynı cisimde toplanır sanılır. Bunlar farklı cisimlere etki eder, bu yüzden net kuvvet sıfır olmaz.</p><p><strong>Yanılgı 3:</strong> Ağırlık ile kütle karıştırılır. Kütle sabit, ağırlık m·g olduğundan yer çekimi ivmesine bağlıdır.</p><p><strong>Yanılgı 4:</strong> Sabit süratle hareket eden cismin ivmesiz olduğu sanılır. Dairesel harekette hızın yönü değiştiği için merkezcil ivme vardır.</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Vektör bileşenleri Fx = F·cosθ ve Fy = F·sinθ ile bulunur; işaretler yöne bağlıdır.</li>
+            <li>Sabit ivmeli harekette v = v0 + a·t ve v² = v0² + 2·a·Δx bağıntıları kullanılır.</li>
+            <li>Newton yasaları eylemsizliği, Fnet = m·a ilişkisini ve etki-tepki çiftlerini kapsar.</li>
+            <li>İş F·s·cosθ, kinetik enerji 1/2·m·v², güç ise W/t ile hesaplanır.</li>
+            <li>Dış net kuvvet yoksa momentum korunur; yapışmalı çarpışmada ortak hız kullanılır.</li>
+            <li>Merkezcil ivme v²/r, merkezcil kuvvet m·v²/r ile verilir ve merkeze doğrudur.</li>
+            <li>Evrensel çekim F = G·m1·m2/r² ile ifade edilir; yerel g cismin kütlesinden bağımsızdır.</li>
+            <li>Statik denge için ∑F = 0 ve ∑τ = 0; tork F·r·sinθ ile hesaplanır.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#vektorler">Vektörlerin bileşenleri ve işaretleri, büyüklük-yön ayrımıyla birlikte ele alınır.</a></li>
+            <li><a href="#kinematik">Konum, hız ve ivme ilişkisi sabit ivmeli hareket bağıntılarıyla kurulur.</a></li>
+            <li><a href="#newton-yasalari">Eylemsizlik, Fnet = m·a ve etki-tepki yasaları sürtünmeyle birlikte uygulanır.</a></li>
+            <li><a href="#is-enerji-guc">İş, kinetik-potansiyel enerji ve güç arasındaki dönüşüm adım adım gösterilir.</a></li>
+            <li><a href="#momentum-carpisma">Momentum korunumu esnek ve esnek olmayan çarpışmalarda karşılaştırılır.</a></li>
+            <li><a href="#dairesel-kutle-cekimi">Merkezcil kuvvet, açısal hız ve evrensel çekim aynı çerçevede incelenir.</a></li>
+            <li><a href="#denge-tork">Statik denge koşulları, tork ve ağırlık merkezi örneklerle açıklanır.</a></li>
+            <li><a href="#yanilgilar">Mekanikte sık yapılan kavram yanılgıları ve doğru karşılıkları sıralanır.</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 15 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+        <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
+      </aside>
+    </div>
+
+    <nav class="unite-gecis" aria-label="Konular arası geçiş">
+      <span></span>
+    </nav>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/kpss/">
+          <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
+          <span class="logo-yazi"><small>KPSS</small>Rehberi</span>
+        </a>
+        <p>KPSS adayları için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Dersler</h4>
+        <ul>
+          <li><a href="/kpss/genel-yetenek/turkce/">Türkçe</a></li>
+          <li><a href="/kpss/genel-yetenek/matematik/">Matematik</a></li>
+          <li><a href="/kpss/genel-kultur/tarih/">Tarih</a></li>
+          <li><a href="/kpss/genel-kultur/cografya/">Coğrafya</a></li>
+          <li><a href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a></li>
+          <li><a href="/kpss/egitim-bilimleri/">Eğitim Bilimleri</a></li>
+          <li><a href="/kpss/oabt-fen/">ÖABT Fen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Tüm Bölümler</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Fen Bilimleri Rehberi</span>
+      <span>Hedefine adım adım 🎯</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_SORULARI = [
+  {
+    "soru": "Sürtünmesiz yatay düzlemde aynı kuvvet, aynı yol boyunca farklı kütleli iki cisme uygulanıyor. İki cisim için aynı olan nedir?",
+    "secenekler": [
+      "Son hızları",
+      "İvmeleri",
+      "Kinetik enerjilerindeki artış",
+      "Momentum değişiminin büyüklüğü",
+      "Kuvvetin etki süresi"
+    ],
+    "dogru": 2,
+    "aciklama": "Yapılan iş W = F·s olduğundan kütleden bağımsız olarak aynıdır ve iş-enerji teoremi gereği kinetik enerji artışı aynı olur. C doğrudur. A ve B kütleye bağlıdır; D'de momentum değişimi F·Δt olduğundan süre farklıdır, E zaten kütleye göre değişir."
+  },
+  {
+    "soru": "Ay yüzeyine götürülen bir cismin kütlesi ve ağırlığı için hangisi doğrudur?",
+    "secenekler": [
+      "Kütlesi aynı kalır, ağırlığı azalır.",
+      "Kütlesi azalır, ağırlığı aynı kalır.",
+      "İkisi de aynı oranda azalır.",
+      "Ağırlık yalnızca kütleye bağlıdır.",
+      "Kütle yer çekimi ivmesine bağlıdır."
+    ],
+    "dogru": 0,
+    "aciklama": "Kütle cismin içerdiği madde miktarıdır ve yer değiştirince değişmez; ağırlık ise W = m·g olduğundan Ay'da daha küçük g ile azalır. A doğrudur. D ve E kütle-ağırlık ayrımını karıştırır; B ve C kütlenin sabitliğini gözden kaçırır."
+  },
+  {
+    "soru": "2 kg cisim 3 m/s hızla hareket ederken 10 N kuvvet 4 m yol boyunca hız yönünde etki ediyor. Son kinetik enerjisi kaç jouldür?",
+    "secenekler": [
+      "9 J",
+      "20 J",
+      "40 J",
+      "49 J",
+      "80 J"
+    ],
+    "dogru": 3,
+    "aciklama": "Başlangıç kinetik enerjisi K0 = 1/2·2·3² = 9 J'dir. Kuvvetin yaptığı iş W = 10·4 = 40 J; iş-enerji teoremiyle Kson = 9 + 40 = 49 J olur. D doğrudur. C yalnızca yapılan işi verir, A ise yalnızca başlangıç enerjisidir."
+  },
+  {
+    "soru": "Düz yolda ilerleyen bir araç aniden fren yaptığında içindeki yolcunun öne doğru savrulması hangi ilkeyle açıklanır?",
+    "secenekler": [
+      "Etki-tepki yasası ile",
+      "Eylemsizlik ilkesi ile",
+      "Momentumun korunumu ile",
+      "Hooke yasası ile",
+      "Enerjinin korunumu ile"
+    ],
+    "dogru": 1,
+    "aciklama": "Aracın hızı azalırken yolcunun üst gövdesi mevcut hızını korumaya devam eder; bu eylemsizlik ilkesidir. B doğrudur. Etki-tepki kuvvetleri farklı cisimlere etki eder; C'deki korunum için dış kuvvetin sıfır olması gerekir, frenlemede yolcuya dış kuvvet etki eder."
+  },
+  {
+    "soru": "Aynı büyüklükte bir kuvvetle bir kapıyı menteşeye yakın bir noktadan itmek yerine menteşeden uzak kenarından itmek kapıyı açmayı kolaylaştırır. Bunun temel nedeni hangisidir?",
+    "secenekler": [
+      "Kuvvetin büyüklüğü uzaklıkla azalır.",
+      "Kapının ağırlık merkezi koldan uzaklaşır.",
+      "Sürtünme kuvveti artar.",
+      "Tork yalnızca kütleyle ilgilidir.",
+      "Tork F·r·sinθ ile hesaplanır; r artar."
+    ],
+    "dogru": 4,
+    "aciklama": "Döner eksene uzaklık arttıkça tork büyür; kuvvet dik uygulanırsa τ = F·r olur. E doğrudur. A yanlıştır çünkü uygulanan kuvvet aynıdır; B ve C bu farkı açıklamaz, D ise torkun tanımını yanlış verir."
+  },
+  {
+    "soru": "I. Merkezcil kuvvet daima merkeze doğrudur ve hıza diktir.\nII. Aynı yerde, sürtünmesiz düşüşte yer çekimi ivmesi cismin kütlesinden bağımsızdır.\nIII. Bir cisme uygulanan tork arttıkça açısal ivme azalır.\nYukarıdaki ifadelerden hangileri doğrudur?",
+    "secenekler": [
+      "Yalnız I",
+      "I ve II",
+      "II ve III",
+      "Yalnız III",
+      "I ve III"
+    ],
+    "dogru": 1,
+    "aciklama": "I ve II doğrudur; merkezcil kuvvet yönü merkezdedir, g ise kütleye bağlı değildir. III yanlıştır çünkü τ = I·α ilişkisinde eylemsizlik momenti sabitse tork arttıkça açısal ivme artar. B doğrudur; III içeren C, D ve E ile II'yi atlayan A eksiktir."
+  },
+  {
+    "soru": "Mekanik konusuyla ilgili aşağıdaki ifadelerden hangisi söylenemez?",
+    "secenekler": [
+      "Vektörlerin toplamı, bileşenlerinin toplamıyla bulunur.",
+      "Sürtünmesiz ortamda mekanik enerji korunur.",
+      "Esnek çarpışmada hem momentum hem kinetik enerji korunur.",
+      "Sabit hızlı dairesel harekette hızın yönü sürekli değişir.",
+      "Tork, kuvvetin döner eksene uzaklığından bağımsızdır."
+    ],
+    "dogru": 4,
+    "aciklama": "E söylenemez; τ = F·r·sinθ olduğundan döner eksene uzaklık arttıkça tork artar. A, B, C ve D doğru ifadelerdir; bu yüzden dışlama sorusunda seçilemezler."
+  },
+  {
+    "soru": "Yatayla 30° açı yapan bir kuvvetin bileşenleriyle ilgili hangi ifade doğrudur?",
+    "secenekler": [
+      "Yatay bileşen F·cos30, düşey bileşen F·sin30'dur.",
+      "Yatay bileşen F·sin30, düşey bileşen F·cos30'dur.",
+      "İki bileşen de F·cos30'a eşittir.",
+      "Düşey bileşen negatif, yatay bileşen sıfırdır.",
+      "Bileşenler kuvvetin büyüklüğünden bağımsızdır."
+    ],
+    "dogru": 0,
+    "aciklama": "Açı yatay eksene göre verildiğinde komşu kenar yatay bileşen, karşı kenar düşey bileşendir; bu yüzden Fx = F·cos30 ve Fy = F·sin30 olur. A doğrudur. B trigonometrik oranları yer değiştirmiştir; D ise yalnızca vektör IV. bölgedeyken söz konusu olabilir."
+  },
+  {
+    "soru": "Kütlesi 5 kg olan blok yatay yüzeyde 14 N kuvvetle çekiliyor; sürtünme kuvveti 4 N ise ivmesi kaçtır?",
+    "secenekler": [
+      "0,8 m/s²",
+      "1,4 m/s²",
+      "2 m/s²",
+      "2,8 m/s²",
+      "3,6 m/s²"
+    ],
+    "dogru": 2,
+    "aciklama": "Yatay yöndeki net kuvvet 14 - 4 = 10 N'dur. Newton'un ikinci yasasından a = Fnet/m = 10/5 = 2 m/s² olur; C doğrudur. D seçeneği 14/5 yapıp sürtünmeyi ihmal ettiği için yanlıştır."
+  },
+  {
+    "soru": "I. Newton'un ikinci yasası Fnet = m·a ile ifade edilir.\nII. Sabit hızda hareket eden cismin net kuvveti sıfırdır.\nIII. Kinetik enerji, hız iki katına çıkınca iki katına çıkar.\nYukarıdaki ifadelerden hangileri doğrudur?",
+    "secenekler": [
+      "I ve II",
+      "II ve III",
+      "Yalnız I",
+      "I ve III",
+      "Yalnız III"
+    ],
+    "dogru": 0,
+    "aciklama": "I temel yasa ifadesidir, II eylemsizlik sonucudur; ikisi doğrudur. III yanlıştır çünkü K = 1/2·m·v² olduğundan hız iki katına çıkarsa enerji dört katına çıkar. Bu nedenle A doğrudur; III içeren B, D ve E ile II'yi dışlayan C yanlıştır."
+  },
+  {
+    "soru": "Bir öğrenci aynı bloğu sürtünmesiz eğik düzlemde farklı açılarda bırakıyor ve açı büyüdükçe ivmenin arttığını ölçüyor. Bu sonucu hangisi açıklar?",
+    "secenekler": [
+      "Kuvvet arttıkça kütle artar.",
+      "Eğim arttıkça normal kuvvet azaldığı için ivme de azalır.",
+      "Yer çekimi ivmesi eğim açısına bağlıdır.",
+      "Net kuvvet m·g·sinθ olduğundan a = g·sinθ olur ve açıyla artar.",
+      "Eğik düzlemde enerji korunmaz."
+    ],
+    "dogru": 3,
+    "aciklama": "Eğik düzlemde yer çekiminin düzleme paralel bileşeni m·g·sinθ'dır; Newton'un ikinci yasasından a = g·sinθ bulunur. θ arttıkça sinθ arttığı için ivme artar; D doğrudur. B normal kuvvetin azalmasını ivmeye yanlış bağlar, C g'nin sabit olduğunu yadsır, E ise sürtünmesiz düzlemde enerjinin korunduğunu göz ardı eder."
+  },
+  {
+    "soru": "Yatay düzlemde sabit hızla dairesel hareket eden bir cismin merkezcil ivme vektörü hangi yöndedir?",
+    "secenekler": [
+      "Hız vektörüyle aynı yönde",
+      "Merkezden dışa doğru",
+      "Düşey yukarı doğru",
+      "Merkeze doğru",
+      "Yörüngeye teğet doğrultuda"
+    ],
+    "dogru": 3,
+    "aciklama": "Hızın büyüklüğü sabit olsa da yönü sürekli değiştiği için ivme vardır ve bu ivme merkeze doğrudur. D doğrudur. B, merkezkaç etkisini gerçek bir kuvvet sanmaktan doğan yaygın bir yanılgıdır; A ve E ise ivmeyi hıza paralel kabul eder, oysa bu durumda sürat değişirdi."
+  },
+  {
+    "soru": "Bir cisim 4 s içinde hızını 2 m/s'den 10 m/s'ye düzgün artırıyor. İvmesi kaçtır?",
+    "secenekler": [
+      "1 m/s²",
+      "2 m/s²",
+      "2,5 m/s²",
+      "3 m/s²",
+      "8 m/s²"
+    ],
+    "dogru": 1,
+    "aciklama": "Sabit ivmeli harekette a = (v - v0)/t kullanılır. a = (10 - 2)/4 = 2 m/s² bulunur; B doğrudur. C seçeneği 10/4 yapıp başlangıç hızını hesaba katmadığı için yanlıştır, E ise yalnızca hız farkını vermiştir."
+  },
+  {
+    "soru": "0,5 kg top 4 m/s hızla gelip önünde duran 1,5 kg topa yapışıyor. Ortak hız kaç m/s'dir?",
+    "secenekler": [
+      "0,25 m/s",
+      "0,5 m/s",
+      "0,75 m/s",
+      "2 m/s",
+      "1 m/s"
+    ],
+    "dogru": 4,
+    "aciklama": "Dış net kuvvet ihmal edilirse momentum korunur: 0,5·4 = (0,5 + 1,5)·v, dolayısıyla 2 = 2·v ve v = 1 m/s bulunur. E doğrudur. D, ilk momentum değerini (2 kg·m/s) hız sanmaktan doğan bir hatadır; A, B ve C kütle oranlarının yanlış kullanılmasından çıkar."
+  },
+  {
+    "soru": "Bir cismin hız-zaman verileri şöyledir: t = 0 s'de v = 0 m/s, t = 2 s'de v = 4 m/s, t = 4 s'de v = 8 m/s, t = 6 s'de v = 8 m/s. Tablodan hangi yargı çıkarılır?",
+    "secenekler": [
+      "0-6 s aralığında ivme sürekli 2 m/s²'dir.",
+      "4-6 s aralığında cisim durmaktadır.",
+      "0-4 s ivme 2 m/s², 4-6 s yer değiştirme 16 m'dir.",
+      "Toplam yer değiştirme yalnızca dikdörtgen alan kadardır.",
+      "Hız 6 s'de 16 m/s'ye ulaşır."
+    ],
+    "dogru": 2,
+    "aciklama": "0-4 s aralığında ivme (8-0)/4 = 2 m/s²'dir. 4-6 s arasında hız 8 m/s sabit olduğundan yer değiştirme 8·2 = 16 m olur; C doğrudur. A son iki saniyedeki ivmeyi yanlış kabul eder, B sabit hızı durma sanır, D hız-zaman alanının üçgen kısmını hesaba katmaz."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
