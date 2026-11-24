@@ -198,3 +198,4 @@
 .org-btn { width: auto; }
 .kal-tablo th { background: transparent !important; color: var(--mor) !important; border: 0 !important; padding: 0; }
 .kal-tablo td { padding: 4px; }
+.ay-sag { display: flex; flex-direction: column; align-items: center; }

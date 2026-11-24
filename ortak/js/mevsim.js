@@ -31,7 +31,7 @@
       if (g.soru) { api.soru(g.soru); return; }
       var e = api.e, sv = api.sv, gun = 80, oynat = false;
       var sahne = e('div', { class: 'oy-sahne' });
-      var s = sv('svg', { viewBox: '0 0 600 340', class: 'isik-svg', role: 'img', 'aria-label': 'Güneş çevresinde Dünya ve mevsimler' });
+      var s = sv('svg', { viewBox: '0 0 600 365', class: 'isik-svg', role: 'img', 'aria-label': 'Güneş çevresinde Dünya ve mevsimler' });
       sahne.appendChild(s); api.alan.appendChild(sahne);
       var bil = e('div', { class: 'eko-sayac' }); api.alan.appendChild(bil);
       var ctl = e('div', { class: 'hal-ctl' });
@@ -54,9 +54,9 @@
       api.raf(function (dt) { if (oynat) { gun += dt * 40; if (gun > 365) gun -= 365; sl.value = Math.round(gun); ciz(); } });
 
       function ciz() {
-        var gn = Math.round(gun), CX = 300, CY = 160, RX = 230, RY = 70;
+        var gn = Math.round(gun), CX = 300, CY = 150, RX = 230, RY = 100;
         s.innerHTML = '';
-        sv('rect', { x: 0, y: 0, width: 600, height: 340, rx: 16, fill: '#0f172a' }, s);
+        sv('rect', { x: 0, y: 0, width: 600, height: 365, rx: 16, fill: '#0f172a' }, s);
         sv('ellipse', { cx: CX, cy: CY, rx: RX, ry: RY, fill: 'none', stroke: '#475569', 'stroke-width': 2, 'stroke-dasharray': '6 6' }, s);
         sv('circle', { cx: CX, cy: CY, r: 38, fill: '#facc15' }, s);
         sv('circle', { cx: CX, cy: CY, r: 50, fill: '#facc15', 'fill-opacity': 0.2 }, s);
@@ -71,13 +71,13 @@
         var kt = sv('text', { x: ex + Math.sin(tilt) * r * 1.7 + 6, y: ey - Math.cos(tilt) * r * 1.7 - 2, 'font-size': 12, 'font-weight': 800, fill: '#bfdbfe' }, s); kt.textContent = 'K';
         // Etiketler
         [[172, 'Haz 21'], [266, 'Eyl 23'], [355, 'Ara 21'], [80, 'Mar 21']].forEach(function (p) {
-          var a = (180 + 360 * (p[0] - 172) / 365) * RAD, x = CX + (RX + 34) * Math.cos(a), y = CY + (RY + 22) * Math.sin(a);
+          var a = (180 + 360 * (p[0] - 172) / 365) * RAD, x = CX + (RX + 34) * Math.cos(a), y = CY + (RY + 34) * Math.sin(a);
           var t = sv('text', { x: x, y: y + 4, 'text-anchor': 'middle', 'font-size': 11, fill: '#94a3b8', 'font-weight': 700 }, s); t.textContent = p[1];
         });
         var dec = sapma(gn), gk = gunduz(40, dec), gg = gunduz(-40, dec);
-        var t1 = sv('text', { x: 300, y: 300, 'text-anchor': 'middle', 'font-size': 14, fill: '#e2e8f0', 'font-weight': 800 }, s);
+        var t1 = sv('text', { x: 300, y: 330, 'text-anchor': 'middle', 'font-size': 14, fill: '#e2e8f0', 'font-weight': 800 }, s);
         t1.textContent = 'Güneş ışınları ' + (dec >= 0 ? Math.abs(dec).toFixed(1) + '° Kuzey' : Math.abs(dec).toFixed(1) + '° Güney') + ' enlemine dik geliyor';
-        var t2 = sv('text', { x: 300, y: 322, 'text-anchor': 'middle', 'font-size': 12, fill: '#94a3b8' }, s);
+        var t2 = sv('text', { x: 300, y: 352, 'text-anchor': 'middle', 'font-size': 12, fill: '#94a3b8' }, s);
         t2.textContent = '(Dünya’nın ekseni her zaman aynı yöne eğiktir — beyaz çizgi, K: Kuzey Kutbu)';
         bil.innerHTML = '<span>📅 <b>' + tarih(gn) + '</b></span><span>🇹🇷 Kuzey Yarım Küre: <b>' + mevsimK(gn) + '</b> · gündüz <b>' + gk.toFixed(1).replace('.', ',') + ' sa</b> (40° K)</span><span>🦘 Güney Yarım Küre: <b>' + mevsimG(gn) + '</b> · gündüz <b>' + gg.toFixed(1).replace('.', ',') + ' sa</b> (40° G)</span>';
       }
