@@ -169,3 +169,32 @@
 .el-kart.adli { width: 104px; }
 .el-kart.adli b { font-size: .95rem; margin-top: 8px; }
 .el-kart.adli span { font-size: .68rem; letter-spacing: .02em; }
+
+/* Yeni oyunlar */
+.oyun-kart-ust.sari { background: linear-gradient(135deg, #eab308, #a16207); }
+.oyun-kart-ust.kirmizi { background: linear-gradient(135deg, #ef4444, #991b1b); }
+.oyun-kart-ust.turkuaz { background: linear-gradient(135deg, #14b8a6, #115e59); }
+.oyun-kart-ust.indigo { background: linear-gradient(135deg, #6366f1, #3730a3); }
+.oyun-kart-ust.gri { background: linear-gradient(135deg, #64748b, #1e293b); }
+.oyun-kart-ust.sakli { background: linear-gradient(135deg, #0ea5e9, #075985); }
+.ol-alan { margin-bottom: 8px; }
+.isik-svg { width: 100%; height: auto; display: block; touch-action: manipulation; }
+.isik-aci { font-weight: 800; color: var(--soluk); padding: 0 8px; }
+.kal-tablo { border-collapse: separate; border-spacing: 6px; margin: 8px 0; }
+.kal-tablo th { width: 58px; height: 44px; font-size: 1.2rem; color: var(--mor); }
+.kal-hucre { width: 96px; height: 96px; text-align: center; border: 3px dashed var(--mor); border-radius: 14px; cursor: pointer; font-weight: 900; font-size: 1rem; background: #faf5ff; user-select: none; vertical-align: middle; }
+.kal-hucre.dogru { border: 3px solid #16a34a; background: #f0fdf4; }
+.kal-hucre.yanlis { border: 3px solid #dc2626; background: #fef2f2; }
+.kal-cicek { display: inline-block; border-radius: 50%; border: 2px solid #7c3aed; vertical-align: middle; }
+.kal-sar { overflow-x: auto; }
+.kal-yavrular { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 10px; }
+.kal-yavrular p { flex-basis: 100%; margin: 4px 0 0; }
+.kal-gizli { padding: 12px; }
+.kuv-cv { margin-bottom: 8px; }
+.kuv-f { min-width: 3.5em; }
+.org-yol { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; min-height: 40px; }
+.org-adim { background: #f0fdf4; border: 2px solid #86efac; border-radius: 99px; padding: 3px 12px; font-weight: 800; font-size: .9rem; color: #15803d; }
+.org-havuz { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.org-btn { width: auto; }
+.kal-tablo th { background: transparent !important; color: var(--mor) !important; border: 0 !important; padding: 0; }
+.kal-tablo td { padding: 4px; }
