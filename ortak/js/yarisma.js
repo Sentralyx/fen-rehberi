@@ -1,4 +1,5 @@
-// Takım Yarışması – akıllı tahtada 2-4 takımlı soru yarışması (ortaokul ünite soruları)
+// Takım Yarışması ve Çarkıfelek – akıllı tahtada 2-4 takımlı soru yarışması (ortaokul ünite soruları)
+// Kip sayfa adresinden belirlenir: /carkifelek/ -> çark, diğerleri -> takım yarışması
 (function () {
   'use strict';
   var kok = document.getElementById('oyun');
@@ -6,8 +7,15 @@
   var KAYIT = 'fen-takim-yarismasi-v1';
   var RENKLER = [{ ad: 'Kırmızı Takım', sinif: 't0' }, { ad: 'Mavi Takım', sinif: 't1' }, { ad: 'Yeşil Takım', sinif: 't2' }, { ad: 'Sarı Takım', sinif: 't3' }];
   var HARF = ['A', 'B', 'C', 'D'];
+  var CARK = window.location.pathname.indexOf('/carkifelek/') >= 0;
+  var DILIMLER = [
+    { t: 'puan', v: 100, renk: '#e11d48' }, { t: 'puan', v: 200, renk: '#2563eb' }, { t: 'puan', v: 150, renk: '#16a34a' },
+    { t: 'pas', ad: 'PAS', renk: '#64748b' }, { t: 'puan', v: 300, renk: '#7c3aed' }, { t: 'puan', v: 100, renk: '#ea580c' },
+    { t: 'hediye', ad: '🎁 +100', renk: '#db2777' }, { t: 'puan', v: 200, renk: '#0d9488' }, { t: 'iflas', ad: 'İFLAS', renk: '#0f172a' },
+    { t: 'puan', v: 250, renk: '#b45309' }
+  ];
 
-  var ayar = { sinif: '5', uniteler: [], takim: 2, adlar: RENKLER.map(function (r) { return r.ad; }), adet: 5, sure: 30, calma: true, ses: true };
+  var ayar = { sinif: '5', uniteler: [], takim: 2, adlar: RENKLER.map(function (r) { return r.ad; }), adet: 5, sure: 30, calma: true, ses: true, surpriz: true };
   try {
     var eski = JSON.parse(localStorage.getItem(KAYIT) || 'null');
     if (eski) Object.keys(ayar).forEach(function (k) { if (eski[k] !== undefined) ayar[k] = eski[k]; });
@@ -80,7 +88,7 @@
     kok.innerHTML = '';
     var kutu = e('div', { class: 'ys-ayar' });
     kok.appendChild(kutu);
-    kutu.appendChild(e('h2', {}, '🏆 Yarışmayı kur'));
+    kutu.appendChild(e('h2', {}, CARK ? '🎡 Çarkıfelek yarışmasını kur' : '🏆 Yarışmayı kur'));
 
     function secimSatiri(baslik, secenekler, secili, is) {
       var s = e('div', { class: 'ys-satir' });
@@ -116,9 +124,10 @@
     }
     kutu.appendChild(adlar);
 
-    kutu.appendChild(secimSatiri('4. Her takıma soru', [[3, '3'], [5, '5'], [8, '8']], ayar.adet, function (v) { ayar.adet = v; yenile(); }));
+    kutu.appendChild(secimSatiri(CARK ? '4. Her takıma tur (çevirme hakkı)' : '4. Her takıma soru', [[3, '3'], [5, '5'], [8, '8']], ayar.adet, function (v) { ayar.adet = v; yenile(); }));
     kutu.appendChild(secimSatiri('5. Soru süresi', [[20, '20 sn'], [30, '30 sn'], [45, '45 sn'], [0, 'Süresiz']], ayar.sure, function (v) { ayar.sure = v; yenile(); }));
     kutu.appendChild(secimSatiri('6. Yanlışta soru sıradaki takıma geçsin mi?', [[true, 'Evet (yarım puan)'], [false, 'Hayır']], ayar.calma, function (v) { ayar.calma = v; yenile(); }));
+    if (CARK) kutu.appendChild(secimSatiri('Sürpriz dilimler (Pas, Hediye, İflas)', [[true, 'Açık'], [false, 'Kapalı (yalnız puan)']], ayar.surpriz, function (v) { ayar.surpriz = v; yenile(); }));
     kutu.appendChild(secimSatiri('Ses', [[true, '🔊 Açık'], [false, '🔇 Kapalı']], ayar.ses, function (v) { ayar.ses = v; yenile(); }));
 
     var not = e('p', { class: 'ys-not', 'aria-live': 'polite' });
@@ -139,7 +148,7 @@
         if (!havuz) not.textContent = 'Başlamak için en az bir ünite seç.';
         else {
           var n = Math.min(ayar.adet, Math.floor(havuz / ayar.takim));
-          not.textContent = 'Seçilen ünitelerde ' + havuz + ' soru var. Toplam ' + (n * ayar.takim) + ' soru sorulacak (her takıma ' + n + ').' + (n < ayar.adet ? ' Daha fazla soru için ünite ekle.' : '');
+          not.textContent = 'Seçilen ünitelerde ' + havuz + ' soru var. Toplam ' + (n * ayar.takim) + (CARK ? ' tur oynanacak' : ' soru sorulacak') + ' (her takıma ' + n + ').' + (n < ayar.adet ? ' Daha fazlası için ünite ekle.' : '');
         }
         [].forEach.call(uList.querySelectorAll('button[data-no]'), function (b) {
           var s = ayar.uniteler.indexOf(+b.getAttribute('data-no')) >= 0;
@@ -192,8 +201,8 @@
         var sira = karistir([0, 1, 2, 3]);
         return { soru: s.soru, sec: sira.map(function (k) { return s.sec[k]; }), dogru: sira.indexOf(s.dogru), acik: s.acik, unite: s.unite };
       });
-      oyun = { takimlar: takimlar, sorular: sorular, i: 0, yanlislar: [] };
-      soruEkrani();
+      oyun = { takimlar: takimlar, sorular: sorular, i: 0, qi: 0, tur: sorular.length, deger: 0, aci: 0, yanlislar: [] };
+      turAc();
       kok.scrollIntoView({ block: 'start' });
     });
   }
@@ -209,15 +218,105 @@
     return t;
   }
 
+  function turAc() { if (CARK) carkEkrani(); else soruEkrani(); }
+
+  /* ---------- Çark ---------- */
+  function carkCiz(dilimler) {
+    var NS = 'http://www.w3.org/2000/svg', n = dilimler.length, a = 360 / n;
+    function sv(tag, attrs, ust) {
+      var el = document.createElementNS(NS, tag);
+      Object.keys(attrs).forEach(function (k) { el.setAttribute(k, attrs[k]); });
+      if (ust) ust.appendChild(el);
+      return el;
+    }
+    function nokta(derece, yari) { var rd = (derece - 90) * Math.PI / 180; return (200 + yari * Math.cos(rd)).toFixed(2) + ' ' + (200 + yari * Math.sin(rd)).toFixed(2); }
+    var svg = sv('svg', { viewBox: '0 0 400 400', class: 'ys-cark', role: 'img', 'aria-label': 'Puan çarkı' });
+    var don = sv('g', { class: 'ys-cark-don' }, svg);
+    dilimler.forEach(function (d, k) {
+      sv('path', { d: 'M200 200 L' + nokta(k * a, 192) + ' A192 192 0 0 1 ' + nokta((k + 1) * a, 192) + ' Z', fill: d.renk, stroke: '#fff', 'stroke-width': 3 }, don);
+      var t = sv('text', { x: 200, y: 52, transform: 'rotate(' + ((k + 0.5) * a) + ' 200 200)', 'text-anchor': 'middle', 'font-size': d.t === 'puan' ? 28 : 19, 'font-weight': 900, fill: '#fff' }, don);
+      t.textContent = d.t === 'puan' ? String(d.v) : d.ad;
+    });
+    sv('circle', { cx: 200, cy: 200, r: 30, fill: '#fff', stroke: '#0f172a', 'stroke-width': 5 }, svg);
+    sv('path', { d: 'M180 2 L220 2 L200 42 Z', fill: '#facc15', stroke: '#0f172a', 'stroke-width': 3 }, svg);
+    return { svg: svg, don: don };
+  }
+
+  function carkEkrani() {
+    saatDurdur(); tusIsi = {};
+    var asil = oyun.i % oyun.takimlar.length, tk = oyun.takimlar[asil];
+    var dilimler = ayar.surpriz ? DILIMLER : DILIMLER.filter(function (d) { return d.t === 'puan'; });
+    var bu = oyun, donuyor = false;
+    kok.innerHTML = '';
+    var tablo = puanTablosu(asil); kok.appendChild(tablo);
+    var bilgi = e('div', { class: 'ys-bilgi' });
+    bilgi.appendChild(e('span', {}, 'Tur ' + (oyun.i + 1) + ' / ' + oyun.tur));
+    var bitirB = dugme('oy-arac', '✖ Yarışmayı bitir', function () {
+      if (window.confirm('Yarışma bitirilsin mi? Şu anki puanlarla sonuç ekranı açılır.')) sonucEkrani();
+    });
+    bilgi.appendChild(bitirB);
+    kok.appendChild(bilgi);
+    kok.appendChild(e('div', { class: 'ys-sira ' + tk.renk, 'aria-live': 'polite' }, 'Sıra: ' + tk.ad + ' — çarkı çevir!'));
+    var alan = e('div', { class: 'ys-cark-alan' });
+    var cark = carkCiz(dilimler);
+    cark.don.style.transform = 'rotate(' + oyun.aci + 'deg)';
+    alan.appendChild(cark.svg); kok.appendChild(alan);
+    var alt = e('div', { class: 'ys-alt', 'aria-live': 'polite' });
+    var cevirB = dugme('btn btn-sari ys-basla ys-cevir', '🎡 Çarkı çevir', cevir);
+    kok.appendChild(cevirB); kok.appendChild(alt);
+
+    function cevir() {
+      if (donuyor) return;
+      donuyor = true; tusIsi.ileri = null; cevirB.disabled = true; bitirB.disabled = true;
+      var k = Math.floor(Math.random() * dilimler.length), a = 360 / dilimler.length;
+      // Seçilen dilimin ortası (kenarlara değmeden, küçük rastgele kayma ile) üstteki ibreye gelir
+      var hedef = 360 - (k + 0.5) * a + (Math.random() - 0.5) * a * 0.7;
+      var fark = ((hedef - oyun.aci % 360) % 360 + 360) % 360;
+      oyun.aci += 1800 + fark;
+      cark.don.classList.add('donuyor');
+      cark.don.getBoundingClientRect();
+      cark.don.style.transform = 'rotate(' + oyun.aci + 'deg)';
+      var tik = 0, bekle = 90;
+      (function tikla() {
+        if (!cark.svg.isConnected || tik > 3300) return;
+        bip([880]); tik += bekle; bekle *= 1.13; setTimeout(tikla, bekle);
+      })();
+      setTimeout(function () { if (oyun === bu && cark.svg.isConnected) sonuc(dilimler[k]); }, 4000);
+    }
+    function sonuc(d) {
+      var kutu = e('div', { class: 'oy-basari ys-cark-sonuc' });
+      var son = oyun.i === oyun.tur - 1, metin, ileri;
+      if (d.t === 'puan') {
+        bip([523, 784]);
+        metin = '🎯 ' + d.v + ' puanlık soru!';
+        ileri = function () { tusIsi.ileri = null; oyun.deger = d.v; soruEkrani(); };
+      } else {
+        if (d.t === 'hediye') { tk.puan += 100; bip([523, 659, 784, 1047]); metin = '🎁 Hediye! ' + tk.ad + ' +100 puan kazandı.'; }
+        else if (d.t === 'iflas') { var giden = Math.ceil(tk.puan / 2); tk.puan -= giden; bip([220, 165, 110]); metin = '💥 İflas! ' + tk.ad + (giden ? ' puanının yarısını kaybetti (−' + giden + ').' : ' henüz puanı olmadığı için bir şey kaybetmedi.'); }
+        else { bip([330, 262]); metin = '⏭ Pas! Sıra diğer takıma geçiyor.'; }
+        var yeni = puanTablosu(asil); tablo.replaceWith(yeni); tablo = yeni;
+        ileri = function () { tusIsi.ileri = null; if (son) sonucEkrani(); else { oyun.i++; turAc(); } };
+      }
+      bitirB.disabled = false;
+      kutu.appendChild(e('h3', {}, metin));
+      var b = dugme('btn btn-sari', d.t === 'puan' ? 'Soruyu aç ▶' : son ? '🏁 Sonuçları göster' : 'Sıradaki takım ▶', ileri);
+      kutu.appendChild(b); alt.appendChild(kutu);
+      cevirB.hidden = true;
+      kutu.scrollIntoView({ block: 'nearest' });
+      setTimeout(function () { if (b.isConnected) tusIsi.ileri = ileri; }, 400);
+    }
+    tusIsi = { sec: null, ileri: cevir };
+  }
+
   function soruEkrani() {
     saatDurdur();
-    var q = oyun.sorular[oyun.i], asil = oyun.i % oyun.takimlar.length;
+    var q = oyun.sorular[oyun.qi], asil = oyun.i % oyun.takimlar.length;
     var cevaplayan = asil, calmada = false, bitti = false, ciftAcik = false, kalan = ayar.sure, sonAn = 0, duraklat = false;
     var kapali = [false, false, false, false];
     kok.innerHTML = '';
     var tablo = puanTablosu(asil); kok.appendChild(tablo);
     var bilgi = e('div', { class: 'ys-bilgi' });
-    bilgi.appendChild(e('span', {}, 'Soru ' + (oyun.i + 1) + ' / ' + oyun.sorular.length + ' · ' + q.unite));
+    bilgi.appendChild(e('span', {}, CARK ? 'Tur ' + (oyun.i + 1) + ' / ' + oyun.tur + ' · ' + oyun.deger + ' puanlık soru · ' + q.unite : 'Soru ' + (oyun.i + 1) + ' / ' + oyun.tur + ' · ' + q.unite));
     bilgi.appendChild(dugme('oy-arac', '✖ Yarışmayı bitir', function () {
       if (window.confirm('Yarışma bitirilsin mi? Şu anki puanlarla sonuç ekranı açılır.')) sonucEkrani();
     }));
@@ -301,7 +400,7 @@
     function cevapla(k) {
       if (bitti || duraklat || kapali[k]) return;
       if (k === q.dogru) {
-        var puan = calmada ? 50 : 100 + (ayar.sure ? Math.round(kalan / ayar.sure * 50) : 0);
+        var puan = CARK ? (calmada ? Math.round(oyun.deger / 2) : oyun.deger) : (calmada ? 50 : 100 + (ayar.sure ? Math.round(kalan / ayar.sure * 50) : 0));
         if (ciftAcik) puan *= 2;
         var kazanan = oyun.takimlar[cevaplayan];
         kazanan.puan += puan; kazanan.dogru++;
@@ -329,9 +428,9 @@
       var kutu = e('div', { class: 'oy-basari' });
       kutu.appendChild(e('h3', {}, baslik));
       kutu.appendChild(e('p', {}, 'Doğru cevap: ' + HARF[q.dogru] + ') ' + q.sec[q.dogru] + ' — ' + q.acik));
-      var son = oyun.i === oyun.sorular.length - 1;
-      var ileri = function () { tusIsi.ileri = null; if (son) sonucEkrani(); else { oyun.i++; soruEkrani(); } };
-      var b = dugme('btn btn-sari', son ? '🏁 Sonuçları göster' : 'Sonraki soru ▶', ileri);
+      var son = oyun.i === oyun.tur - 1;
+      var ileri = function () { tusIsi.ileri = null; if (son) sonucEkrani(); else { oyun.i++; oyun.qi++; turAc(); } };
+      var b = dugme('btn btn-sari', son ? '🏁 Sonuçları göster' : CARK ? 'Sıradaki takım ▶' : 'Sonraki soru ▶', ileri);
       kutu.appendChild(b); alt.appendChild(kutu);
       // Aynı tuş vuruşunun soruyu atlamaması için kısa gecikme
       setTimeout(function () { if (b.isConnected) tusIsi.ileri = ileri; }, 400);

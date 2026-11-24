@@ -261,3 +261,13 @@
 .ys-son-dugmeler { justify-content: center; margin-top: 12px; }
 .ys-son-dugmeler .btn { border: 0; font-family: inherit; cursor: pointer; }
 .oyun-kutu:fullscreen:has(.ys-soru), .oyun-kutu:fullscreen:has(.ys-sonuc) { font-size: clamp(17px, 1.6vw, 30px); }
+
+/* Çarkıfelek */
+.ys-cark-alan { display: flex; justify-content: center; }
+.ys-cark { width: min(100%, 420px, 52vh); min-width: 240px; height: auto; display: block; }
+.ys-cark-don { transform-origin: 200px 200px; }
+.ys-cark-don.donuyor { transition: transform 3.8s cubic-bezier(.12, .7, .12, 1); }
+.ys-cevir { display: block; margin: 12px auto 0; }
+.ys-cevir[hidden] { display: none; }
+.ys-cark-sonuc { text-align: center; }
+.ys-cark-sonuc .btn { border: 0; font-family: inherit; cursor: pointer; }
