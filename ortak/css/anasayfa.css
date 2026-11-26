@@ -219,3 +219,37 @@
   .as-giris h1 { font-size: 2.1rem; }
   .as-ozet-satir { display: none; }
 }
+
+/* ===== Ana sayfa: bölüm seçme kartları ===== */
+.as-giris.gk-giris { padding: 44px 0 96px; }
+.gk-ic { position: relative; z-index: 1; text-align: center; }
+.gk-giris h1 { font-size: 2.8rem; margin: 0 0 22px; }
+.gk-kartlar { display: grid; gap: 18px; grid-template-columns: 1.35fr .8fr 1.35fr; text-align: left; align-items: stretch; }
+.gk-kart { background: #fff; color: var(--yazi); border-radius: 22px; padding: 22px; box-shadow: 0 18px 40px rgba(0, 0, 0, .28); border-top: 7px solid; }
+.gk-ortaokul { border-color: #14b8a6; }
+.gk-lise { border-color: #94a3b8; }
+.gk-kpss { border-color: #f59e0b; }
+.gk-kart h2 { margin: 0 0 4px; font-size: 1.6rem; }
+.gk-kart h2 a { color: var(--lacivert); text-decoration: none; }
+.as-giris .gk-kart p { margin: 0 0 14px; opacity: 1; color: var(--soluk); font-size: .98rem; max-width: none; }
+.as-giris .gk-kart p.gk-ara { margin: 16px 0 8px; font-size: .88rem; font-weight: 800; }
+.gk-ciplar { display: flex; flex-wrap: wrap; gap: 8px; }
+.gk-cip { text-decoration: none; font-weight: 800; font-size: .93rem; padding: 8px 13px; border-radius: 11px; background: #f1f5f9; color: var(--lacivert-2); border: 1px solid var(--cizgi); }
+.gk-cip:hover { background: var(--ana-acik); color: var(--ana-koyu); }
+.gk-cip.gk-buyuk { background: var(--ana-koyu); border-color: var(--ana-koyu); color: #fff; }
+.gk-cip.gk-buyuk:hover { background: var(--ana); color: #fff; }
+.gk-devam { display: inline-block; margin: 0 0 20px; padding: 10px 20px; border-radius: 99px; background: #fbbf24; color: #1e293b; font-weight: 800; text-decoration: none; }
+.gk-devam[hidden] { display: none; }
+
+/* Ortaokul ve sınıf vitrini */
+.as-siniflar.gk-iki { grid-template-columns: repeat(2, 1fr); }
+.gk-konular { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+.gk-konu { display: flex; align-items: center; gap: 12px; background: #fff; border: 1px solid var(--cizgi); border-radius: 14px; padding: 14px 16px; text-decoration: none; color: var(--lacivert); font-weight: 800; line-height: 1.35; box-shadow: var(--golge-kucuk); }
+.gk-konu:hover { border-color: var(--ana); }
+.gk-konu span { font-size: 1.6rem; }
+.gk-tum { text-align: center; margin: 20px 0 0; }
+.as-sinif.yakinda { opacity: .65; }
+.as-sinif.yakinda:hover { transform: none; }
+
+@media (max-width: 920px) { .gk-kartlar { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .gk-giris h1 { font-size: 2rem; } .as-siniflar.gk-iki { grid-template-columns: 1fr; } }

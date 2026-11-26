@@ -1,4 +1,4 @@
-/* ===== Fen Bilimleri Rehberi – Ortak Stiller ===== */
+/* ===== Ortak Stiller ===== */
 :root {
   --ana: #0d9488;
   --ana-koyu: #0f766e;
@@ -68,29 +68,33 @@ h1, h2, h3 { line-height: 1.25; font-weight: 800; }
 .logo-yazi { display: flex; flex-direction: column; line-height: 1.05; font-weight: 800; font-size: 1.25rem; }
 .logo-yazi small { font-size: .72rem; font-weight: 700; color: var(--ana); letter-spacing: .04em; text-transform: uppercase; }
 
-.menu { display: flex; align-items: center; gap: 4px; }
-.menu a {
-  text-decoration: none; color: var(--lacivert-2); font-weight: 700;
-  padding: 8px 14px; border-radius: 10px; font-size: .98rem;
-  transition: background .15s, color .15s;
-}
-.menu a:hover { background: #f1f5f9; color: var(--ana-koyu); }
-.menu a.aktif { color: var(--ana-koyu); background: var(--ana-acik); }
-.menu a.menu-lgs {
-  background: var(--vurgu); color: #1e293b; margin-left: 6px;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, .35);
-}
-.menu a.menu-lgs:hover { background: #fbbf24; }
+.logo-gorsel { height: 40px; width: auto; }
 
-.menu-btn {
-  display: none; width: 44px; height: 44px; border: none; background: #f1f5f9;
-  border-radius: 12px; cursor: pointer; padding: 12px 11px;
-  flex-direction: column; justify-content: space-between;
+/* Birinci satır: büyük bölümler (her sayfada aynı) */
+.ana-menu { display: flex; align-items: center; gap: 4px; }
+.ana-menu a {
+  text-decoration: none; color: var(--lacivert-2); font-weight: 800;
+  padding: 8px 16px; border-radius: 10px; font-size: 1rem;
 }
-.menu-btn span { display: block; height: 2.5px; background: var(--lacivert); border-radius: 2px; transition: transform .2s, opacity .2s; }
-.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(8.75px) rotate(45deg); }
-.menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8.75px) rotate(-45deg); }
+.ana-menu a:hover { background: #f1f5f9; color: var(--ana-koyu); }
+.ana-menu a.aktif { color: #fff; background: var(--ana-koyu); }
+
+/* İkinci satır: ders ve sınıf seçimi; dar ekranda yana kaydırılır */
+.alt-menu { border-top: 1px solid var(--cizgi); background: rgba(248, 250, 252, .9); }
+.alt-menu-ic {
+  display: flex; align-items: center; gap: 4px; height: 48px;
+  overflow-x: auto; scrollbar-width: none; white-space: nowrap;
+}
+.alt-menu-ic::-webkit-scrollbar { display: none; }
+.alt-menu-ic a, .alt-menu-ic span {
+  flex: none; text-decoration: none; color: var(--lacivert-2); font-weight: 700;
+  font-size: .93rem; line-height: 1; padding: 9px 12px; border-radius: 9px;
+}
+.alt-menu-ic a:hover { background: #e2e8f0; }
+.alt-menu-ic a.aktif { background: var(--ana-acik); color: var(--ana-koyu); }
+.alt-menu-ic span.pasif { color: #94a3b8; cursor: default; }
+.alt-menu-ic .grup { display: flex; flex: none; align-items: center; gap: 4px; }
+.alt-menu-ic .grup + .grup { margin-left: 8px; padding-left: 12px; border-left: 1px solid #cbd5e1; }
 
 /* ===== Genel sayfa başlığı (iç sayfalar) ===== */
 .sayfa-bas {
@@ -333,22 +337,21 @@ tr:nth-child(even) td { background: #f8fafc; }
 }
 
 @media (max-width: 1040px) {
-  .menu-btn { display: flex; }
-  .menu {
-    display: none; position: absolute; top: 68px; left: 0; right: 0;
-    flex-direction: column; align-items: stretch; gap: 2px;
-    background: #fff; padding: 10px 16px 16px; border-bottom: 1px solid var(--cizgi);
-    box-shadow: var(--golge);
-  }
-  .menu.acik { display: flex; }
-  .menu a { padding: 12px 14px; }
-  .menu a.menu-lgs { margin: 6px 0 0; text-align: center; }
   .alt-izgara { grid-template-columns: 1fr 1fr; }
   .alt-izgara > div:first-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
+  .ust-ic { height: 60px; gap: 6px; }
+  .logo { gap: 7px; }
+  .ust .logo-ikon { width: 34px; height: 34px; border-radius: 10px; }
+  .ust .logo-ikon svg { width: 22px; height: 22px; }
+  .ust .logo-yazi { font-size: 1.05rem; }
+  .ust .logo-yazi small { font-size: .62rem; }
+  .ana-menu { gap: 0; }
+  .ana-menu a { padding: 7px 9px; font-size: .9rem; }
+  .ust-iki ~ main .yazi h2, .ust-iki ~ main .test { scroll-margin-top: 150px; }
   .sayfa-bas { padding: 32px 0 48px; }
   .sayfa-bas h1 { font-size: 1.75rem; }
   .bolum { margin: 40px 0; }
@@ -358,3 +361,23 @@ tr:nth-child(even) td { background: #f8fafc; }
   .unite-gecis { grid-template-columns: 1fr; }
   .unite-gecis .gecis-sonraki { grid-column: 1; }
 }
+
+.alt-menu-ic .sim { font-style: normal; white-space: pre; }
+
+/* Telefon ve küçük tablette: dersler üstte, sınıflar altta; hiçbiri ekran dışında kalmaz */
+@media (max-width: 860px) {
+  .alt-menu-ic .sim { display: none; }
+  .alt-menu-ic:has(.grup) { flex-wrap: wrap; height: auto; padding-top: 5px; padding-bottom: 6px; row-gap: 5px; overflow: visible; }
+  .alt-menu-ic .grup { gap: 2px; }
+  .alt-menu-ic .grup + .grup { margin-left: 0; padding-left: 0; border-left: 0; }
+  .alt-menu-ic .grup a, .alt-menu-ic .grup span { font-size: .84rem; padding: 8px 7px; }
+  .alt-menu-ic .grup-ders { order: 1; }
+  .alt-menu-ic .grup-ek { order: 2; margin-left: auto; }
+  .alt-menu-ic .grup-sinif { order: 3; flex: 0 0 100%; justify-content: space-between; }
+  .alt-menu-ic .grup-sinif a, .alt-menu-ic .grup-sinif span { flex: 1 1 auto; text-align: center; }
+}
+
+/* İki satırlı üst menü payı */
+.ust-iki ~ main .yan { top: 134px; }
+@media (min-width: 861px) { .ust-iki ~ main .yazi h2, .ust-iki ~ main .test { scroll-margin-top: 134px; } }
+@media (max-width: 900px) { .ust-iki ~ main .yan { top: auto; } }

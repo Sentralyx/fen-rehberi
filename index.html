@@ -3,234 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fen Bilimleri Rehberi | Ücretsiz Konu Anlatımı, Testler ve Deneyler</title>
-  <meta name="description" content="Ortaokul Fen Bilimleri ve KPSS için ücretsiz konu anlatımları, özetler, testler ve evde yapılabilen deneyler.">
+  <title>Ders Rehberi | Ücretsiz Konu Anlatımı ve Testler</title>
+  <meta name="description" content="Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.">
   <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/sinif.css">
   <link rel="stylesheet" href="/ortak/css/anasayfa.css">
 </head>
 <body>
   <header class="ust">
     <div class="kap ust-ic">
-      <a class="logo" href="/">
-        <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
-        <span class="logo-yazi"><small>Fen Bilimleri</small>Rehberi</span>
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
       </a>
-      <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="menu">
-        <a class="aktif" href="/">Ana Sayfa</a>
-        <a href="/ortaokul/fen/">Ortaokul Fen</a>
-        <a href="/ortaokul/matematik/">Matematik</a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
         <a href="/kpss/">KPSS</a>
-        <a href="/ortaokul/fen/deneyler/">🧪 Deneyler</a>
-        <a href="/ortaokul/fen/oyunlar/">🎮 Oyunlar</a>
       </nav>
     </div>
   </header>
 
-  <section class="as-giris">
+  <section class="as-giris gk-giris">
     <div class="as-yildizlar" aria-hidden="true"></div>
-    <div class="kap as-giris-ic">
-      <div>
-        <span class="as-rozet"><i></i> Ücretsiz · Üyelik gerekmez</span>
-        <h1>Öğrenmeye<br><span>buradan başla!</span></h1>
-        <p>Ortaokul Fen Bilimleri'nden KPSS'ye: sade konu anlatımları, özetler ve anında sonuç veren testlerle hedefine daha kolay ulaş.</p>
-        <div class="as-butonlar">
-          <a class="btn btn-sari" href="/ortaokul/fen/">Ortaokul Fen Bilimleri →</a>
-          <a class="btn btn-cizgi" href="/kpss/">KPSS Hazırlık</a>
-        </div>
-        <div class="as-ozet-satir">
-          <div><b>📖</b> 28 ünite</div>
-          <div><b>✅</b> 280 soru</div>
-          <div><b>🧪</b> 28 deney</div>
-        </div>
-      </div>
-      <div class="as-gorsel" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="15" class="cekirdek"/>
-          <g class="y1"><ellipse cx="100" cy="100" rx="82" ry="28"/><circle r="6.5" class="elektron"><animateMotion dur="3s" repeatCount="indefinite" path="M182,100 A82,28 0 1,1 18,100 A82,28 0 1,1 182,100"/></circle></g>
-          <g class="y2"><ellipse cx="100" cy="100" rx="82" ry="28"/><circle r="6.5" class="elektron"><animateMotion dur="4s" repeatCount="indefinite" path="M18,100 A82,28 0 1,1 182,100 A82,28 0 1,1 18,100"/></circle></g>
-          <g class="y3"><ellipse cx="100" cy="100" rx="82" ry="28"/><circle r="6.5" class="elektron"><animateMotion dur="5s" repeatCount="indefinite" path="M182,100 A82,28 0 1,0 18,100 A82,28 0 1,0 182,100"/></circle></g>
-        </svg>
-        <span class="as-yuzen y-1">📚</span>
-        <span class="as-yuzen y-2">🔬</span>
-        <span class="as-yuzen y-3">🧪</span>
-        <span class="as-yuzen y-4">🎯</span>
+    <div class="kap gk-ic">
+      <span class="as-rozet"><i></i> Ücretsiz · Üyelik gerekmez</span>
+      <h1>Ne <span>çalışmak</span> istiyorsun?</h1>
+      <a id="devam" class="gk-devam" hidden></a>
+      <div class="gk-kartlar">
+        <article class="gk-kart gk-ortaokul">
+          <h2><a href="/ortaokul/">🎒 Ortaokul</a></h2>
+          <p>Sınıfını seç, bütün derslerini gör.</p>
+          <div class="gk-ciplar"><a class="gk-cip gk-buyuk" href="/ortaokul/5-sinif/">5. Sınıf</a><a class="gk-cip gk-buyuk" href="/ortaokul/6-sinif/">6. Sınıf</a><a class="gk-cip gk-buyuk" href="/ortaokul/7-sinif/">7. Sınıf</a><a class="gk-cip gk-buyuk" href="/ortaokul/8-sinif/">8. Sınıf</a></div>
+          <p class="gk-ara">Ya da dersini seç:</p>
+          <div class="gk-ciplar"><a class="gk-cip" href="/ortaokul/fen/">🔬 Fen Bilimleri</a><a class="gk-cip" href="/ortaokul/matematik/">➗ Matematik</a></div>
+        </article>
+        <article class="gk-kart gk-lise">
+          <h2><a href="/lise/">🏫 Lise</a></h2>
+          <p>9-12. sınıf içerikleri hazırlanıyor.</p>
+          <div class="gk-ciplar"><a class="gk-cip" href="/lise/">Yakında →</a></div>
+        </article>
+        <article class="gk-kart gk-kpss">
+          <h2><a href="/kpss/">🎯 KPSS</a></h2>
+          <p>Dersini seç, konuları oku ve testle çalış.</p>
+          <div class="gk-ciplar"><a class="gk-cip" href="/kpss/genel-yetenek/turkce/">Türkçe</a><a class="gk-cip" href="/kpss/genel-yetenek/matematik/">Matematik</a><a class="gk-cip" href="/kpss/genel-kultur/tarih/">Tarih</a><a class="gk-cip" href="/kpss/genel-kultur/cografya/">Coğrafya</a><a class="gk-cip" href="/kpss/genel-kultur/vatandaslik/">Vatandaşlık</a><a class="gk-cip" href="/kpss/egitim-bilimleri/">Eğitim Bilimleri</a><a class="gk-cip" href="/kpss/oabt-fen/">ÖABT Fen</a></div>
+        </article>
       </div>
     </div>
   </section>
 
   <main class="kap">
     <section class="bolum">
-      <div class="bolum-bas">
-        <span class="ust-yazi">Ortaokul</span>
-        <h2>Fen Bilimleri · 5-8. Sınıf</h2>
-        <p>Sınıfını seç; bütün üniteler konu anlatımı, özet ve testlerle seni bekliyor.</p>
-      </div>
-      <div class="as-siniflar">
-        <a class="as-sinif renk-mor" href="/ortaokul/fen/5-sinif/">
-          <span class="as-sinif-no">5</span>
-          <span class="as-sinif-ikon">🌍</span>
-          <h3>5. Sınıf Fen</h3>
-          <p>7 ünite: konu anlatımı, özet ve test.</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-mavi" href="/ortaokul/fen/6-sinif/">
-          <span class="as-sinif-no">6</span>
-          <span class="as-sinif-ikon">🧲</span>
-          <h3>6. Sınıf Fen</h3>
-          <p>7 ünite: konu anlatımı, özet ve test.</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-turuncu" href="/ortaokul/fen/7-sinif/">
-          <span class="as-sinif-no">7</span>
-          <span class="as-sinif-ikon">🔭</span>
-          <h3>7. Sınıf Fen</h3>
-          <p>7 ünite: konu anlatımı, özet ve test.</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-yesil" href="/ortaokul/fen/8-sinif/">
-          <span class="as-sinif-no">8</span>
-          <span class="as-sinif-ikon">🧬</span>
-          <h3>8. Sınıf Fen</h3>
-          <p>7 ünite: konu anlatımı, özet ve test.</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="bolum">
       <div class="as-lgs as-deney">
         <div>
-          <span class="as-lgs-etiket">➗ Yeni: Ortaokul Matematik</span>
-          <h2>5. Sınıf Matematik başladı</h2>
-          <p>İlk konu Kesirler: şekillerle anlatım, özet ve 20 soruluk test.</p>
-        </div>
-        <a class="btn btn-sari" href="/ortaokul/matematik/">Matematiğe Git →</a>
-      </div>
-    </section>
-
-    <section class="bolum">
-      <div class="bolum-bas">
-        <span class="ust-yazi">KPSS</span>
-        <h2>Genel Yetenek · Genel Kültür · Eğitim Bilimleri · ÖABT</h2>
-        <p>Sınav derslerine konu anlatımı, özet ve testlerle hazırlan.</p>
-      </div>
-      <div class="as-siniflar">
-        <a class="as-sinif renk-turuncu" href="/kpss/genel-yetenek/turkce/">
-          <span class="as-sinif-no">30</span>
-          <span class="as-sinif-ikon">📝</span>
-          <h3>Türkçe</h3>
-          <p>Sınavda 30 soru · 10 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-mavi" href="/kpss/genel-yetenek/matematik/">
-          <span class="as-sinif-no">30</span>
-          <span class="as-sinif-ikon">➗</span>
-          <h3>Matematik</h3>
-          <p>Sınavda 30 soru · 17 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-mor" href="/kpss/genel-kultur/tarih/">
-          <span class="as-sinif-no">27</span>
-          <span class="as-sinif-ikon">🏛️</span>
-          <h3>Tarih</h3>
-          <p>Sınavda 27 soru · 13 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-yesil" href="/kpss/genel-kultur/cografya/">
-          <span class="as-sinif-no">18</span>
-          <span class="as-sinif-ikon">🗺️</span>
-          <h3>Coğrafya</h3>
-          <p>Sınavda 18 soru · 8 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-mavi" href="/kpss/genel-kultur/vatandaslik/">
-          <span class="as-sinif-no">9</span>
-          <span class="as-sinif-ikon">⚖️</span>
-          <h3>Vatandaşlık</h3>
-          <p>Sınavda 9 soru · 8 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-mor" href="/kpss/egitim-bilimleri/">
-          <span class="as-sinif-no">80</span>
-          <span class="as-sinif-ikon">🎓</span>
-          <h3>Eğitim Bilimleri</h3>
-          <p>Sınavda 80 soru · 12 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-        <a class="as-sinif renk-yesil" href="/kpss/oabt-fen/">
-          <span class="as-sinif-no">50</span>
-          <span class="as-sinif-ikon">🔬</span>
-          <h3>ÖABT Fen</h3>
-          <p>Sınavda 50 soru · 16 konu</p>
-          <span class="as-git">Konulara git →</span>
-        </a>
-      </div>
-    </section>
-
-    <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
-
-    <section class="bolum">
-      <div class="as-lgs as-deney">
-        <div>
-          <span class="as-lgs-etiket">🧪 Deney Köşesi</span>
-          <h2>Evde Bilim İnsanı Ol!</h2>
-          <p>Evdeki basit ve güvenli malzemelerle 28 deney: önce tahmin et, sonra dene, sonunda açıkla.</p>
-        </div>
-        <a class="btn btn-sari" href="/ortaokul/fen/deneyler/">Deneylere Git →</a>
-      </div>
-    </section>
-
-    <section class="bolum">
-      <div class="as-lgs as-deney">
-        <div>
-          <span class="as-lgs-etiket">🎮 Oyunlar</span>
-          <h2>Oynayarak Öğren!</h2>
-          <p>Devre kur, maddeyi ısıt, aynalarla ışığı yönlendir, bezelye çaprazla: sınıfta tahtada ya da evde telefonda oynanan fen oyunları.</p>
+          <span class="as-lgs-etiket">🎮 Öğretmenler için</span>
+          <h2>Sınıfta açılacak oyunlar</h2>
+          <p>Takım Yarışması, Çarkıfelek ve fen oyunları: tahtada açıp hemen oynatın. Kayıt ve telefon gerekmez. (Şimdilik Fen Bilimleri.)</p>
         </div>
         <a class="btn btn-sari" href="/ortaokul/fen/oyunlar/">Oyunlara Git →</a>
       </div>
     </section>
 
     <section class="bolum">
-      <div class="as-lgs">
+      <div class="as-lgs ">
         <div>
-          <span class="as-lgs-etiket">🎯 8. Sınıf</span>
-          <h2>LGS'ye Hazır mısın?</h2>
-          <p>8. sınıf Fen Bilimleri konularını tekrar et, sorularla kendini dene.</p>
+          <span class="as-lgs-etiket">🧪 Deney Köşesi</span>
+          <h2>Evde Bilim İnsanı Ol!</h2>
+          <p>Basit ve güvenli malzemelerle fen deneyleri: önce tahmin et, sonra dene, sonunda açıkla.</p>
         </div>
-        <a class="btn btn-sari" href="/ortaokul/fen/8-sinif/">LGS Konuları →</a>
+        <a class="btn btn-sari" href="/ortaokul/fen/deneyler/">Deneylere Git →</a>
       </div>
     </section>
+
+    <section class="bolum">
+      <div class="bolum-bas">
+        <span class="ust-yazi">Yeni</span>
+        <h2>Son eklenen konular</h2>
+      </div>
+      <div class="as-konular">
+        <a class="as-konu" href="/ortaokul/matematik/5-sinif/kesirler/">
+          <div class="as-konu-gorsel renk-mor">🍕</div>
+          <div class="as-konu-ic">
+            <span class="etiket">5. Sınıf · Matematik</span>
+            <h3>Kesirler</h3>
+            <p>Kesirlerin farklı gösterimlerini modellerle okuma, karşılaştırma ve gerekçe sunma.</p>
+          </div>
+        </a>
+        <a class="as-konu" href="/ortaokul/fen/8-sinif/elektrik-yukleri-ve-elektrik-enerjisi/">
+          <div class="as-konu-gorsel renk-turuncu">⚡</div>
+          <div class="as-konu-ic">
+            <span class="etiket">8. Sınıf · Fen</span>
+            <h3>Elektrik Yükleri ve Elektrik Enerjisi</h3>
+            <p>Elektriklenme, elektroskop, topraklama, enerji dönüşümü ve santraller.</p>
+          </div>
+        </a>
+        <a class="as-konu" href="/ortaokul/fen/8-sinif/enerji-donusumleri-ve-cevre-bilimi/">
+          <div class="as-konu-gorsel renk-yesil">🌿</div>
+          <div class="as-konu-ic">
+            <span class="etiket">8. Sınıf · Fen</span>
+            <h3>Enerji Dönüşümleri ve Çevre Bilimi</h3>
+            <p>Besin zinciri, fotosentez, solunum, madde döngüleri ve iklim değişikliği.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="reklam"><!-- AdSense reklam kodu buraya --></div>
   </main>
 
   <footer class="alt">
     <div class="kap alt-izgara">
       <div>
-        <a class="logo" href="/">
-          <span class="logo-ikon"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><ellipse cx="16" cy="16" rx="13" ry="5"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.6" fill="#fff" stroke="none"/></svg></span>
-          <span class="logo-yazi"><small>Fen Bilimleri</small>Rehberi</span>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
         </a>
-        <p>Ortaokul Fen Bilimleri ve KPSS için ücretsiz konu anlatımları, özetler ve testler.</p>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
       </div>
       <div>
         <h4>Bölümler</h4>
         <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
           <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
-          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
-          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/lise/">Lise</a></li>
           <li><a href="/kpss/">KPSS</a></li>
         </ul>
       </div>
       <div>
         <h4>Site</h4>
         <ul>
-          <li><a href="/">Tüm Bölümler</a></li>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
           <li><a href="/hakkimizda/">Hakkımızda</a></li>
           <li><a href="/iletisim/">İletişim</a></li>
           <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
@@ -238,7 +149,7 @@
       </div>
     </div>
     <div class="kap alt-son">
-      <span>© 2026 Fen Bilimleri Rehberi</span>
+      <span>© 2026 Ders Rehberi</span>
       <span>Öğrenmenin en kolay hâli 📚</span>
     </div>
   </footer>
