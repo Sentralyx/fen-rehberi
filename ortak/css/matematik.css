@@ -1,0 +1,17 @@
+/* Ortaokul Matematik: kesir yazımı, model şekilleri */
+.kesir { display: inline-flex; align-items: center; gap: 2px; vertical-align: middle; margin: 0 1px; line-height: 1; white-space: nowrap; }
+.ts-tam { font-size: 1.15em; }
+.ks { display: inline-flex; flex-direction: column; align-items: center; font-size: .86em; }
+.ks > span { padding: 1px 3px; line-height: 1.15; }
+.ks > span:first-child { border-bottom: 2px solid currentColor; align-self: stretch; text-align: center; }
+.bitisik { white-space: nowrap; }
+.msekil { display: block; margin: 14px 0; text-align: center; }
+.msekil svg { display: block; width: 100%; height: auto; margin: 0 auto; background: #fff; border-radius: 8px; }
+figure.msekil { padding: 12px; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 14px; }
+.soru .msekil { padding: 8px; background: #fff; border: 1px solid #ddd6fe; border-radius: 12px; }
+.yazi li { line-height: 2; }
+.yazi details { margin: 0 0 18px; border: 1px solid #ddd6fe; border-radius: 12px; padding: 10px 14px; background: #f5f3ff; }
+.yazi summary { cursor: pointer; font-weight: 800; color: #5b21b6; }
+.yazi details p { margin: 10px 0 0; }
+.tablo-kap table { min-width: 0; }
+.as-sinif.yakinda { opacity: .6; cursor: default; }

@@ -6,6 +6,9 @@
   var harfler = ["A", "B", "C", "D", "E"];
   var toplam = TEST_SORULARI.length;
   var cevaplanan, dogruSayisi;
+  // Matematik sayfaları kesir ve şekil içeren, üretici tarafından hazırlanmış HTML verir (TEST_HTML)
+  var htmlModu = typeof TEST_HTML !== "undefined" && TEST_HTML;
+  function metinYaz(el, deger) { if (htmlModu) el.innerHTML = deger; else el.textContent = deger; }
 
   // Üst kısım: ilerleme çubuğu ve sayaç
   var ust = document.createElement("div");
@@ -70,12 +73,12 @@
       kutu.className = "soru";
 
       var metin = document.createElement("p");
-      metin.textContent = (i + 1) + ". " + s.soru;
+      metinYaz(metin, (i + 1) + ". " + s.soru);
       kutu.appendChild(metin);
 
       var aciklama = document.createElement("div");
       aciklama.className = "aciklama";
-      aciklama.textContent = "💡 " + s.aciklama;
+      metinYaz(aciklama, "💡 " + s.aciklama);
 
       var butonlar = [];
       s.secenekler.forEach(function (secenek, j) {
@@ -86,7 +89,7 @@
         harf.className = "harf";
         harf.textContent = harfler[j];
         var yazi = document.createElement("span");
-        yazi.textContent = secenek;
+        metinYaz(yazi, secenek);
         b.appendChild(harf);
         b.appendChild(yazi);
         b.addEventListener("click", function () {
