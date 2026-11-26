@@ -5,10 +5,19 @@
   var AYGUN = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   var RAD = Math.PI / 180;
   function tarih(gun) { var a = 0; while (gun > AYGUN[a]) { gun -= AYGUN[a]; a++; } return gun + ' ' + AYLAR[a]; }
-  function sapma(gun) { return 23.44 * Math.sin(2 * Math.PI * (gun - 80) / 365); }
+  // Yörüngedeki evre (derece): 21 Mart 0, 21 Haziran 90, 23 Eylül 180, 21 Aralık 270.
+  // Mevsim süreleri eşit olmadığından dört tarih tam yerine sabitlenir, araları doğrusal doldurulur.
+  function evre(gun) {
+    var G = [-10, 80, 172, 266, 355, 445], i = 1;
+    while (gun > G[i]) i++;
+    return (i - 2) * 90 + 90 * (gun - G[i - 1]) / (G[i] - G[i - 1]);
+  }
+  function sapma(gun) { return 23.44 * Math.sin(evre(gun) * Math.PI / 180); }
   function gunduz(lat, dec) { var x = -Math.tan(lat * RAD) * Math.tan(dec * RAD); x = Math.max(-1, Math.min(1, x)); return 24 / Math.PI * Math.acos(x); }
   function mevsimK(gun) { return gun >= 80 && gun < 172 ? 'İlkbahar' : gun >= 172 && gun < 266 ? 'Yaz' : gun >= 266 && gun < 355 ? 'Sonbahar' : 'Kış'; }
   function mevsimG(gun) { return { 'İlkbahar': 'Sonbahar', 'Yaz': 'Kış', 'Sonbahar': 'İlkbahar', 'Kış': 'Yaz' }[mevsimK(gun)]; }
+  // Ekran açısı (y aşağı): 21 Haziran solda. Açı azalır -> kuzeyden bakınca saat yönünün TERSİNE dolanma (sol, ön, sağ, arka).
+  function yorungeAci(gun) { return (270 - evre(gun)) * RAD; }
   function fark(a, b) { var d = Math.abs(a - b); return Math.min(d, 365 - d); }
 
   var GOREVLER = [
@@ -60,7 +69,7 @@
         sv('ellipse', { cx: CX, cy: CY, rx: RX, ry: RY, fill: 'none', stroke: '#475569', 'stroke-width': 2, 'stroke-dasharray': '6 6' }, s);
         sv('circle', { cx: CX, cy: CY, r: 38, fill: '#facc15' }, s);
         sv('circle', { cx: CX, cy: CY, r: 50, fill: '#facc15', 'fill-opacity': 0.2 }, s);
-        var al = (180 + 360 * (gn - 172) / 365) * RAD;
+        var al = yorungeAci(gn);
         var ex = CX + RX * Math.cos(al), ey = CY + RY * Math.sin(al), r = 24 + 6 * Math.sin(al);
         var dxs = CX - ex, dys = CY - ey, kar = Math.atan2(-dys, -dxs) * 180 / Math.PI;
         sv('circle', { cx: ex, cy: ey, r: r, fill: '#3b82f6' }, s);
@@ -70,13 +79,13 @@
         sv('line', { x1: ex - Math.sin(tilt) * r * 1.7 * -1, y1: ey - Math.cos(tilt) * r * 1.7, x2: ex + Math.sin(tilt) * r * 1.7 * -1, y2: ey + Math.cos(tilt) * r * 1.7, stroke: '#f8fafc', 'stroke-width': 2.5 }, s);
         var kt = sv('text', { x: ex + Math.sin(tilt) * r * 1.7 + 6, y: ey - Math.cos(tilt) * r * 1.7 - 2, 'font-size': 12, 'font-weight': 800, fill: '#bfdbfe' }, s); kt.textContent = 'K';
         // Etiketler
-        [[172, 'Haz 21'], [266, 'Eyl 23'], [355, 'Ara 21'], [80, 'Mar 21']].forEach(function (p) {
-          var a = (180 + 360 * (p[0] - 172) / 365) * RAD, x = CX + (RX + 34) * Math.cos(a), y = CY + (RY + 34) * Math.sin(a);
-          var t = sv('text', { x: x, y: y + 4, 'text-anchor': 'middle', 'font-size': 11, fill: '#94a3b8', 'font-weight': 700 }, s); t.textContent = p[1];
+        // Konumlar Dünya ve eksen çizgisiyle çakışmayacak biçimde sabittir
+        [['Haz 21', 172, 154], ['Eyl 23', 276, 214], ['Ara 21', 464, 154], ['Mar 21', 300, 94]].forEach(function (p) {
+          var t = sv('text', { x: p[1], y: p[2], 'text-anchor': 'middle', 'font-size': 12, fill: '#94a3b8', 'font-weight': 700 }, s); t.textContent = p[0];
         });
         var dec = sapma(gn), gk = gunduz(40, dec), gg = gunduz(-40, dec);
         var t1 = sv('text', { x: 300, y: 330, 'text-anchor': 'middle', 'font-size': 14, fill: '#e2e8f0', 'font-weight': 800 }, s);
-        t1.textContent = 'Güneş ışınları ' + (dec >= 0 ? Math.abs(dec).toFixed(1) + '° Kuzey' : Math.abs(dec).toFixed(1) + '° Güney') + ' enlemine dik geliyor';
+        t1.textContent = 'Güneş ışınları ' + (Math.abs(dec) < 0.05 ? 'Ekvator’a' : Math.abs(dec).toFixed(1).replace('.', ',') + (dec > 0 ? '° Kuzey' : '° Güney') + ' enlemine') + ' dik geliyor';
         var t2 = sv('text', { x: 300, y: 352, 'text-anchor': 'middle', 'font-size': 12, fill: '#94a3b8' }, s);
         t2.textContent = '(Dünya’nın ekseni her zaman aynı yöne eğiktir — beyaz çizgi, K: Kuzey Kutbu)';
         bil.innerHTML = '<span>📅 <b>' + tarih(gn) + '</b></span><span>🇹🇷 Kuzey Yarım Küre: <b>' + mevsimK(gn) + '</b> · gündüz <b>' + gk.toFixed(1).replace('.', ',') + ' sa</b> (40° K)</span><span>🦘 Güney Yarım Küre: <b>' + mevsimG(gn) + '</b> · gündüz <b>' + gg.toFixed(1).replace('.', ',') + ' sa</b> (40° G)</span>';
