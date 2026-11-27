@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstatistiksel Araştırma Süreci – 7. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="7. sınıf istatistik: sürekli ve kategorik veri, evren ve örneklem, nokta ve çizgi grafiği, ortalama, ortanca, tepe değer, açıklık, ortalama mutlak sapma, yanıltıcı yorumlar.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/7-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/">7. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/7-sinif/">7. Sınıf</a> › İstatistiksel Araştırma Süreci</div>
+      <h1>📊 İstatistiksel Araştırma Süreci</h1>
+      <p>İki grubun uyku süresi ortalaması aynı: 8 saat. Üstelik ortancaları ve tepe değerleri de aynı. O hâlde iki grup aynı mı uyuyor?</p>
+      <div class="konu-meta"><span>📚 7. Sınıf Matematik</span><span>⏱️ 35 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="veri">Yeni Bir Veri Türü ve Araştırma Sorusu</h2>
+
+<p>Sağlıklı büyümek için uyku önemlidir. «Sınıfımızdakiler bir gecede ne kadar uyuyor?» sorusunun cevabı kişiden kişiye, geceden geceye <strong>değişir</strong>. Üstelik bu veri sayılarak değil, <strong>ölçülerek</strong> bulunur.</p>
+<div class="tablo-kap"><table><tr><th>Veri türü</th><th>Nasıl?</th></tr><tr><td><strong>Kategorik</strong></td><td>Cevaplar gruptur: en sevilen meyve, okula geliş yolu.</td></tr><tr><td><strong>Nicel, kesikli</strong></td><td>Sayılır: kardeş sayısı, okunan kitap sayısı.</td></tr><tr><td><strong>Nicel, sürekli</strong></td><td>Ölçülür; iki değer arasında başka değerler de alabilir: boy, kütle, süre, sıcaklık.</td></tr></table></div>
+<p>Sürekli veriyi kaydederken ölçme aracının hassasiyetine göre yuvarlarız: 7 saat 52 dakikayı «en yakın yarım saat» ile 8 saat diye yazabiliriz. Veri yuvarlanmış olsa da ölçülen nicelik süreklidir.</p>
+<p><strong>İyi bir araştırma sorusunda:</strong></p>
+<ul><li><strong>Amaç</strong> nettir.</li><li><strong>Değişken</strong> (ne ölçülecek) ve kimlerle ilgili olduğu bellidir.</li><li><strong>Veri toplayarak</strong> cevaplanabilir.</li><li>Verinin <strong>değişmesi</strong> beklenir (kişiden, ortamdan, yapılan bir müdahaleden ya da ölçümden).</li></ul>
+<p>Soru <strong>betimleyebilir</strong> («Şubemizdekilerin dinlenirken dakikadaki nabzı nasıl dağılıyor?», «Okul çantalarımızın kütlesi nasıl dağılıyor?») ya da <strong>karşılaştırabilir</strong> («7/A mı 7/B mi okula daha uzun sürede geliyor?»). Örneğin nabız; yaşa, o anki harekete ve ölçüm yöntemine göre değişebilir.</p>
+<p><strong>Sen dene:</strong> Su tasarrufu, dengeli beslenme, kuraklık ya da iklimle ilgili, <em>ölçerek</em> veri toplayabileceğin bir betimleme ve bir karşılaştırma sorusu yaz. Arkadaşın dört ölçüte göre değerlendirsin; gerekiyorsa düzelt.</p>
+
+        <h2 id="evren">Evren ve Örneklem</h2>
+
+<p>Hakkında bilgi edinmek istediğin grubun ya da nesnelerin tamamına <strong>evren</strong> denir. Hepsine ulaşamıyorsan içinden bir bölümünü seçersin: bu <strong>örneklemdir</strong>.</p>
+<p><strong>Örnek:</strong> «Mahallemizdeki marketlerde kaç çeşit makarna satılıyor?» araştırmasında evren, mahalledeki marketlerin <em>tamamıdır</em>. Örneklem seçerken küçük bakkal, orta boy market ve büyük marketlerin hepsinden almalısın. Yalnız büyük marketlere bakarsan çeşit sayısını olduğundan yüksek bulabilirsin.</p>
+<ul><li>İyi bir örneklem evreni <strong>temsil eder:</strong> evrendeki farklı gruplar örnekleme de girer.</li><li>Her grubun içinden <strong>kura ile (rastgele)</strong> seçmek, «istediğini seçme» etkisini azaltır.</li><li>Çok kişiye ulaşmak yetmez: yalnız bir gruptan 500 kişi seçmek yine yanlı olabilir. Çok küçük örneklemden de genel sonuç çıkarmak risklidir.</li></ul>
+<p><strong>Sen dene:</strong> «Okulumuzdaki öğrenciler günde kaç bardak su içiyor?» ve «Türkiye’deki bütün öğrenciler günde ne kadar uyuyor?» sorularından hangisinde evrene ulaşman gerçekçi? İlki için evreni ve bir örneklem planını yaz.</p>
+<details><summary>Cevabı göster</summary><p>İlk soru okul ölçeğinde yürütülebilir: evren okuldaki bütün öğrenciler; örneklem, her sınıf düzeyinden ve şubeden kura ile seçilen öğrenciler. İkincisinin evreni senin ulaşamayacağın kadar geniştir; soruyu daraltman ya da güvenilir hazır veri araman gerekir. (Bardak sayısı kesikli veridir; sürekli veri için içilen su miktarını mililitre olarak ölçebilirsin.)</p></details>
+
+        <h2 id="plan">Veri Toplama Planı</h2>
+
+<p>İki yol var: veriyi <strong>kendin toplarsın</strong> (anket, ölçme) ya da güvenilir bir kaynaktan <strong>hazır veri</strong> alırsın (resmî kurumlar gibi). Bazen ikisini birlikte kullanırsın.</p>
+<p>Planında şunlar bulunsun: soru, evren ve örneklem, anket sorusu ya da ölçme aracı, <strong>nerede, ne zaman, nasıl</strong> toplanacağı, nasıl kaydedileceği ve grup içi görevler.</p>
+<ul><li>Ölçüyorsan herkesi <strong>aynı araçla, aynı birimle, benzer koşulda</strong> ölç.</li><li>Anket sorusu açık olsun, tek şey sorsun, cevabı yönlendirmesin ve katılanların anlayacağı dilde olsun.</li><li>Verini not defterine, elektronik tabloya ya da çevrim içi bir forma kaydet. Çevrim içi form için bir yetişkinden yardım al.</li><li>Hazır veride sor: Kim topladı, ne zaman, kimlerden, nasıl?</li></ul>
+<div class="bilgi"><div><strong>Veri istemeden önce:</strong> Gerekli izinleri al (katılan kişiden, öğretmeninden, gerekiyorsa kurumdan). Kendine sor: «Sana ait bu bilgiyi istememde sakınca var mı? Bu soru seni rahatsız ediyor mu?» Gerekmiyorsa ad ve başka kimlik bilgisi isteme. Kütle gibi bilgiler hassas olabilir; kimse ölçülmek ya da cevap vermek zorunda değildir.</div></div>
+<p><strong>Sen yap:</strong> Grubunla bir soru seçin, planı yazın, anket sorunuzu iki kişide deneyin, anlaşılmayan yeri düzeltin ve veriyi toplayın.</p>
+
+        <h2 id="grafik">Nokta Grafiğinden Çizgi Grafiğine</h2>
+
+<p><strong>Hayalî veri:</strong> A grubundaki 10 öğrencinin bir gecelik uyku süreleri (en yakın yarım saate yuvarlanmış):</p>
+<div class="formul">7; 7,5; 7,5; 8; 8; 8; 8; 8,5; 8,5; 9</div>
+<figure class="msekil"><svg viewBox="0 0 340 166" style="max-width:400px" role="img" aria-label="Nokta grafiği: A grubu: uyku süresi (saat). 6 değerinde 0, 6,5 değerinde 0, 7 değerinde 1, 7,5 değerinde 2, 8 değerinde 4, 8,5 değerinde 2, 9 değerinde 1, 9,5 değerinde 0, 10 değerinde 0"><text x="170.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">A grubu: uyku süresi (saat)</text><line x1="12.0" y1="130.0" x2="328.0" y2="130.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="24.0" y1="130.0" x2="24.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="24.0" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6</text><line x1="60.5" y1="130.0" x2="60.5" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="60.5" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6,5</text><line x1="97.0" y1="130.0" x2="97.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="97.0" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7</text><circle cx="97.0" cy="117" r="8.5" fill="#6d28d9"/><line x1="133.5" y1="130.0" x2="133.5" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="133.5" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7,5</text><circle cx="133.5" cy="117" r="8.5" fill="#6d28d9"/><circle cx="133.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="170.0" y1="130.0" x2="170.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="170.0" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8</text><circle cx="170.0" cy="117" r="8.5" fill="#6d28d9"/><circle cx="170.0" cy="96" r="8.5" fill="#6d28d9"/><circle cx="170.0" cy="75" r="8.5" fill="#6d28d9"/><circle cx="170.0" cy="54" r="8.5" fill="#6d28d9"/><line x1="206.5" y1="130.0" x2="206.5" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="206.5" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8,5</text><circle cx="206.5" cy="117" r="8.5" fill="#6d28d9"/><circle cx="206.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="243.0" y1="130.0" x2="243.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="243.0" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9</text><circle cx="243.0" cy="117" r="8.5" fill="#6d28d9"/><line x1="279.5" y1="130.0" x2="279.5" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="279.5" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9,5</text><line x1="316.0" y1="130.0" x2="316.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="316.0" y="155.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">10</text></svg></figure>
+<p>Süre sürekli bir niceliktir: 7,5 ile 8 saat arasında da süreler vardır. Daha hassas ölçseydik noktalar eksende birbirine daha çok yaklaşır, aynı yere denk gelen az olurdu. Dağılımın <strong>biçimini</strong> görmek için her ölçüm değerindeki veri sayısını bir noktayla gösterip komşu noktaları birleştirebiliriz. Böylece <strong>çizgi grafiği</strong> elde ederiz:</p>
+<figure class="msekil"><svg viewBox="0 0 340 222" style="max-width:400px" role="img" aria-label="Sıklık çizgi grafiği: A grubu: sıklık çizgi grafiği. 6 değerinde 0, 6,5 değerinde 0, 7 değerinde 1, 7,5 değerinde 2, 8 değerinde 4, 8,5 değerinde 2, 9 değerinde 1, 9,5 değerinde 0, 10 değerinde 0"><text x="170.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">A grubu: sıklık çizgi grafiği</text><line x1="42.0" y1="186.0" x2="330.0" y2="186.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="34.0" y="192.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">0</text><line x1="42.0" y1="156.0" x2="330.0" y2="156.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="34.0" y="162.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">1</text><line x1="42.0" y1="126.0" x2="330.0" y2="126.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="34.0" y="132.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">2</text><line x1="42.0" y1="96.0" x2="330.0" y2="96.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="34.0" y="102.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">3</text><line x1="42.0" y1="66.0" x2="330.0" y2="66.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="34.0" y="72.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">4</text><polyline points="54.0,186.0 87.0,186.0 120.0,156.0 153.0,126.0 186.0,66.0 219.0,126.0 252.0,156.0 285.0,186.0 318.0,186.0" fill="none" stroke="#6d28d9" stroke-width="3.5"/><circle cx="54.0" cy="186.0" r="6" fill="#6d28d9"/><text x="54.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6</text><circle cx="87.0" cy="186.0" r="6" fill="#6d28d9"/><text x="87.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6,5</text><circle cx="120.0" cy="156.0" r="6" fill="#6d28d9"/><text x="120.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7</text><circle cx="153.0" cy="126.0" r="6" fill="#6d28d9"/><text x="153.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7,5</text><circle cx="186.0" cy="66.0" r="6" fill="#6d28d9"/><text x="186.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8</text><circle cx="219.0" cy="126.0" r="6" fill="#6d28d9"/><text x="219.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8,5</text><circle cx="252.0" cy="156.0" r="6" fill="#6d28d9"/><text x="252.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9</text><circle cx="285.0" cy="186.0" r="6" fill="#6d28d9"/><text x="285.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9,5</text><circle cx="318.0" cy="186.0" r="6" fill="#6d28d9"/><text x="318.0" y="210.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">10</text><line x1="42.0" y1="186.0" x2="330.0" y2="186.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="42.0" y1="58.0" x2="42.0" y2="186.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><text x="4.0" y="42.0" text-anchor="start" font-size="16" font-weight="700" fill="#475569">Sıklık</text></svg></figure>
+<p>Yatay eksende süre, dikey eksende <strong>o süredeki öğrenci sayısı</strong> var. Çizginin yükselip alçalması verinin nerede yığıldığını gösterir.</p>
+<div class="bilgi"><div><strong>Dikkat:</strong> Bu grafikte yalnız <em>işaretli noktalar</em> veri sayısını söyler. İki nokta arasındaki çizgi dağılımın biçimini izlememize yardım eder; 7,75 saat uyuyanların sayısını oradan okuyamazsın.</div></div>
+<p>Çizgi grafiği, bir niceliğin <strong>zaman içinde değişimini</strong> göstermek için de çok kullanılır: bir bitkinin her gün ölçülen boyu, gün içinde saat saat sıcaklık gibi. O zaman yatay eksende zaman bulunur. Grafiği okurken önce eksenlerin neyi gösterdiğine bak.</p>
+<p><strong>Aracı seçerken gerekçeni söyle:</strong></p>
+<div class="tablo-kap"><table><tr><th>Araç</th><th>Güçlü ve zayıf yanı</th></tr><tr><td>Nokta grafiği</td><td>Her veri görünür; veri ya da farklı değer çok olunca kalabalıklaşır.</td></tr><tr><td>Çizgi grafiği</td><td>Biçimi ve değişimi iyi gösterir; ara noktalar ölçülmüş veri değildir.</td></tr><tr><td>Sütun grafiği</td><td>Kategorilerin sıklığını karşılaştırır.</td></tr></table></div>
+<p><strong>Sen yap:</strong> Kendi sürekli verini önce nokta grafiğiyle, sonra çizgi grafiğiyle göster. İstersen bir istatistik yazılımı ya da elektronik tablo kullan. Hangisini seçtiğini nedenleriyle yaz.</p>
+
+        <h2 id="merkez">Dağılımın Merkezi</h2>
+
+<p>6. sınıftan bildiğin üç ölçü:</p>
+<div class="kavramlar"><div class="kavram"><b>Aritmetik ortalama</b><span>Verilerin toplamı ÷ veri sayısı.</span></div><div class="kavram"><b>Ortanca</b><span>Sıralı verinin ortası; veri sayısı çiftse ortadaki ikisinin ortalaması.</span></div><div class="kavram"><b>Tepe değer</b><span>En çok tekrar eden değer; birden çok olabilir ya da hiç olmayabilir.</span></div></div>
+<p>A grubunda toplam 80 saat, 10 veri: ortalama <strong>8</strong>. Ortadaki iki veri 8 ve 8: ortanca <strong>8</strong>. Tepe değer <strong>8</strong>.</p>
+<ul><li>Merkez, veri setinde <strong>bulunmak zorunda değildir</strong> (ortalama 7,84 çıkabilir).</li><li>Merkez bazen tek sayı yerine bir <strong>bölge</strong> ile anlatılır: «Öğrencilerin çoğu 7,5 ile 8,5 saat arasında uyumuş.»</li><li><strong>Kategorik veride</strong> toplama yapılamaz; ortalama, ortanca (doğal sırası yoksa) ve açıklık anlamlı değildir. En sık görülen kategori (tepe değer) söylenir.</li><li><strong>Uç değer</strong> ortalamayı kendine doğru çeker; ortanca ondan daha az etkilenir.</li></ul>
+<p><strong>Sen dene:</strong> Bir koşucunun hayalî süreleri: 12,1; 12,3; 12,3; 12,5; 15,8 saniye. Üç ölçüyü bul. Hangisini seçersin, neden?</p>
+<details><summary>Cevabı göster</summary><p>Ortalama 65 ÷ 5 = 13; ortanca 12,3; tepe değer 12,3. 15,8 ortalamayı yukarı çektiği için 12,3 koşucunun çoğu süresini daha iyi anlatır. 15,8’in neden farklı olduğunu (düşme, ölçüm hatası…) araştırmak gerekir; sırf farklı diye silinmez.</p></details>
+
+        <h2 id="yayilim">Yayılım: Açıklık ve Ortalama Mutlak Sapma</h2>
+
+<p>Şimdi B grubuna bakalım (hayalî):</p>
+<div class="formul">6; 6,5; 7; 7,5; 8; 8; 8,5; 9; 9,5; 10</div>
+<figure class="msekil"><svg viewBox="0 0 340 145" style="max-width:400px" role="img" aria-label="Nokta grafiği: B grubu: uyku süresi (saat). 6 değerinde 1, 6,5 değerinde 1, 7 değerinde 1, 7,5 değerinde 1, 8 değerinde 2, 8,5 değerinde 1, 9 değerinde 1, 9,5 değerinde 1, 10 değerinde 1"><text x="170.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">B grubu: uyku süresi (saat)</text><line x1="12.0" y1="109.0" x2="328.0" y2="109.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="24.0" y1="109.0" x2="24.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="24.0" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6</text><circle cx="24.0" cy="96" r="8.5" fill="#6d28d9"/><line x1="60.5" y1="109.0" x2="60.5" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="60.5" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">6,5</text><circle cx="60.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="97.0" y1="109.0" x2="97.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="97.0" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7</text><circle cx="97.0" cy="96" r="8.5" fill="#6d28d9"/><line x1="133.5" y1="109.0" x2="133.5" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="133.5" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">7,5</text><circle cx="133.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="170.0" y1="109.0" x2="170.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="170.0" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8</text><circle cx="170.0" cy="96" r="8.5" fill="#6d28d9"/><circle cx="170.0" cy="75" r="8.5" fill="#6d28d9"/><line x1="206.5" y1="109.0" x2="206.5" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="206.5" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">8,5</text><circle cx="206.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="243.0" y1="109.0" x2="243.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="243.0" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9</text><circle cx="243.0" cy="96" r="8.5" fill="#6d28d9"/><line x1="279.5" y1="109.0" x2="279.5" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="279.5" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">9,5</text><circle cx="279.5" cy="96" r="8.5" fill="#6d28d9"/><line x1="316.0" y1="109.0" x2="316.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="316.0" y="134.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">10</text><circle cx="316.0" cy="96" r="8.5" fill="#6d28d9"/></svg></figure>
+<p>B’nin de ortalaması 8, ortancası 8, tepe değeri 8. Ama grafikler hiç benzemiyor. Farkı <strong>yayılım</strong> gösterir.</p>
+<p><strong>1. Açıklık</strong> = en büyük − en küçük. A: 9 − 7 = <strong>2 saat</strong>. B: 10 − 6 = <strong>4 saat</strong>. Açıklık yalnız iki uca bakar.</p>
+<p><strong>2. Her veri ortalamaya ne kadar uzak?</strong> A grubunda ortalama 8. Her verinin 8’e uzaklığını (yönünü düşünmeden) yazalım:</p>
+<div class="tablo-kap"><table><tr><th>Veri (A)</th><th>8’e uzaklık</th></tr><tr><td>7 ve 9</td><td>1’er saat</td></tr><tr><td>7,5; 7,5; 8,5; 8,5</td><td>0,5’er saat</td></tr><tr><td>8 (dört tane)</td><td>0</td></tr></table></div>
+<p>Bu uzaklıkların ortalaması <strong>ortalama mutlak sapmadır</strong>. Bu değeri sana hazır veririz ya da bir matematik yazılımıyla bulursun; senin işin <strong>yorumlamak</strong>.</p>
+<div class="tablo-kap"><table><tr><th>Özet</th><th>A</th><th>B</th></tr><tr><td>Ortalama, ortanca, tepe</td><td>8</td><td>8</td></tr><tr><td>Açıklık</td><td>2</td><td>4</td></tr><tr><td>Ort. mutlak sapma</td><td>0,4</td><td>1,0</td></tr></table></div>
+<p><strong>Yorum:</strong> A’da süreler ortalamaya ortalama 0,4 saat uzakta; öğrenciler birbirine yakın uyumuş ve «8 saat» bu grubu iyi temsil ediyor. B’de uzaklık ortalaması 1 saat; süreler daha yayılmış, tek bir «8 saat» her öğrenciyi o kadar iyi anlatmıyor.</p>
+<ul><li>Küçük sapma: veriler ortalama çevresinde toplanmış. Büyük sapma: ortalamadan daha uzağa yayılmış.</li><li>0,4 değeri her öğrencinin tam 0,4 saat uzakta olduğu anlamına <strong>gelmez</strong>.</li><li>Büyük ya da küçük sapma kendi başına «iyi» ya da «kötü» değildir; araştırma sorusuna göre anlam kazanır.</li></ul>
+<p><strong>Sen yap:</strong> B’nin de uzaklık tablosunu doldur. Sonra iki sınıfın hayalî sınav puanlarını karşılaştır: ortalamalar 70 ve 70; sapmalar 4 ve 15. Her sınıf için ne söylersin? Ne söyleyemezsin?</p>
+<details><summary>Cevabı göster</summary><p>B için uzaklıklar: 2; 1,5; 1; 0,5; 0; 0; 0,5; 1; 1,5; 2. Sınav: ilk sınıfta puanlar 70 çevresinde daha çok toplanmış, ikincide daha yayılmış. Hangi sınıfın en yüksek puanı aldığını ya da kaç kişinin 70’i geçtiğini bu özetlerden söyleyemezsin.</p></details>
+
+        <h2 id="degisim">Bir Veri Giderse Ne Değişir?</h2>
+
+<p>Hesap yapmadan düşün: B grubundan <strong>10 saatlik</strong> veri çıkarılırsa ortalama ve açıklık ne olur? Önce tahmin et.</p>
+<details><summary>Cevabı göster</summary><p>10, ortalamanın üstünde ve en büyük veriydi: çıkınca ortalama 8’in altına iner; en büyük değer 9,5 olacağı için açıklık küçülür.</p></details>
+<p>A grubundan bir tane <strong>8</strong> çıkarılırsa?</p>
+<details><summary>Cevabı göster</summary><p>Çıkan veri ortalamaya eşit olduğu için ortalama değişmez; uçlar aynı kaldığı için açıklık da değişmez.</p></details>
+<ul><li>Bir veri <strong>eksik</strong> kalırsa karar da değişebilir: uzakta oturan öğrenciler ankete katılmadıysa «okula yürüme süresi» olduğundan kısa görünür.</li><li>Veri, ancak açıklanabilir bir hata varsa (örneğin yanlış birimle yazılmışsa) düzeltilir ya da çıkarılır ve bu <strong>raporda yazılır</strong>.</li></ul>
+<p><strong>Sen yap:</strong> Bir istatistik yazılımında ya da elektronik tabloda bir veriyi sürükle, sil, yenisini ekle. Ortalama, ortanca, açıklık ve ortalama mutlak sapmanın nasıl değiştiğini izle. Hangisi uç veriden daha çok etkileniyor?</p>
+
+        <h2 id="karar">Karar Ver, Gerekçelendir, Gözden Geçir</h2>
+
+<ol><li><strong>Sorunu cevapla:</strong> Kimler için, hangi zamanda?</li><li><strong>Kanıt göster:</strong> Hangi grafik, hangi merkez ve yayılım ölçüsü? Neden onları seçtin?</li><li><strong>Sınırını yaz:</strong> Veri soruyu ne kadar cevaplıyor? Örneklem temsil ediyor mu? Ölçümde hata olmuş mu?</li><li><strong>Yeniden planla:</strong> Uygun olmayan adımı düzelt; gerekirse yeniden veri topla.</li><li><strong>Tahmin ve öneri:</strong> Sonuca dayanarak ne öneriyorsun? Tahminin kesin bilgi olmadığını belirt.</li></ol>
+<p>Araştırma süreci bir <strong>döngüdür</strong>: soru → veri toplama → analiz → yorum → yeni soru.</p>
+<p><strong>Proje (grupça):</strong> Su sorunu, afet bilinci, kuraklık, göç, yapay zekâ ya da yeterli ve dengeli beslenme konularından biriyle, Fen Bilimleri ya da Sosyal Bilgiler ile ilişkili bir araştırma yürütün. Poster, afiş ya da broşür hazırlayıp sunun.</p>
+<p><strong>Kendini ve grubunu değerlendir:</strong> Sorumuz dört ölçüte uyuyor mu? Örneklemimiz temsil ediyor mu? Grafik ve özet seçimlerimizi gerekçelendirdik mi? Beklemediğimiz sonucu da dürüstçe yazdık mı? Birbirimizin fikrini saygıyla dinledik mi?</p>
+
+        <h2 id="sorgula">Başkalarının Sonuçlarını Sorgula</h2>
+
+<p>Haberde, reklamda, sosyal medyada ya da arkadaşının raporunda gördüğün sonucu hemen kabul etme. Önce sor:</p>
+<div class="tablo-kap"><table><tr><th>Sor</th><th>Olası sorun</th></tr><tr><td>Kimlerden, kaç kişiden veri alınmış?</td><td>Temsil etmeyen ya da çok küçük örneklem</td></tr><tr><td>Soru nasıl sorulmuş, ölçüm nasıl yapılmış?</td><td>Yönlendiren soru, tutarsız ölçüm</td></tr><tr><td>Eksenler nereden başlıyor, aralıklar eşit mi?</td><td>Farkı olduğundan büyük ya da küçük gösterme</td></tr><tr><td>Hangi zaman aralığı ya da hangi veriler gösterilmiş?</td><td>İşine gelen bölümü seçme, veri gizleme</td></tr><tr><td>Yalnız merkez mi verilmiş?</td><td>Yayılımı ve uç değeri saklama</td></tr><tr><td>«Şu yüzden oldu» deniyor mu?</td><td>İki şeyin birlikte görülmesi, birinin ötekine neden olduğunu tek başına kanıtlamaz</td></tr></table></div>
+<p><strong>Örnek (hayalî):</strong> Bir paylaşımda «Dondurma satışının arttığı haftalarda güneş gözlüğü satışı da arttı; demek ki dondurma gözlük aldırıyor!» yazıyor. İki satış birlikte artmış olabilir; ama ikisini de sıcak ve güneşli hava etkilemiş olabilir. «Dondurma neden oldu» iddiasını bu veriyle <strong>kabul edemeyiz</strong>.</p>
+<p>Kararını üç adımda yaz: <strong>iddia</strong> → <strong>veriye dayalı gerekçe</strong> → <strong>kabul, ret ya da «bilgi yetersiz»</strong>. Her sonuçta hata olmak zorunda değil: sağlam bir sonucu neden kabul ettiğini de açıklayabilmelisin. Tartışırken fikre itiraz et, kişiye değil; farklı görüşe açık ol.</p>
+<p>Yanıltıcı bir haber yalnız yanlış bilgi vermekle kalmaz: insanların yanlış karar vermesine, para kaybetmesine ya da bir kişiye veya gruba haksızlık edilmesine yol açabilir. Emin olmadığın bilgiyi paylaşma; asıl kaynağını bul.</p>
+<p><strong>Araştırma görevi:</strong> Yaşına uygun güncel bir raporu ya da hazır veri setini (örneğin TÜİK gibi resmî bir kurumdan) bir yetişkinin yardımıyla seç. Bu sorularla incele, kaynağını yazarak sun; arkadaşların da senin yorumunu değerlendirsin.</p>
+
+        <h2 id="mahrem">Veri Bir Kişiye Aitse</h2>
+
+<p>Ad, adres, telefon, fotoğraf, konum, sağlık bilgisi ve bir kişiyi tanıtabilecek diğer bilgiler <strong>kişisel veridir</strong>.</p>
+<ul><li>Oyunlar, uygulamalar ve üyelik formları gerekenden fazla bilgi ya da izin isteyebilir. «Hepsine izin ver» düğmesine basmadan önce neden istendiğini düşün ve bir yetişkine danış.</li><li>Topladığın veriyi yalnız izin aldığın amaç için kullan; üçüncü kişilerle paylaşma.</li><li>Özel konuşmaları ve mesajları başkalarıyla paylaşma.</li><li>Özel hayatın gizliliği ve kişisel veriler yasayla korunur (Anayasa ve <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu</strong>). Bir kişinin verisini hukuka aykırı biçimde ele geçirmek ya da yaymak <strong>suçtur</strong>.</li><li>Birini utandıracak ya da onurunu zedeleyecek bir bilgiyi yayma. Kendi bilgin izinsiz paylaşılırsa ya da biri senden rahatsız edici bilgi isterse güvendiğin bir yetişkine söyle.</li></ul>
+<p><strong>Konuş:</strong> Bir oyun, yarışmaya katılman için ev adresini ve rehberini istiyor. Bu bilgiler hangi amaçlarla kullanılabilir? Ne gibi sorunlar çıkabilir? Ne yaparsın?</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Sürekli veri ölçülerek bulunur ve iki değer arasında başka değerler alabilir.</li>
+            <li>Evren hakkında bilgi istenen grubun tamamı, örneklem ondan seçilen bölümdür; örneklem evreni temsil etmelidir.</li>
+            <li>Veri toplarken izin al, gereksiz kişisel bilgi isteme ve herkesi aynı yöntemle ölç.</li>
+            <li>Sıklık çizgi grafiği dağılımın biçimini gösterir; çizgi grafiği zaman içindeki değişim için de kullanılır.</li>
+            <li>Ortalama, ortanca ve tepe değer merkezi; açıklık ve ortalama mutlak sapma yayılımı anlatır.</li>
+            <li>Küçük ortalama mutlak sapma, verilerin ortalama çevresinde daha çok toplandığını gösterir.</li>
+            <li>Merkez ölçüleri eşit iki veri grubunun yayılımı çok farklı olabilir.</li>
+            <li>Veri çıkarmak ya da eksik bırakmak sonucu ve kararı değiştirebilir; gerekçesiz veri silinmez.</li>
+            <li>Bir sonucu kabul etmeden önce örneklemi, soruyu, grafiği, özetleri ve neden-sonuç iddiasını sorgula.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#veri">Veri ve soru</a></li>
+            <li><a href="#evren">Evren ve örneklem</a></li>
+            <li><a href="#plan">Veri toplama</a></li>
+            <li><a href="#grafik">Nokta ve çizgi grafiği</a></li>
+            <li><a href="#merkez">Merkez</a></li>
+            <li><a href="#yayilim">Yayılım</a></li>
+            <li><a href="#degisim">Veri değişirse</a></li>
+            <li><a href="#karar">Karar ve gözden geçirme</a></li>
+            <li><a href="#sorgula">Sonuçları sorgula</a></li>
+            <li><a href="#mahrem">Kişisel veri</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "Aşağıdakilerden hangisi nicel SÜREKLİ veridir?",
+    "secenekler": [
+      "Fidanların türlerinin adları",
+      "Bahçedeki fidanların sayısı",
+      "Fidanların santimetre cinsinden ölçülen boyları",
+      "Fidanları diken öğrencilerin tuttuğu takımlar"
+    ],
+    "dogru": 2,
+    "aciklama": "Boy ölçülerek bulunur ve iki değer arasında başka değerler alabilir. Fidan sayısı sayılarak bulunur (kesikli); tür ve takım adları kategoriktir."
+  },
+  {
+    "soru": "Hangi soru istatistiksel araştırma gerektirir?",
+    "secenekler": [
+      "Okulumuzdaki 7. sınıflar eve yürüyerek kaç dakikada gidiyor?",
+      "Dün ben eve yürüyerek kaç dakikada gittim?",
+      "Bir saat kaç dakikadan oluşur?",
+      "Okulumuzun bahçe kapısı okul yönetiminin kararına göre saat kaçta açılıyor?"
+    ],
+    "dogru": 0,
+    "aciklama": "Öğrencilerin süreleri birbirinden farklı olabilir; veri toplayıp incelemek gerekir. Öteki soruların tek bir cevabı vardır."
+  },
+  {
+    "soru": "Bir araştırmada 600 öğrencili bir okulun öğrencilerinin günlük su tüketimi merak ediliyor ve 60 öğrenciden veri toplanıyor. Bu araştırmada evren hangisidir?",
+    "secenekler": [
+      "Veri toplanan 60 öğrenci",
+      "Öğrencilerin içtiği suyun miktarı",
+      "Veri toplayan araştırmacı grup",
+      "Okuldaki 600 öğrencinin tamamı"
+    ],
+    "dogru": 3,
+    "aciklama": "Hakkında sonuç söylemek istediğimiz grubun tamamı evrendir; veri alınan 60 öğrenci örneklemdir."
+  },
+  {
+    "soru": "Grafiğe göre tepe değer ve açıklık sırasıyla kaçtır?<span class=\"msekil\"><svg viewBox=\"0 0 340 145\" style=\"max-width:400px\" role=\"img\" aria-label=\"Nokta grafiği: Fidan boyları (cm). 10 değerinde 0, 10,5 değerinde 0, 11 değerinde 1, 11,5 değerinde 1, 12 değerinde 3, 12,5 değerinde 1, 13 değerinde 1, 13,5 değerinde 0, 14 değerinde 1\"><text x=\"170.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Fidan boyları (cm)<\/text><line x1=\"12.0\" y1=\"109.0\" x2=\"328.0\" y2=\"109.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"24.0\" y1=\"109.0\" x2=\"24.0\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"24.0\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">10<\/text><line x1=\"60.5\" y1=\"109.0\" x2=\"60.5\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"60.5\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">10,5<\/text><line x1=\"97.0\" y1=\"109.0\" x2=\"97.0\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"97.0\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">11<\/text><circle cx=\"97.0\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><line x1=\"133.5\" y1=\"109.0\" x2=\"133.5\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"133.5\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">11,5<\/text><circle cx=\"133.5\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><line x1=\"170.0\" y1=\"109.0\" x2=\"170.0\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"170.0\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">12<\/text><circle cx=\"170.0\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><circle cx=\"170.0\" cy=\"75\" r=\"8.5\" fill=\"#6d28d9\"/><circle cx=\"170.0\" cy=\"54\" r=\"8.5\" fill=\"#6d28d9\"/><line x1=\"206.5\" y1=\"109.0\" x2=\"206.5\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"206.5\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">12,5<\/text><circle cx=\"206.5\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><line x1=\"243.0\" y1=\"109.0\" x2=\"243.0\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"243.0\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">13<\/text><circle cx=\"243.0\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><line x1=\"279.5\" y1=\"109.0\" x2=\"279.5\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"279.5\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">13,5<\/text><line x1=\"316.0\" y1=\"109.0\" x2=\"316.0\" y2=\"115.0\" stroke=\"#1e1b4b\" stroke-width=\"2\" stroke-linecap=\"round\"/><text x=\"316.0\" y=\"134.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">14<\/text><circle cx=\"316.0\" cy=\"96\" r=\"8.5\" fill=\"#6d28d9\"/><\/svg><\/span>",
+    "secenekler": [
+      "12 ve 4",
+      "12 ve 3",
+      "11 ve 3",
+      "3 ve 12"
+    ],
+    "dogru": 1,
+    "aciklama": "En çok nokta 12’dedir. Açıklık en büyük veri eksi en küçük veridir: 14 − 11 = 3. Eksenin başı olan 10 veri değildir."
+  },
+  {
+    "soru": "Sıklık çizgi grafiği, bir grup öğrencinin koşu süresini gösteriyor. Grafiğe göre kaç öğrencinin süresi ölçülmüştür?<span class=\"msekil\"><svg viewBox=\"0 0 340 192\" style=\"max-width:400px\" role=\"img\" aria-label=\"Sıklık çizgi grafiği: Koşu süreleri (saniye). 8 değerinde 0, 8,5 değerinde 1, 9 değerinde 2, 9,5 değerinde 3, 10 değerinde 1, 10,5 değerinde 1, 11 değerinde 0\"><text x=\"170.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Koşu süreleri (saniye)<\/text><line x1=\"42.0\" y1=\"156.0\" x2=\"330.0\" y2=\"156.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"34.0\" y=\"162.0\" text-anchor=\"end\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"42.0\" y1=\"126.0\" x2=\"330.0\" y2=\"126.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"34.0\" y=\"132.0\" text-anchor=\"end\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">1<\/text><line x1=\"42.0\" y1=\"96.0\" x2=\"330.0\" y2=\"96.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"34.0\" y=\"102.0\" text-anchor=\"end\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">2<\/text><line x1=\"42.0\" y1=\"66.0\" x2=\"330.0\" y2=\"66.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"34.0\" y=\"72.0\" text-anchor=\"end\" font-size=\"16\" font-weight=\"700\" fill=\"#334155\">3<\/text><polyline points=\"54.0,156.0 98.3,126.0 142.7,96.0 187.0,66.0 231.3,126.0 275.7,126.0 320.0,156.0\" fill=\"none\" stroke=\"#6d28d9\" stroke-width=\"3.5\"/><circle cx=\"54.0\" cy=\"156.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"54.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">8<\/text><circle cx=\"98.3\" cy=\"126.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"98.3\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">8,5<\/text><circle cx=\"142.7\" cy=\"96.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"142.7\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">9<\/text><circle cx=\"187.0\" cy=\"66.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"187.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">9,5<\/text><circle cx=\"231.3\" cy=\"126.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"231.3\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">10<\/text><circle cx=\"275.7\" cy=\"126.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"275.7\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">10,5<\/text><circle cx=\"320.0\" cy=\"156.0\" r=\"6\" fill=\"#6d28d9\"/><text x=\"320.0\" y=\"180.0\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"700\" fill=\"#1e1b4b\">11<\/text><line x1=\"42.0\" y1=\"156.0\" x2=\"330.0\" y2=\"156.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"42.0\" y1=\"58.0\" x2=\"42.0\" y2=\"156.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"4.0\" y=\"42.0\" text-anchor=\"start\" font-size=\"16\" font-weight=\"700\" fill=\"#475569\">Sıklık<\/text><\/svg><\/span>",
+    "secenekler": [
+      "3",
+      "7",
+      "8",
+      "5"
+    ],
+    "dogru": 2,
+    "aciklama": "İşaretli noktalardaki sıklıklar toplanır: 0 + 1 + 2 + 3 + 1 + 1 + 0 = 8. 3 yalnız en yüksek sıklıktır."
+  },
+  {
+    "soru": "7. sınıfların çanta kütlesi araştırılacak. Okuldaki 7. sınıfları en iyi temsil etmesi beklenen örneklem seçimi hangisidir?",
+    "secenekler": [
+      "Her 7. sınıf şubesinden kura ile birkaç öğrenci seçmek",
+      "Yalnız 7/A sınıfındaki öğrencilerin hepsini seçmek",
+      "Çantasını tarttırmaya gönüllü gelen ilk öğrencileri seçmek",
+      "Yalnız okul servisini kullanan 7. sınıfları seçmek"
+    ],
+    "dogru": 0,
+    "aciklama": "Her şubeden rastgele seçim, evrendeki farklı grupların örnekleme girmesini sağlar. Tek şube, gönüllüler ya da yalnız servis kullananlar farklı olabilir."
+  },
+  {
+    "soru": "Öğrencilerin uyku süresi için veri toplanacak. Hangi plan mahremiyete en uygundur?",
+    "secenekler": [
+      "Herkesin adı ve uyku süresi bir listede yazılıp sınıf panosuna asılır.",
+      "Katılım isteğe bağlı olur, ad yazılmaz ve veri yalnız araştırma için kullanılır.",
+      "Öğrencilerin telefonlarındaki uyku kayıtları haber verilmeden incelenir.",
+      "Katılmak istemeyenlerin yerine arkadaşlarının tahmini ad ile kaydedilir."
+    ],
+    "dogru": 1,
+    "aciklama": "İzin almak, gerekmeyen kişisel bilgiyi istememek ve veriyi amacı dışında kullanmamak gerekir."
+  },
+  {
+    "soru": "Bir bebeğin kütlesi 12 ay boyunca her ayın aynı gününde ölçülüyor. Kütlenin zaman içinde nasıl değiştiğini göstermek için hangisi en uygundur?",
+    "secenekler": [
+      "Her ayın adını bir dilim yapan, on iki dilimli bir daire grafiği",
+      "Yalnız ilk aydaki kütleyi gösteren tek sütunlu bir sütun grafiği",
+      "Yalnız ölçülen kütlelerin toplamını yazan tek satırlık bir tablo",
+      "Yatay eksende ayların, dikey eksende kütlenin olduğu çizgi grafiği"
+    ],
+    "dogru": 3,
+    "aciklama": "Ay sırasıyla birleştirilen noktalar artışı ve hızlanıp yavaşlamayı gösterir."
+  },
+  {
+    "soru": "Beş öğrencinin evden okula uzaklığı 1,2; 1,3; 1,3; 1,4 ve 4,8 kilometredir. «Tipik uzaklığı» anlatmak için hangisi en uygundur?",
+    "secenekler": [
+      "Ortanca olan 1,3 km; çünkü 4,8 uç değeri ortalamayı yukarı çeker.",
+      "Ortalama olan 2 km; çünkü beş verinin çoğu 2 km dolayındadır.",
+      "En büyük değer olan 4,8 km; çünkü en çok bilgiyi o veri verir.",
+      "Açıklık olan 3,6 km; çünkü merkezi açıklık değeri gösterir."
+    ],
+    "dogru": 0,
+    "aciklama": "Ortalama 10 ÷ 5 = 2 km’dir ama dört veri 1,4 ya da daha küçüktür. Ortanca 1,3 çoğunluğu daha iyi anlatır; açıklık merkez ölçüsü değildir."
+  },
+  {
+    "soru": "Bir veri grubunun aritmetik ortalaması 150 cm, ortalama mutlak sapması 4 cm’dir. Bu bilgi için hangisi doğrudur?",
+    "secenekler": [
+      "Bütün veriler ortalamadan tam olarak 4 cm uzaklıktadır.",
+      "En büyük veri ile en küçük veri arasındaki fark 4 cm’dir.",
+      "Verilerin ortalamaya uzaklıkları ortalama olarak 4 cm’dir.",
+      "Bütün veriler 146 cm ile 154 cm arasında bulunmak zorundadır."
+    ],
+    "dogru": 2,
+    "aciklama": "Ortalama mutlak sapma uzaklıkların ortalamasıdır. Tek tek veriler 4 cm’den daha yakın ya da daha uzak olabilir."
+  },
+  {
+    "soru": "Ortalaması yaklaşık 20 olan bir veri grubunda değerlerin biri 45, ötekiler 17 ile 20 arasındadır. 45 çıkarılırsa HESAP YAPMADAN ne söylenebilir?",
+    "secenekler": [
+      "Ortalama küçülür, açıklık büyür.",
+      "Ortalama da açıklık da küçülür.",
+      "Ortalama büyür, açıklık küçülür.",
+      "Ortalama da açıklık da değişmez."
+    ],
+    "dogru": 1,
+    "aciklama": "45 ortalamanın çok üstündedir; çıkınca ortalama aşağı iner. En büyük değer artık en çok 20 olduğundan açıklık da küçülür."
+  },
+  {
+    "soru": "İki atletin 100 m sürelerinde ortalama 14,0 saniyedir. Ortalama mutlak sapma Ada için 0,2 saniye, Bora için 0,9 saniyedir. Daha tutarlı koşan atlet aranıyorsa hangi karar uygundur?",
+    "secenekler": [
+      "Bora; sapma değeri büyük olan daha tutarlı koşmuş demektir.",
+      "İkisi aynıdır; ortalamaları eşitse tutarlılıkları da eşittir.",
+      "Bora; çünkü her koşusunda Ada’dan daha hızlı koşmuştur.",
+      "Ada; süreleri ortalamasına genel olarak daha yakındır."
+    ],
+    "dogru": 3,
+    "aciklama": "Küçük ortalama mutlak sapma, sürelerin ortalama çevresinde daha sık toplandığını gösterir. Bu bilgi her koşuda kimin hızlı olduğunu söylemez."
+  },
+  {
+    "soru": "Soru «Okulumuzdaki bütün öğrenciler teneffüste kaç dakika hareket ediyor?» iken veri yalnız 5. sınıflardan toplanmıştır. En uygun sonraki adım hangisidir?",
+    "secenekler": [
+      "Toplanan veriyi bütün okula ait gibi grafikle sunup araştırmayı bitirmek",
+      "Beklenen sonuca uymayan 5. sınıf verilerini silip ortalamayı yeniden bulmak",
+      "Öteki sınıf düzeylerinden de veri toplamak ya da soruyu 5. sınıflarla sınırlamak",
+      "Daha büyük görünsün diye 5. sınıf verilerinin her birini üç kez saymak"
+    ],
+    "dogru": 2,
+    "aciklama": "Veri soruyu tam cevaplamıyorsa uygun olmayan adım yeniden planlanır: ya örneklem genişletilir ya da soru daraltılır."
+  },
+  {
+    "soru": "Aşağıdaki veri türü ve özet aracı eşleştirmelerinden hangisi UYGUN DEĞİLDİR?",
+    "secenekler": [
+      "En sevilen meyve adları için aritmetik ortalama",
+      "En sevilen meyve adları için en sık görülen kategoriyi veren tepe değer",
+      "Ölçülen boy uzunlukları için ortanca",
+      "Ölçülen koşu süreleri için açıklık"
+    ],
+    "dogru": 0,
+    "aciklama": "Meyve adları toplanıp bölünemez; kategorik veride ortalama hesaplanmaz. En sık görülen kategori söylenebilir."
+  },
+  {
+    "soru": "Rapor: «K ve L bahçelerindeki fidanların boy ortalaması 60 cm; öyleyse iki bahçede dağılım aynıdır.» Ortalama mutlak sapma K’de 2 cm, L’de 11 cm’dir. Hangisi doğrudur?",
+    "secenekler": [
+      "Kabul edilir; ortalamalar eşitse dağılımlar da mutlaka eşittir.",
+      "Kabul edilir; sapma değerleri dağılım hakkında bilgi vermez.",
+      "Reddedilir; K bahçesindeki bütün fidanlar L’dekilerden uzundur.",
+      "Reddedilir; L’de boylar ortalamadan genel olarak daha uzaktır."
+    ],
+    "dogru": 3,
+    "aciklama": "Eşit merkez, aynı dağılım demek değildir. L’nin daha büyük sapması verilerin daha çok yayıldığını gösterir."
+  },
+  {
+    "soru": "«Gençler her gün 3 saatten fazla spor yapıyor.» başlıklı bir haberde anketin yalnız bir spor kulübünün üyelerine yapıldığı yazıyor. Hangi değerlendirme uygundur?",
+    "secenekler": [
+      "Sonuç doğrudur; spor yapanlar bu konuyu en iyi bilen kişilerdir.",
+      "Sonuç bütün gençlere genellenemez; örneklem yanlıdır.",
+      "Sonuç doğrudur; anket yapıldığı için bütün gençleri temsil eder.",
+      "Sonuç kesin yanlıştır; hiçbir genç her gün spor yapamaz."
+    ],
+    "dogru": 1,
+    "aciklama": "Kulüp üyelerinin spora daha çok zaman ayırması beklenir. Bu veri en fazla sorulan üyeler hakkında bilgi verir."
+  },
+  {
+    "soru": "Bir grafikte iki ayın su tüketimi 52 ve 54 birimdir. Dikey eksen 50’den başladığı için ikinci sütun birincinin iki katı görünüyor ve «Tüketim iki katına çıktı!» yazılıyor. Hangisi doğrudur?",
+    "secenekler": [
+      "İddia reddedilir; değerler 52 ve 54’tür, artış yalnız 2 birimdir.",
+      "İddia kabul edilir; grafikteki sütun yüksekliği iki katına çıkmıştır.",
+      "İddia kabul edilir; eksenin nereden başladığı sonucu etkilemez.",
+      "İddia reddedilir; iki ayda tüketim hiç değişmemiş olmalıdır."
+    ],
+    "dogru": 0,
+    "aciklama": "Kesik eksende görünen yükseklikler yalnız 50’nin üstüdür. Gerçek değerler karşılaştırılınca iki kat artış yoktur."
+  },
+  {
+    "soru": "Bir anket, düzenli kahvaltı yapan öğrencilerin sınav puanı ortalamasının daha yüksek olduğunu gösteriyor. Yazar «Puanı yükselten tek neden kahvaltıdır.» diyor. Hangisi doğrudur?",
+    "secenekler": [
+      "Kabul edilir; iki ortalama farklıysa nedeni her zaman kahvaltıdır.",
+      "Kabul edilir; anketler neden-sonuç ilişkisini kesin olarak kanıtlar.",
+      "Bu veriyle kabul edilemez; birlikte görülmek tek nedeni kanıtlamaz.",
+      "Reddedilir; kahvaltı yapanların puanı hiçbir zaman yüksek olamaz."
+    ],
+    "dogru": 2,
+    "aciklama": "Uyku, çalışma süresi gibi başka etkenler de farklı olabilir. Yalnız bu anket, farkın tek nedeninin kahvaltı olduğunu göstermez."
+  },
+  {
+    "soru": "Bir şirket, ürününün dayanma süresi ortalamasını yüksek göstermek için en kısa dayanan ürünlerin verilerini nedenini açıklamadan siliyor. Bu rapor için hangisi doğrudur?",
+    "secenekler": [
+      "Güvenilirdir; ortalama hesaplanırken küçük değerler her zaman silinmelidir.",
+      "Güvenilirdir; geriye kalan veriler gerçek ölçüm olduğu için sorun yoktur.",
+      "Güvenilmez; çünkü dayanma süresi hiçbir yöntemle ölçülemeyen bir veridir.",
+      "Güvenilmez; sonuca uymayan veriler seçilip atılarak yanlılık oluşturulmuştur."
+    ],
+    "dogru": 3,
+    "aciklama": "Gerçek ölçümler yalnız sonucu güzelleştirmek için atılırsa ortalama ürünlerin tamamını anlatmaz. Bu dürüst bir sunum değildir."
+  },
+  {
+    "soru": "Bir arkadaşın, sınıf arkadaşlarının ad, boy ve kütle bilgilerini içeren araştırma tablosunu izin almadan sosyal medyada paylaşmak istiyor. En uygun cevap hangisidir?",
+    "secenekler": [
+      "Paylaş; araştırma için toplanan her bilgi herkese açık sayılır.",
+      "Paylaşma; bunlar kişisel bilgi, izinsiz yayılması hak ihlalidir.",
+      "Paylaş; yalnız arkadaş listen görecekse izin almak gerekmez.",
+      "Paylaşabilirsin; adların sırasını değiştirmen yeterli bir korumadır."
+    ],
+    "dogru": 1,
+    "aciklama": "Kişilerin bilgileri toplandığı amaç dışında ve izinsiz paylaşılmaz. Ad bağlı kaldığı sürece sırayı değiştirmek kimliği gizlemez."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
