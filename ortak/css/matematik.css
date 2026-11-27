@@ -22,6 +22,8 @@ figure.msekil { padding: 12px; background: #f5f3ff; border: 1px solid #ddd6fe; b
 
 @media (max-width: 360px) {
   .yazi .tablo-kap th, .yazi .tablo-kap td { padding: 8px 5px; font-size: .8rem; }
+  /* Dar ekranda şekil yazıları küçülmesin diye çerçeve boşluğu azaltılır */
+  .yazi figure.msekil { padding: 4px; }
 }
 
 /* Türkçe okuma metinleri */
