@@ -41,3 +41,4 @@ figure.msekil { padding: 12px; background: #f5f3ff; border: 1px solid #ddd6fe; b
 .yazi .metin > div .msekil { margin: 0; text-align: left; }
 .soru .msekil:has(.siir) { text-align: left; margin: 10px 0 0; }
 @media (max-width: 600px) { .metin .siir > span { font-size: .93rem; } }
+.yazi .metin p.metin-not { margin-top: 14px; padding-top: 8px; border-top: 1px dashed #cbd5e1; font-size: .82rem; font-style: italic; color: #64748b; line-height: 1.5; text-align: right; }
