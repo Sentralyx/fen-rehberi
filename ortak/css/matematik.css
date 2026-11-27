@@ -55,3 +55,17 @@ figure.msekil { padding: 12px; background: #f5f3ff; border: 1px solid #ddd6fe; b
 .dinle-dugme.caliyor { background: #fde68a; border-color: #d97706; }
 .dinle-hepsi.caliyor { background: #b45309; }
 .dinle-dugme:focus-visible, .dinle-hepsi:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+
+/* Din Kültürü: ayet, meal ve kaynak kutuları */
+.yazi .meal { margin: 0 0 18px; padding: 14px 18px; border-left: 6px solid #0f766e; border-radius: 12px; background: #f0fdfa; }
+.yazi .meal p { margin: 0 0 6px; line-height: 1.8; }
+.yazi .meal footer { font-size: .82rem; color: #475569; }
+.yazi .sure { margin: 0 0 20px; padding: 18px 20px; border: 1px solid #99f6e4; border-radius: 14px; background: #fffdf7; }
+.yazi .sure h3 { margin: 0 0 12px; text-align: center; }
+.yazi .ayet-ar { font-family: 'Amiri Quran', 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif; font-size: 1.75rem; line-height: 2.6; text-align: center; direction: rtl; margin: 0 0 8px; color: #0f172a; }
+.yazi .ayet-ar.besmele { font-size: 1.5rem; }
+.yazi .besmele-tr { text-align: center; font-style: italic; margin: 0 0 14px; }
+.yazi .sure-meal { margin: 14px 0 10px; padding-top: 12px; border-top: 1px dashed #99f6e4; }
+.yazi .sure-meal p { margin: 8px 0 0; line-height: 1.8; }
+.yazi .kaynak { margin: 8px 0 0; font-size: .8rem; color: #64748b; line-height: 1.5; }
+@media (max-width: 600px) { .yazi .sure { padding: 14px 12px; } .yazi .ayet-ar { font-size: 1.55rem; } }
