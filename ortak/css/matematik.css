@@ -23,3 +23,13 @@ figure.msekil { padding: 12px; background: #f5f3ff; border: 1px solid #ddd6fe; b
 @media (max-width: 360px) {
   .yazi .tablo-kap th, .yazi .tablo-kap td { padding: 8px 5px; font-size: .8rem; }
 }
+
+/* Türkçe okuma metinleri */
+.yazi .metin { margin: 0 0 20px; padding: 18px 20px; border: 1px solid #e2e8f0; border-left: 6px solid #7c3aed; border-radius: 12px; background: #fffdf7; }
+.yazi .metin h3 { margin: 0 0 12px; }
+.yazi .metin p { margin: 0 0 12px; line-height: 1.9; }
+.yazi .metin p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .yazi .metin { padding: 14px 13px; } }
+@media (max-width: 360px) {
+  .soru p .msekil:has(svg[aria-label^="Afiş"]) { margin-left: -14px; margin-right: -14px; padding: 2px; }
+}
