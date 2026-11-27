@@ -187,6 +187,18 @@ a.kart:hover { transform: translateY(-4px); box-shadow: var(--golge); }
 .sekil { margin: 22px 0; }
 .sekil svg { width: 100%; height: auto; display: block; }
 
+/* Fen şekillerinin telefon kopyası (fen_dar.py üretir). Geniş ekranda asıl çizim görünür. */
+.sekil > svg.sek-dar { display: none; }
+@media (max-width: 560px) {
+  .sekil > svg.sek-genis { display: none; }
+  .sekil > svg.sek-dar { display: block; max-width: 420px; margin: 0 auto; }
+  .yazi .sekil { margin-left: -12px; margin-right: -12px; }
+  /* Bölünemeyen tablo ve akışlar: tam boy, yana kaydırılır */
+  .sekil.kaydir { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .sekil.kaydir > svg { min-width: 540px; }
+  .sekil.kaydir::after { content: "↔ Şekli yana kaydır"; display: block; position: sticky; left: 0; padding-top: 4px; font-size: .78rem; font-weight: 700; color: #5b21b6; text-align: center; }
+}
+
 table { border-collapse: separate; border-spacing: 0; width: 100%; margin: 16px 0; border: 1px solid var(--cizgi); border-radius: 12px; overflow: hidden; }
 th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--cizgi); }
 tr:last-child td { border-bottom: none; }
