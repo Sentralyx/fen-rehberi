@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstatistiksel Araştırma Süreci – 6. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="6. sınıf istatistik: araştırma sorusu, veri toplama, kök-yaprak gösterimi, nokta grafiği, aritmetik ortalama, ortanca, tepe değer, açıklık ve yanıltıcı yorumlar.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/6-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/6-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">7. Sınıf</span>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a> › İstatistiksel Araştırma Süreci</div>
+      <h1>📊 İstatistiksel Araştırma Süreci</h1>
+      <p>Beş arkadaşın dördü ayda 3-4 kez sinemaya gidiyor, biri 38 kez. «Ortalama 10 kez gidiyoruz» demek onları iyi anlatır mı?</p>
+      <div class="konu-meta"><span>📚 6. Sınıf Matematik</span><span>⏱️ 28 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="soru">Hangi Soru Araştırma İster?</h2>
+
+<p>«Benim kaç kardeşim var?» sorusunun tek bir cevabı vardır. «Sınıfımızdaki öğrencilerin kaçar kardeşi var?» sorusunun cevabı ise kişiden kişiye <strong>değişir</strong>. Bu <strong>değişebilirlik</strong> yüzünden veri toplayıp incelemen gerekir. Değişebilirlik; kişilerin ve ortamın doğal farklarından, yapılan bir müdahaleden ya da ölçümden kaynaklanabilir. Örneğin bir iş yerinde izinli kişi sayısı, verinin toplandığı güne göre değişebilir.</p>
+<p>İki tür veriyle çalışacaksın:</p>
+<div class="kavramlar"><div class="kavram"><b>Kategorik veri</b><span>Cevaplar gruptur: en sevilen spor, okula geliş yolu.</span></div><div class="kavram"><b>Nicel (kesikli) veri</b><span>Sayarak elde edilir: kardeş sayısı, okunan kitap sayısı.</span></div></div>
+<p>Sayıyla yazılan her şey nicel veri değildir. Forma numarası bir oyuncuyu tanıtır; numaraları toplamanın anlamı yoktur.</p>
+<p><strong>İyi bir araştırma sorusu:</strong></p>
+<ul><li>Amacı nettir.</li><li>Neyin inceleneceği (değişken) ve kimlerle ilgili olduğu bellidir.</li><li>Veri toplayarak cevaplanabilir.</li><li>Cevaplarda değişebilirlik beklenir.</li></ul>
+<p>Soru bir grubu <strong>betimleyebilir</strong> («6. sınıf şubemizdekiler ayda kaçar kitap okuyor?») ya da grupları <strong>karşılaştırabilir</strong> («Şubemizdeki öğrenciler mi, 6/B’dekiler mi ayda daha çok kitap okuyor?»).</p>
+<p><strong>Sen dene:</strong> Engelsiz yaşam, su tasarrufu ya da yaşlıların günlük yaşamıyla ilgili, sayarak veri toplayabileceğin bir betimleme ve bir karşılaştırma sorusu yaz. Sıra arkadaşın dört ölçüte göre incelesin; gerekiyorsa sorunu düzelt.</p>
+
+        <h2 id="plan">Veri Toplama Planı</h2>
+
+<p>Veriye iki yoldan ulaşabilirsin: <strong>kendin toplarsın</strong> ya da güvenilir bir kaynaktan <strong>hazır veri</strong> kullanırsın. Bazı sorularda iki yol da olabilir. Örneğin bir dönemde okunan kitap sayısı için arkadaşlarına sorabilir ya da kütüphanenin <em>kişi adları çıkarılmış</em> kayıtlarını, izin verilirse, kullanabilirsin.</p>
+<p>Planında şunlar bulunsun: soru, kimlerden veri alınacağı, anket sorusu ya da veri kaynağı, zaman, kayıt biçimi ve grup içi görevler.</p>
+<ul><li>Anket sorusu <strong>açık</strong> olsun, <strong>tek şey</strong> sorsun ve cevabı <strong>yönlendirmesin</strong>.</li><li>Kimden veri aldığın sonucunu etkiler. Yalnız kütüphanedekilere sorarsan okumayı sevenler fazla temsil edilebilir.</li><li>Hazır veride kim hazırlamış, ne zaman toplamış, kaç kişiye sormuş, nasıl sormuş: bunlara bak.</li></ul>
+<div class="bilgi"><div><strong>Gizlilik:</strong> Katılmak isteğe bağlı olsun. Gerekmiyorsa ad, adres, telefon, fotoğraf ya da sağlık bilgisi isteme. İnternet üzerinden anket yapacaksan bir yetişkinden izin ve yardım al. Başkalarının cevaplarını izinsiz paylaşma.</div></div>
+<p><strong>Sen dene:</strong> Bir araştırma sorusu seç; planını yaz, anket sorunu iki arkadaşında dene. Anlaşılmayan yeri düzelt, sonra verini topla.</p>
+
+        <h2 id="kok-yaprak">Yeni Gösterim: Kök-Yaprak</h2>
+
+<p><strong>Hayalî veri:</strong> 15 öğrencinin bir haftada okuduğu sayfa sayıları:</p>
+<div class="formul">24, 8, 33, 15, 41, 27, 12, 33, 63, 21, 30, 36, 24, 45, 33</div>
+<p>Her sayıyı iki parçaya ayır: <strong>yaprak</strong> birler basamağı, <strong>kök</strong> ise onun solunda kalan kısımdır. Adımlar:</p>
+<ol><li>Kökleri en küçükten en büyüğe alt alta yaz: 0, 1, 2, 3, 4, 5, 6.</li><li>Her verinin yaprağını kendi kökünün karşısına yaz.</li><li>Yaprakları küçükten büyüğe sırala.</li><li>Bir <strong>anahtar</strong> ekle.</li></ol>
+<div class="tablo-kap"><table><tr><th>Kök</th><th>Yaprak</th></tr><tr><td>0</td><td>8</td></tr><tr><td>1</td><td>2&nbsp; 5</td></tr><tr><td>2</td><td>1&nbsp; 4&nbsp; 4&nbsp; 7</td></tr><tr><td>3</td><td>0&nbsp; 3&nbsp; 3&nbsp; 3&nbsp; 6</td></tr><tr><td>4</td><td>1&nbsp; 5</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>3</td></tr></table></div>
+<p><strong>Anahtar:</strong> 3 | 6 = 36 sayfa</p>
+<ul><li>10’dan küçük sayının kökü 0’dır: 8 → 0 | 8.</li><li>Tekrar eden veri her seferinde yazılır: üç tane 33 için üç tane 3.</li><li>Arada verisi olmayan kök de yazılır, karşısı boş kalır (5). Böylece boşluk görünür.</li><li>Her yaprak <strong>tek rakamdır</strong>. 125 gibi bir sayıda kök 12, yaprak 5 olur. Farklı biçimde ayrılırsa karışmaması için anahtar şarttır.</li></ul>
+<p>Kök-yaprak gösteriminde her veri korunur ve yığılma görülür: burada en kalabalık satır 30’lu sayılardır.</p>
+<p><strong>Sen dene:</strong> 9, 17, 34, 11, 34, 102, 98 sayılarını kök-yaprak gösterimine yerleştirirsen hangi kökler gerekir? Gösterimi çiz.</p>
+<details><summary>Cevabı göster</summary><p>Kökler 0’dan 10’a kadar sırayla yazılır: 0 | 9; 1 | 1 7; 3 | 4 4; 9 | 8; 10 | 2. Aradaki 2, 4, 5, 6, 7 ve 8 kökleri boş kalır. Anahtar: 10 | 2 = 102.</p></details>
+
+        <h2 id="ortalama">Aritmetik Ortalama</h2>
+
+<p><strong>Eşit paylaşım:</strong> Dört arkadaşta 2, 5, 3 ve 6 kart var. Toplam 16 kart dört kişiye eşit dağıtılırsa herkese 4 kart düşer. Bu sayı <strong>aritmetik ortalamadır</strong>.</p>
+<div class="formul">Aritmetik ortalama = verilerin toplamı ÷ veri sayısı</div>
+<p><strong>Denge:</strong> Ortalama 4’ün altında kalan farklar 2 + 1 = 3; üstünde kalan farklar 1 + 2 = 3’tür. İki yan dengededir.</p>
+<p>Ortalama veri setinde bulunmayabilir ve tam sayı olmayabilir: 2, 5, 3, 5 için 15 ÷ 4 = 3,75. Bu, birinin 3,75 kartı olduğu anlamına gelmez.</p>
+<p><strong>Örnek:</strong> Sayfa verisinde toplam 445, veri sayısı 15: 445 ÷ 15 yaklaşık 29,7’dir.</p>
+<p><strong>Sen dene:</strong> Hesap makinesi ya da elektronik tablo ile kendi verinin ortalamasını bul. Önce sonucu tahmin et. Sonuç en küçük ve en büyük değerin arasında mı?</p>
+
+        <h2 id="ortanca">Açıklık, Ortanca ve Tepe Değer</h2>
+
+<div class="kavramlar"><div class="kavram"><b>Açıklık</b><span>En büyük değer − en küçük değer. Yayılımı gösterir; merkez ölçüsü değildir.</span></div><div class="kavram"><b>Ortanca</b><span>Sıralanmış verinin ortasındaki değer.</span></div><div class="kavram"><b>Tepe değer</b><span>En çok tekrar eden değer.</span></div></div>
+<p><strong>Ortanca için önce sırala.</strong> Veri sayısı tek ise tam ortada bir değer vardır: sayfa verisinde 15 değer var, 8. değer <strong>30</strong>’dur. Veri sayısı çift ise ortadaki iki değerin ortalaması alınır: 3, 5, 6, 8, 9, 14 için (6 + 8) ÷ 2 = <strong>7</strong>.</p>
+<p>Sayfa verisinin tepe değeri <strong>33</strong>, açıklığı 63 − 8 = <strong>55</strong>’tir.</p>
+<p><strong>Tepe değerde üç durum:</strong></p>
+<ul><li>Bir değer en çok tekrar ediyor: 2, 4, 4, 4, 7 → tepe değer 4.</li><li>İki değer aynı en yüksek sıklıkta: 2, 3, 3, 8, 8, 9 → tepe değerler 3 ve 8.</li><li>Her değer birer kez: 1, 4, 6, 9 → tepe değer yoktur.</li></ul>
+<p><strong>Veri türü:</strong> Kategorik veride (futbol, yüzme, voleybol) toplama yapılamaz; ortalama ve açıklık hesaplanmaz. Merkezi anlatmak için en sık görülen kategoriye, yani tepe değere bakılır.</p>
+<h3>Uç değer ne yapar?</h3>
+<p>3, 4, 4, 5, 24 verisinde 24 öteki değerlerden çok uzaktır. Ortalama 40 ÷ 5 = 8; ortanca 4; tepe değer 4’tür. Tek bir uç değer ortalamayı epey yukarı çekti. Uç değeri yalnız sonucu beğenmediğin için silme; önce doğru kaydedilip kaydedilmediğini kontrol et.</p>
+<p><strong>Sen dene:</strong> Bir spor ayakkabıyı kaç ayda bir yenilediklerine ilişkin hayalî cevaplar: 6, 12, 12, 12, 8, 48. Üç merkez ölçüsünü bul. Hangisi bu grubu daha iyi anlatıyor? Neden? Bu veriden tasarrufla ilgili neyi söyleyemezsin?</p>
+<details><summary>Cevabı göster</summary><p>Sıralı veri 6, 8, 12, 12, 12, 48. Ortalama 98 ÷ 6 ≈ 16,3; ortanca 12; tepe değer 12. 48 ortalamayı yukarı çektiği için 12 çoğunluğu daha iyi anlatır. Ayakkabıların neden yenilendiğini ya da kimin gereksiz harcama yaptığını bu veriden söyleyemezsin.</p></details>
+
+        <h2 id="dagilim">Dağılımı Oku: Merkez ve Yayılım</h2>
+
+<p>Hayalî iki grubun, bir ayda bitirdikleri bulmaca sayıları:</p>
+<figure class="msekil"><svg viewBox="0 0 360 166" style="max-width:420px" role="img" aria-label="Nokta grafiği: A grubu. Veriler: 4, 5, 5, 5, 5, 6"><text x="180.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">A grubu</text><line x1="10.0" y1="130.0" x2="350.0" y2="130.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="22.0" y1="130.0" x2="22.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="22.0" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">0</text><line x1="53.6" y1="130.0" x2="53.6" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="53.6" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">1</text><line x1="85.2" y1="130.0" x2="85.2" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="85.2" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">2</text><line x1="116.8" y1="130.0" x2="116.8" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="116.8" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">3</text><line x1="148.4" y1="130.0" x2="148.4" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="148.4" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">4</text><circle cx="148.4" cy="117" r="8.5" fill="#6d28d9"/><line x1="180.0" y1="130.0" x2="180.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="180.0" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">5</text><circle cx="180.0" cy="117" r="8.5" fill="#6d28d9"/><circle cx="180.0" cy="96" r="8.5" fill="#6d28d9"/><circle cx="180.0" cy="75" r="8.5" fill="#6d28d9"/><circle cx="180.0" cy="54" r="8.5" fill="#6d28d9"/><line x1="211.6" y1="130.0" x2="211.6" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="211.6" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">6</text><circle cx="211.6" cy="117" r="8.5" fill="#6d28d9"/><line x1="243.2" y1="130.0" x2="243.2" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="243.2" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">7</text><line x1="274.8" y1="130.0" x2="274.8" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="274.8" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">8</text><line x1="306.4" y1="130.0" x2="306.4" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="306.4" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">9</text><line x1="338.0" y1="130.0" x2="338.0" y2="136.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="338.0" y="155.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">10</text></svg></figure>
+<figure class="msekil"><svg viewBox="0 0 360 145" style="max-width:420px" role="img" aria-label="Nokta grafiği: B grubu. Veriler: 1, 2, 5, 5, 8, 9"><text x="180.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">B grubu</text><line x1="10.0" y1="109.0" x2="350.0" y2="109.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="22.0" y1="109.0" x2="22.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="22.0" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">0</text><line x1="53.6" y1="109.0" x2="53.6" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="53.6" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">1</text><circle cx="53.6" cy="96" r="8.5" fill="#6d28d9"/><line x1="85.2" y1="109.0" x2="85.2" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="85.2" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">2</text><circle cx="85.2" cy="96" r="8.5" fill="#6d28d9"/><line x1="116.8" y1="109.0" x2="116.8" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="116.8" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">3</text><line x1="148.4" y1="109.0" x2="148.4" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="148.4" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">4</text><line x1="180.0" y1="109.0" x2="180.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="180.0" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">5</text><circle cx="180.0" cy="96" r="8.5" fill="#6d28d9"/><circle cx="180.0" cy="75" r="8.5" fill="#6d28d9"/><line x1="211.6" y1="109.0" x2="211.6" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="211.6" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">6</text><line x1="243.2" y1="109.0" x2="243.2" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="243.2" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">7</text><line x1="274.8" y1="109.0" x2="274.8" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="274.8" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">8</text><circle cx="274.8" cy="96" r="8.5" fill="#6d28d9"/><line x1="306.4" y1="109.0" x2="306.4" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="306.4" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">9</text><circle cx="306.4" cy="96" r="8.5" fill="#6d28d9"/><line x1="338.0" y1="109.0" x2="338.0" y2="115.0" stroke="#1e1b4b" stroke-width="2" stroke-linecap="round"/><text x="338.0" y="134.0" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1b4b">10</text></svg></figure>
+<p>İki grubun da ortalaması 30 ÷ 6 = 5, ortancası 5, tepe değeri 5’tir. Ama aynı değiller: A’da veriler 5 çevresinde toplanmış (açıklık 2), B’de geniş yayılmış (açıklık 8). Bu yüzden 5 sayısı A grubunu B grubundan daha iyi temsil eder.</p>
+<p>Dağılıma bakarken sor: Veriler <strong>nerede yığılıyor</strong>? <strong>Ne kadar yayılıyor</strong>? Boşluk ya da <strong>uç değer</strong> var mı? Merkez veri setindeki bir değer olmayabilir ve bazen tek sayı yerine bir <strong>bölge</strong> ile anlatılır («çoğu 4-6 arasında»).</p>
+<h3>Hangi aracı seçmeli?</h3>
+<div class="tablo-kap"><table><tr><th>Araç</th><th>Seçme nedeni</th></tr><tr><td>Nokta grafiği</td><td>Az sayıda ve birbirine yakın değerleri, tekrarları göstermek</td></tr><tr><td>Kök-yaprak</td><td>Daha geniş aralıktaki sayılarda her veriyi koruyarak yığılmayı görmek</td></tr><tr><td>Sütun grafiği</td><td>Kategorilerin sıklıklarını karşılaştırmak</td></tr><tr><td>Ortalama</td><td>Bütün değerleri hesaba katmak; uç değere duyarlıdır</td></tr><tr><td>Ortanca</td><td>Uç değer varken ortayı anlatmak</td></tr><tr><td>Tepe değer</td><td>En sık cevabı ya da kategoriyi anlatmak</td></tr></table></div>
+<p><strong>Sen dene:</strong> Ortalaması 6 olan, biri sıkışık biri yayılmış iki veri seti oluştur. İkisini aynı sayı ekseninde nokta grafiğiyle çiz ve farkı anlat. İstersen bir istatistik yazılımı kullan.</p>
+
+        <h2 id="sonuc">Karar Ver, Gerekçelendir, Gözden Geçir</h2>
+
+<p>Analiz bitince araştırma sorusuna dön:</p>
+<ol><li><strong>Cevabını söyle:</strong> Kimler için, hangi zamanda?</li><li><strong>Kanıt göster:</strong> Hangi grafik, hangi özet değer?</li><li><strong>Sınırını yaz:</strong> Veri sorunu tam cevaplıyor mu? Eksik grup, anlaşılmayan soru, hatalı kayıt var mı?</li><li><strong>Yeniden planla:</strong> Uygun olmayan adımı düzelt ve gerekirse veriyi yeniden topla.</li></ol>
+<p><strong>Örnek:</strong> Soru «Okulumuzdaki 6. sınıflar haftada kaç kitap okuyor?» ama veri yalnız bir şubeden alınmışsa sonuç o şube için geçerlidir. Soruyu daraltabilir ya da öteki şubelerden de veri toplayabilirsin. Süreç tek yönlü bir yol değil, bir <strong>döngüdür</strong>.</p>
+<p><strong>Proje:</strong> Grubunla Fen Bilimleri ya da Sosyal Bilgiler ile ilgili, sayılabilir veri toplayacağın güvenli bir konu seçin (örneğin bir haftada evde suyu boşa harcamamak için yapılan davranış sayısı). Soru, plan, veri, grafik, seçtiğiniz özet değerler ve gerekçeleriyle, sonucunuzu ve eksiklerinizi bir posterde sunun. Arkadaşlarınız sorunuzu dört ölçüte göre değerlendirsin.</p>
+
+        <h2 id="sorgula">Başkalarının Sonuçlarını Sorgula</h2>
+
+<p>Bir haber, reklam ya da arkadaş raporundaki sonucu hemen kabul etme. Şunları sor:</p>
+<div class="tablo-kap"><table><tr><th>Soru</th><th>Olası sorun</th></tr><tr><td>Kimlere, kaç kişiye sorulmuş?</td><td>Temsil etmeyen ya da çok küçük grup; aşırı genelleme</td></tr><tr><td>Soru nasıl sorulmuş?</td><td>Yönlendiren soru</td></tr><tr><td>Grafiğin ekseni nereden başlıyor? Ölçek eşit mi?</td><td>Farkı büyük ya da küçük gösterme</td></tr><tr><td>Hangi özet verilmiş, hangisi gizlenmiş?</td><td>Uç değerli veride yalnız ortalama</td></tr><tr><td>Sayılar mı, oranlar mı karşılaştırılmış?</td><td>Farklı büyüklükte grupları yalnız sayıyla karşılaştırma</td></tr></table></div>
+<p><strong>Örnek:</strong> Hayalî bir kantinde iki günde satılan ayran sayısı için aşağıdaki grafikle «Salı satışı kat kat fazla!» yazılıyor. Dikey eksen 40’tan başlıyor:</p>
+<figure class="msekil"><svg viewBox="0 0 300 296" style="max-width:340px" role="img" aria-label="Sütun grafiği: Ayran: eksen 40’tan. Dikey eksen 40 sayısından başlıyor. Pazartesi 42, Salı 46"><text x="150.0" y="22.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Ayran: eksen 40’tan</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="266.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">40</text><line x1="44.0" y1="212.5" x2="292.0" y2="212.5" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="218.5" text-anchor="end" font-size="16" font-weight="700" fill="#334155">42</text><line x1="44.0" y1="165.0" x2="292.0" y2="165.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="171.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">44</text><line x1="44.0" y1="117.5" x2="292.0" y2="117.5" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="123.5" text-anchor="end" font-size="16" font-weight="700" fill="#334155">46</text><line x1="44.0" y1="70.0" x2="292.0" y2="70.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="76.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">48</text><rect x="80" y="212.5" width="64" height="47.5" fill="#2563eb"/><text x="112.0" y="204.5" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">42</text><text x="112.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Pazartesi</text><rect x="200" y="117.5" width="64" height="142.5" fill="#2563eb"/><text x="232.0" y="109.5" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">46</text><text x="232.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Salı</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="44.0" y1="48.0" x2="44.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/></svg></figure>
+<p>Aynı veri 0’dan başlayan eksenle:</p>
+<figure class="msekil"><svg viewBox="0 0 300 296" style="max-width:340px" role="img" aria-label="Sütun grafiği: Ayran: eksen 0’dan. Dikey eksen 0 sayısından başlıyor. Pazartesi 42, Salı 46"><text x="150.0" y="22.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Ayran: eksen 0’dan</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="266.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">0</text><line x1="44.0" y1="222.0" x2="292.0" y2="222.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="228.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">10</text><line x1="44.0" y1="184.0" x2="292.0" y2="184.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="190.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">20</text><line x1="44.0" y1="146.0" x2="292.0" y2="146.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="152.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">30</text><line x1="44.0" y1="108.0" x2="292.0" y2="108.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="114.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">40</text><line x1="44.0" y1="70.0" x2="292.0" y2="70.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="76.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">50</text><rect x="80" y="100.4" width="64" height="159.6" fill="#2563eb"/><text x="112.0" y="92.4" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">42</text><text x="112.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Pazartesi</text><rect x="200" y="85.2" width="64" height="174.8" fill="#2563eb"/><text x="232.0" y="77.2" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">46</text><text x="232.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Salı</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="44.0" y1="48.0" x2="44.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/></svg></figure>
+<p>Gerçek fark 46 − 42 = 4 ayrandır. İlk grafik farkı olduğundan büyük gösterdiği için «kat kat» iddiasını reddederiz. «Salı günü 4 ayran daha fazla satıldı» iddiasını ise kabul ederiz. Tek iki güne bakarak «salıları her zaman daha çok satılır» da diyemeyiz.</p>
+<p>Kararını üç adımda yaz: <strong>iddia</strong> → <strong>veriye dayalı gerekçe</strong> → <strong>kabul, ret ya da «bilgi yetersiz»</strong>. Arkadaşının görüşünü dinle; fikre itiraz et, kişiye değil. Sosyal medyada gördüğün grafiği paylaşmadan önce de aynı soruları sor.</p>
+<p><strong>Araştırma görevi:</strong> Yaşına uygun güncel bir raporu ya da hazır veri setini (örneğin TÜİK gibi resmî bir kurumdan) bir yetişkinin yardımıyla seç. İçindeki sayısal bir sonucu bu sorularla incele ve sunumunda kaynağını yaz. Her raporda hata olmak zorunda değildir; doğruysa neden kabul ettiğini de açıkla.</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Cevapları değişebilen ve veriyle yanıtlanabilen sorular istatistiksel araştırma gerektirir.</li>
+            <li>Kategorik veri gruplardan, nicel (kesikli) veri sayılarak elde edilen değerlerden oluşur.</li>
+            <li>Veri toplarken soruyu yönlendirme, kimden veri aldığına dikkat et ve gizliliği koru.</li>
+            <li>Kök-yaprak gösteriminde yaprak tek rakamdır; tekrarlar yazılır ve anahtar eklenir.</li>
+            <li>Aritmetik ortalama, toplamın veri sayısına bölümüdür.</li>
+            <li>Ortanca için veri sıralanır; veri sayısı çiftse ortadaki iki değerin ortalaması alınır.</li>
+            <li>Tepe değer en çok tekrar eden değerdir; birden fazla olabilir ya da bulunmayabilir.</li>
+            <li>Açıklık en büyük ile en küçük değerin farkıdır.</li>
+            <li>Aynı merkez değerlerine sahip veri setlerinin dağılımları farklı olabilir.</li>
+            <li>Bir sonucu kabul etmeden önce grubu, soruyu, grafiği, özet değeri ve genellemeyi sorgula.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#soru">Araştırma sorusu</a></li>
+            <li><a href="#plan">Veri toplama</a></li>
+            <li><a href="#kok-yaprak">Kök-yaprak</a></li>
+            <li><a href="#ortalama">Aritmetik ortalama</a></li>
+            <li><a href="#ortanca">Ortanca ve tepe değer</a></li>
+            <li><a href="#dagilim">Dağılım</a></li>
+            <li><a href="#sonuc">Karar ve gözden geçirme</a></li>
+            <li><a href="#sorgula">Sonuçları sorgula</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "Aşağıdaki sorulardan hangisini cevaplamak için istatistiksel araştırma gerekir?",
+    "secenekler": [
+      "Ben bu ay kaç film izledim?",
+      "Bir yılda kaç ay vardır?",
+      "Türkiye’nin başkenti neresidir?",
+      "Sınıfımızdakiler bu ay kaçar film izledi?"
+    ],
+    "dogru": 3,
+    "aciklama": "Sınıftakilerin cevapları birbirinden farklı olabilir; yani veri değişkenlik gösterir ve toplanıp incelenmelidir. Öteki soruların tek bir cevabı vardır."
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi kategorik veridir?",
+    "secenekler": [
+      "Öğrencilerin çantasındaki kalem sayısı",
+      "Öğrencilerin en sevdiği meyve",
+      "Öğrencilerin kardeş sayısı",
+      "Öğrencilerin bir haftada okuduğu sayfa sayısı"
+    ],
+    "dogru": 1,
+    "aciklama": "Elma, muz gibi cevaplar gruplardır. Öteki üçü sayılarak elde edilen nicel (kesikli) veridir."
+  },
+  {
+    "soru": "4 | 0 şeklinin 40’ı gösterdiği bir kök-yaprak gösteriminde «4 | 0 2 2» satırı hangi verileri gösterir?",
+    "secenekler": [
+      "40, 42, 42",
+      "40, 42",
+      "40, 2, 2",
+      "4, 0, 2, 2"
+    ],
+    "dogru": 0,
+    "aciklama": "4 köktür (onlar), sağdaki her rakam ayrı bir verinin yaprağıdır. 2 iki kez yazıldığı için 42 iki kez vardır."
+  },
+  {
+    "soru": "7, 9, 4, 9, 6, 9, 7 veri grubunun tepe değeri kaçtır?",
+    "secenekler": [
+      "3",
+      "5",
+      "9",
+      "7"
+    ],
+    "dogru": 2,
+    "aciklama": "En çok tekrar eden değer 9’dur (3 kez). 3 tekrar sayısıdır, 5 açıklıktır; 7 ise 2 kez tekrar eder."
+  },
+  {
+    "soru": "14, 9, 22, 11, 17 veri grubunun açıklığı kaçtır?",
+    "secenekler": [
+      "3",
+      "13",
+      "8",
+      "22"
+    ],
+    "dogru": 1,
+    "aciklama": "Açıklık = en büyük değer − en küçük değer = 22 − 9 = 13. Listenin ilk ve son sayısının farkı alınmaz."
+  },
+  {
+    "soru": "6, 10, 7, 8, 14 veri grubunun aritmetik ortalaması kaçtır?",
+    "secenekler": [
+      "7",
+      "8",
+      "45",
+      "9"
+    ],
+    "dogru": 3,
+    "aciklama": "Toplam 45’tir, 5 veri vardır: 45 ÷ 5 = 9. 8 ortancadır, 45 yalnız toplamdır."
+  },
+  {
+    "soru": "12, 5, 20, 9, 7 veri grubunun ortancası kaçtır?",
+    "secenekler": [
+      "9",
+      "12",
+      "15",
+      "20"
+    ],
+    "dogru": 0,
+    "aciklama": "Önce sırala: 5, 7, 9, 12, 20. Ortadaki değer 9’dur. Sıralamadan ortadaki sayıyı (20) almak yanlıştır; 15 açıklıktır."
+  },
+  {
+    "soru": "4, 11, 6, 15, 9, 8 veri grubunun ortancası kaçtır?",
+    "secenekler": [
+      "8",
+      "9",
+      "8,5",
+      "10,5"
+    ],
+    "dogru": 2,
+    "aciklama": "Sıralı hâli: 4, 6, 8, 9, 11, 15. Veri sayısı çift olduğu için ortadaki iki değerin ortalaması alınır: (8 + 9) ÷ 2 = 8,5."
+  },
+  {
+    "soru": "Okuldaki öğrencilerin spor alışkanlığını araştırmak için hazırlanan anket sorularından hangisi en uygundur?",
+    "secenekler": [
+      "«Spor çok yararlıdır; sen de yapıyorsun, değil mi?»",
+      "«Sporu ve sağlıklı beslenmeyi seviyor musun?»",
+      "«Spor konusunda genel olarak ne dersin?»",
+      "«Haftada kaç gün spor yapıyorsun? (0-7)»"
+    ],
+    "dogru": 3,
+    "aciklama": "Uygun soru açıktır, tek şey sorar ve cevabı yönlendirmez. İkinci bir konuyu aynı soruya eklemek ya da beklenen cevabı sezdirmek veriyi bozar."
+  },
+  {
+    "soru": "Bir haber: «Okulumuzun en sevilen sporu basketbol.» Anket yalnız okulun basketbol takımındaki öğrencilere yapılmış. Bu sonuç için hangisi doğrudur?",
+    "secenekler": [
+      "Doğrudur; sporu en iyi bilen öğrenciler takımdaki oyunculardır.",
+      "Yanlı olabilir; sorulanlar okulun bütün öğrencilerini temsil etmiyor.",
+      "Doğrudur; ankette herkese aynı soru sorulduysa sonuç geneldir.",
+      "Yanlıştır; spor tercihi gibi bir konuda veri toplamak mümkün değildir."
+    ],
+    "dogru": 1,
+    "aciklama": "Basketbol takımındakilerin basketbolu seçmesi daha beklenen bir durumdur. Okul hakkında sonuç için farklı öğrenci gruplarından veri alınmalıdır."
+  },
+  {
+    "soru": "Bir öğrenci, iki sınıfın her birinde öğrencilerin kaç kardeşi olduğunu (kesikli veri) az sayıda değerle topladı. Değerlerin tek tek nerede yığıldığını yan yana görmek istiyor. Hangi gösterim en elverişlidir?",
+    "secenekler": [
+      "Aynı ölçekli iki nokta grafiği",
+      "İki sınıfın toplamlarını gösteren iki sütun",
+      "İki sınıfın ortalamalarını gösteren iki sütun",
+      "Her sınıfın en küçük ve en büyük değeri"
+    ],
+    "dogru": 0,
+    "aciklama": "Nokta grafiği her veriyi bir nokta ile gösterir; aynı ölçekte yan yana ya da alt alta konunca iki dağılım karşılaştırılır. Toplam, ortalama ya da uçlardaki iki değer, öteki verilerin nerede yığıldığını göstermez."
+  },
+  {
+    "soru": "Bir yazıda «Sınıfın kitap ortalaması 6; demek ki her öğrenci 6 kitap okumuş.» deniyor. Hangisi doğrudur?",
+    "secenekler": [
+      "Bu çıkarım yapılır; ortalama herkesin sahip olduğu değeri gösterir.",
+      "Bu çıkarım yapılır; çünkü ortalama tam sayı olarak çıkmıştır.",
+      "Bu çıkarım yapılamaz; ortalama 6 iken kişilerin kitap sayıları farklı olabilir.",
+      "Bu çıkarım yapılamaz; kitap sayısı için ortalama hesaplanamaz."
+    ],
+    "dogru": 2,
+    "aciklama": "Örneğin 2, 6 ve 10 sayılarının ortalaması da 6’dır ama herkes 6 kitap okumamıştır."
+  },
+  {
+    "soru": "Bir öğrenci yalnız kendi 8 arkadaşına sorup «Türkiye’deki 6. sınıfların çoğu en çok mavi rengi seviyor.» yazıyor. Hangi değerlendirme uygundur?",
+    "secenekler": [
+      "Kabul edilir; arkadaşlarının hepsi 6. sınıf öğrencisidir.",
+      "Kabul edilemez; 8 arkadaşın cevabı Türkiye’yi temsil etmez.",
+      "Kabul edilir; renk sorusunun doğru cevabı herkeste aynıdır.",
+      "Kabul edilemez; renk bilgisi veri sayılmaz."
+    ],
+    "dogru": 1,
+    "aciklama": "Küçük ve yakın çevreden seçilmiş bir grup bütün ülkeye genellenemez. Sonuç yalnız sorulan 8 kişi için söylenebilir."
+  },
+  {
+    "soru": "Altı öğrencinin okuduğu kitap sayıları 2, 5, 5, 5, 6, 7’dir. Aşağıdaki yorumlardan hangisi bu veriyle kabul edilir?",
+    "secenekler": [
+      "En az okuyan öğrenci 5 kitap okumuştur.",
+      "Kitap sayılarının açıklığı 7’dir.",
+      "Aritmetik ortalama 6 kitaptır.",
+      "Öğrencilerin yarısı tam 5 kitap okumuştur."
+    ],
+    "dogru": 3,
+    "aciklama": "6 öğrenciden 3’ü 5 kitap okumuştur. En küçük değer 2, açıklık 7 − 2 = 5, ortalama 30 ÷ 6 = 5’tir."
+  },
+  {
+    "soru": "Bir raporda «Öğrencilerin %95’i okul bahçesine ağaç dikilmesini istiyor.» yazıyor. Sorulan soru ise şöyleymiş: «Doğayı seven herkes gibi sen de ağaç dikilsin istiyorsun, değil mi?» Hangi değerlendirme uygundur?",
+    "secenekler": [
+      "Güvenle kabul edilemez; soru, cevap vereni «evet» demeye yönlendiriyor.",
+      "Kabul edilir; %95 çok büyük bir oran olduğu için hata olamaz.",
+      "Kabul edilir; ağaç dikmek yararlı olduğu için soru uygundur.",
+      "Kesin yanlıştır; öğrencilerin hiçbiri ağaç dikilmesini istemiyordur."
+    ],
+    "dogru": 0,
+    "aciklama": "Yönlendiren soru cevapları etkileyebilir. Bu, gerçek oranın ne olduğunu da göstermez; tarafsız bir soruyla veriyi yeniden toplamak gerekir."
+  },
+  {
+    "soru": "Dört öğrencinin topladığı pul sayılarının aritmetik ortalaması 7’dir. Üçünün pul sayısı 5, 8 ve 6 ise dördüncünün kaç pulu vardır?",
+    "secenekler": [
+      "7",
+      "19",
+      "9",
+      "28"
+    ],
+    "dogru": 2,
+    "aciklama": "Dört sayının toplamı 4 × 7 = 28 olmalıdır. Bilinen üçünün toplamı 19; 28 − 19 = 9."
+  },
+  {
+    "soru": "Beş kişinin geçen ay sinemaya gitme sayıları 2, 3, 3, 4, 38’dir. «Tipik bir kişi»yi anlatmak için hangi seçim ve gerekçe uygundur?",
+    "secenekler": [
+      "Ortalama olan 10; verilerin çoğu 10 değerine yakındır.",
+      "Ortanca olan 3; tek uç değer ortalamayı 10’a çıkarmıştır.",
+      "En büyük değer olan 38; en çok bilgiyi o veri taşır.",
+      "Açıklık olan 36; merkezi en iyi açıklık gösterir."
+    ],
+    "dogru": 1,
+    "aciklama": "Ortalama 50 ÷ 5 = 10’dur ama beş kişiden dördü 4 ya da daha az gitmiştir. Ortanca 3, çoğunluğa daha yakındır. Açıklık merkez ölçüsü değildir."
+  },
+  {
+    "soru": "X: 8, 9, 10, 11, 12 ve Y: 2, 6, 10, 14, 18 veri grupları veriliyor. Hangisi doğrudur?",
+    "secenekler": [
+      "Ortalamaları eşit olduğu için dağılımları da aynıdır.",
+      "Y’nin ortalaması büyüktür; çünkü Y’de 18 vardır.",
+      "X daha geniş yayılmıştır; sayıları birbirine yakındır.",
+      "Ortalamaları eşittir ama Y daha geniş yayılmıştır."
+    ],
+    "dogru": 3,
+    "aciklama": "İkisinin ortalaması 10’dur. X’in açıklığı 4, Y’nin açıklığı 16’dır. Yalnız ortalamaya bakmak yayılımı gizler."
+  },
+  {
+    "soru": "Bir reklamdaki sütun grafiğinde dikey eksen 50’den başlıyor; A ürününün değeri 52, B’ninki 54. B’nin sütunu A’nınkinin iki katı görünüyor ve altında «B iki kat tercih ediliyor» yazıyor. Hangisi doğrudur?",
+    "secenekler": [
+      "İddia kabul edilir; B sütunu A sütunundan gerçekten iki kat uzundur.",
+      "İddia kabul edilir; 54 ile 52’nin farkı 2 olduğu için oran da 2’dir.",
+      "İddia reddedilir; sayılar 52 ve 54’tür, kesik eksen farkı büyütmüştür.",
+      "İddia reddedilir; sütun grafiklerinde hiçbir zaman karşılaştırma yapılamaz."
+    ],
+    "dogru": 2,
+    "aciklama": "Sütun yükseklikleri eksenin başladığı 50’nin üstünü gösterir: 2 ve 4. Gerçek değerler 52 ve 54’tür; 54, 52’nin iki katı değildir."
+  },
+  {
+    "soru": "A sınıfında 20 öğrencinin 12’si, B sınıfında 40 öğrencinin 15’i bisiklete biniyor. Bir yorum: «Bisiklet B’de daha yaygın, çünkü 15, 12’den büyük.» Hangisi doğrudur?",
+    "secenekler": [
+      "Yorum reddedilir; A’da oran %60, B’de %37,5’tir.",
+      "Yorum kabul edilir; B’de bisiklete binen kişi sayısı fazladır.",
+      "Yorum kabul edilir; kalabalık sınıfın oranı da büyük olur.",
+      "Yorum reddedilir; iki sınıfta oranlar birbirine eşittir."
+    ],
+    "dogru": 0,
+    "aciklama": "«Daha yaygın» sınıf içindeki payı anlatır. Sınıf mevcutları farklı olduğu için oranlar karşılaştırılır: <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"12 bölü 20\"><span class=\"ks\"><span>12<\/span><span>20<\/span><\/span><\/span><\/span> = %60, <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"15 bölü 40\"><span class=\"ks\"><span>15<\/span><span>40<\/span><\/span><\/span><\/span> = %37,5."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
