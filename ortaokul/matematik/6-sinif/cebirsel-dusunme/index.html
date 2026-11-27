@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İşlemlerle Cebirsel Düşünme ve Değişimler – 6. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="6. sınıf cebir: bilinmeyen nicelikler, değişken, terim, katsayı, denk ifadeler, örüntü kuralı, çokgen açıları ve algoritma.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/6-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/6-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">7. Sınıf</span>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a> › İşlemlerle Cebirsel Düşünme ve Değişimler</div>
+      <h1>⚖️ İşlemlerle Cebirsel Düşünme ve Değişimler</h1>
+      <p>Aklından bir sayı tut, 2 ile çarp, 10 ekle, yarısını al ve tuttuğun sayıyı çıkar. Cevabın 5! Bunu senin sayını bilmeden nasıl biliyoruz?</p>
+      <div class="konu-meta"><span>📚 6. Sınıf Matematik</span><span>⏱️ 28 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="nicelik">Bilinenden Bilinmeyene</h2>
+
+<p>Sayılabilen ya da ölçülebilen şeylere <strong>nicelik</strong> diyelim: satılan tişört sayısı, toplanan para, alınan kitap sayısı…</p>
+<p><strong>Durum (sayılar hayalî):</strong> Okul kütüphanesi için bir kermeste tanesi 80 liraya bileklik satılacak. Kaç bileklik satılacağı henüz belli değil. Önce tabloyla düşünelim:</p>
+<div class="tablo-kap"><table><tr><th>Satılan bileklik</th><th>Gelir (lira)</th></tr><tr><td>1</td><td>80 · 1 = 80</td></tr><tr><td>2</td><td>80 · 2 = 160</td></tr><tr><td>5</td><td>80 · 5 = 400</td></tr><tr><td><strong>s</strong></td><td><strong>80 · s</strong></td></tr></table></div>
+<p>Her satırda değişen sayıyı <strong>s</strong> harfiyle gösterdik. Farklı değerler alabilen niceliği gösteren harfe <strong>değişken</strong> denir. 80 · s gibi, içinde değişken ve işlem bulunan anlatıma <strong>cebirsel ifade</strong> denir.</p>
+<p><strong>80 · s ne demek?</strong> İki türlü okuyabilirsin: «satılan bileklik sayısının 80 ile çarpılması» (işlem) ve «bu çarpmanın sonunda elde edilen yeni sayı, yani gelir» (sonuç). s değişince gelir de değişir: bir değişken nicelikten yeni bir nicelik elde ettik.</p>
+<p>Sık kullanılan yapılar:</p>
+<div class="tablo-kap"><table><tr><th>Sözel</th><th>Cebirsel</th></tr><tr><td>k’nin 3 fazlası</td><td>k + 3</td></tr><tr><td>d’nin 4 eksiği</td><td>d − 4</td></tr><tr><td>x’in 4 katı</td><td>4 · x (kısaca 4x)</td></tr><tr><td>y’nin beşte biri</td><td>y ÷ 5</td></tr><tr><td>3x’in 1 fazlasının 4 katı</td><td>4 · (3x + 1)</td></tr><tr><td>m’nin 2 fazlasının üçte biri</td><td>(m + 2) ÷ 3</td></tr></table></div>
+<p>Sayı ile değişken arasındaki nokta çoğu zaman yazılmaz: 4 · x = 4x. x · 4 de aynı sayıdır; yine <strong>4x</strong> biçiminde yazarız.</p>
+<p><strong>Sen dene:</strong> Barınaktaki hayvanlar için h paket mama alınacak, her paket 150 lira; ayrıca bir kez 90 lira taşıma ücreti ödenecek. Hangi nicelikler var? h = 1, 2, 3 için tablo yap, sonra toplam gideri ifade et ve ifadeni kendi cümlenle anlat.</p>
+<details><summary>Cevabı göster</summary><p>Paket sayısı, paket fiyatı, taşıma ücreti, toplam gider. Tablo: 240, 390, 540 lira. İfade: 150h + 90. «Paket sayısının 150 katına 90 eklenince toplam gider bulunur.»</p></details>
+
+        <h2 id="ifade">İfadenin Parçaları</h2>
+
+<p><strong>6m + 4</strong> ifadesine bakalım:</p>
+<div class="kavramlar"><div class="kavram"><b>Terim</b><span>Toplama ya da çıkarmayla ayrılan parçalar: 6m ve 4.</span></div><div class="kavram"><b>Katsayı</b><span>Değişkenin çarpıldığı sayı: 6m teriminde 6.</span></div><div class="kavram"><b>Sabit terim</b><span>Değişkeni olmayan terim: 4.</span></div></div>
+<p>Bu parçalar bir durumda anlam kazanır. Tanesi 6 lira olan m tane silgi ve 4 liralık bir poşet alınıyorsa 6 <strong>bir silginin fiyatı</strong>, 4 ise <strong>silgi sayısına bağlı olmayan</strong> poşet ücretidir.</p>
+<p><strong>Değer bulma:</strong> Değişkenin yerine sayı yazıp işlem sırasına uy. m = 5 için 6 · 5 + 4 = 34.</p>
+<p>m tek başına yazılırsa katsayısı 1’dir: m = 1 · m. Bu derste (m + 2) gibi parantez, önce içindeki işlemin sonucunu bir bütün olarak alacağını gösterir.</p>
+<p><strong>Sen dene:</strong> 150h + 90 ifadesinde katsayı ve sabit terim neyi anlatıyor?</p>
+<details><summary>Cevabı göster</summary><p>150 bir paket mamanın fiyatı, 90 paket sayısına bağlı olmayan taşıma ücretidir.</p></details>
+
+        <h2 id="anlam">Aynı İfade, Farklı Durumlar; Denk İfadeler</h2>
+
+<p>Bir cebirsel ifade tek bir hikâyeye ait değildir. <strong>2x + 2y</strong> için «kenarları x ve y birim olan dikdörtgenin çevresi» de «iki sayının ikişer katının toplamı» da diyebilirsin. <strong>9m + 5n</strong> bir kantinde «tanesi 9 liradan m simit ve tanesi 5 liradan n ayran» olabilir; «tanesi m liradan 9 simit ve tanesi n liradan 5 ayran» da olabilir.</p>
+<p><strong>Varsayımda bulun, sonra sına:</strong> 3(k + 1), x + y + z ve a ÷ 4 ifadelerinin her biri için bir durum yaz. Değişkenin neyi gösterdiğini belirt. Sayılar vererek hikâyen ile ifadenin aynı sonucu verip vermediğini kontrol et. (Kişi sayısı anlatan bir değişken yarım olamaz: değişkenin alabileceği değerler duruma bağlıdır.)</p>
+<p>Genelleme: <strong>Değişken, durumdaki değişebilen bir niceliği temsil eder; ifade ise ona bağlı yeni bir niceliği.</strong></p>
+<h3>Tersinden anlatma</h3>
+<p>Ahmet’in parası x lira, Mehmet’inki ondan 8 lira fazlaysa Mehmet’in parası x + 8’dir. Mehmet’in parasına y dersen Ahmet’inki <strong>y − 8</strong> olur.</p>
+<h3>Denk ifadeler</h3>
+<p>Değişkenin <strong>her</strong> değerinde aynı sonucu veren ifadelere <strong>denk ifadeler</strong> denir. 4a = a + 2a + a = a + 3a. Nedeni: hepsi dört tane a demektir. 3(k + 1) = 3k + 3 de dağılma özelliğinden gelir.</p>
+<div class="bilgi"><div><strong>Dikkat:</strong> Birkaç sayıda aynı sonucu görmek denkliği <em>kanıtlamaz</em>. a + 3 ile 2a, a = 3 için ikisi de 6’dır; a = 5 için 8 ve 10 çıkar. Farklı sonuç veren <strong>tek bir değer</strong> denk olmadıklarını gösterir. Denk olduklarını söylemek için bir gerekçe gerekir.</div></div>
+<p><strong>Sen dene:</strong> 2(n + 4) ile 2n + 4 denk mi? Değer vererek sına ve gerekçeni yaz.</p>
+<details><summary>Cevabı göster</summary><p>Denk değil: n = 1 için 10 ve 6. 2(n + 4) = 2n + 8’dir; 4 de 2 ile çarpılır.</p></details>
+<p><strong>Cebir ne işe yarar?</strong> Bir ilişkiyi bütün sayılar için bir kez yazmanı, problem çözmeni ve bütçe ya da alışveriş gibi durumlarda seçenekleri karşılaştırmanı sağlar.</p>
+<p><strong>Şimdi o sayı oyunu:</strong> Tuttuğun sayı x olsun.</p>
+<div class="tablo-kap"><table><tr><th>Adım</th><th>İfade</th><th>x = 7 ile</th></tr><tr><td>Tut</td><td>x</td><td>7</td></tr><tr><td>2 ile çarp</td><td>2x</td><td>14</td></tr><tr><td>10 ekle</td><td>2x + 10</td><td>24</td></tr><tr><td>Yarısını al</td><td>x + 5</td><td>12</td></tr><tr><td>Tuttuğunu çıkar</td><td>5</td><td>5</td></tr></table></div>
+<p>2x’in yarısı x, 10’un yarısı 5’tir. x çıkınca her zaman 5 kalır. Kendi sayı oyununu kur.</p>
+
+        <h2 id="oruntu">Örüntünün Kuralını Cebirle Yaz</h2>
+
+<figure class="msekil"><svg viewBox="0 0 293 88" style="max-width:293px" role="img" aria-label="Karelerden oluşan şekil örüntüsünün ilk 3 adımı"><rect x="6" y="30" width="22" height="22" fill="#fb923c" stroke="#1e1b4b" stroke-width="1.6"/><rect x="33" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="33" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><text x="30.5" y="78" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">1. adım</text><rect x="89" y="30" width="22" height="22" fill="#fb923c" stroke="#1e1b4b" stroke-width="1.6"/><rect x="116" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="116" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="138" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="138" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><text x="124.5" y="78" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">2. adım</text><rect x="194" y="30" width="22" height="22" fill="#fb923c" stroke="#1e1b4b" stroke-width="1.6"/><rect x="221" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="221" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="243" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="243" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="265" y="30" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><rect x="265" y="8" width="22" height="22" fill="#8b5cf6" stroke="#1e1b4b" stroke-width="1.6"/><text x="240.5" y="78" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">3. adım</text></svg></figure>
+<p>Her adımda 1 sabit kare (turuncu) ve adım sayısı kadar 2’li sütun vardır:</p>
+<div class="tablo-kap"><table><tr><th>Adım (n)</th><th>1</th><th>2</th><th>3</th><th>n</th></tr><tr><td>Kare sayısı</td><td>3</td><td>5</td><td>7</td><td>2n + 1</td></tr></table></div>
+<p>Aynı ilişki <strong>grafikte</strong>:</p>
+<figure class="msekil"><svg viewBox="0 0 320 320" style="max-width:320px" role="img" aria-label="Örüntü grafiği: 1. adımda 3, 2. adımda 5, 3. adımda 7, 4. adımda 9, 5. adımda 11"><line x1="44" y1="262.0" x2="312" y2="262.0" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="268.0" text-anchor="end" font-size="17" font-weight="800" fill="#334155">0</text><line x1="44" y1="225.3" x2="312" y2="225.3" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="231.3" text-anchor="end" font-size="17" font-weight="800" fill="#334155">2</text><line x1="44" y1="188.7" x2="312" y2="188.7" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="194.7" text-anchor="end" font-size="17" font-weight="800" fill="#334155">4</text><line x1="44" y1="152.0" x2="312" y2="152.0" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="158.0" text-anchor="end" font-size="17" font-weight="800" fill="#334155">6</text><line x1="44" y1="115.3" x2="312" y2="115.3" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="121.3" text-anchor="end" font-size="17" font-weight="800" fill="#334155">8</text><line x1="44" y1="78.7" x2="312" y2="78.7" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="84.7" text-anchor="end" font-size="17" font-weight="800" fill="#334155">10</text><line x1="44" y1="42.0" x2="312" y2="42.0" stroke="#cbd5e1" stroke-width="1"/><text x="36.0" y="48.0" text-anchor="end" font-size="17" font-weight="800" fill="#334155">12</text><line x1="70.0" y1="262" x2="70.0" y2="207.0" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="70.0" cy="207.0" r="7" fill="#6d28d9"/><text x="70.0" y="194.0" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">3</text><text x="70.0" y="285.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">1</text><line x1="122.0" y1="262" x2="122.0" y2="170.3" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="122.0" cy="170.3" r="7" fill="#6d28d9"/><text x="122.0" y="157.3" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">5</text><text x="122.0" y="285.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">2</text><line x1="174.0" y1="262" x2="174.0" y2="133.7" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="174.0" cy="133.7" r="7" fill="#6d28d9"/><text x="174.0" y="120.7" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">7</text><text x="174.0" y="285.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">3</text><line x1="226.0" y1="262" x2="226.0" y2="97.0" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="226.0" cy="97.0" r="7" fill="#6d28d9"/><text x="226.0" y="84.0" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">9</text><text x="226.0" y="285.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">4</text><line x1="278.0" y1="262" x2="278.0" y2="60.3" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="5 5"/><circle cx="278.0" cy="60.3" r="7" fill="#6d28d9"/><text x="278.0" y="47.3" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">11</text><text x="278.0" y="285.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">5</text><line x1="44" y1="262" x2="312" y2="262" stroke="#1e1b4b" stroke-width="3"/><line x1="44" y1="36.0" x2="44" y2="262" stroke="#1e1b4b" stroke-width="3"/><text x="8.0" y="20.0" text-anchor="start" font-size="17" font-weight="800" fill="#475569">Terim</text><text x="182.0" y="310.0" text-anchor="middle" font-size="17" font-weight="800" fill="#475569">Adım sayısı</text></svg></figure>
+<p>Sözle: «Kare sayısı, adım sayısının 2 katından 1 fazladır.» Grafikte adım 1 artınca nokta 2 birim yükselir. Adım sayısı doğal sayı olduğu için noktaları birleştirmedik: 2,5. adım yoktur.</p>
+<p>Cebirsel kural sayesinde 40. adımı tek tek çizmeden bulursun: 2 · 40 + 1 = <strong>81</strong>.</p>
+<p><strong>Kuralı kurma yolu</strong> (artış sabitse): artışı katsayı yap, sonra 1. adıma uyması için gereken sayıyı ekle ya da çıkar. Kuralı en az üç adımda sına. Birkaç terim, örüntünün sonsuza kadar aynı gideceğini tek başına kanıtlamaz; «aynı kural sürerse» koşulunu ya da şeklin kuruluş biçimini kullan.</p>
+<p><strong>Sen dene:</strong> 2, 5, 8, 11, … örüntüsü sabit artışla sürüyor. Tablo ve grafik çiz, kuralı sözle ve cebirle yaz, 30. terimi bul.</p>
+<details><summary>Cevabı göster</summary><p>Artış 3; 3 · 1’den 1 eksik: 3n − 1. 30. terim 89.</p></details>
+
+        <h2 id="cokgen">Bir Örüntü Daha: Çokgenlerin Açıları</h2>
+
+<p>Bir <strong>dışbükey</strong> çokgende bir köşeden bütün köşegenleri çizersen üçgenler oluşur. Her üçgenin iç açıları toplamı 180°’dir.</p>
+<div class="tablo-kap"><table><tr><th>Kenar sayısı</th><th>Üçgen sayısı</th><th>İç açıların toplamı</th></tr><tr><td>3</td><td>1</td><td>180°</td></tr><tr><td>4</td><td>2</td><td>360°</td></tr><tr><td>5</td><td>3</td><td>540°</td></tr><tr><td>6</td><td>4</td><td>720°</td></tr><tr><td><strong>n</strong></td><td><strong>n − 2</strong></td><td><strong>(n − 2) · 180°</strong></td></tr></table></div>
+<p>Kendin çiz ve üçgenleri say; tablodaki ilişkiyi gör.</p>
+<p><strong>Düzgün çokgende</strong> (bütün kenarları ve iç açıları eş) açılar eşit paylaşılır. Geometrik Şekiller konusunda dış açıların toplamının 360° olduğunu gördün:</p>
+<div class="formul">Bir dış açı = 360° ÷ n<small>Bir iç açı = 180° − bir dış açı. Bu iki kural yalnız DÜZGÜN çokgen içindir.</small></div>
+<p><strong>Örnek:</strong> Düzgün beşgende bir dış açı 360 ÷ 5 = 72°, bir iç açı 180 − 72 = 108°. Kontrol: 5 · 108 = 540°.</p>
+<p><strong>Sen dene:</strong> Düzgün altıgen ve düzgün ongenin bir iç açısını bul. Kenar sayısı arttıkça dış açıya ne oluyor?</p>
+<details><summary>Cevabı göster</summary><p>Altıgende dış 60°, iç 120°. Ongende dış 36°, iç 144°. Kenar sayısı arttıkça bir dış açı küçülür, bir iç açı büyür.</p></details>
+
+        <h2 id="algoritma">Cebirsel İfadeli Algoritmaları Oku</h2>
+
+<p>Algoritmayı doğal dille, sözde kodla ya da akış şemasıyla gösterebilirsin. Aşağıdaki algoritma, <strong>3k − 1</strong> kuralıyla örüntünün ilk n terimini yazdırır. <strong>n, 1 ya da daha büyük bir doğal sayı</strong> olmalıdır.</p>
+<p><strong>Sözde kod:</strong></p>
+<ol><li>Başla.</li><li>n sayısını al.</li><li>k = 0 yap.</li><li>k’yi 1 artır.</li><li>3k − 1 değerini yazdır.</li><li>k, n’ye eşit değilse 4. adıma dön.</li><li>Bitir.</li></ol>
+<p><strong>Akış şeması:</strong></p>
+<figure class="msekil"><svg viewBox="0 0 282 648" style="max-width:320px" role="img" aria-label="Akış şeması: 1. Başla; 2. n sayısını al; 3. k = 0 yap; 4. k’yi 1 artır; 5. 3k − 1 yaz; 6. k = n mi? (Hayır ise 4. kutuya dön); 7. Bitir"><rect x="80" y="8" width="120" height="50" rx="25.0" fill="#dcfce7" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="39.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Başla</text><text x="6" y="38.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">1.</text><line x1="140" y1="58" x2="140" y2="88" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,98 133,86 147,86" fill="#1e1b4b"/><polygon points="54,98 242,98 226,148 38,148" fill="#e0f2fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="129.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">n sayısını al</text><text x="6" y="128.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">2.</text><line x1="140" y1="148" x2="140" y2="178" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,188 133,176 147,176" fill="#1e1b4b"/><rect x="44" y="188" width="192" height="50" fill="#ede9fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="219.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">k = 0 yap</text><text x="6" y="218.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">3.</text><line x1="140" y1="238" x2="140" y2="268" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,278 133,266 147,266" fill="#1e1b4b"/><rect x="44" y="278" width="192" height="50" fill="#ede9fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="309.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">k’yi 1 artır</text><text x="6" y="308.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">4.</text><line x1="140" y1="328" x2="140" y2="358" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,368 133,356 147,356" fill="#1e1b4b"/><polygon points="54,368 242,368 226,418 38,418" fill="#e0f2fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="399.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">3k − 1 yaz</text><text x="6" y="398.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">5.</text><line x1="140" y1="418" x2="140" y2="448" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,458 133,446 147,446" fill="#1e1b4b"/><polygon points="140,458 248,504.0 140,550 32,504.0" fill="#fef3c7" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="510.0" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">k = n mi?</text><text x="6" y="509.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">6.</text><line x1="140" y1="550" x2="140" y2="580" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,590 133,578 147,578" fill="#1e1b4b"/><text x="154" y="572" text-anchor="start" font-size="15" font-weight="800" fill="#047857">Evet</text><rect x="80" y="590" width="120" height="50" rx="25.0" fill="#fee2e2" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="621.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Bitir</text><text x="6" y="620.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">7.</text><polyline points="248,504.0 272,504.0 272,303.0 246,303.0" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="236,303.0 248,296.0 248,310.0" fill="#1e1b4b"/><text x="218" y="484.0" text-anchor="start" font-size="15" font-weight="800" fill="#b91c1c">Hayır</text></svg></figure>
+<p>Buradaki «k = 0 yap» ve «k’yi 1 artır», k’de tutulan değeri değiştirir. n = 5 için izleme tablosu:</p>
+<div class="tablo-kap"><table><tr><th>k</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr><tr><td>Yazılan 3k − 1</td><td>2</td><td>5</td><td>8</td><td>11</td><td>14</td></tr></table></div>
+<p>5. adımda k = n olur ve algoritma biter. Sözle: «k, 1’den n’ye kadar birer artar; her seferinde k’nin 3 katının 1 eksiği yazılır.»</p>
+<p><strong>Neden n en az 1?</strong> n = 0 girilirse k ilk kontrolde 1 olur ve artmaya devam eder; k = 0 bir daha olmaz, algoritma durmaz.</p>
+<p><strong>Değiştir ve incele:</strong> «3k − 1 yaz» yerine «3k + 2 yaz» koyarsan n = 4 için hangi sayılar yazılır? Önce tahmin et, sonra tablo yap.</p>
+<details><summary>Cevabı göster</summary><p>5, 8, 11, 14. Ardışık sayıların farkı yine 3’tür: artış aynı, başlangıç farklı.</p></details>
+
+        <h2 id="hata">Hata Bul, Yöntemleri Karşılaştır</h2>
+
+<p><strong>Hatalı karar:</strong> Yukarıdaki algoritmada karar kutusu «k, n’den büyükse bitir; değilse 4. adıma dön» olsaydı k = n iken durmaz, bir sayı daha yazardı. n = 5 için 17 de yazılırdı: toplam <strong>n + 1</strong> terim.</p>
+<p><strong>İki yöntem:</strong> 2, 5, 8, … dizisinin yalnız 100. terimi isteniyor.</p>
+<ul><li><strong>A:</strong> 2’den başla, 99 kez 3 ekle.</li><li><strong>B:</strong> n = 100 al, 3n − 1 hesapla.</li></ul>
+<p>İkisi de 299 bulur. A, ardışık terimleri görmeni sağlar ve kolay anlaşılır ama çok adımlıdır; hata yapma fırsatı artar. B kısa yoldur ama kuralın doğru kurulduğunu önceden bilmen gerekir.</p>
+<p><strong>Sen dene:</strong> «Fiyat 300 liradan büyükse fiyattan 40 çıkar, değilse fiyatı değiştirme» algoritmasını x değişkeniyle sözde kod ve akış şeması olarak yaz. x = 280, 300 ve 320 için tablo yap. Tam 300’de ne olur? «büyükse» yerine «büyük ya da eşitse» deseydik?</p>
+<details><summary>Cevabı göster</summary><p>Sonuçlar 280, 300, 280. 300, 300’den büyük olmadığı için değişmez. «Büyük ya da eşitse» deseydik 300 için 260 çıkardı.</p></details>
+<p><strong>Performans görevi:</strong> Matematikte ve Fen Bilimleri gibi başka derslerde gördüğün sembolleri ve cebirsel ifadeleri araştır; anlamlarını gösteren bir bilgi görseli (infografik) hazırla ve kaynaklarını yaz. İstersen Harizmi ya da Ömer Hayyam’ın cebir çalışmalarını da ekle.</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Değişken, değişebilen bir niceliği gösteren harftir; cebirsel ifade ona bağlı yeni bir niceliği anlatabilir.</li>
+            <li>6m + 4 ifadesinde 6m ve 4 terim, 6 katsayı, 4 sabit terimdir.</li>
+            <li>Aynı ifade farklı durumlara karşılık gelebilir; değişkenin neyi gösterdiğini belirt.</li>
+            <li>Denk ifadeler değişkenin her değerinde eşittir; birkaç değerde eşitlik denkliği kanıtlamaz.</li>
+            <li>Sabit artışlı örüntüde artış katsayı olur; kural 1. adıma uyacak biçimde tamamlanır.</li>
+            <li>Dışbükey n kenarlı çokgenin iç açıları toplamı (n − 2) · 180°’dir.</li>
+            <li>Düzgün n kenarlı çokgende bir dış açı 360° ÷ n’dir.</li>
+            <li>Algoritmayı izleme tablosuyla sına; karar koşulunu ve izin verilen giriş değerlerini kontrol et.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#nicelik">Bilinmeyen nicelik</a></li>
+            <li><a href="#ifade">İfadenin parçaları</a></li>
+            <li><a href="#anlam">Anlam ve denklik</a></li>
+            <li><a href="#oruntu">Örüntüler</a></li>
+            <li><a href="#cokgen">Çokgen açıları</a></li>
+            <li><a href="#algoritma">Algoritma</a></li>
+            <li><a href="#hata">Hata ve karşılaştırma</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "«Bir k sayısının 7 fazlası» ifadesinin cebirsel gösterimi hangisidir?",
+    "secenekler": [
+      "7 · k",
+      "k − 7",
+      "k + 7",
+      "7 − k"
+    ],
+    "dogru": 2,
+    "aciklama": "«7 fazlası» sayıya 7 eklemektir. 7 · k ise sayının 7 katıdır."
+  },
+  {
+    "soru": "6 · m + 4 cebirsel ifadesinde sabit terim hangisidir?",
+    "secenekler": [
+      "4",
+      "6",
+      "m",
+      "10"
+    ],
+    "dogru": 0,
+    "aciklama": "Sabit terim, yanında değişken bulunmayan terimdir: 4. 6, m’li terimin katsayısıdır."
+  },
+  {
+    "soru": "Tanesi 15 lira olan kitaplardan b tane alınıyor. Ödenecek tutarı hangi ifade gösterir?",
+    "secenekler": [
+      "b + 15",
+      "15 − b",
+      "b ÷ 15",
+      "15 · b"
+    ],
+    "dogru": 3,
+    "aciklama": "Her kitap 15 liradır; b tane kitap için 15 sayısı b ile çarpılır."
+  },
+  {
+    "soru": "k = 6 için 3 · k + 5 ifadesinin değeri kaçtır?",
+    "secenekler": [
+      "14",
+      "23",
+      "33",
+      "41"
+    ],
+    "dogru": 1,
+    "aciklama": "k yerine 6 yazılır: 3 · 6 + 5 = 18 + 5 = 23. 33, toplamayı önce yapınca; 41 ise 36 ile 5 toplanınca çıkar."
+  },
+  {
+    "soru": "Algoritma: «Bir sayı al. Sayıyı 4 ile çarp. Sonuçtan 3 çıkar. Sonucu yazdır.» Alınan sayı x ise yazdırılan ifade hangisidir?",
+    "secenekler": [
+      "4 · x − 3",
+      "4 · (x − 3)",
+      "3 − 4 · x",
+      "4 · x + 3"
+    ],
+    "dogru": 0,
+    "aciklama": "Adımlar sırayla uygulanır: önce 4 · x, sonra bundan 3 çıkarılır."
+  },
+  {
+    "soru": "Bir tabloda 1 pakette 8, 2 pakette 16, 3 pakette 24 boya kalemi görülüyor. Aynı kural sürerse x paketteki kalem sayısını hangi ifade verir?",
+    "secenekler": [
+      "x + 7",
+      "x + 8",
+      "8 · x",
+      "x + 16"
+    ],
+    "dogru": 2,
+    "aciklama": "Her satırda kalem sayısı paket sayısının 8 katıdır. x + 7 yalnız ilk satıra uyar; 2 pakette 9 verir."
+  },
+  {
+    "soru": "Ece y yaşındadır ve ağabeyi ondan 5 yaş büyüktür. Ağabeyin yaşı A ile gösterilirse Ece’nin yaşını hangi ifade verir?",
+    "secenekler": [
+      "A + 5",
+      "A − 5",
+      "5 − A",
+      "5 · A"
+    ],
+    "dogru": 1,
+    "aciklama": "Ağabeyin yaşı A = y + 5 olur. Tersinden düşünürsek Ece, ağabeyinden 5 yaş küçüktür: y = A − 5."
+  },
+  {
+    "soru": "Aşağıdakilerden hangisi her a sayısı için 5 · a ifadesine denktir?",
+    "secenekler": [
+      "5 + a",
+      "a + 5 · 1",
+      "2 · a + 3",
+      "2 · a + 3 · a"
+    ],
+    "dogru": 3,
+    "aciklama": "İki tane a ile üç tane a toplam beş tane a eder. Öteki ifadelerde a’nın katsayısı 5 değildir; örneğin a = 2 için 10 vermezler."
+  },
+  {
+    "soru": "4 · (x + 2) ifadesine uygun durum hangisidir?",
+    "secenekler": [
+      "4 pakette x’er kalem varken bunlara yalnız 2 silgi eklenince oluşan sayı",
+      "x ile 2’nin toplamına 4 eklenince elde edilen yeni sayı",
+      "Her birinde x kalem ve 2 silgi bulunan 4 paketteki toplam eşya sayısı",
+      "4 ile x’in toplamının 2 katı kadar olan eşya sayısı"
+    ],
+    "dogru": 2,
+    "aciklama": "Parantez bir paketin içindekilerdir; 4 kat tamamı için geçerlidir. Yalnız 2 silgi eklemek 4 · x + 2 olur."
+  },
+  {
+    "soru": "(n − 3) ÷ 2 ifadesinin sözel karşılığı hangisidir?",
+    "secenekler": [
+      "n sayısının 3 eksiğinin yarısı",
+      "n sayısının yarısının 3 eksiği",
+      "3 sayısının n eksiğinin yarısı",
+      "n sayısının 2 eksiğinin üçte biri"
+    ],
+    "dogru": 0,
+    "aciklama": "Önce parantez: n’nin 3 eksiği. Sonra sonucun yarısı alınır. «Yarısının 3 eksiği» n ÷ 2 − 3 olur."
+  },
+  {
+    "soru": "6, 11, 16, 21, … sayı örüntüsünde n. adımdaki terimi hangi ifade verir?",
+    "secenekler": [
+      "n + 5",
+      "6 · n",
+      "5 · n − 1",
+      "5 · n + 1"
+    ],
+    "dogru": 3,
+    "aciklama": "Terimler 5’er artar ve ilk terim 5 · 1’den 1 fazladır. Kontrol: n = 4 için 21."
+  },
+  {
+    "soru": "Bir örüntünün n. adımındaki terim 4 · n + 3 ifadesiyle veriliyor. 20. adımdaki terim kaçtır?",
+    "secenekler": [
+      "27",
+      "83",
+      "80",
+      "92"
+    ],
+    "dogru": 1,
+    "aciklama": "4 · 20 + 3 = 83. 80’de sabit terim unutulmuş, 92’de 23 ile 4 çarpılmıştır."
+  },
+  {
+    "soru": "Algoritma: «Bir sayı al. 5 ekle. Sonucu 2 ile çarp. Yazdır.» Girilen sayı 7 ise ne yazdırılır?",
+    "secenekler": [
+      "24",
+      "14",
+      "17",
+      "19"
+    ],
+    "dogru": 0,
+    "aciklama": "Önce 7 + 5 = 12, sonra 12 · 2 = 24. 19, yalnız 7’yi 2 ile çarpıp 5 ekleyince çıkar."
+  },
+  {
+    "soru": "Dışbükey bir sekizgenin iç açılarının ölçüleri toplamı kaç derecedir?",
+    "secenekler": [
+      "360°",
+      "900°",
+      "1080°",
+      "1440°"
+    ],
+    "dogru": 2,
+    "aciklama": "Bir köşeden çizilen köşegenler sekizgeni 8 − 2 = 6 üçgene ayırır: 6 · 180° = 1080°."
+  },
+  {
+    "soru": "Düzgün bir on ikigenin bir iç açısının ölçüsü kaç derecedir?",
+    "secenekler": [
+      "30°",
+      "120°",
+      "1800°",
+      "150°"
+    ],
+    "dogru": 3,
+    "aciklama": "Bir dış açı 360° ÷ 12 = 30°’dir. İç açı 180° − 30° = 150°. 1800° bütün iç açıların toplamıdır."
+  },
+  {
+    "soru": "2 · m ile m + 6 ifadeleri m = 6 için aynı sonucu veriyor. Can «Öyleyse bu iki ifade denktir.» diyor. Hangisi doğrudur?",
+    "secenekler": [
+      "Doğrudur; bir değer için eşit olan iki ifade her değerde eşittir.",
+      "Yanlıştır; örneğin m = 1 için sonuçlar 2 ve 7 olur, yani farklıdır.",
+      "Doğrudur; iki ifadede de aynı değişken harfi kullanılmıştır.",
+      "Yanlıştır; değişken içeren iki ifade hiçbir değerde eşit olamaz."
+    ],
+    "dogru": 1,
+    "aciklama": "Denk ifadeler değişkenin her değerinde eşit olur. Tek bir değerdeki eşitlik bunu göstermez; farklı sonuç veren tek bir değer ise denk olmadıklarını gösterir."
+  },
+  {
+    "soru": "Bir düzgün çokgenin bir dış açısı 45° ise bu çokgenin kaç kenarı vardır?",
+    "secenekler": [
+      "4",
+      "6",
+      "12",
+      "8"
+    ],
+    "dogru": 3,
+    "aciklama": "Düzgün çokgende bir dış açı 360° ÷ kenar sayısıdır. 360 ÷ 45 = 8."
+  },
+  {
+    "soru": "Bir örüntü grafiğinde (adım, terim) noktaları (1, 9), (2, 13), (3, 17) olarak işaretlenmiş. Aynı sabit artış sürerse n. adımın terimi hangisidir?",
+    "secenekler": [
+      "4 · n + 5",
+      "9 · n",
+      "n + 8",
+      "5 · n + 4"
+    ],
+    "dogru": 0,
+    "aciklama": "Adım 1 artınca terim 4 artıyor. 4 · 1’den ilk terime 5 vardır. 9 · n, n + 8 ve 5 · n + 4 yalnız ilk noktaya uyar."
+  },
+  {
+    "soru": "Bir algoritmanın 3 · (x + 2) değerini bulması isteniyor. Adımları ise «x’i al, 3 ile çarp, 2 ekle, yazdır» biçiminde yazılmış. Hata nedir?",
+    "secenekler": [
+      "Sonuç yazdırılmadan önce ayrıca 3 eklenmesi gerekirdi.",
+      "x değeri en sonda alınmalı, işlemler ondan önce yapılmalı.",
+      "İşlem sırası yanlış; önce x’e 2 eklenip sonra sonuç 3 ile çarpılmalı.",
+      "Hata yoktur; çarpma ile eklemenin sırası sonucu etkilemez."
+    ],
+    "dogru": 2,
+    "aciklama": "Yazılan adımlar 3 · x + 2 verir. x = 1 için 5 çıkar, oysa 3 · (1 + 2) = 9’dur."
+  },
+  {
+    "soru": "Algoritma: «t = 0 yap. Şu iki adımı 4 kez tekrarla: t’ye a ekle; sonra t’ye 2 ekle. t’yi yazdır.» Yazdırılan değeri hangi ifade verir?",
+    "secenekler": [
+      "4 · a + 2",
+      "4 · (a + 2)",
+      "a + 2 · 4",
+      "a + 4 + 2"
+    ],
+    "dogru": 1,
+    "aciklama": "Her turda t’ye toplam a + 2 eklenir. Dört turda 4 · (a + 2) olur."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
