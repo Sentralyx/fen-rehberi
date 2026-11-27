@@ -377,6 +377,13 @@ tr:nth-child(even) td { background: #f8fafc; }
   .alt-menu-ic .grup-sinif a, .alt-menu-ic .grup-sinif span { flex: 1 1 auto; text-align: center; }
 }
 
+/* Dar telefonda ders satırı tek sırada kalsın */
+@media (max-width: 400px) {
+  .alt-menu-ic { padding-left: 8px; padding-right: 8px; }
+  .alt-menu-ic .grup a, .alt-menu-ic .grup span { font-size: .8rem; padding: 8px 5px; }
+  .alt-menu-ic .grup { gap: 1px; }
+}
+
 /* İki satırlı üst menü payı */
 .ust-iki ~ main .yan { top: 134px; }
 @media (min-width: 861px) { .ust-iki ~ main .yazi h2, .ust-iki ~ main .test { scroll-margin-top: 134px; } }
