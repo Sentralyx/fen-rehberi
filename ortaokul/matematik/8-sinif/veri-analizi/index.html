@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veri Analizi – 8. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="8. sınıf Matematik veri analizi: üç veri gruplu sütun ve çizgi grafiği yorumlama, daire grafiği, grafikler arası dönüşüm ve 20 soruluk test.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/8-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/8-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <a href="/ortaokul/matematik/7-sinif/">7. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/8-sinif/">8. Sınıf · LGS</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/8-sinif/">8. Sınıf</a> › Veri Analizi</div>
+      <h1>📊 Veri Analizi</h1>
+      <p>Aynı veriyi sütunla, çizgiyle ya da daireyle gösterebilirsin. Ama her grafik her soruya aynı kolaylıkla cevap vermez.</p>
+      <div class="konu-meta"><span>📚 8. Sınıf Matematik</span><span>⏱️ 25 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="oku">Grafiği Okumadan Önce</h2>
+
+<p>Soruya geçmeden dört şeye bak:</p>
+<ol><li><strong>Başlık:</strong> Neyin verisi, hangi birimle?</li><li><strong>Eksenler:</strong> Yatay eksende ne var? Dikey eksen kaçtan başlıyor, kaçar kaçar artıyor?</li><li><strong>Açıklama (lejant):</strong> Hangi renk, çizgi ve işaret hangi veri grubunu gösteriyor?</li><li><strong>Soru:</strong> Tek bir değer mi, fark mı, toplam mı, değişim mi isteniyor?</li></ol>
+<p>Aynı grafikte birden çok veri grubu (bu sınıfta en çok üç) yan yana karşılaştırılabilir.</p>
+
+        <h2 id="sutun">Gruplu Sütun Grafiği</h2>
+
+<p>İki hayalî öğrencinin üç ayda okuduğu kitap sayfası sayıları (onar sayfa olarak):</p>
+<figure class="msekil"><svg viewBox="0 0 320 314" style="max-width:380px" role="img" aria-label="Gruplu sütun grafiği: Okunan sayfa (×10). Ada: Ocak 20, Şubat 35, Mart 30; Efe: Ocak 25, Şubat 15, Mart 40"><text x="160.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Okunan sayfa (×10)</text><g transform="translate(0 0)"><line x1="34.0" y1="248.0" x2="314.0" y2="248.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="253.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">0</text><line x1="34.0" y1="198.0" x2="314.0" y2="198.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="203.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">10</text><line x1="34.0" y1="148.0" x2="314.0" y2="148.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="153.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">20</text><line x1="34.0" y1="98.0" x2="314.0" y2="98.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="103.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">30</text><line x1="34.0" y1="48.0" x2="314.0" y2="48.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="53.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">40</text><line x1="34.0" y1="248.0" x2="314.0" y2="248.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="34.0" y1="40.0" x2="34.0" y2="248.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><rect x="52.7" y="148.0" width="26.0" height="100.0" fill="#2563eb"/><text x="65.7" y="142.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">20</text><rect x="80.7" y="123.0" width="26.0" height="125.0" fill="#d97706"/><text x="93.7" y="117.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">25</text><text x="80.7" y="269.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">Ocak</text><rect x="146.0" y="73.0" width="26.0" height="175.0" fill="#2563eb"/><text x="159.0" y="67.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">35</text><rect x="174.0" y="173.0" width="26.0" height="75.0" fill="#d97706"/><text x="187.0" y="167.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">15</text><text x="174.0" y="269.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">Şubat</text><rect x="239.3" y="98.0" width="26.0" height="150.0" fill="#2563eb"/><text x="252.3" y="92.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">30</text><rect x="267.3" y="48.0" width="26.0" height="200.0" fill="#d97706"/><text x="280.3" y="42.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">40</text><text x="267.3" y="269.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">Mart</text><rect x="16.0" y="287" width="18" height="18" rx="3" fill="#2563eb"/><text x="39.0" y="301.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">Ada</text><rect x="172.0" y="287" width="18" height="18" rx="3" fill="#d97706"/><text x="195.0" y="301.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">Efe</text></g></svg></figure>
+<ul><li><strong>Aynı ay içinde:</strong> Şubat’ta Ada, Efe’den 20 birim (200 sayfa) fazla okumuştur.</li><li><strong>Toplam:</strong> Ada 20 + 35 + 30 = 85; Efe 25 + 15 + 40 = 80 birim.</li><li><strong>Değişim:</strong> Efe’nin okuması Şubat’ta azalmış, Mart’ta artmıştır.</li></ul>
+<p><strong>Dikkat:</strong> Grafik, sayfaların <em>neden</em> arttığını ya da azaldığını söylemez. Grafikte olmayan bir nedeni kesin bilgi gibi yazma.</p>
+<p><strong>Sen çöz:</strong> Grafiğe göre Mart’ta ikisinin toplamı kaç sayfadır?</p>
+<details><summary>Çözümü göster</summary><p>30 + 40 = 70 birim, yani 700 sayfa.</p></details>
+
+        <h2 id="cizgi">Çok Serili Çizgi Grafiği</h2>
+
+<p>Çizgi grafiği özellikle <strong>zaman içindeki değişimi</strong> gösterir. Hayalî bir fidanlığın dört yıllık satışı:</p>
+<figure class="msekil"><svg viewBox="0 0 320 334" style="max-width:380px" role="img" aria-label="Çok serili çizgi grafiği: Satılan fidan sayısı. Çam: 2023 20, 2024 30, 2025 40, 2026 60; Meşe: 2023 50, 2024 40, 2025 40, 2026 30"><text x="160.0" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Satılan fidan sayısı</text><g transform="translate(0 0)"><line x1="34.0" y1="268.0" x2="314.0" y2="268.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="273.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">0</text><line x1="34.0" y1="249.7" x2="314.0" y2="249.7" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="254.7" text-anchor="end" font-size="15" font-weight="700" fill="#334155">5</text><line x1="34.0" y1="231.3" x2="314.0" y2="231.3" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="236.3" text-anchor="end" font-size="15" font-weight="700" fill="#334155">10</text><line x1="34.0" y1="213.0" x2="314.0" y2="213.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="218.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">15</text><line x1="34.0" y1="194.7" x2="314.0" y2="194.7" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="199.7" text-anchor="end" font-size="15" font-weight="700" fill="#334155">20</text><line x1="34.0" y1="176.3" x2="314.0" y2="176.3" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="181.3" text-anchor="end" font-size="15" font-weight="700" fill="#334155">25</text><line x1="34.0" y1="158.0" x2="314.0" y2="158.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="163.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">30</text><line x1="34.0" y1="139.7" x2="314.0" y2="139.7" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="144.7" text-anchor="end" font-size="15" font-weight="700" fill="#334155">35</text><line x1="34.0" y1="121.3" x2="314.0" y2="121.3" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="126.3" text-anchor="end" font-size="15" font-weight="700" fill="#334155">40</text><line x1="34.0" y1="103.0" x2="314.0" y2="103.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="108.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">45</text><line x1="34.0" y1="84.7" x2="314.0" y2="84.7" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="89.7" text-anchor="end" font-size="15" font-weight="700" fill="#334155">50</text><line x1="34.0" y1="66.3" x2="314.0" y2="66.3" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="71.3" text-anchor="end" font-size="15" font-weight="700" fill="#334155">55</text><line x1="34.0" y1="48.0" x2="314.0" y2="48.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="28.0" y="53.0" text-anchor="end" font-size="15" font-weight="700" fill="#334155">60</text><line x1="34.0" y1="268.0" x2="314.0" y2="268.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="34.0" y1="40.0" x2="34.0" y2="268.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><polyline points="69.0,194.7 139.0,158.0 209.0,121.3 279.0,48.0" fill="none" stroke="#2563eb" stroke-width="3.5"/><polyline points="69.0,84.7 139.0,121.3 209.0,121.3 279.0,158.0" fill="none" stroke="#d97706" stroke-width="3.5" stroke-dasharray="9 5"/><circle cx="69.0" cy="194.7" r="6" fill="#2563eb"/><rect x="63.5" y="79.2" width="11" height="11" fill="#d97706"/><text x="69.0" y="289.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">2023</text><circle cx="139.0" cy="158.0" r="6" fill="#2563eb"/><rect x="133.5" y="115.8" width="11" height="11" fill="#d97706"/><text x="139.0" y="289.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">2024</text><circle cx="209.0" cy="121.3" r="6" fill="#2563eb"/><rect x="213.5" y="115.8" width="11" height="11" fill="#d97706"/><text x="209.0" y="289.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">2025</text><circle cx="279.0" cy="48.0" r="6" fill="#2563eb"/><rect x="273.5" y="152.5" width="11" height="11" fill="#d97706"/><text x="279.0" y="289.0" text-anchor="middle" font-size="15" font-weight="700" fill="#1e1b4b">2026</text><line x1="8.0" y1="316" x2="34.0" y2="316" stroke="#2563eb" stroke-width="3.5"/><circle cx="21.0" cy="316.0" r="6" fill="#2563eb"/><text x="39.0" y="321.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">Çam</text><line x1="164.0" y1="316" x2="190.0" y2="316" stroke="#d97706" stroke-width="3.5" stroke-dasharray="9 5"/><rect x="171.5" y="310.5" width="11" height="11" fill="#d97706"/><text x="195.0" y="321.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">Meşe</text></g></svg></figure>
+<ul><li>Çam satışı her yıl <strong>artmıştır</strong>; en büyük artış 2025–2026 arasındadır (20).</li><li>Meşe satışı azalmış, 2024–2025 arasında <strong>değişmemiştir</strong> (yatay parça).</li><li>2025’te iki nokta çakışır: satışlar eşittir (40).</li></ul>
+<p><strong>Dikkat:</strong> Noktaları birleştiren çizgi değişimin yönünü gösterir; yıllar arasındaki bir anda ölçüm yapıldığı anlamına gelmez. Çizginin eğimine bakarken eksenin eşit aralıklı olduğunu denetle.</p>
+<p><strong>Sen çöz:</strong> Dört yılın toplamında hangi fidan daha çok satılmıştır, fark kaçtır?</p>
+<details><summary>Çözümü göster</summary><p>Çam: 150, meşe: 160. Meşe 10 fazladır.</p></details>
+
+        <h2 id="sec">Hangi Grafik Neye Uygun?</h2>
+
+<div class="tablo-kap"><table><tr><th>Grafik</th><th>Güçlü yanı</th><th>Zayıf yanı</th></tr><tr><td>Sütun</td><td>Kategorileri karşılaştırır, değerler rahat okunur</td><td>Bütün içindeki payı doğrudan göstermez</td></tr><tr><td>Çizgi</td><td>Zaman içindeki artış ve azalışı gösterir</td><td>Sırasız kategorilerde yanıltır</td></tr><tr><td>Daire</td><td>Parçaların bütün içindeki payını gösterir</td><td>Yakın dilimleri ayırmak zordur; toplam verilmezse sayılar bilinmez</td></tr></table></div>
+<p>Doğru grafik, <strong>cevaplamak istediğin soruya</strong> göre seçilir. Daire grafiği için verilerin <strong>tek bir bütünün parçaları</strong> olması gerekir.</p>
+<p><strong>Sen çöz:</strong> Bir bebeğin 12 ay boyunca aylık kütle ölçümü için hangi grafiği seçersin? Neden?</p>
+<details><summary>Çözümü göster</summary><p>Çizgi grafiği: aynı büyüklüğün zaman içindeki değişimi izlenir.</p></details>
+
+        <h2 id="donusum">Grafikler Arasında Dönüştürme</h2>
+
+<p>Dönüştürürken <strong>veriler değişmez, yalnız gösterimi değişir</strong>. Hayalî 60 öğrencinin seçtiği spor dalı:</p>
+<div class="tablo-kap"><table><tr><th>Spor</th><th>Kişi</th><th>Merkez açısı</th><th>Yüzde</th></tr><tr><td>Futbol</td><td>20</td><td>120°</td><td>yaklaşık %33,3</td></tr><tr><td>Voleybol</td><td>15</td><td>90°</td><td>%25</td></tr><tr><td>Yüzme</td><td>15</td><td>90°</td><td>%25</td></tr><tr><td>Basketbol</td><td>10</td><td>60°</td><td>yaklaşık %16,7</td></tr></table></div>
+<p><strong>Tablodan daireye:</strong> açı = (kişi ÷ toplam) × 360°. Futbol: <span class="bitisik"><span class="kesir" role="img" aria-label="20 bölü 60"><span class="ks"><span>20</span><span>60</span></span></span></span> × 360° = 120°.</p>
+<figure class="msekil"><svg viewBox="0 0 310 398" style="max-width:370px" role="img" aria-label="Daire grafiği: Spor seçimi (60 öğrenci). Futbol: 120° 20, Voleybol: 90° 15, Yüzme: 90° 15, Basketbol: 60° 10"><text x="155.0" y="22.0" text-anchor="middle" font-size="18" font-weight="800" fill="#1e1b4b">Spor seçimi (60 öğrenci)</text><g transform="translate(0 0)"><path d="M155 150 L155.00 44.00 A106 106 0 0 1 246.80 203.00 Z" fill="#2563eb" stroke="#fff" stroke-width="2.5"/><rect x="73.2" y="275" width="22" height="22" rx="4" fill="#2563eb"/><text x="105.2" y="292.0" text-anchor="start" font-size="17" font-weight="700" fill="#1e1b4b">Futbol: 120°</text><path d="M155 150 L246.80 203.00 A106 106 0 0 1 102.00 241.80 Z" fill="#f59e0b" stroke="#fff" stroke-width="2.5"/><rect x="73.2" y="303" width="22" height="22" rx="4" fill="#f59e0b"/><text x="105.2" y="320.0" text-anchor="start" font-size="17" font-weight="700" fill="#1e1b4b">Voleybol: 90°</text><path d="M155 150 L102.00 241.80 A106 106 0 0 1 63.20 97.00 Z" fill="#059669" stroke="#fff" stroke-width="2.5"/><rect x="73.2" y="331" width="22" height="22" rx="4" fill="#059669"/><text x="105.2" y="348.0" text-anchor="start" font-size="17" font-weight="700" fill="#1e1b4b">Yüzme: 90°</text><path d="M155 150 L63.20 97.00 A106 106 0 0 1 155.00 44.00 Z" fill="#db2777" stroke="#fff" stroke-width="2.5"/><rect x="73.2" y="359" width="22" height="22" rx="4" fill="#db2777"/><text x="105.2" y="376.0" text-anchor="start" font-size="17" font-weight="700" fill="#1e1b4b">Basketbol: 60°</text></g></svg></figure>
+<p><strong>Daireden tabloya:</strong> kişi = (açı ÷ 360°) × toplam. Yüzme: <span class="bitisik"><span class="kesir" role="img" aria-label="90 bölü 360"><span class="ks"><span>90</span><span>360</span></span></span></span> × 60 = 15.</p>
+<p><strong>Kontrol:</strong> Açıların toplamı 360°, kişi sayılarının toplamı 60 olmalıdır. (Yuvarlanmış yüzdelerin toplamı tam 100 çıkmayabilir.)</p>
+<p><strong>Sen çöz:</strong> Aynı grupta 12 kişi tenis seçseydi (toplam yine 60), tenis diliminin açısı kaç olurdu?</p>
+<details><summary>Çözümü göster</summary><p><span class="bitisik"><span class="kesir" role="img" aria-label="12 bölü 60"><span class="ks"><span>12</span><span>60</span></span></span></span> × 360° = 72°.</p></details>
+
+        <h2 id="yaniltma">Yanıltıcı Gösterimi Fark Etme</h2>
+
+<p>Sütun grafiğinde göz, <strong>sütun boylarını</strong> karşılaştırır. Dikey eksen 0 yerine daha büyük bir sayıdan başlarsa küçük fark büyük görünür:</p>
+<figure class="msekil"><svg viewBox="0 0 300 296" style="max-width:340px" role="img" aria-label="Sütun grafiği: Ziyaretçi sayısı. Dikey eksen 40 sayısından başlıyor. Cuma 42, Cumartesi 46"><text x="150.0" y="22.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Ziyaretçi sayısı</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="266.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">40</text><line x1="44.0" y1="222.0" x2="292.0" y2="222.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="228.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">42</text><line x1="44.0" y1="184.0" x2="292.0" y2="184.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="190.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">44</text><line x1="44.0" y1="146.0" x2="292.0" y2="146.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="152.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">46</text><line x1="44.0" y1="108.0" x2="292.0" y2="108.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="114.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">48</text><line x1="44.0" y1="70.0" x2="292.0" y2="70.0" stroke="#cbd5e1" stroke-width="1" stroke-linecap="round"/><text x="36.0" y="76.0" text-anchor="end" font-size="16" font-weight="700" fill="#334155">50</text><rect x="80" y="222.0" width="64" height="38.0" fill="#2563eb"/><text x="112.0" y="214.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">42</text><text x="112.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Cuma</text><rect x="200" y="146.0" width="64" height="114.0" fill="#2563eb"/><text x="232.0" y="138.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">46</text><text x="232.0" y="284.0" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1b4b">Cumartesi</text><line x1="44.0" y1="260.0" x2="292.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/><line x1="44.0" y1="48.0" x2="44.0" y2="260.0" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round"/></svg></figure>
+<p>Cumartesi sütunu Cuma sütununun 3 katı kadar uzundur; oysa ziyaretçi sayıları 42 ve 46’dır, fark yalnız 4’tür.</p>
+<p>Ayrıca eksendeki aralıkların eşit olmasını, birimin yazılmasını ve açıklamanın doğru olmasını denetle.</p>
+<p><strong>Sen çöz:</strong> Aynı veriler dikey ekseni 0’dan başlayan bir grafikte nasıl görünür?</p>
+<details><summary>Çözümü göster</summary><p>İki sütunun boyu birbirine yakın görünür.</p></details>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Önce başlık, eksenler, ölçek ve açıklamayı oku.</li>
+            <li>Sütun grafiği karşılaştırır, çizgi grafiği değişimi, daire grafiği bütün içindeki payı gösterir.</li>
+            <li>Daire dilimi açısı = (parça ÷ bütün) × 360°.</li>
+            <li>Açıdan kişi sayısına geçmek için toplam gerekir.</li>
+            <li>Dilimin büyüklüğü, toplamlar farklıysa sayıyı tek başına göstermez.</li>
+            <li>Sıfırdan başlamayan dikey eksen farkı büyük gösterebilir.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#oku">Grafik okuma</a></li>
+            <li><a href="#sutun">Gruplu sütun</a></li>
+            <li><a href="#cizgi">Çok serili çizgi</a></li>
+            <li><a href="#sec">Grafik seçimi</a></li>
+            <li><a href="#donusum">Dönüştürme</a></li>
+            <li><a href="#yaniltma">Yanıltıcı grafik</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "Grafik hayalî bir kantindeki satışları gösteriyor. Hangi gün ayran satışı su satışından fazladır?<span class=\"msekil\"><svg viewBox=\"0 0 320 314\" style=\"max-width:380px\" role=\"img\" aria-label=\"Gruplu sütun grafiği: Satılan şişe sayısı. Ayran: Pzt 30, Salı 40, Çrş 25; Su: Pzt 45, Salı 35, Çrş 50\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Satılan şişe sayısı<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"253.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"208.0\" x2=\"314.0\" y2=\"208.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"213.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"168.0\" x2=\"314.0\" y2=\"168.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"173.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"128.0\" x2=\"314.0\" y2=\"128.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"133.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"88.0\" x2=\"314.0\" y2=\"88.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"93.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">40<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">50<\/text><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"52.7\" y=\"128.0\" width=\"26.0\" height=\"120.0\" fill=\"#2563eb\"/><text x=\"65.7\" y=\"122.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">30<\/text><rect x=\"80.7\" y=\"68.0\" width=\"26.0\" height=\"180.0\" fill=\"#d97706\"/><text x=\"93.7\" y=\"62.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">45<\/text><text x=\"80.7\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Pzt<\/text><rect x=\"146.0\" y=\"88.0\" width=\"26.0\" height=\"160.0\" fill=\"#2563eb\"/><text x=\"159.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">40<\/text><rect x=\"174.0\" y=\"108.0\" width=\"26.0\" height=\"140.0\" fill=\"#d97706\"/><text x=\"187.0\" y=\"102.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">35<\/text><text x=\"174.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Salı<\/text><rect x=\"239.3\" y=\"148.0\" width=\"26.0\" height=\"100.0\" fill=\"#2563eb\"/><text x=\"252.3\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><rect x=\"267.3\" y=\"48.0\" width=\"26.0\" height=\"200.0\" fill=\"#d97706\"/><text x=\"280.3\" y=\"42.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">50<\/text><text x=\"267.3\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Çrş<\/text><rect x=\"16.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Ayran<\/text><rect x=\"172.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#d97706\"/><text x=\"195.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Su<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "Salı",
+      "Pazartesi",
+      "Çarşamba",
+      "Hiçbir gün"
+    ],
+    "dogru": 0,
+    "aciklama": "Salı günü 40 ayran, 35 su satılmıştır. Öteki günlerde su satışı daha fazladır."
+  },
+  {
+    "soru": "Bir odanın gün içinde saatlere göre sıcaklık <b>değişimini<\/b> göstermek için en uygun grafik hangisidir?",
+    "secenekler": [
+      "Daire grafiği",
+      "Sıklık tablosu",
+      "Çizgi grafiği",
+      "Çarpan ağacı"
+    ],
+    "dogru": 2,
+    "aciklama": "Zaman içindeki artış ve azalışlar en iyi çizgi grafiğinde izlenir."
+  },
+  {
+    "soru": "Bir harçlığın hangi bölümünün nereye ayrıldığını, yani <b>parçaların bütün içindeki payını<\/b> göstermek için en uygun grafik hangisidir?",
+    "secenekler": [
+      "Çizgi grafiği",
+      "Sayı doğrusu",
+      "Koordinat sistemi",
+      "Daire grafiği"
+    ],
+    "dogru": 3,
+    "aciklama": "Daire grafiğinde bütün 360°’dir; her dilim bir parçanın payını gösterir."
+  },
+  {
+    "soru": "40 öğrenciden 10’u satranç kulübünü seçmiştir. Daire grafiğinde satranç diliminin merkez açısı kaç derecedir?",
+    "secenekler": [
+      "10°",
+      "90°",
+      "25°",
+      "36°"
+    ],
+    "dogru": 1,
+    "aciklama": "10 ÷ 40 = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 4\"><span class=\"ks\"><span>1<\/span><span>4<\/span><\/span><\/span>;<\/span> 360°’nin <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 4\"><span class=\"ks\"><span>1<\/span><span>4<\/span><\/span><\/span>’i<\/span> 90°’dir."
+  },
+  {
+    "soru": "200 kişilik bir ankete ait daire grafiğinde bir dilimin merkez açısı 72° ise bu dilim kaç kişiyi gösterir?",
+    "secenekler": [
+      "20",
+      "36",
+      "40",
+      "72"
+    ],
+    "dogru": 2,
+    "aciklama": "72 ÷ 360 = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 5\"><span class=\"ks\"><span>1<\/span><span>5<\/span><\/span><\/span>;<\/span> 200’ün <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 5\"><span class=\"ks\"><span>1<\/span><span>5<\/span><\/span><\/span>’i<\/span> 40’tır."
+  },
+  {
+    "soru": "Dikey ekseni sıfırdan başlamayan bir sütun grafiği hangi yanlış izlenime yol açabilir?",
+    "secenekler": [
+      "Sütunlar arasındaki farkın olduğundan büyük görünmesine",
+      "Grafikteki verilerin sayıca azalmasına",
+      "Kategori adlarının yer değiştirmesine",
+      "Büyük değerin küçük görünüp sıranın değişmesine"
+    ],
+    "dogru": 0,
+    "aciklama": "Sütunların alt kısmı kesildiği için küçük farklar büyük görünebilir. Veriler ve büyüklük sırası değişmez."
+  },
+  {
+    "soru": "Üç hayalî sınıfın bağışladığı kitaplar grafikte verilmiştir. Üç ayın toplamında en çok kitabı hangi sınıf bağışlamıştır?<span class=\"msekil\"><svg viewBox=\"0 0 320 314\" style=\"max-width:380px\" role=\"img\" aria-label=\"Gruplu sütun grafiği: Bağışlanan kitap. 8/A: Eylül 10, Ekim 25, Kasım 20; 8/B: Eylül 15, Ekim 20, Kasım 30; 8/C: Eylül 20, Ekim 15, Kasım 25\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Bağışlanan kitap<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"253.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"181.3\" x2=\"314.0\" y2=\"181.3\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"186.3\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"114.7\" x2=\"314.0\" y2=\"114.7\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"119.7\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"40.0\" y=\"181.3\" width=\"25.1\" height=\"66.7\" fill=\"#2563eb\"/><text x=\"52.6\" y=\"175.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">10<\/text><rect x=\"67.1\" y=\"148.0\" width=\"25.1\" height=\"100.0\" fill=\"#d97706\"/><text x=\"79.7\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">15<\/text><rect x=\"94.2\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#047857\"/><text x=\"106.8\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><text x=\"80.7\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Eylül<\/text><rect x=\"133.3\" y=\"81.3\" width=\"25.1\" height=\"166.7\" fill=\"#2563eb\"/><text x=\"145.9\" y=\"75.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><rect x=\"160.4\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#d97706\"/><text x=\"173.0\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"187.6\" y=\"148.0\" width=\"25.1\" height=\"100.0\" fill=\"#047857\"/><text x=\"200.1\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">15<\/text><text x=\"174.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Ekim<\/text><rect x=\"226.7\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"253.8\" y=\"48.0\" width=\"25.1\" height=\"200.0\" fill=\"#d97706\"/><text x=\"266.3\" y=\"42.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">30<\/text><rect x=\"280.9\" y=\"81.3\" width=\"25.1\" height=\"166.7\" fill=\"#047857\"/><text x=\"293.4\" y=\"75.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><text x=\"267.3\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Kasım<\/text><rect x=\"16.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">8/A<\/text><rect x=\"120.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#d97706\"/><text x=\"143.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">8/B<\/text><rect x=\"224.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#047857\"/><text x=\"247.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">8/C<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "8/A",
+      "8/C",
+      "Üçü eşit",
+      "8/B"
+    ],
+    "dogru": 3,
+    "aciklama": "8/A: 55, 8/B: 65, 8/C: 60 kitap."
+  },
+  {
+    "soru": "Grafik hayalî bir spor merkezine kayıt olanları gösteriyor. 2026 yılında üç dalın toplam kayıt sayısı kaçtır?<span class=\"msekil\"><svg viewBox=\"0 0 320 314\" style=\"max-width:380px\" role=\"img\" aria-label=\"Gruplu sütun grafiği: Yeni kayıt sayısı. Yüzme: 2024 15, 2025 20, 2026 25; Tenis: 2024 20, 2025 20, 2026 10; Okçuluk: 2024 10, 2025 25, 2026 30\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Yeni kayıt sayısı<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"253.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"181.3\" x2=\"314.0\" y2=\"181.3\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"186.3\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"114.7\" x2=\"314.0\" y2=\"114.7\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"119.7\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"40.0\" y=\"148.0\" width=\"25.1\" height=\"100.0\" fill=\"#2563eb\"/><text x=\"52.6\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">15<\/text><rect x=\"67.1\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#d97706\"/><text x=\"79.7\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"94.2\" y=\"181.3\" width=\"25.1\" height=\"66.7\" fill=\"#047857\"/><text x=\"106.8\" y=\"175.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">10<\/text><text x=\"80.7\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">2024<\/text><rect x=\"133.3\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#2563eb\"/><text x=\"145.9\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"160.4\" y=\"114.7\" width=\"25.1\" height=\"133.3\" fill=\"#d97706\"/><text x=\"173.0\" y=\"108.7\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"187.6\" y=\"81.3\" width=\"25.1\" height=\"166.7\" fill=\"#047857\"/><text x=\"200.1\" y=\"75.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><text x=\"174.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">2025<\/text><rect x=\"226.7\" y=\"81.3\" width=\"25.1\" height=\"166.7\" fill=\"#2563eb\"/><text x=\"239.2\" y=\"75.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><rect x=\"253.8\" y=\"181.3\" width=\"25.1\" height=\"66.7\" fill=\"#d97706\"/><text x=\"266.3\" y=\"175.3\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">10<\/text><rect x=\"280.9\" y=\"48.0\" width=\"25.1\" height=\"200.0\" fill=\"#047857\"/><text x=\"293.4\" y=\"42.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">30<\/text><text x=\"267.3\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">2026<\/text><rect x=\"16.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Yüzme<\/text><rect x=\"120.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#d97706\"/><text x=\"143.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Tenis<\/text><rect x=\"224.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#047857\"/><text x=\"247.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Okçuluk<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "45",
+      "65",
+      "55",
+      "75"
+    ],
+    "dogru": 1,
+    "aciklama": "2026: 25 + 10 + 30 = 65."
+  },
+  {
+    "soru": "Aşağıdaki verilerden hangisini daire grafiğiyle göstermek anlamlı <b>değildir<\/b>?",
+    "secenekler": [
+      "Bir sınıfta herkesin seçtiği tek kulüp",
+      "Bir günlük 24 saatin etkinliklere dağılımı",
+      "Bir ilçede 7 gün boyunca ölçülen öğle sıcaklıkları",
+      "Bir bahçedeki ağaçların türlere dağılımı"
+    ],
+    "dogru": 2,
+    "aciklama": "Sıcaklıklar bir bütünün parçaları değildir; toplamlarının anlamı yoktur. Ötekiler bir bütünün parçalarıdır."
+  },
+  {
+    "soru": "Grafikte iki bitkinin boyu veriliyor (hayalî). Hangi hafta iki bitkinin boyu eşittir?<span class=\"msekil\"><svg viewBox=\"0 0 320 334\" style=\"max-width:380px\" role=\"img\" aria-label=\"Çok serili çizgi grafiği: Bitki boyu (cm). Fasulye: 1. 5, 2. 10, 3. 20, 4. 35; Nohut: 1. 10, 2. 15, 3. 20, 4. 25\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Bitki boyu (cm)<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"273.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"236.6\" x2=\"314.0\" y2=\"236.6\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"241.6\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">5<\/text><line x1=\"34.0\" y1=\"205.1\" x2=\"314.0\" y2=\"205.1\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"210.1\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"173.7\" x2=\"314.0\" y2=\"173.7\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"178.7\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">15<\/text><line x1=\"34.0\" y1=\"142.3\" x2=\"314.0\" y2=\"142.3\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"147.3\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"110.9\" x2=\"314.0\" y2=\"110.9\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"115.9\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">25<\/text><line x1=\"34.0\" y1=\"79.4\" x2=\"314.0\" y2=\"79.4\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"84.4\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">35<\/text><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"69.0,236.6 139.0,205.1 209.0,142.3 279.0,48.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><polyline points=\"69.0,205.1 139.0,173.7 209.0,142.3 279.0,110.9\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><circle cx=\"69.0\" cy=\"236.6\" r=\"6\" fill=\"#2563eb\"/><rect x=\"63.5\" y=\"199.6\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"69.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">1.<\/text><circle cx=\"139.0\" cy=\"205.1\" r=\"6\" fill=\"#2563eb\"/><rect x=\"133.5\" y=\"168.2\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"139.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">2.<\/text><circle cx=\"209.0\" cy=\"142.3\" r=\"6\" fill=\"#2563eb\"/><rect x=\"213.5\" y=\"136.8\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"209.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">3.<\/text><circle cx=\"279.0\" cy=\"48.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"273.5\" y=\"105.4\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"279.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">4.<\/text><line x1=\"8.0\" y1=\"316\" x2=\"34.0\" y2=\"316\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><circle cx=\"21.0\" cy=\"316.0\" r=\"6\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Fasulye<\/text><line x1=\"164.0\" y1=\"316\" x2=\"190.0\" y2=\"316\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><rect x=\"171.5\" y=\"310.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"195.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Nohut<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "1. hafta",
+      "2. hafta",
+      "4. hafta",
+      "3. hafta"
+    ],
+    "dogru": 3,
+    "aciklama": "3. haftada iki nokta çakışır: ikisi de 20 cm’dir."
+  },
+  {
+    "soru": "Hayalî bir kitaplıktan ödünç alınan kitaplar grafikte verilmiştir. Roman sayısındaki <b>en büyük artış<\/b> hangi iki ay arasındadır?<span class=\"msekil\"><svg viewBox=\"0 0 320 334\" style=\"max-width:380px\" role=\"img\" aria-label=\"Çok serili çizgi grafiği: Ödünç alınan kitap. Roman: Ocak 20, Şubat 25, Mart 45, Nisan 50; Bilim: Ocak 30, Şubat 40, Mart 35, Nisan 40\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Ödünç alınan kitap<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"273.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"246.0\" x2=\"314.0\" y2=\"246.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"251.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">5<\/text><line x1=\"34.0\" y1=\"224.0\" x2=\"314.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"229.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"202.0\" x2=\"314.0\" y2=\"202.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"207.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">15<\/text><line x1=\"34.0\" y1=\"180.0\" x2=\"314.0\" y2=\"180.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"185.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"158.0\" x2=\"314.0\" y2=\"158.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"163.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">25<\/text><line x1=\"34.0\" y1=\"136.0\" x2=\"314.0\" y2=\"136.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"141.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"114.0\" x2=\"314.0\" y2=\"114.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"119.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">35<\/text><line x1=\"34.0\" y1=\"92.0\" x2=\"314.0\" y2=\"92.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"97.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">40<\/text><line x1=\"34.0\" y1=\"70.0\" x2=\"314.0\" y2=\"70.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">45<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">50<\/text><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"69.0,180.0 139.0,158.0 209.0,70.0 279.0,48.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><polyline points=\"69.0,136.0 139.0,92.0 209.0,114.0 279.0,92.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><circle cx=\"69.0\" cy=\"180.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"63.5\" y=\"130.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"69.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Ocak<\/text><circle cx=\"139.0\" cy=\"158.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"133.5\" y=\"86.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"139.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Şubat<\/text><circle cx=\"209.0\" cy=\"70.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"203.5\" y=\"108.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"209.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Mart<\/text><circle cx=\"279.0\" cy=\"48.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"273.5\" y=\"86.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"279.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Nisan<\/text><line x1=\"8.0\" y1=\"316\" x2=\"34.0\" y2=\"316\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><circle cx=\"21.0\" cy=\"316.0\" r=\"6\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Roman<\/text><line x1=\"164.0\" y1=\"316\" x2=\"190.0\" y2=\"316\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><rect x=\"171.5\" y=\"310.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"195.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Bilim<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "Şubat – Mart",
+      "Ocak – Şubat",
+      "Mart – Nisan",
+      "Ocak – Nisan arasında artış yoktur"
+    ],
+    "dogru": 0,
+    "aciklama": "Roman sayısı sırasıyla 5, 20 ve 5 artmıştır. En büyük artış Şubat – Mart arasındadır."
+  },
+  {
+    "soru": "Yalnız merkez açıları verilen bir daire grafiği, kişi sayılarını gösteren bir sütun grafiğine dönüştürülecek. Bunun için ayrıca hangi bilgi gerekir?",
+    "secenekler": [
+      "Dairenin yarıçapı",
+      "Toplam kişi sayısı",
+      "Dilimlerin renkleri",
+      "Grafiğin çizildiği tarih"
+    ],
+    "dogru": 1,
+    "aciklama": "Açılar yalnız payları verir. Kişi sayısı = (açı ÷ 360) × toplam."
+  },
+  {
+    "soru": "72 öğrencilik hayalî bir grubun okula geliş biçimi daire grafiğinde gösterilmiştir. Servisle gelen kaç öğrencidir?<span class=\"msekil\"><svg viewBox=\"0 0 310 370\" style=\"max-width:370px\" role=\"img\" aria-label=\"Daire grafiği: Okula geliş. Yürüyerek: 150° 5, Servis: 120° 4, Otobüs: 90° 3\"><text x=\"155.0\" y=\"22.0\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" fill=\"#1e1b4b\">Okula geliş<\/text><g transform=\"translate(0 0)\"><path d=\"M155 150 L155.00 44.00 A106 106 0 0 1 208.00 241.80 Z\" fill=\"#2563eb\" stroke=\"#fff\" stroke-width=\"2.5\"/><rect x=\"68.5\" y=\"275\" width=\"22\" height=\"22\" rx=\"4\" fill=\"#2563eb\"/><text x=\"100.5\" y=\"292.0\" text-anchor=\"start\" font-size=\"17\" font-weight=\"700\" fill=\"#1e1b4b\">Yürüyerek: 150°<\/text><path d=\"M155 150 L208.00 241.80 A106 106 0 0 1 49.00 150.00 Z\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"2.5\"/><rect x=\"68.5\" y=\"303\" width=\"22\" height=\"22\" rx=\"4\" fill=\"#f59e0b\"/><text x=\"100.5\" y=\"320.0\" text-anchor=\"start\" font-size=\"17\" font-weight=\"700\" fill=\"#1e1b4b\">Servis: 120°<\/text><path d=\"M155 150 L49.00 150.00 A106 106 0 0 1 155.00 44.00 Z\" fill=\"#059669\" stroke=\"#fff\" stroke-width=\"2.5\"/><rect x=\"68.5\" y=\"331\" width=\"22\" height=\"22\" rx=\"4\" fill=\"#059669\"/><text x=\"100.5\" y=\"348.0\" text-anchor=\"start\" font-size=\"17\" font-weight=\"700\" fill=\"#1e1b4b\">Otobüs: 90°<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "12",
+      "30",
+      "24",
+      "120"
+    ],
+    "dogru": 2,
+    "aciklama": "120 ÷ 360 = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 3\"><span class=\"ks\"><span>1<\/span><span>3<\/span><\/span><\/span>;<\/span> 72’nin <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 3\"><span class=\"ks\"><span>1<\/span><span>3<\/span><\/span><\/span>’i<\/span> 24’tür."
+  },
+  {
+    "soru": "Bir sıklık tablosunda üç seçeneğin sayıları 6, 9 ve 15’tir. Daire grafiğinde 9 sayısını gösteren dilimin merkez açısı kaç derecedir?",
+    "secenekler": [
+      "108°",
+      "90°",
+      "54°",
+      "126°"
+    ],
+    "dogru": 0,
+    "aciklama": "Toplam 30. 9 ÷ 30 × 360° = 108°."
+  },
+  {
+    "soru": "«En sevilen meyve» anketinin sütun grafiği çizgi grafiğine dönüştürülmek isteniyor. Bu dönüşüm neden uygun <b>değildir<\/b>?",
+    "secenekler": [
+      "Çizgi grafiğinde sayı gösterilemez.",
+      "Sütun grafiği hiçbir grafiğe dönüştürülemez.",
+      "Anket verileri tabloya yazılamaz.",
+      "Meyveler arasında doğal bir sıra ve süreklilik yoktur."
+    ],
+    "dogru": 3,
+    "aciklama": "Noktaları birleştiren çizgi, elmadan muza bir «değişim» varmış izlenimi verir; kategoriler arasında böyle bir ilişki yoktur."
+  },
+  {
+    "soru": "A ürününden 48, B ürününden 52 adet satılmıştır. Dikey ekseni 45’ten başlayan bir sütun grafiği için hangisi doğrudur?",
+    "secenekler": [
+      "İki sütunun boyu eşit görünür.",
+      "Fark yalnız 4 olduğu hâlde B’nin sütunu A’nınkinin 2 katından uzun görünür.",
+      "B’nin satışı A’nın satışının 2 katından fazladır.",
+      "A’nın sütunu B’nin sütunundan uzun olur."
+    ],
+    "dogru": 1,
+    "aciklama": "Görünen boylar 48 − 45 = 3 ve 52 − 45 = 7 birimdir. Gerçek satışlar 48 ve 52’dir."
+  },
+  {
+    "soru": "Grafik hayalî bir okulda toplanan atıkları gösteriyor. Dört aylık toplamları <b>eşit<\/b> olan iki atık türü hangisidir?<span class=\"msekil\"><svg viewBox=\"0 0 320 334\" style=\"max-width:380px\" role=\"img\" aria-label=\"Çok serili çizgi grafiği: Toplanan atık (kg). Kâğıt: Ekim 20, Kasım 30, Aralık 40, Ocak 50; Plastik: Ekim 25, Kasım 30, Aralık 35, Ocak 40; Cam: Ekim 45, Kasım 35, Aralık 30, Ocak 20\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Toplanan atık (kg)<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"273.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"246.0\" x2=\"314.0\" y2=\"246.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"251.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">5<\/text><line x1=\"34.0\" y1=\"224.0\" x2=\"314.0\" y2=\"224.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"229.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"202.0\" x2=\"314.0\" y2=\"202.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"207.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">15<\/text><line x1=\"34.0\" y1=\"180.0\" x2=\"314.0\" y2=\"180.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"185.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"158.0\" x2=\"314.0\" y2=\"158.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"163.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">25<\/text><line x1=\"34.0\" y1=\"136.0\" x2=\"314.0\" y2=\"136.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"141.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"114.0\" x2=\"314.0\" y2=\"114.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"119.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">35<\/text><line x1=\"34.0\" y1=\"92.0\" x2=\"314.0\" y2=\"92.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"97.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">40<\/text><line x1=\"34.0\" y1=\"70.0\" x2=\"314.0\" y2=\"70.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"75.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">45<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">50<\/text><line x1=\"34.0\" y1=\"268.0\" x2=\"314.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"268.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><polyline points=\"69.0,180.0 139.0,136.0 209.0,92.0 279.0,48.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><polyline points=\"69.0,158.0 139.0,136.0 209.0,114.0 279.0,92.0\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><polyline points=\"69.0,70.0 139.0,114.0 209.0,136.0 279.0,180.0\" fill=\"none\" stroke=\"#047857\" stroke-width=\"3.5\" stroke-dasharray=\"2 6\"/><circle cx=\"69.0\" cy=\"180.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"63.5\" y=\"152.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><polygon points=\"69.0,62.0 76.0,75.0 62.0,75.0\" fill=\"#047857\"/><text x=\"69.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Ekim<\/text><circle cx=\"139.0\" cy=\"136.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"143.5\" y=\"130.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><polygon points=\"139.0,106.0 146.0,119.0 132.0,119.0\" fill=\"#047857\"/><text x=\"139.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Kasım<\/text><circle cx=\"209.0\" cy=\"92.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"203.5\" y=\"108.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><polygon points=\"209.0,128.0 216.0,141.0 202.0,141.0\" fill=\"#047857\"/><text x=\"209.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Aralık<\/text><circle cx=\"279.0\" cy=\"48.0\" r=\"6\" fill=\"#2563eb\"/><rect x=\"273.5\" y=\"86.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><polygon points=\"279.0,172.0 286.0,185.0 272.0,185.0\" fill=\"#047857\"/><text x=\"279.0\" y=\"289.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Ocak<\/text><line x1=\"8.0\" y1=\"316\" x2=\"34.0\" y2=\"316\" stroke=\"#2563eb\" stroke-width=\"3.5\"/><circle cx=\"21.0\" cy=\"316.0\" r=\"6\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Kâğıt<\/text><line x1=\"112.0\" y1=\"316\" x2=\"138.0\" y2=\"316\" stroke=\"#d97706\" stroke-width=\"3.5\" stroke-dasharray=\"9 5\"/><rect x=\"119.5\" y=\"310.5\" width=\"11\" height=\"11\" fill=\"#d97706\"/><text x=\"143.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Plastik<\/text><line x1=\"216.0\" y1=\"316\" x2=\"242.0\" y2=\"316\" stroke=\"#047857\" stroke-width=\"3.5\" stroke-dasharray=\"2 6\"/><polygon points=\"229.0,308.0 236.0,321.0 222.0,321.0\" fill=\"#047857\"/><text x=\"247.0\" y=\"321.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Cam<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "Plastik ve cam",
+      "Kâğıt ve cam",
+      "Kâğıt ve plastik",
+      "Eşit olan yoktur"
+    ],
+    "dogru": 0,
+    "aciklama": "Kâğıt: 140, plastik: 130, cam: 130 kg."
+  },
+  {
+    "soru": "Hayalî bir kırtasiyenin satışlarında defter ve kalem sayıları arasındaki <b>fark<\/b> hangi gün en büyüktür?<span class=\"msekil\"><svg viewBox=\"0 0 320 314\" style=\"max-width:380px\" role=\"img\" aria-label=\"Gruplu sütun grafiği: Satılan ürün. Defter: Pzt 20, Salı 30, Çrş 25, Prş 40; Kalem: Pzt 35, Salı 25, Çrş 45, Prş 30\"><text x=\"160.0\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Satılan ürün<\/text><g transform=\"translate(0 0)\"><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"253.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">0<\/text><line x1=\"34.0\" y1=\"208.0\" x2=\"314.0\" y2=\"208.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"213.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">10<\/text><line x1=\"34.0\" y1=\"168.0\" x2=\"314.0\" y2=\"168.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"173.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">20<\/text><line x1=\"34.0\" y1=\"128.0\" x2=\"314.0\" y2=\"128.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"133.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">30<\/text><line x1=\"34.0\" y1=\"88.0\" x2=\"314.0\" y2=\"88.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"93.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">40<\/text><line x1=\"34.0\" y1=\"48.0\" x2=\"314.0\" y2=\"48.0\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\"/><text x=\"28.0\" y=\"53.0\" text-anchor=\"end\" font-size=\"15\" font-weight=\"700\" fill=\"#334155\">50<\/text><line x1=\"34.0\" y1=\"248.0\" x2=\"314.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"34.0\" y1=\"40.0\" x2=\"34.0\" y2=\"248.0\" stroke=\"#1e1b4b\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"41.0\" y=\"168.0\" width=\"26.0\" height=\"80.0\" fill=\"#2563eb\"/><text x=\"54.0\" y=\"162.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">20<\/text><rect x=\"69.0\" y=\"108.0\" width=\"26.0\" height=\"140.0\" fill=\"#d97706\"/><text x=\"82.0\" y=\"102.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">35<\/text><text x=\"69.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Pzt<\/text><rect x=\"111.0\" y=\"128.0\" width=\"26.0\" height=\"120.0\" fill=\"#2563eb\"/><text x=\"124.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">30<\/text><rect x=\"139.0\" y=\"148.0\" width=\"26.0\" height=\"100.0\" fill=\"#d97706\"/><text x=\"152.0\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><text x=\"139.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Salı<\/text><rect x=\"181.0\" y=\"148.0\" width=\"26.0\" height=\"100.0\" fill=\"#2563eb\"/><text x=\"194.0\" y=\"142.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">25<\/text><rect x=\"209.0\" y=\"68.0\" width=\"26.0\" height=\"180.0\" fill=\"#d97706\"/><text x=\"222.0\" y=\"62.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">45<\/text><text x=\"209.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Çrş<\/text><rect x=\"251.0\" y=\"88.0\" width=\"26.0\" height=\"160.0\" fill=\"#2563eb\"/><text x=\"264.0\" y=\"82.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">40<\/text><rect x=\"279.0\" y=\"128.0\" width=\"26.0\" height=\"120.0\" fill=\"#d97706\"/><text x=\"292.0\" y=\"122.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"800\" fill=\"#1e1b4b\">30<\/text><text x=\"279.0\" y=\"269.0\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Prş<\/text><rect x=\"16.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#2563eb\"/><text x=\"39.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Defter<\/text><rect x=\"172.0\" y=\"287\" width=\"18\" height=\"18\" rx=\"3\" fill=\"#d97706\"/><text x=\"195.0\" y=\"301.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"700\" fill=\"#1e1b4b\">Kalem<\/text><\/g><\/svg><\/span>",
+    "secenekler": [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe"
+    ],
+    "dogru": 2,
+    "aciklama": "Farklar: Pazartesi 15, Salı 5, Çarşamba 20, Perşembe 10."
+  },
+  {
+    "soru": "Bir daire grafiğinde merkez açısı 144° olan dilim 36 kişiyi gösteriyor. Ankete toplam kaç kişi katılmıştır?",
+    "secenekler": [
+      "72",
+      "90",
+      "108",
+      "144"
+    ],
+    "dogru": 1,
+    "aciklama": "144° bütünün <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span>’idir.<\/span> <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span>’i<\/span> 36 olan sayı 90’dır."
+  },
+  {
+    "soru": "Hayalî X okulunda 200, Y okulunda 120 öğrenci vardır. Daire grafiklerinde satranç dilimi X için 90°, Y için 120°’dir. Satranç seçenlerin sayısı için hangisi doğrudur?",
+    "secenekler": [
+      "Y okulunda daha fazladır.",
+      "İki okulda eşittir.",
+      "Bu bilgilerle bulunamaz.",
+      "X okulunda daha fazladır."
+    ],
+    "dogru": 3,
+    "aciklama": "X: 200’ün <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 4\"><span class=\"ks\"><span>1<\/span><span>4<\/span><\/span><\/span>’i<\/span> = 50. Y: 120’nin <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 3\"><span class=\"ks\"><span>1<\/span><span>3<\/span><\/span><\/span>’i<\/span> = 40. Dilimin büyük olması sayının büyük olduğunu göstermez; toplamlar farklıdır."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
