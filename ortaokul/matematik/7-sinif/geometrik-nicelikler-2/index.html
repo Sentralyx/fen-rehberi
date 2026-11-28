@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometrik Nicelikler (2) – 7. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="7. sınıf dairenin ve daire diliminin alanı, yamuk ve eşkenar dörtgenin alanı ve alan problemleri.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/7-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/">7. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/7-sinif/">7. Sınıf</a> › Geometrik Nicelikler (2)</div>
+      <h1>📏 Geometrik Nicelikler (2)</h1>
+      <p>Yuvarlak bir pidenin yüzeyi kaç santimetrekaredir? Kenarı eğri olan bir şekle birim kare döşemek zor. Peki pideyi dilimleyip parçaları başka bir şekle dizersen?</p>
+      <div class="konu-meta"><span>📚 7. Sınıf Matematik</span><span>⏱️ 30 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="hatirla">Elindeki Araçlar</h2>
+
+<table><tr><th>Şekil / uzunluk</th><th>Bağıntı</th></tr><tr><td>Dikdörtgenin alanı</td><td>uzun kenar · kısa kenar</td></tr><tr><td>Paralelkenarın alanı</td><td>taban · o tabana ait yükseklik</td></tr><tr><td>Üçgenin alanı</td><td>taban · yükseklik ÷ 2</td></tr><tr><td>Çemberin uzunluğu</td><td>2 · π · r</td></tr></table>
+<p>Paralelkenarın bir ucundan dik üçgen kesip öbür uca taşıyınca dikdörtgen oluştuğunu hatırla. <strong>Parçalayıp yeniden dizince alan değişmez.</strong></p>
+<p><strong>Tartış:</strong> Aynı «parçala ve diz» yöntemi bir daire için de işe yarar mı?</p>
+
+        <h2 id="daire">Daireden Dikdörtgene</h2>
+
+<p><strong>Yap:</strong> Kâğıttan bir daire kes. Katlayarak 8 eş dilime ayır, dilimleri kes.</p>
+<figure class="msekil"><svg viewBox="0 0 320 200" style="max-width:380px" role="img" aria-label="8 eş dilime ayrılmış daire; yarısı mor, yarısı turuncu"><path d="M160.00 100.00 L250.00 100.00 A90.00 90.00 0 0 0 223.64 36.36 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L223.64 36.36 A90.00 90.00 0 0 0 160.00 10.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L160.00 10.00 A90.00 90.00 0 0 0 96.36 36.36 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L96.36 36.36 A90.00 90.00 0 0 0 70.00 100.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L70.00 100.00 A90.00 90.00 0 0 0 96.36 163.64 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L96.36 163.64 A90.00 90.00 0 0 0 160.00 190.00 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L160.00 190.00 A90.00 90.00 0 0 0 223.64 163.64 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.00 100.00 L223.64 163.64 A90.00 90.00 0 0 0 250.00 100.00 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/></svg></figure>
+<p>Dilimleri bir yukarı, bir aşağı yan yana diz:</p>
+<figure class="msekil"><svg viewBox="0 0 320 148" style="max-width:380px" role="img" aria-label="8 eş dilim bir yukarı bir aşağı dizilince paralelkenara benzeyen şekil; yüksekliği yaklaşık r"><path d="M66.21 104.21 L95.29 34.00 A76.00 76.00 0 0 0 37.12 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M124.37 104.21 L153.46 34.00 A76.00 76.00 0 0 0 95.29 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M182.54 104.21 L211.63 34.00 A76.00 76.00 0 0 0 153.46 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M240.71 104.21 L269.79 34.00 A76.00 76.00 0 0 0 211.63 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M95.29 34.00 L66.21 104.21 A76.00 76.00 0 0 0 124.37 104.21 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M153.46 34.00 L124.37 104.21 A76.00 76.00 0 0 0 182.54 104.21 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M211.63 34.00 L182.54 104.21 A76.00 76.00 0 0 0 240.71 104.21 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M269.79 34.00 L240.71 104.21 A76.00 76.00 0 0 0 298.88 104.21 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><text x="160.0" y="16.0" text-anchor="middle" font-size="15" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="4" paint-order="stroke">çevrenin yarısına yakın</text><text x="160.0" y="138.2" text-anchor="middle" font-size="15" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="4" paint-order="stroke">çevrenin yarısına yakın</text><text x="27.1" y="74.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="4" paint-order="stroke">≈ r</text></svg></figure>
+<p>Şekil paralelkenara benziyor, ama üstü ve altı dalgalı. Şimdi <strong>16 dilimle</strong> dene:</p>
+<figure class="msekil"><svg viewBox="0 0 320 153" style="max-width:380px" role="img" aria-label="16 eş dilim bir yukarı bir aşağı dizilince paralelkenara benzeyen şekil; yüksekliği yaklaşık r"><path d="M56.80 108.54 L71.63 34.00 A76.00 76.00 0 0 0 41.97 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M86.45 108.54 L101.28 34.00 A76.00 76.00 0 0 0 71.63 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M116.11 108.54 L130.93 34.00 A76.00 76.00 0 0 0 101.28 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M145.76 108.54 L160.59 34.00 A76.00 76.00 0 0 0 130.93 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M175.41 108.54 L190.24 34.00 A76.00 76.00 0 0 0 160.59 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M205.07 108.54 L219.89 34.00 A76.00 76.00 0 0 0 190.24 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M234.72 108.54 L249.55 34.00 A76.00 76.00 0 0 0 219.89 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M264.37 108.54 L279.20 34.00 A76.00 76.00 0 0 0 249.55 34.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M71.63 34.00 L56.80 108.54 A76.00 76.00 0 0 0 86.45 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M101.28 34.00 L86.45 108.54 A76.00 76.00 0 0 0 116.11 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M130.93 34.00 L116.11 108.54 A76.00 76.00 0 0 0 145.76 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160.59 34.00 L145.76 108.54 A76.00 76.00 0 0 0 175.41 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M190.24 34.00 L175.41 108.54 A76.00 76.00 0 0 0 205.07 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M219.89 34.00 L205.07 108.54 A76.00 76.00 0 0 0 234.72 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M249.55 34.00 L234.72 108.54 A76.00 76.00 0 0 0 264.37 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><path d="M279.20 34.00 L264.37 108.54 A76.00 76.00 0 0 0 294.03 108.54 Z" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8" stroke-linejoin="round"/><text x="160.0" y="16.0" text-anchor="middle" font-size="15" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="4" paint-order="stroke">çevrenin yarısına yakın</text><text x="160.0" y="142.5" text-anchor="middle" font-size="15" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="4" paint-order="stroke">çevrenin yarısına yakın</text><text x="32.0" y="76.3" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="4" paint-order="stroke">≈ r</text></svg></figure>
+<p>Dalgalar küçüldü, yan kenarlar dikleşti. Dilim sayısı arttıkça (32, 64 …) şekil <strong>dikdörtgene yaklaşır.</strong> Matematik yazılımında dilim sayısını artırarak da izleyebilirsin.</p>
+<p><strong>Çıkarımı tamamla:</strong> Bu dikdörtgenin kısa kenarı neye, uzun kenarı neye karşılık gelir?</p>
+<details><summary>Cevabı göster</summary><p>Kısa kenar yaklaşık <strong>r</strong>. Çemberin yarısı üstte, yarısı altta kaldığı için uzun kenar <strong>çevrenin yarısı</strong>: 2 · π · r ÷ 2 = π · r.</p></details>
+<div class="formul">Dairenin alanı = π · r · r = π · r²</div>
+<p>(r² = r · r demektir.) Kestiğin sonlu sayıdaki dilimle tam dikdörtgen oluşmaz; sonuç, dilimler küçüldükçe yaklaşılan şekilden çıkar. Alan, dilimleri dizmekle değişmediği için bu alan dairenin alanıdır.</p>
+<p><strong>Farklı dairelerde değerlendir:</strong> Bu mantık yarıçapa bağlı mı? Kareli kâğıda yarıçapı 5 ve 10 birim olan iki daire çiz, kareleri sayarak alanı tahmin et; π ≈ 3,14 ile hesabınla karşılaştır.</p>
+<details><summary>Cevabı göster</summary><p>Hesapla 78,5 ve 314 birimkare. Sayma yaklaşık sonuç verir. Yarıçap 2 katına çıkınca alan 4 katına çıkar. Dilimleme her yarıçapta yapılabildiği için bağıntı bütün dairelerde geçerlidir.</p></details>
+
+        <h2 id="dilim">Daire Dilimi: Aynı Kesir</h2>
+
+<p>Bir pideyi arkadaşlarınla <strong>adil</strong> paylaşmak istiyorsun. Herkes eşit miktar alsın diye merkezden, <strong>merkez açıları eşit</strong> dilimler kesersin (pidenin her yeri aynı kalınlıktaysa).</p>
+<p><strong>Gözlemle:</strong> Yarıçapı 12 cm olan daire (π ≈ 3): çevre 72 cm, alan 432 cm². Çembersel geometri tahtası ya da kâğıtla deneyebilirsin.</p>
+<table><tr><th>Merkez açı</th><th>Yay (cm) · dilim alanı (cm²)</th></tr><tr><td>360°</td><td>72 · 432</td></tr><tr><td>180°</td><td>36 · 216</td></tr><tr><td>90°</td><td>18 · 108</td></tr><tr><td>45°</td><td>9 · 54</td></tr></table>
+<p><strong>İlişkiyi bul:</strong> Açı yarıya inince yaya ne oluyor? Alana ne oluyor?</p>
+<p><strong>Benzetme ile akıl yürüt:</strong> Yay uzunluğu, açının tam açıya oranı kadar çevre payıdır. Daire de eş dilimlerden oluştuğu için <strong>dilim alanı da aynı oran kadar alan payıdır.</strong> Dilimin alanı merkez açının ölçüsüyle <strong>doğru orantılıdır.</strong></p>
+<div class="formul">Dilim alanı = π · r² · <span class="bitisik"><span class="kesir" role="img" aria-label="α bölü 360"><span class="ks"><span>α</span><span>360</span></span></span></span> (α: merkez açının derecesi)</div>
+<figure class="msekil"><svg viewBox="0 0 320 234" style="max-width:380px" role="img" aria-label="Merkez açısı 120 derece olan daire dilimi; yarıçap: 9 cm"><circle cx="160" cy="108" r="92" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/><path d="M160.00 108.00 L239.67 62.00 A92.00 92.00 0 0 0 80.33 62.00 Z" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round"/><path d="M180.8 96.0 A24 24 0 0 0 139.2 96.0" fill="none" stroke="#be123c" stroke-width="2.5"/><text x="160.0" y="65.0" text-anchor="middle" font-size="18" font-weight="800" fill="#be123c" stroke="#ffffff" stroke-width="4" paint-order="stroke">120°</text><circle cx="160" cy="108" r="4.5" fill="#1e1b4b"/><text x="160.0" y="224.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="4" paint-order="stroke">yarıçap: 9 cm</text></svg></figure>
+<p><strong>Sen hesapla (π ≈ 3):</strong> Şekildeki dilimin alanı ve yayı kaç olur? İki yoldan düşün: kesirle ve eş parçaya bölerek.</p>
+<details><summary>Cevabı göster</summary><p>120°, tam açının <span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 3"><span class="ks"><span>1</span><span>3</span></span></span>’ü.</span> Alan: 243 ÷ 3 = 81 cm². Yay: 54 ÷ 3 = 18 cm.</p></details>
+
+        <h2 id="yamuk">Yamuğun Alanı</h2>
+
+<p><strong>En az bir çift kenarı paralel</strong> olan bu dörtgende paralel kenarlara <strong>taban</strong> (a ve c), aralarındaki dik uzaklığa <strong>yükseklik</strong> (h) diyoruz. Eğik kenar yükseklik değildir.</p>
+<figure class="msekil"><svg viewBox="0 0 320 174" style="max-width:380px" role="img" aria-label="Yamuk: alt taban 10 cm, üst taban 6 cm, yükseklik 5 cm"><polygon points="50.0,140.0 270.0,140.0 208.4,30.0 76.4,30.0" fill="#ede9fe" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round"/><line x1="135.8" y1="140.0" x2="135.8" y2="30.0" stroke="#047857" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 5"/><polyline points="135.8,129.0 146.8,129.0 146.8,140.0" fill="none" stroke="#047857" stroke-width="2"/><text x="165.8" y="90.0" text-anchor="middle" font-size="17" font-weight="800" fill="#047857" stroke="#ffffff" stroke-width="4" paint-order="stroke">5 cm</text><text x="160.0" y="164.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="4" paint-order="stroke">10 cm</text><text x="142.4" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="4" paint-order="stroke">6 cm</text></svg></figure>
+<p><strong>1. Varsayım:</strong> Grubunla alanın nasıl bulunacağını tahmin edin ve yazın. Kareli kâğıtta, geometri tahtasında ya da yazılımda kendi yamuklarınızı oluşturun.</p>
+<p><strong>2. Tamamla:</strong> İki eş yamuk kes; birini yarım tur döndürüp ötekine yapıştır:</p>
+<figure class="msekil"><svg viewBox="0 0 320 148" style="max-width:380px" role="img" aria-label="İki eş yamuk birleşince tabanı 10 + 6, yüksekliği 5 olan paralelkenar oluşur"><polygon points="14.9,114.4 183.6,114.4 136.4,30.0 35.1,30.0" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round"/><polygon points="305.1,30.0 136.4,30.0 183.6,114.4 284.9,114.4" fill="#fed7aa" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round"/><text x="99.2" y="138.4" text-anchor="middle" font-size="17" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="4" paint-order="stroke">10</text><text x="234.2" y="138.4" text-anchor="middle" font-size="17" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="4" paint-order="stroke">6</text><text x="85.8" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="4" paint-order="stroke">6</text><text x="220.8" y="20.0" text-anchor="middle" font-size="17" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="4" paint-order="stroke">10</text><line x1="47.3" y1="114.4" x2="47.3" y2="30.0" stroke="#047857" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 5"/><text x="71.3" y="77.2" text-anchor="middle" font-size="15" font-weight="800" fill="#047857" stroke="#ffffff" stroke-width="4" paint-order="stroke">h = 5</text></svg></figure>
+<p>Tabanı a + c, yüksekliği h olan bir <strong>paralelkenar</strong> oluştu. Alanı (a + c) · h; bir yamuk bunun yarısıdır:</p>
+<div class="formul">Yamuğun alanı = (a + c) · h ÷ 2</div>
+<p><strong>3. Parçala:</strong> Bir köşegen çiz: yamuk, tabanları a ve c, yükseklikleri h olan iki üçgene ayrılır: a · h ÷ 2 + c · h ÷ 2. Aynı sonuca çıktı mı?</p>
+<p><strong>4. Karşılaştır:</strong> Baştaki varsayımın tuttu mu? Tutmadıysa hangi parçayı eksik ya da fazla saymışsın? Kendi cümlenle bir önerme yaz.</p>
+
+        <h2 id="eskenar">Eşkenar Dörtgenin Alanı</h2>
+
+<p>Eşkenar dörtgenin köşegenleri <strong>birbirini dik olarak ortalar.</strong> Yalnız köşegen uzunluklarını biliyorsan alanı bulabilir misin? <strong>Önce varsayımını yaz.</strong></p>
+<figure class="msekil"><svg viewBox="0 0 320 220" style="max-width:380px" role="img" aria-label="Köşegenleri 8 cm ve 6 cm olan eşkenar dörtgen, kenarları köşegenlere paralel bir dikdörtgenin içinde"><rect x="60.0" y="14" width="200.0" height="150.0" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/><polygon points="60.0,89.0 160.0,14.0 260.0,89.0 160.0,164.0" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="2.5" stroke-linejoin="round"/><line x1="60.0" y1="89.0" x2="260.0" y2="89.0" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/><line x1="160.0" y1="14.0" x2="160.0" y2="164.0" stroke="#047857" stroke-width="2.5" stroke-linecap="round"/><polyline points="160.0,78.0 171.0,78.0 171.0,89.0" fill="none" stroke="#1e1b4b" stroke-width="2"/><text x="160.0" y="188.0" text-anchor="middle" font-size="16" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="4" paint-order="stroke">yatay köşegen: 8 cm</text><text x="160.0" y="210.0" text-anchor="middle" font-size="16" font-weight="800" fill="#047857" stroke="#ffffff" stroke-width="4" paint-order="stroke">dikey köşegen: 6 cm</text></svg></figure>
+<p><strong>Parçala:</strong> Köşegenler dört eş dik üçgen oluşturur. Her birinin dik kenarları 4 cm ve 3 cm: 4 · 3 ÷ 2 = 6 cm². Dördü 24 cm².</p>
+<p><strong>Tamamla:</strong> Kesik çizgili dikdörtgen 8 × 6 = 48 cm²’dir. İçinde eşkenar dörtgenin dört üçgeni ve onlara eş dört köşe üçgeni vardır. Eşkenar dörtgen dikdörtgenin <strong>yarısıdır.</strong></p>
+<div class="formul">Eşkenar dörtgenin alanı = e · f ÷ 2 (e, f: köşegenler)</div>
+<p>Eşkenar dörtgen aynı zamanda paralelkenardır; taban ve yüksekliği biliniyorsa <strong>taban · yükseklik</strong> de kullanılır. İki yol aynı alanı verir.</p>
+<p><strong>Bu bağıntılar ne işe yarıyor?</strong> Karmaşık bir şekli yamuk, eşkenar dörtgen, üçgen ve dikdörtgene ayırarak alanını bulursun. Köşegenleri <em>dik kesişen</em> dışbükey başka bir dörtgende (ör. deltoid) de «köşegenler çarpımının yarısı» çalışır mı? Üçgenlere ayırarak incele. Sonra bu temadaki şekillerle bir <strong>zihin haritası</strong> yap.</p>
+<details><summary>Cevabı göster</summary><p>Çalışır: bir köşegen şekli iki üçgene ayırır; üçgenlerin yükseklikleri öteki köşegenin iki parçasıdır ve toplamları o köşegendir. Köşegenler dik değilse bu parçalar yükseklik olmaz.</p></details>
+
+        <h2 id="problem">Problem: Tahmin Et, Çöz, Kontrol Et</h2>
+
+<p><strong>Problem:</strong> Hayalî bir parkta yarıçapı 5 m olan daire biçimli havuzun çevresine 1 m genişliğinde yürüyüş yolu yapılacak. Yolun alanı kaç m²? (π ≈ 3)</p>
+<ol><li><strong>Bileşenler:</strong> iç daire r = 5 m; yol genişliği 1 m; dış daire r = 6 m. İstenen halka alanı.</li><li><strong>İlişki:</strong> yol = büyük daire − havuz.</li><li><strong>Temsil:</strong> iç içe iki daire çiz, ölçüleri yaz, problemi kendi cümlenle anlat.</li><li><strong>Tahmin:</strong> Yolun ortasından geçen çember yaklaşık 2 · 3 · 5,5 = 33 m; genişlik 1 m olduğuna göre alan 33 m² dolayında olmalı.</li><li><strong>Uygula:</strong> 3 · 36 − 3 · 25 = 108 − 75 = <strong>33 m²</strong>.</li><li><strong>Kontrol et:</strong> Tahminle uyumlu mu? «Yarıçap farkı 1, alan 3 · 1 · 1 = 3» yolu neden yanlış? Çünkü alanlar çıkarılır, yarıçaplar değil.</li></ol>
+<p><strong>Sen çöz (π ≈ 3):</strong> Bir aracın silecek lastiği, dönme noktasına 20 cm ile 60 cm uzaklıkları arasını siliyor ve 120° dönüyor. Silinen alan kaç cm²? Önce tahmin et, iki yoldan çöz.</p>
+<details><summary>Cevabı göster</summary><p>Büyük dilim: 3 · 3600 ÷ 3 = 3600; küçük dilim: 3 · 400 ÷ 3 = 400; fark <strong>3200 cm²</strong>. İkinci yol: önce halkanın alanı 3 · (3600 − 400) = 9600, sonra üçte biri 3200.</p></details>
+<p>Çözüme ulaşamazsan stratejini değiştir: şekli yeniden çiz, noktalı kâğıt, çembersel kâğıt ya da matematik yazılımı kullan.</p>
+
+        <h2 id="genelle">Stratejini Genelle, Problem Kur</h2>
+
+<p><strong>Gözden geçir:</strong> Hangi problemde «bütünden parçayı çıkar», hangisinde «parçalara ayırıp topla», hangisinde «dairenin kesrini al» işine yaradı? Hangi yol daha kısaydı?</p>
+<p><strong>Genelle ve sına:</strong> «İç içe iki dairenin arasındaki alanda büyük alandan küçüğü çıkarırım.» Bu strateji, merkezleri aynı olmayan ama küçüğü büyüğün tamamen içinde kalan iki dairede de geçerli mi? Kare içindeki daire için? Örneklerle değerlendir.</p>
+<details><summary>Cevabı göster</summary><p>Evet. İç şekil dış şeklin tamamen içindeyse, arada kalan alan iki alanın farkıdır; merkezlerin yeri sonucu değiştirmez. İç şekil dışarı taşıyorsa bu çıkarma yanlış olur.</p></details>
+<p><strong>Kendi problemini kur:</strong> Uçurtma, hız göstergesi, süs havuzu ya da bahçe gibi bir durum seç; ölçüleri yaz, çöz, arkadaşına çözdür ve sorunu birlikte geliştirin. Sosyal Bilgiler ile bağlantı: bir kent meydanı krokisinde farklı şekillerdeki alanların nasıl kullanıldığını tartışın.</p>
+
+        <h2 id="proje">Afiş ve Değerlendirme</h2>
+
+<p><strong>Performans görevi:</strong> Dairenin alan bağıntısını anlatan bir <strong>materyal</strong> (ör. cırt cırtlı ya da kartondan dilimler) tasarla ve nasıl çalıştığını anlatan bir afiş hazırla. İçerik, doğruluk, görsellik, planlama ve özgünlük açısından kendini değerlendir. Makas kullanırken dikkatli ol.</p>
+<p><strong>Grup çalışması:</strong> Görevleri adil paylaşın, takılan arkadaşınıza yardım edin.</p>
+<p><strong>Kendine sor:</strong> Hangi bağıntıyı yalnız ezberliyorum, hangisinin nereden geldiğini anlatabiliyorum? Birimleri (cm ile cm²) karıştırdım mı?</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Parçalayıp yeniden dizmek alanı değiştirmez.</li>
+            <li>Dilimler küçüldükçe daire, kenarları yaklaşık r ve π·r olan dikdörtgene yaklaşır: alan π·r².</li>
+            <li>Daire diliminin alanı merkez açının ölçüsüyle doğru orantılıdır.</li>
+            <li>Yamuğun alanı: tabanlar toplamı · yükseklik ÷ 2. Eğik kenar yükseklik değildir.</li>
+            <li>Eşkenar dörtgenin alanı köşegenler çarpımının yarısıdır.</li>
+            <li>Problemde bileşenleri belirle, tahmin et, çöz ve kontrol et.</li>
+            <li>Uzunluk birimi cm ise alan birimi cm²’dir.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#hatirla">Hatırla</a></li>
+            <li><a href="#daire">Dairenin alanı</a></li>
+            <li><a href="#dilim">Daire dilimi</a></li>
+            <li><a href="#yamuk">Yamuğun alanı</a></li>
+            <li><a href="#eskenar">Eşkenar dörtgen</a></li>
+            <li><a href="#problem">Problem çözme</a></li>
+            <li><a href="#genelle">Genelle ve kur</a></li>
+            <li><a href="#proje">Görevler</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "Yarıçapı 5 cm olan dairenin alanı kaç santimetrekaredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "30",
+      "225",
+      "75",
+      "15"
+    ],
+    "dogru": 2,
+    "aciklama": "Alan = π · r · r = 3 · 5 · 5 = 75 cm². 30, çevrenin uzunluğudur."
+  },
+  {
+    "soru": "Yarıçapı 10 cm olan daire çok sayıda eş dilime ayrılıp bir yukarı bir aşağı diziliyor. Oluşan dikdörtgene yakın şeklin UZUN kenarı yaklaşık kaç santimetredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "30",
+      "60",
+      "10",
+      "20"
+    ],
+    "dogru": 0,
+    "aciklama": "Uzun kenar çemberin uzunluğunun yarısına yaklaşır: 2 · 3 · 10 ÷ 2 = 30 cm."
+  },
+  {
+    "soru": "Çapı 8 cm olan dairenin alanı kaç santimetrekaredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "192",
+      "24",
+      "12",
+      "48"
+    ],
+    "dogru": 3,
+    "aciklama": "Yarıçap 4 cm’dir: 3 · 4 · 4 = 48 cm². 192, çap yarıçap sanılınca çıkar."
+  },
+  {
+    "soru": "Bir dairenin yarıçapı 3 katına çıkarılırsa alanı kaç katına çıkar?",
+    "secenekler": [
+      "3",
+      "9",
+      "6",
+      "27"
+    ],
+    "dogru": 1,
+    "aciklama": "π · (3r) · (3r) = 9 · π · r · r olur."
+  },
+  {
+    "soru": "Alanı 147 cm² olan dairenin yarıçapı kaç santimetredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "49",
+      "14",
+      "21",
+      "7"
+    ],
+    "dogru": 3,
+    "aciklama": "3 · r · r = 147 ise r · r = 49 ve r = 7’dir."
+  },
+  {
+    "soru": "Merkez açısı 72° olan daire dilimi, aynı dairenin alanının kaçta kaçıdır?",
+    "secenekler": [
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 4\"><span class=\"ks\"><span>1<\/span><span>4<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 5\"><span class=\"ks\"><span>1<\/span><span>5<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 72\"><span class=\"ks\"><span>1<\/span><span>72<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span><\/span>"
+    ],
+    "dogru": 1,
+    "aciklama": "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"72 bölü 360\"><span class=\"ks\"><span>72<\/span><span>360<\/span><\/span><\/span><\/span> = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 5\"><span class=\"ks\"><span>1<\/span><span>5<\/span><\/span><\/span>.<\/span> Yay uzunluğu için de aynı kesir geçerlidir."
+  },
+  {
+    "soru": "Aynı dairede bir dilimin merkez açısı 40°, öteki dilimin merkez açısı 120°’dir. İkinci dilimin alanı için hangisi doğrudur?",
+    "secenekler": [
+      "Birincinin 3 katıdır; açı 3 katına çıkınca alan da 3 katına çıkar.",
+      "Birinciden 80 cm² büyüktür; açıların farkı 80 derecedir.",
+      "Birincinin 9 katıdır; alanlar açıların karesiyle büyür.",
+      "Birinciye eşittir; iki dilimin yarıçapı aynı uzunluktadır."
+    ],
+    "dogru": 0,
+    "aciklama": "Aynı dairede dilim alanı merkez açıyla doğru orantılıdır: 120 ÷ 40 = 3."
+  },
+  {
+    "soru": "Şekildeki daire diliminin alanı kaç santimetrekaredir? (π yerine 3 alınız.)<span class=\"msekil\"><svg viewBox=\"0 0 320 234\" style=\"max-width:380px\" role=\"img\" aria-label=\"Merkez açısı 150 derece olan daire dilimi; yarıçap: 6 cm\"><circle cx=\"160\" cy=\"108\" r=\"92\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><path d=\"M160.00 108.00 L248.87 84.19 A92.00 92.00 0 0 0 71.13 84.19 Z\" fill=\"#c4b5fd\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><path d=\"M183.2 101.8 A24 24 0 0 0 136.8 101.8\" fill=\"none\" stroke=\"#be123c\" stroke-width=\"2.5\"/><text x=\"160.0\" y=\"65.0\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"800\" fill=\"#be123c\" stroke=\"#ffffff\" stroke-width=\"4\" paint-order=\"stroke\">150°<\/text><circle cx=\"160\" cy=\"108\" r=\"4.5\" fill=\"#1e1b4b\"/><text x=\"160.0\" y=\"224.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"4\" paint-order=\"stroke\">yarıçap: 6 cm<\/text><\/svg><\/span>",
+    "secenekler": [
+      "108",
+      "15",
+      "45",
+      "90"
+    ],
+    "dogru": 2,
+    "aciklama": "Dairenin alanı 3 · 36 = 108 cm²; <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"150 bölü 360\"><span class=\"ks\"><span>150<\/span><span>360<\/span><\/span><\/span><\/span> = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 12\"><span class=\"ks\"><span>5<\/span><span>12<\/span><\/span><\/span><\/span> olduğundan dilim 45 cm²’dir."
+  },
+  {
+    "soru": "Alanı 108 cm² olan bir dairenin bir diliminin alanı 18 cm²’dir. Dilimin merkez açısı kaç derecedir?",
+    "secenekler": [
+      "18",
+      "60",
+      "90",
+      "6"
+    ],
+    "dogru": 1,
+    "aciklama": "Dilim dairenin <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"18 bölü 108\"><span class=\"ks\"><span>18<\/span><span>108<\/span><\/span><\/span><\/span> = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 6\"><span class=\"ks\"><span>1<\/span><span>6<\/span><\/span><\/span>’sıdır;<\/span> 360 ÷ 6 = 60."
+  },
+  {
+    "soru": "Şekildeki yamuğun alanı kaç santimetrekaredir?<span class=\"msekil\"><svg viewBox=\"0 0 320 166\" style=\"max-width:380px\" role=\"img\" aria-label=\"Yamuk: alt taban 13 cm, üst taban 7 cm, yükseklik 6 cm\"><polygon points=\"50.0,131.5 270.0,131.5 198.9,30.0 80.5,30.0\" fill=\"#ede9fe\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/><line x1=\"133.8\" y1=\"131.5\" x2=\"133.8\" y2=\"30.0\" stroke=\"#047857\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\"/><polyline points=\"133.76923076923077,120.53846153846155 144.76923076923077,120.53846153846155 144.76923076923077,131.53846153846155\" fill=\"none\" stroke=\"#047857\" stroke-width=\"2\"/><text x=\"163.8\" y=\"85.8\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#047857\" stroke=\"#ffffff\" stroke-width=\"4\" paint-order=\"stroke\">6 cm<\/text><text x=\"160.0\" y=\"155.5\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"4\" paint-order=\"stroke\">13 cm<\/text><text x=\"139.7\" y=\"20.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"4\" paint-order=\"stroke\">7 cm<\/text><\/svg><\/span>",
+    "secenekler": [
+      "120",
+      "78",
+      "26",
+      "60"
+    ],
+    "dogru": 3,
+    "aciklama": "(13 + 7) · 6 ÷ 2 = 60 cm²."
+  },
+  {
+    "soru": "Köşegen uzunlukları 10 cm ve 14 cm olan eşkenar dörtgenin alanı kaç santimetrekaredir?",
+    "secenekler": [
+      "70",
+      "140",
+      "24",
+      "48"
+    ],
+    "dogru": 0,
+    "aciklama": "Köşegenlerin çarpımının yarısı: 10 · 14 ÷ 2 = 70 cm²."
+  },
+  {
+    "soru": "Paralel kenarları 6 cm ve 12 cm, yüksekliği 4 cm, paralel olmayan kenarlarından biri 5 cm olan yamuğun alanı kaç santimetrekaredir?",
+    "secenekler": [
+      "45",
+      "72",
+      "36",
+      "27"
+    ],
+    "dogru": 2,
+    "aciklama": "Alan paralel kenarlar ve yükseklikle bulunur: (6 + 12) · 4 ÷ 2 = 36. 5 cm’lik eğik kenar yükseklik değildir."
+  },
+  {
+    "soru": "Alanı 96 cm² olan eşkenar dörtgenin bir köşegeni 12 cm’dir. Öteki köşegeni kaç santimetredir?",
+    "secenekler": [
+      "8",
+      "16",
+      "84",
+      "4"
+    ],
+    "dogru": 1,
+    "aciklama": "12 · f ÷ 2 = 96 ise 6f = 96 ve f = 16’dır."
+  },
+  {
+    "soru": "Can, tabanları 8 cm ve 4 cm, yüksekliği 5 cm olan yamuğun alanını 8 · 4 · 5 ÷ 2 = 80 cm² buluyor. Hangi değerlendirme doğrudur?",
+    "secenekler": [
+      "Tabanları çarpmış; toplayıp yükseklikle çarpmalıydı: alan 30 cm²’dir.",
+      "Yalnız ikiye bölmeyi fazladan yapmış: alan 160 cm²’dir.",
+      "Küçük tabanı kullanmamalıydı: alan 20 cm²’dir.",
+      "İşlemi doğru yapmış: yamuğun alanı 80 cm²’dir."
+    ],
+    "dogru": 0,
+    "aciklama": "(8 + 4) · 5 ÷ 2 = 30 cm². Yamuk iki üçgene ayrıldığında alanlar 20 ve 10 cm² olur."
+  },
+  {
+    "soru": "Eşkenar dörtgen biçimindeki bir uçurtmanın köşegen çubukları 60 cm ve 40 cm’dir. Bir yüzünü kaplamak için, pay bırakmadan kaç santimetrekare kâğıt gerekir?",
+    "secenekler": [
+      "2400",
+      "100",
+      "1200",
+      "200"
+    ],
+    "dogru": 2,
+    "aciklama": "60 · 40 ÷ 2 = 1200 cm²."
+  },
+  {
+    "soru": "Yarıçapı 10 cm olan daire biçimindeki bir kek, üstten bakınca eş merkez açılı dilimlerle 5 kişiye paylaştırılıyor. Bir dilimin üst yüz alanı kaç santimetrekaredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "300",
+      "12",
+      "50",
+      "60"
+    ],
+    "dogru": 3,
+    "aciklama": "Üst yüzün alanı 3 · 10 · 10 = 300 cm²; beşte biri 60 cm²’dir. Her dilimin merkez açısı 72° olur."
+  },
+  {
+    "soru": "Yarıçapı 10 m olan daire biçimli bir parkın içinde yarıçapı 4 m olan daire biçimli bir havuz var. Havuzun dışında kalan alan kaç metrekaredir? (π yerine 3 alınız.)",
+    "secenekler": [
+      "252",
+      "108",
+      "348",
+      "300"
+    ],
+    "dogru": 0,
+    "aciklama": "Büyük daireden havuz çıkarılır: 300 − 48 = 252 m². Yarıçapları çıkarıp 6 m’lik daire hesaplamak yanlıştır."
+  },
+  {
+    "soru": "Üç eş kanatlı hayalî bir döner kapının üstten görünüşü, yarıçapı 2 m olan bir dairedir. Kanatlar daireyi üç eş bölmeye ayırıyor. Bir bölmenin taban alanı kaç metrekaredir? (π yerine 3 alınız; kanat kalınlığı yok sayılacak.)",
+    "secenekler": [
+      "12",
+      "6",
+      "4",
+      "2"
+    ],
+    "dogru": 2,
+    "aciklama": "Daire 3 · 2 · 2 = 12 m²’dir; her bölme 120°’lik dilimdir: 12 ÷ 3 = 4 m²."
+  },
+  {
+    "soru": "Yamuk biçimli bir bahçenin paralel kenarları 20 m ve 30 m, bunlar arasındaki dik uzaklık 12 m’dir. 1 kg tohum 25 m²’ye yetiyor. Bahçenin tamamı için kaç kg tohum gerekir?",
+    "secenekler": [
+      "24",
+      "300",
+      "25",
+      "12"
+    ],
+    "dogru": 3,
+    "aciklama": "Alan (20 + 30) · 12 ÷ 2 = 300 m²; 300 ÷ 25 = 12 kg."
+  },
+  {
+    "soru": "Aynı kalınlıkta ve aynı malzemeli pizzalardan biri 30 cm çaplı tek büyük pizza, öteki seçenek 20 cm çaplı iki pizzadır. π yerine 3 alınırsa hangi seçenekte daha çok pizza vardır?",
+    "secenekler": [
+      "İki küçük pizzada; toplam çapları 10 cm daha uzundur.",
+      "Büyük pizzada; üst yüz alanı iki küçüğünkinden 75 cm² fazladır.",
+      "İki seçenekte eşittir; yarıçaplarının farkı küçüktür.",
+      "İki küçük pizzada; toplam alanları 75 cm² daha fazladır."
+    ],
+    "dogru": 1,
+    "aciklama": "Büyük: 3 · 15 · 15 = 675 cm². Küçükler: 2 · 3 · 10 · 10 = 600 cm². Çapları toplamak alanları karşılaştırmaz."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
