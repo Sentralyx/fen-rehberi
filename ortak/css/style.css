@@ -383,7 +383,7 @@ tr:nth-child(even) td { background: #f8fafc; }
   .alt-menu-ic .grup { gap: 2px; }
   .alt-menu-ic .grup + .grup { margin-left: 0; padding-left: 0; border-left: 0; }
   .alt-menu-ic .grup a, .alt-menu-ic .grup span { font-size: .84rem; padding: 8px 7px; }
-  .alt-menu-ic .grup-ders { order: 1; }
+  .alt-menu-ic .grup-ders { order: 1; flex: 0 1 auto; flex-wrap: wrap; min-width: 0; max-width: 100%; row-gap: 2px; }
   .alt-menu-ic .grup-ek { order: 2; margin-left: auto; }
   .alt-menu-ic .grup-sinif { order: 3; flex: 0 0 100%; justify-content: space-between; }
   .alt-menu-ic .grup-sinif a, .alt-menu-ic .grup-sinif span { flex: 1 1 auto; text-align: center; }
@@ -394,6 +394,16 @@ tr:nth-child(even) td { background: #f8fafc; }
   .alt-menu-ic { padding-left: 8px; padding-right: 8px; }
   .alt-menu-ic .grup a, .alt-menu-ic .grup span { font-size: .8rem; padding: 8px 5px; }
   .alt-menu-ic .grup { gap: 1px; }
+}
+
+/* Geniş ekranda ders sayısı arttı: simgeler gizlenir, sığmazsa menü alt satıra geçer */
+@media (min-width: 861px) {
+  .alt-menu-ic:has(.grup) .sim { display: none; }
+  .alt-menu-ic:has(.grup) { flex-wrap: wrap; height: auto; min-height: 52px; padding-top: 5px; padding-bottom: 5px; row-gap: 4px; overflow: visible; }
+}
+@media (min-width: 861px) and (max-width: 1160px) {
+  .ust-iki ~ main .yan { top: 180px; }
+  .ust-iki ~ main .yazi h2, .ust-iki ~ main .test { scroll-margin-top: 180px !important; }
 }
 
 /* İki satırlı üst menü payı */
