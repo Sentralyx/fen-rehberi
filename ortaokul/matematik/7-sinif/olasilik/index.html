@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veriden Olasılığa – 7. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="7. sınıf teorik olasılık: örnek uzay, tümleyen olay, eşit olasılıklı olaylar, ayrık ve ayrık olmayan olaylar.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/7-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/">7. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/7-sinif/">7. Sınıf</a> › Veriden Olasılığa</div>
+      <h1>🎲 Veriden Olasılığa</h1>
+      <p>Bir sayı küpünde «6 gelmesi» mi daha olasıdır, «6 gelmemesi» mi? Bu kez küpü hiç atmadan, yalnız düşünerek kesin bir sayıyla cevap vereceksin.</p>
+      <div class="konu-meta"><span>📚 7. Sınıf Matematik</span><span>⏱️ 25 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="uzay">Atmadan Önce: Neler Olabilir?</h2>
+
+<p>6. sınıfta bir olayın olasılığını <strong>deney yaparak</strong> tahmin ettin. Şimdi deney yapmadan, olabilecek sonuçları inceleyeceksin. Bu sayfadaki paralar, küpler ve çarklar <strong>hilesizdir</strong>; deneylerin her biri <strong>tek aşamalıdır</strong>.</p>
+<p>Bir deneyde elde edilebilecek <strong>tüm çıktıların kümesine örnek uzay</strong> denir. Örnek uzayın çıktılarından oluşturulan her grup bir <strong>olaydır</strong>.</p>
+<table><tr><th>Deney</th><th>Örnek uzay</th></tr><tr><td>Para atma</td><td>yazı, tura</td></tr><tr><td>Sayı küpü atma</td><td>1, 2, 3, 4, 5, 6</td></tr><tr><td>A, B, C, D kartlarından birini çekme</td><td>A, B, C, D</td></tr></table>
+<p>Çıktıları <strong>listeleyebilir</strong> ya da <strong>ağaç şemasıyla</strong> gösterebilirsin. Aşağıda küpün altı çıktısı tek ve çift diye dallanıyor. Bu yine <em>tek bir atıştır</em>:</p>
+<figure class="msekil"><svg viewBox="0 0 320 196" style="max-width:400px" role="img" aria-label="Ağaç şeması. Sayı küpü. Tek: 1, 3, 5. Çift: 2, 4, 6"><text x="160.0" y="26.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Sayı küpü</text><line x1="160.0" y1="36" x2="85.0" y2="82" stroke="#64748b" stroke-width="2.5"/><text x="85.0" y="104.0" text-anchor="middle" font-size="19" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">Tek</text><line x1="85.0" y1="114" x2="35.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="35.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">1</text><line x1="85.0" y1="114" x2="85.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="85.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">3</text><line x1="85.0" y1="114" x2="135.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="135.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">5</text><line x1="160.0" y1="36" x2="235.0" y2="82" stroke="#64748b" stroke-width="2.5"/><text x="235.0" y="104.0" text-anchor="middle" font-size="19" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">Çift</text><line x1="235.0" y1="114" x2="185.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="185.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">2</text><line x1="235.0" y1="114" x2="235.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="235.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">4</text><line x1="235.0" y1="114" x2="285.0" y2="160" stroke="#64748b" stroke-width="2.5"/><text x="285.0" y="184.0" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">6</text></svg></figure>
+<p><strong>Sen yap:</strong> 1’den 8’e kadar numaralı kartlardan çekme deneyini önce listeyle, sonra «4’ten büyük olanlar / olmayanlar» dallı ağaçla göster. Hiçbir çıktıyı atladın mı, iki kez yazdın mı?</p>
+
+        <h2 id="teorik">Tekrar Eden Yapıyı Bul</h2>
+
+<p><strong>Önce tahmin et</strong>, sonra tabloyu incele:</p>
+<table><tr><th>Olay</th><th>Olasılık</th></tr><tr><td>Parada tura (2 çıktının 1’i)</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 2"><span class="ks"><span>1</span><span>2</span></span></span></span></td></tr><tr><td>Küpte 3 (6 çıktının 1’i)</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 6"><span class="ks"><span>1</span><span>6</span></span></span></span></td></tr><tr><td>Küpte 4’ten büyük (6 çıktının 2’si)</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="2 bölü 6"><span class="ks"><span>2</span><span>6</span></span></span></span></td></tr><tr><td>A–D kartlarında A (4 çıktının 1’i)</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 4"><span class="ks"><span>1</span><span>4</span></span></span></span></td></tr></table>
+<p>Hepsinde aynı yapı var. <strong>Çıktıların her biri eşit olasılıklıysa:</strong></p>
+<div class="formul">Olayın teorik olasılığı = olaya ait çıktı sayısı ÷ örnek uzaydaki tüm çıktı sayısı</div>
+<p>Bu bir <strong>parça–bütün oranıdır</strong>. Kesir, ondalık gösterim ya da yüzde olarak yazılabilir; 0 ile 1 arasındadır (0 ve 1 dâhil). Küpte 7 gelmesi imkânsızdır (0), 7’den küçük sayı gelmesi kesindir (1).</p>
+<p><strong>Koşulu unutma: Çıktılar eşit olasılıklı olmalı.</strong> 3 kırmızı ve 1 mavi özdeş topta «renkler» iki tanedir ama olasılıkları eşit değildir. Eşit olasılıklı çıktılar <strong>tek tek toplardır</strong>: kırmızı <span class="bitisik"><span class="kesir" role="img" aria-label="3 bölü 4"><span class="ks"><span>3</span><span>4</span></span></span>,</span> mavi <span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 4"><span class="ks"><span>1</span><span>4</span></span></span>.</span></p>
+<figure class="msekil"><svg viewBox="38 0 324 182" style="max-width:384px" role="img" aria-label="Torbada özdeş toplar: 3 kırmızı, 1 mavi"><path d="M130.0 14 Q200.0 34 270.0 14 L258.0 40 C390.0 60 380.0 132 310.0 132 L90.0 132 C20.0 132 10.0 60 142.0 40 Z" fill="#fef3c7" stroke="#92400e" stroke-width="3"/><circle class="top" cx="122.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="122.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle class="top" cx="174.0" cy="78" r="21" fill="#2563eb" stroke="#1e1b4b" stroke-width="1.5"/><text x="174.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">M</text><circle class="top" cx="226.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="226.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle class="top" cx="278.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="278.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle cx="112.0" cy="162" r="11" fill="#dc2626"/><text x="112.0" y="167.0" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">K</text><text x="129.0" y="167.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">kırmızı</text><circle cx="212.0" cy="162" r="11" fill="#2563eb"/><text x="212.0" y="167.0" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">M</text><text x="229.0" y="167.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">mavi</text></svg></figure>
+<p><strong>Fen Bilimleri bağlantısı:</strong> Alyuvar naklinde, yalnız AB0 sistemine bakılan basit bir modelde A grubu alıcı <strong>A ve 0</strong> gruplarından alabilir. A, B, AB ve 0 yazılı <em>dört özdeş karttan</em> biri çekilirse «A grubu alıcıya verebilen grup» olasılığı <span class="bitisik"><span class="kesir" role="img" aria-label="2 bölü 4"><span class="ks"><span>2</span><span>4</span></span></span></span> = <span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 2"><span class="ks"><span>1</span><span>2</span></span></span></span> olur. Bu, kart deneyinin olasılığıdır: gerçek hayatta grupların görülme sıklığı eşit değildir; kan nakline Rh ve başka testlere de bakarak sağlık uzmanları karar verir.</p>
+
+        <h2 id="deney">Teori ile Deney Buluşuyor mu?</h2>
+
+<p>Küpte çift sayı gelmesinin teorik olasılığı <span class="bitisik"><span class="kesir" role="img" aria-label="3 bölü 6"><span class="ks"><span>3</span><span>6</span></span></span></span> = 0,5’tir. Bilgisayar benzetiminde küp art arda «atıldı»:</p>
+<table><tr><th>Atış sayısı (çift sayı sayısı)</th><th>Göreli sıklık</th></tr><tr><td>20 (11)</td><td>0,550</td></tr><tr><td>100 (53)</td><td>0,530</td></tr><tr><td>1000 (507)</td><td>0,507</td></tr><tr><td>10000 (4938)</td><td>0,494</td></tr></table>
+<p>Tekrar sayısı büyüdükçe göreli sıklık <strong>genellikle teorik değere yaklaşır</strong>. Her adımda tam yaklaşmak ya da 0,5’e eşit olmak zorunda değildir. Teorik olasılık, sıradaki birkaç atışın sonucunu garanti etmez.</p>
+<p><strong>Dene:</strong> Bir matematik yazılımında ya da elektronik tabloda tek küp benzetimini 100, 1000 ve 5000 kez çalıştır. Sonuçlarını teorik değerle karşılaştır.</p>
+
+        <h2 id="tumleyen">Olursa ve Olmazsa: Tümleyen Olay</h2>
+
+<p>Bir olayda <strong>bulunmayan bütün çıktıların</strong> oluşturduğu olaya o olayın <strong>tümleyeni</strong> denir. «Küpte 3 gelmesi»nin tümleyeni «3 gelmemesi»dir: 1, 2, 4, 5, 6.</p>
+<p><strong>İncele ve ilişkiyi bul:</strong></p>
+<table><tr><th>Olay → tümleyeni</th><th>Olasılıklar</th></tr><tr><td>Parada tura → tura gelmemesi</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 2"><span class="ks"><span>1</span><span>2</span></span></span></span> ve <span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 2"><span class="ks"><span>1</span><span>2</span></span></span></span></td></tr><tr><td>Küpte 3 → 3 gelmemesi</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 6"><span class="ks"><span>1</span><span>6</span></span></span></span> ve <span class="bitisik"><span class="kesir" role="img" aria-label="5 bölü 6"><span class="ks"><span>5</span><span>6</span></span></span></span></td></tr><tr><td>A–D kartlarında A → A gelmemesi</td><td><span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 4"><span class="ks"><span>1</span><span>4</span></span></span></span> ve <span class="bitisik"><span class="kesir" role="img" aria-label="3 bölü 4"><span class="ks"><span>3</span><span>4</span></span></span></span></td></tr></table>
+<p>Çıktı sayılarına bak: olayınkiler + tümleyeninkiler = <strong>örnek uzayın tamamı</strong>; hiçbir çıktı iki kez sayılmaz. İkisinin olasılıklarını toplayınca her satırda ne çıkıyor?</p>
+<details><summary>Genellemeyi kontrol et</summary><p>Her satırda <strong>1</strong>. Parça sayıları bütünü tamamlar. Bu nedenle <strong>olayın olmama olasılığı = 1 − olma olasılığı</strong>. Yüzde ile yazarsan toplam yüzde 100’dür.</p></details>
+<p>Dikkat: Olay ve tümleyeninin olasılıkları <em>eşit olmak zorunda değildir</em>.</p>
+
+        <h2 id="esit">Eşit Olasılıklı mı, Değil mi?</h2>
+
+<p>Bu torbada 4 kırmızı, 3 sarı ve 2 mavi özdeş top var:</p>
+<figure class="msekil"><svg viewBox="38 0 324 234" style="max-width:384px" role="img" aria-label="Torbada özdeş toplar: 4 kırmızı, 3 sarı, 2 mavi"><path d="M130.0 14 Q200.0 34 270.0 14 L258.0 40 C390.0 60 380.0 184 310.0 184 L90.0 184 C20.0 184 10.0 60 142.0 40 Z" fill="#fef3c7" stroke="#92400e" stroke-width="3"/><circle class="top" cx="96.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="96.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle class="top" cx="148.0" cy="78" r="21" fill="#2563eb" stroke="#1e1b4b" stroke-width="1.5"/><text x="148.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">M</text><circle class="top" cx="200.0" cy="78" r="21" fill="#facc15" stroke="#1e1b4b" stroke-width="1.5"/><text x="200.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">S</text><circle class="top" cx="252.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="252.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle class="top" cx="304.0" cy="78" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="304.0" y="84.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle class="top" cx="122.0" cy="130" r="21" fill="#2563eb" stroke="#1e1b4b" stroke-width="1.5"/><text x="122.0" y="136.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">M</text><circle class="top" cx="174.0" cy="130" r="21" fill="#facc15" stroke="#1e1b4b" stroke-width="1.5"/><text x="174.0" y="136.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">S</text><circle class="top" cx="226.0" cy="130" r="21" fill="#facc15" stroke="#1e1b4b" stroke-width="1.5"/><text x="226.0" y="136.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">S</text><circle class="top" cx="278.0" cy="130" r="21" fill="#dc2626" stroke="#1e1b4b" stroke-width="1.5"/><text x="278.0" y="136.0" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">K</text><circle cx="62.0" cy="214" r="11" fill="#dc2626"/><text x="62.0" y="219.0" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">K</text><text x="79.0" y="219.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">kırmızı</text><circle cx="162.0" cy="214" r="11" fill="#facc15"/><text x="162.0" y="219.0" text-anchor="middle" font-size="15" font-weight="800" fill="#1e1b4b">S</text><text x="179.0" y="219.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">sarı</text><circle cx="262.0" cy="214" r="11" fill="#2563eb"/><text x="262.0" y="219.0" text-anchor="middle" font-size="15" font-weight="800" fill="#ffffff">M</text><text x="279.0" y="219.0" text-anchor="start" font-size="15" font-weight="700" fill="#1e1b4b">mavi</text></svg></figure>
+<p><strong>Önce ölçüt belirle:</strong> Aynı torbadan çekilen iki olayın olasılığı hangi durumda eşit olur? Neyi karşılaştırmalısın?</p>
+<details><summary>Ölçütü gör</summary><p>Aynı örnek uzayda (çıktılar eşit olasılıklıyken) iki olayın <strong>çıktı sayıları eşitse</strong> olaylar <strong>eşit olasılıklıdır</strong>; değilse eşit olasılıklı değildir.</p></details>
+<p><strong>Hesapla:</strong> Kırmızı <span class="bitisik"><span class="kesir" role="img" aria-label="4 bölü 9"><span class="ks"><span>4</span><span>9</span></span></span>,</span> sarı <span class="bitisik"><span class="kesir" role="img" aria-label="3 bölü 9"><span class="ks"><span>3</span><span>9</span></span></span>,</span> mavi <span class="bitisik"><span class="kesir" role="img" aria-label="2 bölü 9"><span class="ks"><span>2</span><span>9</span></span></span>.</span> Sayılar farklı: bu üç renk olayı <strong>eşit olasılıklı değildir</strong>.</p>
+<p><strong>Düzelt ve sına:</strong> Üç rengin olasılığı eşit olsun diye (1) yalnız top ekleyerek, (2) yalnız top çıkararak torbayı nasıl değiştirirsin? Her yeni torbada olasılıkları hesaplayıp ölçütünle karşılaştır ve yargını yaz.</p>
+<details><summary>Örnek cevaplar</summary><p>Ekleyerek: 1 sarı ve 2 mavi ekle; her renk 4 olur, olasılıklar <span class="bitisik"><span class="kesir" role="img" aria-label="4 bölü 12"><span class="ks"><span>4</span><span>12</span></span></span>.</span> Çıkararak: 2 kırmızı ve 1 sarı çıkar; her renk 2 olur, olasılıklar <span class="bitisik"><span class="kesir" role="img" aria-label="2 bölü 6"><span class="ks"><span>2</span><span>6</span></span></span>.</span></p></details>
+<p><strong>Farklı çıktılar, eşit olasılık:</strong> Küpte «1 ya da 2 gelmesi» ile «5 ya da 6 gelmesi» eşit olasılıklıdır; ikisinde de iki çıktı vardır.</p>
+
+        <h2 id="ayrik">Ortak Çıktı Var mı?</h2>
+
+<p>Aynı deneye ait iki olayı sınıflandırmanın ölçütü <strong>ortak çıktıdır</strong>.</p>
+<div class="kavramlar"><div class="kavram"><b>Ayrık olaylar</b><span>Hiç ortak çıktıları yoktur.</span></div><div class="kavram"><b>Ayrık olmayan olaylar</b><span>En az bir ortak çıktıları vardır.</span></div></div>
+<p>Sayı küpünde dört olayı aynı tabloda inceleyelim:</p>
+<table><tr><th>Olay</th><th>Çıktıları</th></tr><tr><td>Ç: çift sayı</td><td>2, 4, 6</td></tr><tr><td>T: tek sayı</td><td>1, 3, 5</td></tr><tr><td>A: asal sayı</td><td>2, 3, 5</td></tr><tr><td>B: 2’den büyük sayı</td><td>3, 4, 5, 6</td></tr></table>
+<p><strong>Ç ve T ayrıktır:</strong></p>
+<figure class="msekil"><svg viewBox="0 0 320 248" style="max-width:400px" role="img" aria-label="Örnek uzay: 1, 2, 3, 4, 5, 6. Ç olayı: 2, 4, 6. T olayı: 1, 3, 5. Ortak çıktı yok"><rect x="6" y="6" width="308" height="236" rx="12" fill="#f8fafc" stroke="#1e1b4b" stroke-width="2.5"/><circle cx="86" cy="112" r="68" fill="#c4b5fd" fill-opacity="0.4" stroke="#6d28d9" stroke-width="3"/><circle cx="234" cy="112" r="68" fill="#fed7aa" fill-opacity="0.4" stroke="#c2410c" stroke-width="3"/><text x="20.0" y="32.0" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">Ç</text><text x="300.0" y="32.0" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">T</text><text x="86.0" y="93.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">2</text><text x="86.0" y="119.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">4</text><text x="86.0" y="145.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">6</text><text x="234.0" y="93.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">1</text><text x="234.0" y="119.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">3</text><text x="234.0" y="145.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">5</text></svg></figure>
+<p><strong>A ve B ayrık değildir:</strong> 3 ve 5 ortaktır. Şemanın dışında kalan 1, iki olayda da yoktur.</p>
+<figure class="msekil"><svg viewBox="0 0 320 248" style="max-width:400px" role="img" aria-label="Örnek uzay: 1, 2, 3, 4, 5, 6. A olayı: 2, 3, 5. B olayı: 3, 4, 5, 6. Ortak çıktılar: 3, 5"><rect x="6" y="6" width="308" height="236" rx="12" fill="#f8fafc" stroke="#1e1b4b" stroke-width="2.5"/><circle cx="112" cy="112" r="84" fill="#c4b5fd" fill-opacity="0.4" stroke="#6d28d9" stroke-width="3"/><circle cx="208" cy="112" r="84" fill="#fed7aa" fill-opacity="0.4" stroke="#c2410c" stroke-width="3"/><text x="46.0" y="32.0" text-anchor="middle" font-size="20" font-weight="800" fill="#6d28d9" stroke="#ffffff" stroke-width="3" paint-order="stroke">A</text><text x="274.0" y="32.0" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c" stroke="#ffffff" stroke-width="3" paint-order="stroke">B</text><text x="66.0" y="119.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">2</text><text x="160.0" y="106.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">3</text><text x="160.0" y="132.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">5</text><text x="254.0" y="106.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">4</text><text x="254.0" y="132.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">6</text><text x="160.0" y="226.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b" stroke="#ffffff" stroke-width="3" paint-order="stroke">1</text></svg></figure>
+<p><strong>Tasnif et:</strong> Tablodaki olaylardan kurulabilecek <em>altı çiftin</em> hepsini yaz; her birine «ayrık» ya da «ayrık değil» etiketi koy ve ortak çıktıları göster.</p>
+<details><summary>Cevabı göster</summary><p>Ayrık: Ç–T. Ayrık değil: Ç–A (2), Ç–B (4, 6), T–A (3, 5), T–B (3, 5), A–B (3, 5).</p></details>
+<p><strong>Tümleyen ile ilişkisi:</strong> «4 gelmesi» ve «4 gelmemesi» ayrıktır. Bir olay ile tümleyeni <strong>her zaman ayrıktır</strong>. Tersi doğru değildir: «1 gelmesi» ile «2 gelmesi» ayrıktır ama tümleyen değildir, çünkü 3–6 dışarıda kalır.</p>
+<p><strong>Karıştırma:</strong> <em>Ayrık</em> olmak ortak çıktılarla, <em>eşit olasılıklı</em> olmak çıktı sayılarıyla ilgilidir.</p>
+
+        <h2 id="merak">Merak Köşesi: Salih Zeki</h2>
+
+<p><strong>Salih Zeki (1864–1921)</strong>, matematik ve bilim tarihi üzerine çalışmış bir Türk bilim insanıdır. Olasılık hesabı üzerine de kitaplar yazmıştır; bunlardan biri <em>Hülâsa-i Hesâb-ı İhtimâlî</em> adını taşır. Daha sonra Darülfünundaki (o dönemin üniversitesi) derslerinden bir olasılık kitabı daha doğmuştur.</p>
+<p><strong>Araştır:</strong> Üniversite, kütüphane ya da resmî kurum kaynaklarından Salih Zeki’nin olasılık çalışmalarını incele. O dönemde bir konuyu Türkçe ders kitabı olarak yazmak nasıl bir emek istemiş olabilir? Bulduğun her bilginin kaynağını yaz; kaynaklar farklı tarih veriyorsa bunu da belirt.</p>
+
+        <h2 id="gorev">Afiş ve Oyun Görevi</h2>
+
+<p><strong>Grup afişi:</strong> Tek aşamalı bir deney seçin (12 eş dilimli çark, numaralı kartlar ya da düzgün on iki yüzlü cisim). Örnek uzayı gösterin; bir olay ve tümleyeni, eşit olasılıklı olan ve olmayan birer çift, ayrık olan ve olmayan birer çift bulun. Her etiketin nedenini şemayla açıklayın.</p>
+<p><strong>Oyun tasarla:</strong> İki oyuncunun kazanma olaylarını eşit olasılıklı seç. Sonra kuralı değiştirip eşit olmayan hâle getir; iki durumu hesapla. Oyunu parasız ve ödülsüz oyna. Oyunda herkesin fikrini saygıyla dinle.</p>
+<p><strong>Kendini ve grubunu değerlendir:</strong> Örnek uzay eksiksiz mi? Çıktılar eşit olasılıklı mı? Ortak çıktıları gösterdik mi? Hesaplarımızı başka bir grup doğrulayabiliyor mu?</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Örnek uzay, deneyde elde edilebilecek tüm çıktılardır.</li>
+            <li>Çıktılar eşit olasılıklıysa teorik olasılık = olayın çıktı sayısı ÷ tüm çıktı sayısı.</li>
+            <li>Tümleyen, olayın dışında kalan bütün çıktılardır; iki olasılığın toplamı 1’dir.</li>
+            <li>Aynı deneyde eşit sayıda (eşit olasılıklı) çıktısı olan olaylar eşit olasılıklıdır.</li>
+            <li>Ayrık olayların ortak çıktısı yoktur; ayrık olmayanların en az bir ortak çıktısı vardır.</li>
+            <li>Olay ile tümleyeni ayrıktır; ama her ayrık çift tümleyen değildir.</li>
+            <li>Tekrar sayısı büyüdükçe göreli sıklık genellikle teorik olasılığa yaklaşır; tek tek sonuçlar garanti değildir.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#uzay">Örnek uzay</a></li>
+            <li><a href="#teorik">Teorik olasılık</a></li>
+            <li><a href="#deney">Deneyle bağı</a></li>
+            <li><a href="#tumleyen">Tümleyen olay</a></li>
+            <li><a href="#esit">Eşit olasılıklı</a></li>
+            <li><a href="#ayrik">Ayrık olaylar</a></li>
+            <li><a href="#merak">Salih Zeki</a></li>
+            <li><a href="#gorev">Sıra sende</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "1’den 10’a kadar numaralı 10 özdeş karttan biri rastgele çekiliyor. Bu deneyin örnek uzayında kaç çıktı vardır?",
+    "secenekler": [
+      "1",
+      "2",
+      "10",
+      "55"
+    ],
+    "dogru": 2,
+    "aciklama": "Her kart ayrı bir çıktıdır: 1, 2, …, 10. Numaraların toplamı çıktı sayısı değildir."
+  },
+  {
+    "soru": "1’den 10’a kadar numaralı özdeş kartlardan biri rastgele çekiliyor. 3’ün katı bir sayı çekme olasılığı kaçtır?",
+    "secenekler": [
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 10\"><span class=\"ks\"><span>3<\/span><span>10<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 7\"><span class=\"ks\"><span>3<\/span><span>7<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 3\"><span class=\"ks\"><span>1<\/span><span>3<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"7 bölü 10\"><span class=\"ks\"><span>7<\/span><span>10<\/span><\/span><\/span><\/span>"
+    ],
+    "dogru": 0,
+    "aciklama": "Olayın çıktıları 3, 6 ve 9’dur. 3 çıktı, 10 eşit olasılıklı çıktıya oranlanır."
+  },
+  {
+    "soru": "Bir torbada özdeş 5 siyah ve 7 beyaz boncuk var. Rastgele çekilen boncuğun siyah olma olasılığı kaçtır?",
+    "secenekler": [
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 7\"><span class=\"ks\"><span>5<\/span><span>7<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 2\"><span class=\"ks\"><span>1<\/span><span>2<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"7 bölü 12\"><span class=\"ks\"><span>7<\/span><span>12<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 12\"><span class=\"ks\"><span>5<\/span><span>12<\/span><\/span><\/span><\/span>"
+    ],
+    "dogru": 3,
+    "aciklama": "Eşit olasılıklı 12 boncuktan 5’i siyahtır. 5 : 7 siyahın beyaza oranıdır, olasılık değildir."
+  },
+  {
+    "soru": "Hayalî bir oyunda bir olayın olasılığı <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 8\"><span class=\"ks\"><span>3<\/span><span>8<\/span><\/span><\/span>’dir.<\/span> Bu olayın tümleyeninin olasılığı kaçtır?",
+    "secenekler": [
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 8\"><span class=\"ks\"><span>3<\/span><span>8<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 8\"><span class=\"ks\"><span>5<\/span><span>8<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"8 bölü 3\"><span class=\"ks\"><span>8<\/span><span>3<\/span><\/span><\/span><\/span>",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 5\"><span class=\"ks\"><span>3<\/span><span>5<\/span><\/span><\/span><\/span>"
+    ],
+    "dogru": 1,
+    "aciklama": "Olay ile tümleyeninin olasılıkları toplamı 1’dir: 1 − <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 8\"><span class=\"ks\"><span>3<\/span><span>8<\/span><\/span><\/span><\/span> = <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 8\"><span class=\"ks\"><span>5<\/span><span>8<\/span><\/span><\/span>.<\/span>"
+  },
+  {
+    "soru": "Yüzleri 1’den 12’ye kadar numaralı düzgün bir on iki yüzlü atılıyor. «10’dan büyük sayı gelmesi» olayının TÜMLEYENİNDE kaç çıktı vardır?",
+    "secenekler": [
+      "2",
+      "9",
+      "12",
+      "10"
+    ],
+    "dogru": 3,
+    "aciklama": "Olayın çıktıları 11 ve 12’dir. Bunlar 12 çıktıdan elenince 1’den 10’a kadar 10 çıktı kalır."
+  },
+  {
+    "soru": "Bir çekilişte «mavi çekme» olayının olasılığı 0,35’tir. «Mavi çekmeme» olayının olasılığı yüzde kaçtır?",
+    "secenekler": [
+      "35",
+      "65",
+      "75",
+      "55"
+    ],
+    "dogru": 1,
+    "aciklama": "0,35 = yüzde 35’tir. Tümleyeni için yüzde 100 − 35 = 65 kalır."
+  },
+  {
+    "soru": "Aşağıdaki olaylardan hangisinin tümleyeni, 1’den 8’e kadar numaralı kartlardan çekme deneyinde «tek sayı çekme»dir?",
+    "secenekler": [
+      "Çift sayı çekme",
+      "Asal sayı çekme",
+      "4’ten küçük sayı çekme",
+      "1 çekmeme"
+    ],
+    "dogru": 0,
+    "aciklama": "Tümleyende, olayın dışında kalan bütün çıktılar bulunur. Tek sayıların dışında yalnız 2, 4, 6 ve 8 vardır."
+  },
+  {
+    "soru": "Özdeş bilyeler bulunan bir torbada yeşil bilye çekme olasılığı <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span>’tir.<\/span> Torbada 20 bilye varsa kaçı yeşil DEĞİLDİR?",
+    "secenekler": [
+      "8",
+      "15",
+      "12",
+      "3"
+    ],
+    "dogru": 2,
+    "aciklama": "Yeşil sayısı 20’nin <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span>’i,<\/span> yani 8’dir. Yeşil olmayan 20 − 8 = 12’dir."
+  },
+  {
+    "soru": "Arda, bir torbada mavi ve kırmızı olmak üzere iki renk top bulunduğu için mavi çekme olasılığının kesinlikle <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 2\"><span class=\"ks\"><span>1<\/span><span>2<\/span><\/span><\/span><\/span> olduğunu söylüyor. Hangi değerlendirme doğrudur?",
+    "secenekler": [
+      "İki renk bulunduğu için olasılık her zaman <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 2\"><span class=\"ks\"><span>1<\/span><span>2<\/span><\/span><\/span><\/span> olur.",
+      "Renklerin top sayıları bilinmeden bu olasılık söylenemez.",
+      "Mavi bir tek renk olduğu için olasılık her zaman 1 olur.",
+      "Olasılık yalnız topların çekilme sırasıyla bulunabilir."
+    ],
+    "dogru": 1,
+    "aciklama": "Eşit olasılıklı çıktılar tek tek toplardır. Örneğin 1 mavi, 9 kırmızı varsa mavi olasılığı <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"1 bölü 10\"><span class=\"ks\"><span>1<\/span><span>10<\/span><\/span><\/span>’dur.<\/span>"
+  },
+  {
+    "soru": "1’den 12’ye kadar numaralı özdeş kartlardan biri çekiliyor. Hangi iki olay eşit olasılıklıdır?",
+    "secenekler": [
+      "Çift sayı çekme ile 8’den büyük sayı çekme",
+      "5’in katı çekme ile 4’ten küçük sayı çekme",
+      "6’nın katı çekme ile 3’ün katı çekme",
+      "4’ün katı çekme ile 9’dan büyük sayı çekme"
+    ],
+    "dogru": 3,
+    "aciklama": "4’ün katları 4, 8, 12; 9’dan büyükler 10, 11, 12’dir. İki olayda da 3’er çıktı vardır; çıktıların aynı olması gerekmez."
+  },
+  {
+    "soru": "Bir torbada özdeş 6 kırmızı, 4 mavi ve 3 sarı top var. Yalnız top EKLEYEREK üç rengin çekilme olasılıkları eşit yapılacak. En az kaç top eklenmelidir?",
+    "secenekler": [
+      "5",
+      "3",
+      "13",
+      "2"
+    ],
+    "dogru": 0,
+    "aciklama": "Hiç top çıkarılmadığından her renk en az 6 olmalıdır: maviye 2, sarıya 3 top eklenir; toplam 5."
+  },
+  {
+    "soru": "12 eş dilimli bir çarkta 4 dilim A, 4 dilim B, 4 dilim C harflidir. Bir C dilimi A yapılırsa ne olur?",
+    "secenekler": [
+      "B olasılığı artar; çünkü artık C harfli dilim sayısı azalmıştır.",
+      "Üçü yine eşit olasılıklıdır; çünkü toplam dilim sayısı aynıdır.",
+      "B olasılığı değişmez; ama A, B ve C artık eşit olasılıklı olmaz.",
+      "A ile B eşit olasılıklı kalır; yalnız C’nin olasılığı değişir."
+    ],
+    "dogru": 2,
+    "aciklama": "Yeni sayılar A: 5, B: 4, C: 3’tür. B yine 12 dilimin 4’üdür; üç olayın çıktı sayıları artık farklıdır."
+  },
+  {
+    "soru": "Çıktıları eşit olasılıklı bir deneyde, iki olayın eşit olasılıklı olup olmadığına hangi ölçüte bakılarak karar verilir?",
+    "secenekler": [
+      "İki olayın hiç ortak çıktısının bulunmaması",
+      "İki olaya ait çıktı sayılarının eşit olması",
+      "İki olayın da en az bir çıktısının bulunması",
+      "İki olayın çıktılarının tamamen aynı olması"
+    ],
+    "dogru": 1,
+    "aciklama": "Paydalar aynıdır. Olay çıktılarının sayıları eşitse oranlar da eşit olur. Çıktıların kendileri farklı olabilir."
+  },
+  {
+    "soru": "1’den 9’a kadar numaralı özdeş kartlardan biri çekiliyor. K: tek sayı çekme, L: çift sayı çekme. Hangi yargı doğrudur?",
+    "secenekler": [
+      "Eşit olasılıklı değildir; K’nin çıktı sayısı daha fazladır.",
+      "Eşit olasılıklıdır; sayılar ya tek ya da çift olmak zorundadır.",
+      "Eşit olasılıklıdır; K ile L’nin hiçbir ortak çıktısı yoktur.",
+      "Eşit olasılıklı değildir; L’nin sayıları daha büyük olabilir."
+    ],
+    "dogru": 0,
+    "aciklama": "K = 1, 3, 5, 7, 9; L = 2, 4, 6, 8’dir. Olasılıklar <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 9\"><span class=\"ks\"><span>5<\/span><span>9<\/span><\/span><\/span><\/span> ve <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"4 bölü 9\"><span class=\"ks\"><span>4<\/span><span>9<\/span><\/span><\/span><\/span> olur."
+  },
+  {
+    "soru": "Şemaya göre K ile L olayları için hangi etiket doğrudur?<span class=\"msekil\"><svg viewBox=\"0 0 320 248\" style=\"max-width:400px\" role=\"img\" aria-label=\"Örnek uzay: 1, 2, 3, 4, 5, 6, 7, 8. K olayı: 1, 2, 3. L olayı: 3, 4, 5. Ortak çıktılar: 3\"><rect x=\"6\" y=\"6\" width=\"308\" height=\"236\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><circle cx=\"112\" cy=\"112\" r=\"84\" fill=\"#c4b5fd\" fill-opacity=\"0.4\" stroke=\"#6d28d9\" stroke-width=\"3\"/><circle cx=\"208\" cy=\"112\" r=\"84\" fill=\"#fed7aa\" fill-opacity=\"0.4\" stroke=\"#c2410c\" stroke-width=\"3\"/><text x=\"46.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"800\" fill=\"#6d28d9\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">K<\/text><text x=\"274.0\" y=\"32.0\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"800\" fill=\"#c2410c\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">L<\/text><text x=\"66.0\" y=\"106.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">1<\/text><text x=\"66.0\" y=\"132.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">2<\/text><text x=\"160.0\" y=\"119.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">3<\/text><text x=\"254.0\" y=\"106.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">4<\/text><text x=\"254.0\" y=\"132.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">5<\/text><text x=\"130.0\" y=\"226.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">6<\/text><text x=\"160.0\" y=\"226.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">7<\/text><text x=\"190.0\" y=\"226.0\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\" fill=\"#1e1b4b\" stroke=\"#ffffff\" stroke-width=\"3\" paint-order=\"stroke\">8<\/text><\/svg><\/span>",
+    "secenekler": [
+      "Ayrık olaylar",
+      "Birbirinin tümleyeni olan olaylar",
+      "Ayrık olmayan olaylar",
+      "Biri imkânsız olan olaylar"
+    ],
+    "dogru": 2,
+    "aciklama": "3 çıktısı iki olayda da vardır. Bir ortak çıktı, olayların ayrık olmaması için yeterlidir."
+  },
+  {
+    "soru": "1’den 10’a kadar kartlardan biri çekiliyor. Hangi olay çifti AYRIKTIR?",
+    "secenekler": [
+      "Çift sayı ile 5’ten büyük sayı çekme",
+      "Asal sayı ile çift sayı çekme",
+      "3’ün katı ile tek sayı çekme",
+      "3’ten küçük sayı ile 8’den büyük sayı çekme"
+    ],
+    "dogru": 3,
+    "aciklama": "Birinde 1 ve 2, ötekinde 9 ve 10 vardır. Öteki çiftlerde sırasıyla 6, 2 ve 3 gibi ortak çıktılar bulunur."
+  },
+  {
+    "soru": "Yüzleri 1’den 12’ye numaralı düzgün cisim atılıyor. «4’ün katı» olayı ile hangi olay ayrık DEĞİLDİR?",
+    "secenekler": [
+      "6’nın katı gelmesi",
+      "Tek sayı gelmesi",
+      "4’ten küçük sayı gelmesi",
+      "10 gelmesi"
+    ],
+    "dogru": 0,
+    "aciklama": "4, 8 ve 12 içinden 12 aynı zamanda 6’nın katıdır. Bu yüzden iki olayın ortak çıktısı vardır."
+  },
+  {
+    "soru": "Aynı deneyde X ve Y olayları ayrıktır. Hangisi kesinlikle doğrudur?",
+    "secenekler": [
+      "X ve Y’nin olasılıkları toplamı 1’dir.",
+      "X ve Y eşit olasılıklı iki olaydır.",
+      "X ve Y’nin hiç ortak çıktısı yoktur.",
+      "Y, X olayının tümleyeni olmak zorundadır."
+    ],
+    "dogru": 2,
+    "aciklama": "Ayrık olmak yalnız ortak çıktı bulunmamasını anlatır. İki ayrık olay örnek uzayın tamamını kaplamak zorunda değildir."
+  },
+  {
+    "soru": "1’den 12’ye kadar kartlardan biri çekiliyor. P: 5’ten küçük sayı, S: 10’dan büyük sayı çekme. Hangi değerlendirme doğrudur?",
+    "secenekler": [
+      "P ile S ayrıktır; ortak çıktıları olmadığından tümleyendir.",
+      "P ile S ayrık değildir; ikisi de aynı kartlardan seçilir.",
+      "P ile S tümleyendir; biri küçük, öteki büyük sayılardır.",
+      "P ile S ayrıktır; ama 5–10 dışarıda kaldığından tümleyen değildir."
+    ],
+    "dogru": 3,
+    "aciklama": "P = {1, 2, 3, 4}, S = {11, 12}’dir. Ortak çıktı yoktur; fakat tümleyen olmaları için birlikte bütün kartları kapsamaları gerekirdi."
+  },
+  {
+    "soru": "1’den 9’a kadar kartlardan biri çekiliyor. M: 6’dan büyük sayı. N olayı hem M ile ayrık olacak hem de M ile eşit olasılıklı olacak. N hangisi olabilir?",
+    "secenekler": [
+      "{4, 6, 8}",
+      "{1, 4, 6}",
+      "{1, 4}",
+      "{1, 2, 3, 4, 5, 6}"
+    ],
+    "dogru": 1,
+    "aciklama": "M = {7, 8, 9}. N’de de 3 çıktı olmalı ve bunların hiçbiri M’de bulunmamalıdır."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
