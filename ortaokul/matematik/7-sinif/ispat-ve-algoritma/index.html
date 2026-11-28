@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İspat ve Algoritma – 7. Sınıf Matematik | Ders Rehberi</title>
+  <meta name="description" content="7. sınıf sayılarla ilgili cebirsel ispat, varsayım ve karşı örnek; doğal dil, sözde kod ve akış şemasıyla algoritma.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="/ortak/img/favicon.svg">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ortak/css/style.css">
+  <link rel="stylesheet" href="/ortak/css/matematik.css">
+</head>
+<body>
+  <header class="ust ust-iki">
+    <div class="kap ust-ic">
+      <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+        <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+        <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+      </a>
+      <nav class="ana-menu" aria-label="Bölümler">
+        <a class="aktif" aria-current="true" href="/ortaokul/">Ortaokul</a>
+        <a href="/lise/">Lise</a>
+        <a href="/kpss/">KPSS</a>
+      </nav>
+    </div>
+    <div class="alt-menu">
+      <nav class="kap alt-menu-ic" aria-label="Ders ve sınıf seçimi">
+        <div class="grup grup-ders">
+        <a href="/ortaokul/fen/7-sinif/"><i class="sim" aria-hidden="true">🔬 </i>Fen</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/"><i class="sim" aria-hidden="true">➗ </i>Matematik</a>
+        <a href="/ortaokul/sosyal-bilgiler/"><i class="sim" aria-hidden="true">🌍 </i>Sosyal</a>
+        <a href="/ortaokul/turkce/"><i class="sim" aria-hidden="true">📖 </i>Türkçe</a>
+        <a href="/ortaokul/ingilizce/"><i class="sim" aria-hidden="true">🗣️ </i>İngilizce</a>
+        <a href="/ortaokul/din-kulturu/"><i class="sim" aria-hidden="true">🕌 </i>Din</a>
+        </div>
+        <div class="grup grup-sinif">
+        <a href="/ortaokul/matematik/5-sinif/">5. Sınıf</a>
+        <a href="/ortaokul/matematik/6-sinif/">6. Sınıf</a>
+        <a class="aktif" aria-current="true" href="/ortaokul/matematik/7-sinif/">7. Sınıf</a>
+        <span class="pasif" title="Hazırlanıyor">8. Sınıf · LGS</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sayfa-bas">
+    <div class="kap">
+      <div class="ekmek"><a href="/ortaokul/matematik/">Matematik</a> › <a href="/ortaokul/matematik/7-sinif/">7. Sınıf</a> › İspat ve Algoritma</div>
+      <h1>🧠 İspat ve Algoritma</h1>
+      <p>İki tek sayıyı topla. Sonuç yine çift mi? 10 denemede öyle çıksa, 11. denemede de öyle çıkacağından nasıl emin olursun?</p>
+      <div class="konu-meta"><span>📚 7. Sınıf Matematik</span><span>⏱️ 25 dk okuma</span><span>✅ 20 soruluk test</span></div>
+    </div>
+  </section>
+
+  <main class="kap">
+    <div class="yazi-duzen">
+      <article class="yazi">
+        <h2 id="neden">Denemek Yetmez mi?</h2>
+
+<p>Bir iddianın <strong>her</strong> sayı için doğru olduğunu söylemek istiyorsan, sonsuz sayıyı tek tek deneyemezsin. <strong>Matematiksel ispat</strong>, bilinen tanım ve kurallarla iddianın kapsadığı bütün durumlarda neden doğru olduğunu gösteren gerekçeler zinciridir.</p>
+<div class="kavramlar"><div class="kavram"><b>Varsayım</b><span>Örnek ve örüntülerden çıkardığın, henüz ispatlanmamış tahmin.</span></div><div class="kavram"><b>Karşı örnek</b><span>«Her zaman» diyen bir iddiayı çürüten TEK örnek.</span></div><div class="kavram"><b>İspatlanmış önerme</b><span>Genel gerekçeyle her durumda doğru olduğu gösterilen cümle.</span></div></div>
+<p><strong>Tartış:</strong> Bir eczacı, mühendis ya da yazılımcı için «birkaç denemede çalıştı» demek neden yetmeyebilir?</p>
+
+        <h2 id="varsayim">Varsay, Listele, Sına</h2>
+
+<p><strong>1. Varsayım kur:</strong> «İki tek sayının toplamı … sayıdır.» Boşluğa tahminini yaz.</p>
+<p><strong>2. Örüntüyü listele:</strong></p>
+<table><tr><th>Toplanan tek sayılar</th><th>Toplam</th></tr><tr><td>1 ve 1</td><td>2</td></tr><tr><td>3 ve 7</td><td>10</td></tr><tr><td>5 ve 11</td><td>16</td></tr><tr><td>13 ve 9</td><td>22</td></tr></table>
+<p><strong>3. Sına:</strong> Varsayımın «toplam tektir» idiyse, 1 + 1 = 2 onu çürütür: bu bir <strong>karşı örnektir</strong>. Varsayımını değiştirmelisin. «Toplam çifttir» idiyse örnekler uyuyor, ama bu henüz ispat değil.</p>
+<p><strong>4. Önermeyi söyle:</strong> Sözel: «İki tek sayının toplamı <strong>her zaman</strong> çifttir.» Cebirsel: «x ve y tek sayı ise x + y çift sayıdır.»</p>
+<p><strong>Nokta dizilimiyle gör:</strong> Tek sayıyı ikişerli dizince hep bir nokta artar:</p>
+<figure class="msekil"><svg viewBox="0 0 320 118" style="max-width:400px" role="img" aria-label="5 ve 3 ikişerli dizilmiş; her birinde bir nokta artıyor, artan iki nokta eşleşince toplam 8 çift oluyor"><circle cx="26" cy="44" r="9" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="26" cy="70" r="9" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="50" cy="44" r="9" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="50" cy="70" r="9" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="74" cy="44" r="9" fill="#c4b5fd" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="190" cy="44" r="9" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="190" cy="70" r="9" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8"/><circle cx="214" cy="44" r="9" fill="#fed7aa" stroke="#1e1b4b" stroke-width="1.8"/><text x="50.0" y="20.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b">5</text><text x="202.0" y="20.0" text-anchor="middle" font-size="19" font-weight="800" fill="#1e1b4b">3</text><text x="158.0" y="62.0" text-anchor="middle" font-size="24" font-weight="800" fill="#1e1b4b">+</text><circle cx="74" cy="44" r="14" fill="none" stroke="#be123c" stroke-width="2.5" stroke-dasharray="5 4"/><circle cx="214" cy="44" r="14" fill="none" stroke="#be123c" stroke-width="2.5" stroke-dasharray="5 4"/><text x="160.0" y="108.0" text-anchor="middle" font-size="16" font-weight="800" fill="#be123c">Artan iki nokta bir çift olur.</text></svg></figure>
+<p><strong>Sözcüklere dikkat:</strong> «her zaman», «bazen», «en az», «hiçbir zaman» sözcükleri önermenin ne iddia ettiğini değiştirir.</p>
+<p><strong>Somut materyal:</strong> Pul ya da küplerle iki tek sayıyı ikişerli diz; artanları birleştir.</p>
+
+        <h2 id="ispat">Cebirsel İspat</h2>
+
+<p><strong>Gösterimi seç:</strong> k doğal sayı ise <strong>2k</strong> bir çift sayı, <strong>2k + 1</strong> bir tek sayıdır. (Doğal sayılarda 0, 2, 4, … çift; 1, 3, 5, … tektir.)</p>
+<p><strong>Önerme:</strong> x ve y tek doğal sayı ise x + y çifttir.</p>
+<ol><li>k ve m doğal sayı olmak üzere x = 2k + 1, y = 2m + 1 yazalım. <em>(İki ayrı harf: sayılar farklı olabilir.)</em></li><li>x + y = 2k + 1 + 2m + 1</li><li>= 2k + 2m + 2 <em>(değişme ve birleşme)</em></li><li>= 2(k + m + 1) <em>(dağılma)</em></li><li>k + m + 1 bir doğal sayıdır. Sonuç, 2 ile bir doğal sayının çarpımıdır; öyleyse <strong>çifttir.</strong></li></ol>
+<p>Harfler bütün doğal sayıları temsil ettiği için sonuç <strong>bütün</strong> tek sayı çiftleri için geçerlidir.</p>
+<p><strong>İkinci bir ispat yolu:</strong> Nokta dizilimi: her tek sayıda ikişerli gruplardan sonra bir nokta artar; iki artan da bir grup olur. İki ispatı karşılaştır: hangisi «bütün sayılar» için nedenini daha açık anlatıyor?</p>
+<p><strong>Ne işe yarar?</strong> Büyük sayılarda sonucu denetlersin: 2 417 + 6 585 işleminde tek bir sonuç bulursan yanlış yaptığını hemen bilirsin. (Çift bulman doğru olduğunu tek başına göstermez.)</p>
+
+        <h2 id="uyarla">Önermeyi Yeni Durumlara Uyarla</h2>
+
+<p><strong>Sen ispatla:</strong> İki çift sayının toplamı çifttir.</p>
+<details><summary>Yarım ispatı tamamla</summary><p>x = 2k, y = 2m. x + y = 2k + 2m = <strong>2(k + m)</strong>. k + m doğal sayıdır, toplam çifttir.</p></details>
+<p><strong>Sen ispatla:</strong> Ardışık üç doğal sayının toplamı 3’e tam bölünür.</p>
+<details><summary>Cevabı göster</summary><p>Sayılar n, n + 1, n + 2. Toplam 3n + 3 = 3(n + 1). n + 1 doğal sayı olduğundan toplam 3’ün katıdır.</p></details>
+<p><strong>Her uyarlama doğru çıkar mı?</strong> «Ardışık <em>dört</em> doğal sayının toplamı 4’e tam bölünür.» iddiasını incele.</p>
+<details><summary>Cevabı göster</summary><p>Yanlış: 0 + 1 + 2 + 3 = 6, 4’e bölünmez. Genel olarak toplam 4n + 6’dır; 4’e bölününce her zaman 2 kalır. Toplam 2’ye ise her zaman bölünür: 2(2n + 3).</p></details>
+<p><strong>Grupça:</strong> Kendi varsayımını kur, örneklerle sına, ispatla ya da karşı örnek bul. Arkadaşlarını gerekçeyle ikna et; onların itirazlarını da dinle.</p>
+
+        <h2 id="adim">Sonuca Götüren Adımlar</h2>
+
+<p><strong>Algoritma</strong>, bir işi yapmak için izlenen <strong>açık, sıralı ve sonlanan</strong> adımlardır.</p>
+<p><strong>Problem:</strong> Hayalî bir bisiklet kiralamada açılış 30 TL, her saat 20 TL’dir. 150 TL’den fazla tutarsa 15 TL indirim yapılacak. Saat sayısı tam sayıdır.</p>
+<p><strong>Önce adımları ve ilişkileri çöz:</strong> girdi (saat s), işlem (30 + 20 · s), karar (tutar 150’den büyük mü?), çıktı (ödenecek tutar). Sıra önemlidir: tutarı bulmadan indirime karar veremezsin.</p>
+<p>İşlemlerde bildiğin kurallar da birer adım dizisidir: <strong>işlem önceliği</strong> (parantez → çarpma ve bölme soldan sağa → toplama ve çıkarma soldan sağa), tam sayılarla dört işlem, kesirle bölme, benzer terimleri birleştirme. <strong>Farklı çarpma stratejisi:</strong> 25 · 48 için 48’i 4’e böl, 100 ile çarp.</p>
+<p><strong>Sen açıkla:</strong> Bir çarpmayı bu stratejiyle yapmanın hangi koşulda tam sayı bölmesi gerektirdiğini düşün. 25 · 30 için ne yaparsın?</p>
+<details><summary>Cevabı göster</summary><p>30 4’e tam bölünmez; 30 ÷ 4 = 7,5 ve 7,5 · 100 = 750 yine doğrudur. Ya da 25 · 28 + 25 · 2 gibi parçalayabilirsin.</p></details>
+
+        <h2 id="ifade">Aynı Algoritma, Üç Anlatım</h2>
+
+<p><strong>1. Doğal dil:</strong> Saat sayısını al. 20 ile çarpıp 30 ekle. Sonuç 150’den büyükse 15 çıkar. Ödenecek tutarı söyle.</p>
+<p><strong>2. Sözde kod (Türkçe):</strong></p>
+<ol><li>BAŞLA</li><li>s sayısını GİR</li><li>tutar ← 30 + 20 · s</li><li>EĞER tutar &gt; 150 İSE: tutar ← tutar − 15</li><li>tutar’ı YAZ</li><li>BİTİR</li></ol>
+<p>Kontrol: s = 4 → 110 TL (indirim yok). s = 7 → 170 &gt; 150, ödenecek 155 TL. Sınırda s = 6 → tutar 150; «fazla» olmadığı için indirim yok.</p>
+<p><strong>3. Akış şeması:</strong> Oval başla/bitir, paralelkenar girdi/çıktı, dikdörtgen işlem, eşkenar dörtgen karar kutusudur. Aşağıdaki şema <strong>tekrar eden</strong> bir adımı gösteriyor: kumbarada 45 TL var; para en az 100 TL olana kadar her hafta 20 TL ekleniyor.</p>
+<figure class="msekil"><svg viewBox="0 0 282 558" style="max-width:340px" role="img" aria-label="Akış şeması: 1. Başla; 2. Para olarak 45 al; 3. Paraya 20 ekle; 4. Para en az 100 mü? (Hayır ise 3. kutuya dön); 5. Parayı yazdır; 6. Bitir"><rect x="80" y="8" width="120" height="50" rx="25.0" fill="#dcfce7" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="39.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Başla</text><text x="6" y="38.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">1.</text><line x1="140" y1="58" x2="140" y2="88" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,98 133,86 147,86" fill="#1e1b4b"/><polygon points="54,98 242,98 226,148 38,148" fill="#e0f2fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="129.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Para olarak 45 al</text><text x="6" y="128.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">2.</text><line x1="140" y1="148" x2="140" y2="178" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,188 133,176 147,176" fill="#1e1b4b"/><rect x="44" y="188" width="192" height="50" fill="#ede9fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="219.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Paraya 20 ekle</text><text x="6" y="218.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">3.</text><line x1="140" y1="238" x2="140" y2="268" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,278 133,266 147,266" fill="#1e1b4b"/><polygon points="140,278 248,324.0 140,370 32,324.0" fill="#fef3c7" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="320.5" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">Para en az 100</text><text x="140" y="339.5" text-anchor="middle" font-size="16" font-weight="800" fill="#1e1b4b">mü?</text><text x="6" y="329.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">4.</text><line x1="140" y1="370" x2="140" y2="400" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,410 133,398 147,398" fill="#1e1b4b"/><text x="154" y="392" text-anchor="start" font-size="15" font-weight="800" fill="#047857">Evet</text><polygon points="54,410 242,410 226,460 38,460" fill="#e0f2fe" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="441.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Parayı yazdır</text><text x="6" y="440.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">5.</text><line x1="140" y1="460" x2="140" y2="490" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="140,500 133,488 147,488" fill="#1e1b4b"/><rect x="80" y="500" width="120" height="50" rx="25.0" fill="#fee2e2" stroke="#1e1b4b" stroke-width="2.5"/><text x="140" y="531.0" text-anchor="middle" font-size="17" font-weight="800" fill="#1e1b4b">Bitir</text><text x="6" y="530.0" text-anchor="start" font-size="15" font-weight="800" fill="#6d28d9">6.</text><polyline points="248,324.0 272,324.0 272,213.0 246,213.0" stroke="#1e1b4b" stroke-width="2.5" fill="none"/><polygon points="236,213.0 248,206.0 248,220.0" fill="#1e1b4b"/><text x="218" y="304.0" text-anchor="start" font-size="15" font-weight="800" fill="#b91c1c">Hayır</text></svg></figure>
+<p><strong>İzle:</strong> Para 65, 85, 105 olur; 105 yazdırılır. Döngüden çıkacak bir koşul olmasa algoritma sonlanmazdı.</p>
+<p><strong>Dönüştür:</strong> Bu şemayı sözde kodla yaz. Sonra bisiklet algoritmasının akış şemasını kâğıtta çiz; karar kutusunun iki yolunu da göster.</p>
+
+        <h2 id="hata">Hatayı Bul, Kısalt, Karşılaştır</h2>
+
+<p><strong>Hatalı algoritma:</strong> «Üç sayının ortalamasını bul: a, b, c’yi al; c’yi 3’e böl; sonuca a ve b’yi ekle.»</p>
+<ol><li>a = 3, b = 6, c = 9 için izle. Ne çıktı?</li><li>Hangi adımın yeri yanlış? Düzelt.</li><li>Düzelttiğin algoritmayı başka sayılarla sına.</li></ol>
+<details><summary>Cevabı göster</summary><p>Hatalı sonuç 3 + 6 + 3 = 12. Doğrusu: önce üçünü topla (18), sonra 3’e böl (6).</p></details>
+<p><strong>Kısalt:</strong> «x’i al, 4 ile çarp, 8 ekle, sonucu 4’e böl» algoritmasını daha kısa yazabilir misin? Kısaltmanın <em>her x için</em> aynı sonucu verdiğini cebirle gerekçelendir.</p>
+<details><summary>Cevabı göster</summary><p>«x’e 2 ekle.» Çünkü <span class="bitisik"><span class="kesir" role="img" aria-label="1 bölü 4"><span class="ks"><span>1</span><span>4</span></span></span></span>(4x + 8) = x + 2.</p></details>
+<p><strong>Grupta karşılaştır:</strong> Hangi algoritma daha kısa, hangisi daha anlaşılır? Hatalı bir adım sonucu nasıl değiştirdi?</p>
+
+        <h2 id="proje">Grup Görevi: Bir Sorun İçin Algoritma</h2>
+
+<p>Çevre kirliliği, trafik ya da <strong>enerji tasarrufu</strong> gibi bir sorun seçin. Küçük ve uygulanabilir bir parçası için algoritma yazın. Örnek: «Sınıftan son çıkan, ışık ve cihazları nasıl kontrol eder?» (Elektrik tesisatına dokunmayın; arızayı bir yetişkine bildirin.)</p>
+<ol><li>Planlayın: girdiler, adımlar, kararlar, çıktı.</li><li>Doğal dil, sözde kod ya da akış şemasıyla yazın.</li><li>Farklı durumlarla sınayın; hataları düzeltin.</li><li>Başka bir grupla değiştirip birbirinizin adımlarını aynen uygulayın.</li></ol>
+<p><strong>Sorumluluk:</strong> Planınızı bir hafta uygulayın. Neyi yapabildiniz, neyi değiştirmeniz gerekti?</p>
+
+        <div class="ozet" id="ozet">
+          <ul>
+            <li>Örnekler varsayım kurmaya ve sınamaya yarar; «her zaman» iddiasını ispatlamaz.</li>
+            <li>Tek bir karşı örnek «her zaman» iddiasını çürütür.</li>
+            <li>k doğal sayı ise 2k çift, 2k + 1 tektir; birbirinden bağımsız iki sayı için iki ayrı harf kullanılır.</li>
+            <li>Cebirsel ispatta her adımın gerekçesi vardır ve sonuç aranan biçimde yazılır.</li>
+            <li>Algoritma açık, sıralı ve sonlanan adımlardır.</li>
+            <li>Doğal dil, sözde kod ve akış şeması aynı algoritmayı anlatabilir.</li>
+            <li>Algoritmayı sınır durumlarıyla da sına; kısaltırsan sonucun değişmediğini göster.</li>
+          </ul>
+        </div>
+
+        <section class="test" id="test-bolumu">
+          <h2>✅ Kendini Test Et</h2>
+          <div id="test"></div>
+        </section>
+      </article>
+
+      <aside class="yan">
+        <div class="yan-kutu">
+          <h3>📑 Bu Konuda</h3>
+          <ol class="icindekiler">
+            <li><a href="#neden">Neden ispat?</a></li>
+            <li><a href="#varsayim">Varsayım ve sınama</a></li>
+            <li><a href="#ispat">Cebirsel ispat</a></li>
+            <li><a href="#uyarla">Uyarla</a></li>
+            <li><a href="#adim">İşlem adımları</a></li>
+            <li><a href="#ifade">Üç anlatım</a></li>
+            <li><a href="#hata">Hata ve kısaltma</a></li>
+            <li><a href="#proje">Grup görevi</a></li>
+            <li><a href="#ozet">Kısa özet</a></li>
+            <li><a href="#test-bolumu">Test</a></li>
+          </ol>
+        </div>
+        <div class="yan-kutu yan-test">
+          <h3>🎯 Hazır mısın?</h3>
+          <p>Konuyu bitirdiysen 20 soruluk testle kendini dene.</p>
+          <a class="btn btn-sari" href="#test-bolumu">Teste Git →</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="alt">
+    <div class="kap alt-izgara">
+      <div>
+        <a class="logo" href="/" aria-label="Ders Rehberi ana sayfa">
+          <span class="logo-ikon" style="background:linear-gradient(135deg, #14b8a6, #0f766e)"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M16 9C13 6.5 9 6 5 7v17c4-1 8-.5 11 2 3-2.500 7-3 11-2V7c-4-1-8-.5-11 2z"/><path d="M16 9v17"/></svg></span>
+          <span class="logo-yazi"><small>Ders</small>Rehberi</span>
+        </a>
+        <p>Ortaokul, lise ve sınavlara hazırlık için ücretsiz konu anlatımları, özetler ve testler.</p>
+      </div>
+      <div>
+        <h4>Bölümler</h4>
+        <ul>
+          <li><a href="/ortaokul/">Ortaokul</a></li>
+          <li><a href="/ortaokul/fen/">Ortaokul Fen Bilimleri</a></li>
+          <li><a href="/ortaokul/matematik/">Ortaokul Matematik</a></li>
+          <li><a href="/ortaokul/sosyal-bilgiler/">Ortaokul Sosyal Bilgiler</a></li>
+          <li><a href="/ortaokul/turkce/">Ortaokul Türkçe</a></li>
+          <li><a href="/ortaokul/ingilizce/">Ortaokul İngilizce</a></li>
+          <li><a href="/ortaokul/din-kulturu/">Ortaokul Din Kültürü ve Ahlak Bilgisi</a></li>
+          <li><a href="/lise/">Lise</a></li>
+          <li><a href="/kpss/">KPSS</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/ortaokul/fen/deneyler/">Deney Köşesi</a></li>
+          <li><a href="/ortaokul/fen/oyunlar/">Oyunlar</a></li>
+          <li><a href="/hakkimizda/">Hakkımızda</a></li>
+          <li><a href="/iletisim/">İletişim</a></li>
+          <li><a href="/gizlilik/">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kap alt-son">
+      <span>© 2026 Ders Rehberi</span>
+      <span>Öğrenmenin en kolay hâli 📚</span>
+    </div>
+  </footer>
+
+  <script>
+    var TEST_HTML = true;
+    var TEST_SORULARI = [
+  {
+    "soru": "k bir doğal sayıdır. Aşağıdakilerden hangisi her zaman ÇİFT bir sayı gösterir?",
+    "secenekler": [
+      "2k + 1",
+      "2k",
+      "k + 2",
+      "3k"
+    ],
+    "dogru": 1,
+    "aciklama": "2k, 2’nin bir doğal sayı katıdır. k + 2 ve 3k bazı k’ler için tek olur."
+  },
+  {
+    "soru": "“Bütün asal sayılar tektir.” önermesinin yanlış olduğunu hangi tek örnek gösterir?",
+    "secenekler": [
+      "3",
+      "9",
+      "4",
+      "2"
+    ],
+    "dogru": 3,
+    "aciklama": "2 asaldır ama tek değildir. 4 ve 9 asal olmadığından bu önermeye karşı örnek olamaz."
+  },
+  {
+    "soru": "1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16 örüntüsüne bakan biri hangi varsayımı kurabilir?",
+    "secenekler": [
+      "1’den başlayan ardışık tek sayıların toplamı bir tam karedir.",
+      "Art arda gelen iki tek sayının toplamı daima bir tam karedir.",
+      "1’den başlayan ardışık tek sayıların toplamı daima çifttir.",
+      "Tek sayıların her toplamı 4’ün bir doğal sayı katıdır."
+    ],
+    "dogru": 0,
+    "aciklama": "4, 9 ve 16 sırasıyla 2, 3 ve 4’ün kareleridir. Bu, örüntüden çıkan bir varsayımdır; henüz ispat değildir."
+  },
+  {
+    "soru": "Ada, bir varsayımını 10 farklı sayı ile deneyip hepsinde doğru buluyor. Hangisi doğrudur?",
+    "secenekler": [
+      "On örnek, varsayımın bütün sayılar için ispatı sayılır.",
+      "Denemeler doğru çıktığı için varsayım yanlış olmak zorundadır.",
+      "Bu denemeler varsayımı destekler ama her sayı için kanıtlamaz.",
+      "Örneklerin varsayımı incelemede hiçbir işe yaramadığı anlaşılır."
+    ],
+    "dogru": 2,
+    "aciklama": "Denemediği bir sayıda yanlış çıkabilir. Her sayıyı kapsayan genel bir gerekçe gerekir."
+  },
+  {
+    "soru": "n bir doğal sayıdır. n + (n + 1) = 2n + 1 eşitliği neyi gösterir?",
+    "secenekler": [
+      "Ardışık iki doğal sayının toplamı çifttir.",
+      "Ardışık iki doğal sayının toplamı tektir.",
+      "İki tek sayının toplamı her zaman tektir.",
+      "Her doğal sayının iki katı tek bir sayıdır."
+    ],
+    "dogru": 1,
+    "aciklama": "2n çifttir; ona 1 eklenince tek sayı elde edilir."
+  },
+  {
+    "soru": "“Çift bir sayı ile bir doğal sayının çarpımı çifttir.” ispatında çift sayı 2k, öteki sayı m alınıyor (k, m doğal). Hangi satır ispatı tamamlar?",
+    "secenekler": [
+      "2k · m = 2k + m",
+      "2k · m = 2(k + m) + 1",
+      "2k · m = 2 · (k · m)",
+      "2k · m = k · k · m"
+    ],
+    "dogru": 2,
+    "aciklama": "Çarpımın 2 ile bir doğal sayının (k · m) çarpımı olduğu görülür; bu çift sayının tanımıdır."
+  },
+  {
+    "soru": "k bir doğal sayıdır. 3(2k + 1) = 6k + 3 = 2(3k + 1) + 1 adımları hangi önermeyi gösterir?",
+    "secenekler": [
+      "Bir tek sayının 3 katı daima çifttir.",
+      "Her doğal sayının 3 katı tek sayıdır.",
+      "Bir tek sayının 3 katı 6’ya tam bölünür.",
+      "Bir tek sayının 3 katı yine tek sayıdır."
+    ],
+    "dogru": 3,
+    "aciklama": "Son ifade «2 · (doğal sayı) + 1» biçimindedir, yani tektir."
+  },
+  {
+    "soru": "Can, “iki tek sayının toplamı çifttir” ispatında sayıların ikisini de 2k + 1 diye yazıyor. Eksik nedir?",
+    "secenekler": [
+      "İspatı yalnız birbirine eşit iki tek sayı için yapmış olur.",
+      "Tek sayıları yazarken 1 yerine 2 eklemesi gerekirdi.",
+      "İki sayıyı toplamak yerine çıkarması gerekirdi.",
+      "k yerine mutlaka 5 sayısını yazması gerekirdi."
+    ],
+    "dogru": 0,
+    "aciklama": "İki tek sayı farklı olabilir. Bu yüzden biri 2k + 1, öteki 2m + 1 diye yazılır."
+  },
+  {
+    "soru": "Ardışık beş doğal sayı n, n + 1, n + 2, n + 3, n + 4 ile yazılıyor. Toplamlarının hangi biçimi 5’e bölündüğünü gösterir?",
+    "secenekler": [
+      "5n + 2",
+      "5(n + 10)",
+      "5(n + 2)",
+      "n + 10"
+    ],
+    "dogru": 2,
+    "aciklama": "Toplam 5n + 10 = 5(n + 2) olur; n + 2 doğal sayıdır."
+  },
+  {
+    "soru": "Aşağıdaki önermelerden hangisi bütün doğal sayılar için doğrudur?",
+    "secenekler": [
+      "Ardışık iki çift sayının toplamı 4’e tam bölünür.",
+      "Ardışık iki tek sayının toplamı 4’e tam bölünür.",
+      "Ardışık iki doğal sayının toplamı 4’e tam bölünür.",
+      "Herhangi iki tek sayının toplamı 4’e tam bölünür."
+    ],
+    "dogru": 1,
+    "aciklama": "(2k + 1) + (2k + 3) = 4k + 4 = 4(k + 1). Öteki önermelere karşı örnekler: 2 + 4 = 6, 1 + 2 = 3, 1 + 5 = 6."
+  },
+  {
+    "soru": "İspatlanmış “iki tek sayının toplamı çifttir” önermesi hangi işe yarar?",
+    "secenekler": [
+      "3517 + 2489 toplamını hiç işlem yapmadan tam olarak verir.",
+      "Çift çıkan her toplama sonucunun doğru olduğunu garanti eder.",
+      "İki tek sayının çarpımının her zaman çift olduğunu gösterir.",
+      "3517 + 2489 işleminde tek çıkan bir sonucun yanlış olduğunu hemen gösterir."
+    ],
+    "dogru": 3,
+    "aciklama": "Önerme sonucu denetlemeye yardım eder; tek çıkan sonuç kesin yanlıştır, ama çift çıkması tek başına doğruluk göstermez."
+  },
+  {
+    "soru": "Bir tek sayı ile bir çift sayının toplamı için k, m doğal sayı olmak üzere hangi yazım ispatta kullanılabilir?",
+    "secenekler": [
+      "(2k + 1) + 2m = 2(k + m) + 1",
+      "(2k + 1) + 2k = 4k + 1 olduğu için yeterlidir",
+      "3 + 4 = 7 olduğu için her zaman tektir",
+      "(k + 1) + m = k + m + 1"
+    ],
+    "dogru": 0,
+    "aciklama": "İki ayrı harf, farklı sayıları kapsar. Sonuç 2 · (doğal sayı) + 1 olduğundan tektir. Tek sayı örneği yeterli değildir."
+  },
+  {
+    "soru": "8 + 12 ÷ 4 · 2 işlemi için yazılan algoritmanın ilk işlem adımı hangisi olmalıdır?",
+    "secenekler": [
+      "8 + 12",
+      "4 · 2",
+      "12 ÷ 4",
+      "8 · 2"
+    ],
+    "dogru": 2,
+    "aciklama": "Çarpma ve bölme toplamadan önce, aralarında soldan sağa yapılır: önce 12 ÷ 4."
+  },
+  {
+    "soru": "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"3 bölü 4\"><span class=\"ks\"><span>3<\/span><span>4<\/span><\/span><\/span><\/span> ÷ <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span><\/span> işlemini yapan algoritmada hangi adım doğrudur?",
+    "secenekler": [
+      "Birinci kesri <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span><\/span> ile çarp.",
+      "<span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"4 bölü 3\"><span class=\"ks\"><span>4<\/span><span>3<\/span><\/span><\/span><\/span> kesrini <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"2 bölü 5\"><span class=\"ks\"><span>2<\/span><span>5<\/span><\/span><\/span><\/span> ile çarp.",
+      "Payları ve paydaları birbirinden çıkar.",
+      "Birinci kesri <span class=\"bitisik\"><span class=\"kesir\" role=\"img\" aria-label=\"5 bölü 2\"><span class=\"ks\"><span>5<\/span><span>2<\/span><\/span><\/span><\/span> ile çarp."
+    ],
+    "dogru": 3,
+    "aciklama": "Bir kesre bölmek, onun çarpmaya göre tersiyle çarpmaktır."
+  },
+  {
+    "soru": "Sözde kod şöyledir:\n1. x sayısını GİR\n2. y ← 3 · x\n3. y ← y − 4\n4. y’yi YAZ\nx = 7 girilirse ne yazılır?",
+    "secenekler": [
+      "17",
+      "9",
+      "21",
+      "25"
+    ],
+    "dogru": 0,
+    "aciklama": "y önce 21, sonra 21 − 4 = 17 olur."
+  },
+  {
+    "soru": "Sözde kod şöyledir:\n1. toplam ← 0, sayaç ← 1\n2. sayaç ≤ 4 İKEN: toplam ← toplam + 2 · sayaç; sayaç ← sayaç + 1\n3. toplamı YAZ\nNe yazılır?",
+    "secenekler": [
+      "8",
+      "20",
+      "10",
+      "30"
+    ],
+    "dogru": 1,
+    "aciklama": "Eklenenler 2, 4, 6 ve 8’dir: toplam 20. Sayaç 5 olunca döngü biter."
+  },
+  {
+    "soru": "Akış şemasına göre hangi sayı yazdırılır?<span class=\"msekil\"><svg viewBox=\"0 0 282 558\" style=\"max-width:340px\" role=\"img\" aria-label=\"Akış şeması: 1. Başla; 2. Sayı olarak 50 al; 3. Sayıdan 12 çıkar; 4. Sayı 12’den küçük mü? (Hayır ise 3. kutuya dön); 5. Sayıyı yazdır; 6. Bitir\"><rect x=\"80\" y=\"8\" width=\"120\" height=\"50\" rx=\"25.0\" fill=\"#dcfce7\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"39.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Başla<\/text><text x=\"6\" y=\"38.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">1.<\/text><line x1=\"140\" y1=\"58\" x2=\"140\" y2=\"88\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"140,98 133,86 147,86\" fill=\"#1e1b4b\"/><polygon points=\"54,98 242,98 226,148 38,148\" fill=\"#e0f2fe\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"129.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Sayı olarak 50 al<\/text><text x=\"6\" y=\"128.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">2.<\/text><line x1=\"140\" y1=\"148\" x2=\"140\" y2=\"178\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"140,188 133,176 147,176\" fill=\"#1e1b4b\"/><rect x=\"44\" y=\"188\" width=\"192\" height=\"50\" fill=\"#ede9fe\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"219.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Sayıdan 12 çıkar<\/text><text x=\"6\" y=\"218.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">3.<\/text><line x1=\"140\" y1=\"238\" x2=\"140\" y2=\"268\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"140,278 133,266 147,266\" fill=\"#1e1b4b\"/><polygon points=\"140,278 248,324.0 140,370 32,324.0\" fill=\"#fef3c7\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"320.5\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e1b4b\">Sayı 12’den<\/text><text x=\"140\" y=\"339.5\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"800\" fill=\"#1e1b4b\">küçük mü?<\/text><text x=\"6\" y=\"329.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">4.<\/text><line x1=\"140\" y1=\"370\" x2=\"140\" y2=\"400\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"140,410 133,398 147,398\" fill=\"#1e1b4b\"/><text x=\"154\" y=\"392\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#047857\">Evet<\/text><polygon points=\"54,410 242,410 226,460 38,460\" fill=\"#e0f2fe\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"441.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Sayıyı yazdır<\/text><text x=\"6\" y=\"440.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">5.<\/text><line x1=\"140\" y1=\"460\" x2=\"140\" y2=\"490\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"140,500 133,488 147,488\" fill=\"#1e1b4b\"/><rect x=\"80\" y=\"500\" width=\"120\" height=\"50\" rx=\"25.0\" fill=\"#fee2e2\" stroke=\"#1e1b4b\" stroke-width=\"2.5\"/><text x=\"140\" y=\"531.0\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"800\" fill=\"#1e1b4b\">Bitir<\/text><text x=\"6\" y=\"530.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#6d28d9\">6.<\/text><polyline points=\"248,324.0 272,324.0 272,213.0 246,213.0\" stroke=\"#1e1b4b\" stroke-width=\"2.5\" fill=\"none\"/><polygon points=\"236,213.0 248,206.0 248,220.0\" fill=\"#1e1b4b\"/><text x=\"218\" y=\"304.0\" text-anchor=\"start\" font-size=\"15\" font-weight=\"800\" fill=\"#b91c1c\">Hayır<\/text><\/svg><\/span>",
+    "secenekler": [
+      "14",
+      "12",
+      "2",
+      "38"
+    ],
+    "dogru": 2,
+    "aciklama": "Sayı sırayla 38, 26, 14 ve 2 olur. 2, 12’den küçük olduğu için döngü biter."
+  },
+  {
+    "soru": "Her x için 2(x + 5) sonucunu vermesi gereken algoritma “x’i 2 ile çarp, sonra 5 ekle” diye yazılmış. Hangi düzeltme doğrudur?",
+    "secenekler": [
+      "Önce x’e 5 ekle, sonra sonucu 2 ile çarp.",
+      "Önce x’ten 5 çıkar, sonra sonucu 2 ile çarp.",
+      "Önce x’i 2 ile çarp, sonra 5 çıkar.",
+      "Önce 5’i 2 ile böl, sonra x’i ekle."
+    ],
+    "dogru": 0,
+    "aciklama": "Parantez önce yapılır. Yanlış sıra 2x + 5 verir; doğrusu 2x + 10’dur."
+  },
+  {
+    "soru": "Bir algoritma, 0’dan başlayıp sonuca art arda üç kez a ekliyor. Aynı sonucu daha kısa nasıl bulur?",
+    "secenekler": [
+      "a’ya 3 ekler.",
+      "a’yı 3 ile çarpar.",
+      "a’yı 3’e böler.",
+      "a’yı kendisiyle üç kez çarpar."
+    ],
+    "dogru": 1,
+    "aciklama": "0 + a + a + a = 3a’dır. Kısaltılan algoritma her a için aynı sonucu vermelidir."
+  },
+  {
+    "soru": "(−6) − (−9) işlemini yapan algoritmanın adımları hangisinde doğru verilmiştir?",
+    "secenekler": [
+      "−9’u olduğu gibi al; −6 ile topla: −15.",
+      "−6’nın tersi 6’yı al; −9 ile topla: −3.",
+      "İki sayının işaretlerini sil; 6’dan 9 çıkar: −3.",
+      "−9’un toplamaya göre tersi 9’u al; −6 ile topla: 3."
+    ],
+    "dogru": 3,
+    "aciklama": "Tam sayıyla çıkarma, çıkanın toplamaya göre tersini eklemektir: −6 + 9 = 3."
+  }
+];
+  </script>
+  <script src="/ortak/js/site.js"></script>
+  <script src="/ortak/js/quiz.js"></script>
+</body>
+</html>
